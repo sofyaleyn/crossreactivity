@@ -1,6 +1,6 @@
 # Predicted structures — Boltz-2.1 cofolds (2026-07-04)
 
-Predicted-structure CIFs for every cofold run, `<run>/sample_N.cif` (5 samples/run; smoke=1). Antibody = chains H+L; antigen = chain V (ligand for the smoke test). Per-run confidence metrics (ipTM, PAE_IF, epitope-reprod, prediction IDs) in [`../cofold_metrics.csv`](../cofold_metrics.csv); exact Boltz inputs in [`../inputs/`](../inputs/); analysis scripts in [`../scripts/`](../scripts/).
+Predicted-structure CIFs **and PAE matrices** for every cofold run: `<run>/sample_N.cif` + `<run>/sample_N_pae.npz` (5 samples/run; smoke=1). Antibody = chains H+L; antigen = chain V (ligand for the smoke test). Per-run confidence metrics (ipTM, PAE_IF, epitope-reprod, prediction IDs) in [`../cofold_metrics.csv`](../cofold_metrics.csv); exact Boltz inputs in [`../inputs/`](../inputs/); analysis scripts in [`../scripts/`](../scripts/).
 
 | run | antibody | antigen | role | samples |
 |---|---|---|---|---|

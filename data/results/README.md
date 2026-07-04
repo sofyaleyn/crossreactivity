@@ -11,9 +11,9 @@ Durable record of the viability-study results (scratchpad is ephemeral). Narrati
 | `benchmark_antigens.json` | Fold-matched decoy benchmark: 40 antigens × {family, name, is_pos, sequence} (Exp 5/7). |
 | `benchmark_embed_scores.json` | Embedding paratope-cosine scores on the benchmark (Exp 5). |
 | `benchmark_surface_scores.json` | Surface-method scores on the benchmark (Exp 7). |
-| `structures/` | Predicted-structure CIFs for all 24 cofold runs (5 samples each) — see `structures/README.md`. |
+| `structures/` | Predicted-structure CIFs **+ PAE matrices** (`sample_N.cif` + `sample_N_pae.npz`) for all 24 cofold runs (5 samples each) — see `structures/README.md`. |
 | `inputs/` | Exact Boltz-2.1 input JSONs for every run (sequences, chains, templates, sampling params). |
-| `scripts/` | Raw session analysis scripts (metric extraction, cofold-input builders, benchmark/filters) — to be refactored into `src/crossflag/` per `plan.md`. |
+| `scripts/` | Raw session analysis scripts (metric extraction, cofold-input builders, benchmark/filters) — to be refactored into `src/crossflag/` per `plan.md`. Includes `requirements.lock.txt` (pinned `crossflag-spike` env, Python 3.10.20). |
 
 ## Metric definitions
 
