@@ -1,72 +1,117 @@
-<svg class="pipeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 452" width="100%" role="img" aria-label="Representative-set off-target screening pipeline">
+<svg class="pipeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 636" width="100%" role="img" aria-label="Representative-set screening never fills the candidate by target grid: cluster candidates to K representatives, discovery-screen to a ~20 protein shortlist, then screen all candidates against the shortlist — a thin cross of the full grid.">
 
 <style>
+.pipeline-svg .surface { fill:#fcfcfb; }
 .pipeline-svg .box  { fill:#fbfbfa; }
+.pipeline-svg .grid { fill:#f4f3ee; }
 .pipeline-svg .ink  { fill:#17170b; }
 .pipeline-svg .ink2 { fill:#52514e; }
-.pipeline-svg .line { stroke:#898781; }
 .pipeline-svg .bar  { fill:#f1f0ea; }
+.pipeline-svg .cell { stroke:#d7d6cd; }
+.pipeline-svg .faint{ fill:#c9c8c0; }
+.pipeline-svg .edge { stroke:#c3c2b7; }
 @media (prefers-color-scheme: dark) {
+  .pipeline-svg .surface { fill:#1a1a19; }
   .pipeline-svg .box  { fill:#1f1f1e; }
+  .pipeline-svg .grid { fill:#141413; }
   .pipeline-svg .ink  { fill:#f5f5f0; }
   .pipeline-svg .ink2 { fill:#c3c2b7; }
-  .pipeline-svg .line { stroke:#a7a69f; }
   .pipeline-svg .bar  { fill:#262624; }
+  .pipeline-svg .cell { stroke:#33322f; }
+  .pipeline-svg .faint{ fill:#4a4945; }
+  .pipeline-svg .edge { stroke:#3a3a37; }
 }
+:root[data-theme="dark"] .pipeline-svg .surface { fill:#1a1a19; }
 :root[data-theme="dark"] .pipeline-svg .box  { fill:#1f1f1e; }
+:root[data-theme="dark"] .pipeline-svg .grid { fill:#141413; }
 :root[data-theme="dark"] .pipeline-svg .ink  { fill:#f5f5f0; }
 :root[data-theme="dark"] .pipeline-svg .ink2 { fill:#c3c2b7; }
-:root[data-theme="dark"] .pipeline-svg .line { stroke:#a7a69f; }
 :root[data-theme="dark"] .pipeline-svg .bar  { fill:#262624; }
+:root[data-theme="dark"] .pipeline-svg .cell { stroke:#33322f; }
+:root[data-theme="dark"] .pipeline-svg .faint{ fill:#4a4945; }
+:root[data-theme="dark"] .pipeline-svg .edge { stroke:#3a3a37; }
+:root[data-theme="light"] .pipeline-svg .surface { fill:#fcfcfb; }
 :root[data-theme="light"] .pipeline-svg .box  { fill:#fbfbfa; }
+:root[data-theme="light"] .pipeline-svg .grid { fill:#f4f3ee; }
 :root[data-theme="light"] .pipeline-svg .ink  { fill:#17170b; }
 :root[data-theme="light"] .pipeline-svg .ink2 { fill:#52514e; }
-:root[data-theme="light"] .pipeline-svg .line { stroke:#898781; }
 :root[data-theme="light"] .pipeline-svg .bar  { fill:#f1f0ea; }
+:root[data-theme="light"] .pipeline-svg .cell { stroke:#d7d6cd; }
+:root[data-theme="light"] .pipeline-svg .faint{ fill:#c9c8c0; }
+:root[data-theme="light"] .pipeline-svg .edge { stroke:#c3c2b7; }
 </style>
-<rect class="bar" x="30" y="10" width="1100" height="36" rx="8"/>
-<text class="ink" x="580.0" y="34" font-size="19" font-weight="700" text-anchor="middle">How it scales to a 100–1000-candidate panel — without the full grid</text>
-<rect class="bar" x="30" y="52" width="1100" height="34" rx="8"/>
-<text class="ink2" x="580.0" y="74" font-size="12.5" font-style="italic" text-anchor="middle">Variants of one lead share ~all their off-targets — so cofold a few representatives to find the shortlist, then screen every candidate against just that shortlist.</text>
-<rect class="box" x="30" y="122" width="320" height="206" rx="14" stroke="#2a78d6" stroke-width="2"/>
-<rect class="box" x="420" y="122" width="320" height="206" rx="14" stroke="#1baf7a" stroke-width="2"/>
-<rect class="box" x="810" y="122" width="320" height="206" rx="14" stroke="#0ca30c" stroke-width="2"/>
-<circle cx="56" cy="150" r="13" fill="#2a78d6"/><text x="56" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
-<text class="ink" x="80" y="155" font-size="15" font-weight="700">Cluster candidates</text>
-<text class="ink2" x="48" y="184" font-size="11.5" font-weight="normal">Input: 100–1000 Fv variants</text>
-<text class="ink2" x="48" y="201" font-size="11.5" font-weight="normal">of one antibody lead.</text>
-<text class="ink2" x="48" y="218" font-size="11.5" font-weight="normal"></text>
-<text class="ink2" x="48" y="235" font-size="11.5" font-weight="normal">Fingerprint each paratope —</text>
-<text class="ink2" x="48" y="252" font-size="11.5" font-weight="normal">CDR charge · hydrophobicity ·</text>
-<text class="ink2" x="48" y="269" font-size="11.5" font-weight="normal">aromatics · length (weight H3/L3).</text>
-<text class="ink2" x="48" y="286" font-size="11.5" font-weight="normal">k-medoids / sphere-exclusion.</text>
-<text class="ink" x="48" y="312" font-size="13" font-weight="700" fill="#2a78d6">→ K ≈ 10 representatives</text>
-<circle cx="446" cy="150" r="13" fill="#1baf7a"/><text x="446" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
-<text class="ink" x="470" y="155" font-size="15" font-weight="700">Discover off-target shortlist</text>
-<text class="ink2" x="438" y="184" font-size="11.5" font-weight="normal">Cofold the K reps ×</text>
-<text class="ink2" x="438" y="201" font-size="11.5" font-weight="normal">2,896 self-proteins (surfaceome),</text>
-<text class="ink2" x="438" y="218" font-size="11.5" font-weight="normal">scored vs the calibrated panel.</text>
-<text class="ink2" x="438" y="235" font-size="11.5" font-weight="normal"></text>
-<text class="ink2" x="438" y="252" font-size="11.5" font-weight="normal">Union of hits = SHORTLIST</text>
-<text class="ink2" x="438" y="269" font-size="11.5" font-weight="normal">(~20 proteins).</text>
-<circle cx="446" cy="304" r="13" fill="#c67f00"/><text x="446" y="308.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
-<text class="ink2" x="470" y="308" font-size="10.5">saturation / Chao1 → add reps</text>
-<text class="ink2" x="470" y="320" font-size="10.5">until recall ≥ 95%</text>
-<circle cx="836" cy="150" r="13" fill="#0ca30c"/><text x="836" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
-<text class="ink" x="860" y="155" font-size="15" font-weight="700">Screen all candidates</text>
-<text class="ink2" x="828" y="184" font-size="11.5" font-weight="normal">Cofold every candidate ×</text>
-<text class="ink2" x="828" y="201" font-size="11.5" font-weight="normal">the shortlist only —</text>
-<text class="ink2" x="828" y="218" font-size="11.5" font-weight="normal">not the full grid.</text>
-<text class="ink2" x="828" y="235" font-size="11.5" font-weight="normal"></text>
-<text class="ink2" x="828" y="252" font-size="11.5" font-weight="normal">→ per-candidate off-target profile.</text>
-<circle cx="836" cy="304" r="13" fill="#0ca30c"/><text x="836" y="308.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
-<text class="ink2" x="860" y="308" font-size="10.5">rank + name confirmation assay</text>
-<text class="ink2" x="860" y="320" font-size="10.5">→ prioritized wet-lab plate</text>
-<line class="line" x1="350" y1="225.0" x2="414" y2="225.0" stroke-width="2.5"/><path d="M 420 225.0 l -11 -6 v 12 z" fill="#898781"/>
-<line class="line" x1="740" y1="225.0" x2="804" y2="225.0" stroke-width="2.5"/><path d="M 810 225.0 l -11 -6 v 12 z" fill="#898781"/>
-<rect class="bar" x="30" y="346" width="1100" height="56" rx="10"/>
-<text class="ink" x="580.0" y="369" font-size="13" font-weight="700" text-anchor="middle">Cost per ~100-candidate panel: <tspan fill="#0ca30c">~$4–7k</tspan>  vs full 100×2,896 grid <tspan fill="#c67f00">~$58k</tspan>  vs wet-lab MPA screen $10–30k</text>
-<text class="ink2" x="580.0" y="390" font-size="11.5" text-anchor="middle">Scales with K (saturation-bounded), not with panel size × reference-set size.</text>
-<rect class="bar" x="30" y="414" width="1100" height="28" rx="8"/>
-<text class="ink2" x="580.0" y="432" font-size="10.5" text-anchor="middle" font-style="italic">Productization path (plan.md), Boltz-2 cofold confirmer validated in this demo · numbers quoted from plan.md · not built here.</text>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" class="faint"/></marker><pattern id="cells" width="13" height="13" patternUnits="userSpaceOnUse"><path class="cell" d="M 13 0 L 0 0 0 13" fill="none" stroke-width="0.6"/></pattern></defs>
+<rect class="surface" x="0" y="0" width="1180" height="636" rx="10"/>
+<rect class="bar" x="30" y="12" width="1120" height="34" rx="8"/>
+<text class="ink" x="590.0" y="35" font-size="19" font-weight="700" text-anchor="middle">How it scales: you never fill the candidate × target grid</text>
+<rect class="bar" x="30" y="52" width="1120" height="30" rx="8"/>
+<text class="ink2" x="590.0" y="72" font-size="12.5" font-weight="normal" text-anchor="middle" font-style="italic">Variants of one lead share ~all their off-targets — so cluster the candidates, discover a shortlist, and cofold only a thin cross of the grid.</text>
+<rect class="box" x="40" y="150" width="250" height="300" rx="14" stroke="#2a78d6" stroke-width="2"/>
+<circle cx="64" cy="176" r="13" fill="#2a78d6"/><text x="64" y="180.42" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text class="ink" x="86" y="181" font-size="14.5" font-weight="700" text-anchor="start">Cluster candidates</text>
+<text class="ink2" x="60" y="208" font-size="11" font-weight="normal" text-anchor="start">100–1000 Fv variants of one lead</text>
+<circle class="faint" cx="95" cy="258" r="26" fill="none" stroke-dasharray="3 3" stroke-width="1" stroke="#2a78d6" opacity="0.35"/>
+<circle class="faint" cx="79" cy="250" r="3.4"/>
+<circle class="faint" cx="86" cy="270" r="3.4"/>
+<circle class="faint" cx="108" cy="245" r="3.4"/>
+<circle class="faint" cx="105" cy="268" r="3.4"/>
+<circle cx="95" cy="258" r="6.5" fill="#2a78d6"/>
+<circle class="faint" cx="190" cy="246" r="26" fill="none" stroke-dasharray="3 3" stroke-width="1" stroke="#2a78d6" opacity="0.35"/>
+<circle class="faint" cx="176" cy="236" r="3.4"/>
+<circle class="faint" cx="186" cy="260" r="3.4"/>
+<circle class="faint" cx="205" cy="250" r="3.4"/>
+<circle cx="190" cy="246" r="6.5" fill="#2a78d6"/>
+<circle class="faint" cx="240" cy="300" r="26" fill="none" stroke-dasharray="3 3" stroke-width="1" stroke="#2a78d6" opacity="0.35"/>
+<circle class="faint" cx="225" cy="294" r="3.4"/>
+<circle class="faint" cx="238" cy="315" r="3.4"/>
+<circle class="faint" cx="254" cy="309" r="3.4"/>
+<circle class="faint" cx="246" cy="286" r="3.4"/>
+<circle cx="240" cy="300" r="6.5" fill="#2a78d6"/>
+<circle class="faint" cx="118" cy="328" r="26" fill="none" stroke-dasharray="3 3" stroke-width="1" stroke="#2a78d6" opacity="0.35"/>
+<circle class="faint" cx="105" cy="338" r="3.4"/>
+<circle class="faint" cx="130" cy="317" r="3.4"/>
+<circle class="faint" cx="134" cy="336" r="3.4"/>
+<circle cx="118" cy="328" r="6.5" fill="#2a78d6"/>
+<circle class="faint" cx="190" cy="350" r="26" fill="none" stroke-dasharray="3 3" stroke-width="1" stroke="#2a78d6" opacity="0.35"/>
+<circle class="faint" cx="175" cy="356" r="3.4"/>
+<circle class="faint" cx="187" cy="366" r="3.4"/>
+<circle class="faint" cx="204" cy="342" r="3.4"/>
+<circle class="faint" cx="203" cy="362" r="3.4"/>
+<circle cx="190" cy="350" r="6.5" fill="#2a78d6"/>
+<text class="ink2" x="165.0" y="410" font-size="10.5" font-weight="normal" text-anchor="middle">cluster by paratope biochemistry</text>
+<text class="ink" x="165.0" y="430" font-size="12.5" font-weight="700" text-anchor="middle">→ K ≈ 10 representatives (medoids)</text>
+<path class="edge" d="M 290 195.5 H 422" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<text class="ink2" x="360.0" y="187.5" font-size="10" font-weight="normal" text-anchor="middle">reps</text>
+<rect class="grid" x="430" y="176" width="470" height="300" rx="4"/>
+<rect x="430" y="176" width="470" height="300" rx="4" fill="url(#cells)"/>
+<rect x="430" y="176" width="470" height="39" fill="#2a78d6" opacity="0.85"/>
+<rect x="712" y="176" width="30" height="300" fill="#0ca30c" opacity="0.85"/>
+<rect x="712" y="176" width="30" height="39" fill="#0f766e"/>
+<rect class="edge" x="430" y="176" width="470" height="300" rx="4" fill="none" stroke-width="1.5"/>
+<text class="ink2" x="561.6" y="362.0" font-size="12.5" font-weight="600" text-anchor="middle" font-style="italic">the grid you never fill</text>
+<text class="ink2" x="561.6" y="380.0" font-size="11" font-weight="normal" text-anchor="middle">289,600 cofolds · ≈ $58k</text>
+<text class="ink" x="430" y="132" font-size="11" font-weight="700" text-anchor="start">SELF-PROTEIN TARGETS</text>
+<text class="ink2" x="430" y="148" font-size="10.5" font-weight="normal" text-anchor="start">2,896 surfaceome proteins</text>
+<line class="edge" x1="430" y1="166" x2="900" y2="166" stroke-width="1.5"/>
+<rect x="712" y="160" width="30" height="8" fill="#0ca30c"/>
+<text class="ink" x="727.0" y="154" font-size="10.5" font-weight="700" text-anchor="middle">shortlist ~20</text>
+<text class="ink" transform="translate(312,326.0) rotate(-90)" font-size="11" font-weight="700" text-anchor="middle">CANDIDATES · 100</text>
+<circle cx="924" cy="195.5" r="13" fill="#2a78d6"/><text x="924" y="199.92" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text class="ink" x="942" y="191.5" font-size="13" font-weight="700" text-anchor="start">Discovery screen</text>
+<text class="ink2" x="942" y="207.5" font-size="10.5" font-weight="normal" text-anchor="start">K reps × all 2,896 → hits</text>
+<circle cx="727.0" cy="500" r="13" fill="#0ca30c"/><text x="727.0" y="504.42" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text class="ink" x="727.0" y="527" font-size="13" font-weight="700" text-anchor="middle">Panel screen</text>
+<text class="ink2" x="727.0" y="543" font-size="10.5" font-weight="middle" text-anchor="start">all candidates × shortlist only</text>
+<path class="edge" d="M 920 211.5 C 930 136, 802.0 130, 744.0 164" fill="none" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+<text class="ink2" x="896" y="122" font-size="10" font-weight="600" text-anchor="end" font-style="italic">hits define the shortlist</text>
+<rect class="bar" x="40" y="560" width="1100" height="72" rx="12"/>
+<rect x="66" y="580" width="16" height="16" fill="#2a78d6" opacity="0.85"/>
+<rect x="66" y="580" width="8" height="16" fill="#0ca30c" opacity="0.85"/>
+<text class="ink" x="92" y="592" font-size="12" font-weight="700" text-anchor="start">What you actually cofold — the cross:</text>
+<text class="ink" x="92" y="610" font-size="12" font-weight="normal" text-anchor="start">~31,000 cofolds  ≈  $4–7k per 100-candidate panel</text>
+<rect class="faint" x="470" y="580" width="16" height="16"/>
+<text class="ink" x="496" y="592" font-size="12" font-weight="700" text-anchor="start">What you skip — the empty grid:</text>
+<text class="ink2" x="496" y="610" font-size="12" font-weight="normal" text-anchor="start">258,600 cofolds you never run  ≈  the $52k you save</text>
+<text class="ink2" x="1114" y="592" font-size="11.5" font-weight="600" text-anchor="end">Full 100 × 2,896 grid = 289,600 ≈ $58k</text>
+<text class="ink2" x="1114" y="610" font-size="11" font-weight="normal" text-anchor="end">wet-lab MPA screen $10–30k · scales with K, not panel×set</text>
 </svg>
