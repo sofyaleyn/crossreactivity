@@ -1,0 +1,18 @@
+{
+  "entities": [
+    {
+      "type": "protein",
+      "chain_ids": ["A"],
+      "value": "NLYIQWLKDGGPSSGRPPPS",
+      "msa": { "type": "empty" }
+    },
+    {
+      "type": "ligand_smiles",
+      "chain_ids": ["L"],
+      "value": "CC(=O)Oc1ccccc1C(=O)O"
+    }
+  ],
+  "binding": { "type": "ligand_protein_binding", "binder_chain_id": "L" },
+  "num_samples": 1,
+  "model_options": { "recycling_steps": 1, "sampling_steps": 50 }
+}

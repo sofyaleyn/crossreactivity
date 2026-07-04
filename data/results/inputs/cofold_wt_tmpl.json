@@ -1,0 +1,51 @@
+{
+  "entities": [
+    {
+      "type": "protein",
+      "chain_ids": [
+        "H"
+      ],
+      "value": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYMMSWVRQAPGKGLEWVATISGGGANTYYPDSVKGRFTISRDNAKNSLYLQMNSLRAEDTAVYYCARQLYYFDYWGQGTTVTVSS"
+    },
+    {
+      "type": "protein",
+      "chain_ids": [
+        "L"
+      ],
+      "value": "DIQMTQSPSSLSASVGDRVTITCLASQTIGTWLTWYQQKPGKAPKLLIYTATSLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQVYSIPWTFGGGTKVEIK"
+    },
+    {
+      "type": "protein",
+      "chain_ids": [
+        "V"
+      ],
+      "value": "NKNKTVVIPCLGSISNLNVSLCARYPEKRFVPDGNRISWDSKKGFTIPSYMISYAGMVFCEAKINDESYQSIMYIVVVVGYRIYDVVLSPSHGIELSVGEKLVLNCTARTELNVGIDFNWEYPSSKHQHKKLVNRDLKTQSGSEMKKFLSTLTIDGVTRSDQGLYTCAASSGLMTKKNST"
+    }
+  ],
+  "binding": {
+    "type": "protein_protein_binding",
+    "binder_chain_ids": [
+      "H",
+      "L"
+    ]
+  },
+  "num_samples": 5,
+  "model_options": {
+    "recycling_steps": 3,
+    "sampling_steps": 200
+  },
+  "templates": [
+    {
+      "template_chains": [
+        {
+          "input_chain_id": "V",
+          "template_chain_id": "R"
+        }
+      ],
+      "template_structure": {
+        "type": "url",
+        "url": "https://files.rcsb.org/download/3V2A.pdb"
+      }
+    }
+  ]
+}

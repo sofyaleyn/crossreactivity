@@ -1,0 +1,37 @@
+{
+  "entities": [
+    {
+      "type": "protein",
+      "chain_ids": [
+        "H"
+      ],
+      "value": "EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYMMSWVRQAPGKGLEWVATISGGGANTYYPDSVKGRFTISRDNAKNSLYLQMNSLRAEDTAVYYCARQLYYFDYWGQGTTVTVSS"
+    },
+    {
+      "type": "protein",
+      "chain_ids": [
+        "L"
+      ],
+      "value": "DIQMTQSPSSLSASVGDRVTITCLASQTIGTWLTWYQQKPGKAPKLLIYTATSLADGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQVYSIPWTFGGGTKVEIK"
+    },
+    {
+      "type": "protein",
+      "chain_ids": [
+        "V"
+      ],
+      "value": "PDHGYCQPISIPLCTDIAYNQTIMPNLLGHTNQEDAGLEVHQFYPLVKVQCSAELKFFLCSMYAPVCTVLEQALPPCRSLCERARQGCEALMNKFGFQWPDTLKCEKFPVHGAGELCVGQ"
+    }
+  ],
+  "binding": {
+    "type": "protein_protein_binding",
+    "binder_chain_ids": [
+      "H",
+      "L"
+    ]
+  },
+  "num_samples": 5,
+  "model_options": {
+    "recycling_steps": 3,
+    "sampling_steps": 200
+  }
+}
