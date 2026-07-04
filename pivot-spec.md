@@ -1,6 +1,8 @@
 # Pivot spec — replacing rung-1 (embedding similarity → surface complementarity funnel)
 
-**Status:** proposed redesign, supersedes the rung-1 mechanism in `mvp-spec.md` §4 and reorders the ladder in `extensions-spec.md`. Written after a viability assessment (2026-07-04) found the original rung-1 broken.
+> **⚠️ The forward build plan has moved to [`plan.md`](plan.md)** (the representative-set cofold screen). This document is retained for the **rationale** of the pivot — why the embedding rung-1 was dropped, and the funnel reasoning — plus the empirical results that drove it. Where this doc and `plan.md` differ on what to build, **`plan.md` wins.** Evidence: [`findings.md`](findings.md).
+
+**Status:** rationale / design-history for the pivot (2026-07-04 viability assessment that found the original rung-1 broken). Supersedes the rung-1 mechanism in `mvp-spec.md` §4 and reorders the ladder in `extensions-spec.md`.
 
 ---
 
@@ -102,7 +104,18 @@ Full experimental log in **`findings.md`**. Headline results that shape this des
 
 **Cheap embedding shortlisting (Stage-1 candidate) fails the confound-controlled test.** On the fold-matched decoy benchmark (`findings.md §Exp 5`), same-model ESM ranking gives **within-family AUROC 0.58 ≈ chance** (VEGFR2 0.79, FZD5 0.55, ULBP2 0.42). Global rank looks good only via the fold confound. **Embedding cannot be Stage 1.**
 
-**Consequence for this design:** Stage 2 (cofold) is validated as the discriminator, but it can't run proteome-wide, so the funnel lives or dies on finding a **cheap Stage-1 that enriches within-fold**. The surface-complementarity proposal below is now the load-bearing untested piece. Two checks in flight: (1) does cofold *discriminate* within-fold (FZD5 vs other Frizzled CRDs); (2) does a surface method beat AUROC 0.58 on the benchmark.
+**Consequence for this design — RESOLVED (see `findings.md` Exp 6–8):** Three validations confirm the cofold Stage-2: it discriminates within-fold (FZD5 vs 11 Frizzled relatives, **AUROC 0.909**) and is antibody-specific (pembrolizumab, which lacks these off-targets, does **not** cofold FZD5/ULBP2 while both antibodies bind PD-1). But **no cheap Stage-1 works** — embedding *and* surface-complementarity both stall at ~0.58–0.62 within-fold AUROC (chance).
+
+**The funnel therefore simplifies.** At hosted-API prices (~$0.20/cofold), a curated few-hundred-protein set costs **~$50–150/antibody** — trivial vs a wet-lab specificity screen. The Stage-1 pre-filter premise ("cofold is too expensive to run on every protein") is **false at these prices**, so drop it:
+
+```
+Stage 0  Curate the self-protein reference set (bounds recall)     ~hundreds–low thousands
+Stage 2  Cofold ALL of them (Boltz-2, 5 samples)                   ~$0.20 each
+Rank     by PAE_IF / epitope-reproducibility vs the calibrated     PD-1 ceiling / lysozyme floor
+         panel; top-ranked = candidate off-targets for wet-lab
+```
+
+The surface/embedding Stage-1 (below) is **retired** — kept only as a documented negative. Limits: weakest off-targets (VEGFR2-class) missed; within-fold false positives (e.g. SMO); recall bounded by Stage-0 curation.
 
 ---
 

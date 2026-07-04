@@ -1,5 +1,7 @@
 # HANDOFF — build instructions for Claude Code
 
+> **⚠️ SUPERSEDED (2026-07-04).** This build order centers the embedding rung-1, which was found broken. **Build from [`plan.md`](plan.md)** (the active representative-set cofold-screen plan), with rationale in [`pivot-spec.md`](pivot-spec.md) and evidence in [`findings.md`](findings.md). Kept for history.
+
 This file is the executable brief. It turns the specs into an ordered build with explicit module contracts and acceptance tests. Read [docs/mvp-spec.md](docs/mvp-spec.md) and [docs/extensions-spec.md](docs/extensions-spec.md) for rationale; build from here.
 
 **Goal:** an antibody CDR cross-reactivity triage tool, validated on the SHR-1210 → VEGFR2 anchor. Rank a variant panel by antibody-PLM ↔ antigen-PLM embedding similarity (MVP), then confirm top suspects with IgFold surface comparison and Boltz-2 cofolding (extensions).

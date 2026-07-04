@@ -2,6 +2,16 @@
 
 **Panel-level CDR cross-reactivity triage for therapeutic antibodies.**
 
+> **⚠️ STATUS (2026-07-04): the design described below is superseded.** An empirical viability study found the original embedding-similarity method broken and validated a replacement — a **Boltz-2 cofold screen** against a curated reference set, ranked on a calibrated panel (true-target ceiling / non-binder floor).
+>
+> **Read in this order:**
+> 1. **[`plan.md`](plan.md)** — the active build plan (representative-set off-target screen). **Build from this.**
+> 2. **[`findings.md`](findings.md)** — what was tested, the evidence, and the current verdict (the plan rests on this).
+> 3. **[`pivot-spec.md`](pivot-spec.md)** — design rationale for the pivot (why embedding was dropped).
+> 4. **[`glossary.md`](docs/glossary.md)** — terminology.
+>
+> `mvp-spec.md`, `demo-run.md`, `HANDOFF.md`, `roadmap.md`, `tools.md`, and the rest of this README are the **original, now-superseded** design, kept for history.
+
 Given a panel of antibody candidates (or CDR variants of one lead), CrossFlag ranks which variants are most likely to cross-react with a self-protein, corroborates the top suspects with 3D surface comparison, confirms the highest-risk pairs by cofolding the antibody against the flagged self-protein, and names the assay to run first.
 
 > *"Feed us your antibody panel. We embed each variant's binding region with an antibody language model, rank the panel against a self-protein reference set, confirm the top suspects by cofolding, and tell you which variant to advance and which assay confirms it — before you spend a wet-lab specificity screen."*

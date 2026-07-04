@@ -2,6 +2,8 @@
 
 Durable record of the viability investigation run on 2026-07-04. Design implications live in `pivot-spec.md`; this file is the experimental log + current verdict. All work used the SHR-1210 (camrelizumab) anti-PD-1 anchor.
 
+> **Raw per-run data:** [`data/results/`](data/results/) — `cofold_metrics.csv` holds the full metrics for all **24 cofold runs** (ipTM max/mean, protein-ipTM, pTM, complex-pLDDT, structure-confidence, binding-confidence, PAE_IF, epitope-reprod, boltz.bio prediction IDs); plus the Tier-1 filter scores and fold-matched-benchmark scores. Human-readable tables in [`data/results/README.md`](data/results/README.md).
+
 ---
 
 ## Environment & tooling stood up
@@ -71,24 +73,80 @@ Embedding method (same-model ESM paratope cosine, best-case), ranking each posit
 
 ---
 
-## Current verdict (2026-07-04)
+## Experiment 6 — Cofold within-fold discrimination (FZD5 family)
 
-**CONDITIONAL — the project's viability now rests on one narrow, still-open question.**
+Cofolded FZD5's 11 fold-matched Frizzled relatives (all screened-negative). Full per-member metrics in `data/results/README.md`; ranked by PAE_IF (whole-interface, lower=tighter):
+
+| Frizzled CRD | ipTM_max | PAE_IF | epitope_reprod |
+|---|---|---|---|
+| SMO | 0.968 | **4.98** | 0.652 |
+| **FZD5 (true off-target)** | 0.952 | **5.69** | 0.660 |
+| FZD1 | 0.948 | 7.66 | 0.885 |
+| FZD10 | 0.902 | 8.24 | 0.756 |
+| FZD8 | 0.898 | 10.32 | 0.707 |
+| FZD2 | 0.894 | 10.36 | 0.607 |
+| SFRP1 / FZD7 / FZD9 / FZD4 | 0.84–0.95 | 11.0–12.1 | 0.27–0.51 |
+| FZD3 / FZD6 | 0.83–0.84 | 15.4 / 16.1 | 0.23 / 0.29 |
+
+FZD5 ranks **2/12 by PAE_IF, within-family AUROC 0.909** (epitope-reprod weaker: rank 4/12, AUROC 0.727). One within-fold false positive: **SMO** (the most divergent member, out-cofolds FZD5 on PAE). → **Cofold is a real within-fold discriminator**, not just a "cofoldable-antigen" detector.
+
+## Experiment 7 — Surface method on the fold-matched benchmark
+
+SASA-restricted ESM + physicochemical surface-complementarity (AlphaFold-DB structures). Best (surface-ESM) mean within-family AUROC ~0.62 (0.61–0.70 across thresholds), only marginally above the 0.58 embedding baseline, driven entirely by Frizzled; MHC-I-like stuck at 0.42 (below chance); physicochemical complementarity 0.554. → **No cheap surface proxy clears ~0.6 or robustly beats embedding. Cheap Stage-1 shortlisting fails.**
+
+## Experiment 8 — Antibody-side specificity control (pembrolizumab)
+
+Cofolded **pembrolizumab** (anti-PD-1, lacks SHR-1210's off-targets; Fv from PDB 5GGS) against the same 4 antigens. Whole-interface metrics (ipTM · PAE_IF · epitope-reprod):
+
+| antigen | SHR-1210 | pembrolizumab |
+|---|---|---|
+| PD-1 (shared target) | 0.910 · 7.2 · 0.936 | 0.963 · 3.6 · 0.968 |
+| VEGFR2 | 0.883 · 11.6 · 0.430 | 0.762 · 16.5 · 0.642 |
+| FZD5 | 0.952 · 5.7 · **0.660** | 0.755 · 18.6 · **0.217** |
+| ULBP2 | 0.940 · 5.7 · **0.893** | 0.901 · 13.9 · **0.341** |
+
+Both bind the shared target PD-1; for the two off-targets SHR-1210 confirmed, **pembrolizumab collapses** (FZD5 reprod 0.66→0.22, ULBP2 0.89→0.34). → **The confirmations are SHR-1210-CDR-specific, not generic dockability. Specificity control PASSES.**
+
+## Experiment 9 — Cheap-filter test on the real curated set (`data/reference/self_proteins.csv`, 2,896 proteins)
+
+"Tier 1": can any cheap (non-cofold) score rank the 3 known SHR-1210 off-targets (all confirmed present) near the top of the real 2,896-protein surfaceome, so a recall-safe cutoff retains them while cutting the list? Metric = **retain-all-3** (fraction you must keep to hold all 3; lower=better).
+
+| filter | VEGFR2 | FZD5 | ULBP2 | retain-all-3 |
+|---|---|---|---|---|
+| annotation "is-it-a-receptor" (FREE baseline) | 3% | 38% | 9% | **0.377** |
+| embed_wholeFv (ESM) | 14% | 30% | 42% | 0.415 |
+| embed_paratope (ESM) | 9% | 64% | 20% | 0.645 |
+| biophys (hydrophobicity / charge / length) | — | — | — | 0.77–0.92 |
+| naive CDR sequence identity | 17% | 55% | 100% | 0.996 |
+
+**No learned filter beats the free annotation baseline (0.377); embeddings add nothing over "keep the receptors."** Even the best requires keeping **38%** of the set to retain all 3 (bottlenecked by FZD5, which every learned filter buries — embed_paratope ranks it 1867/2896). Decision rule (promising only if all 3 in top ~10–20% AND beats annotation) → **FAILED. Tier 2 ($580) not run.** Confirms the within-family benchmark (Exp 5) on real diverse data: the only cheap signal is "off-targets are receptors," captured for free by annotation. **No cheap route to a small per-candidate shortlist exists.**
+
+## Current verdict (2026-07-04, revised)
+
+**The cofold confirmer is validated; the cheap-triage idea is not; and the cost reality reframes the pipeline.**
 
 | Capability | Status |
 |---|---|
-| Antibody-only polyreactivity ("variant is sticky") | ✅ Viable (physicochemical descriptors) — but doesn't *name* the off-target |
-| Cofold **confirmation** of an off-target (Stage 2) | ✅ **Works for 2/3** (FZD5, ULBP2); VEGFR2 (low-affinity/wrong-epitope) at floor |
-| Cheap **embedding shortlisting** (Stage-1 candidate) | ❌ Fails fold-matched test (AUROC 0.58 ≈ chance) |
-| A cheap Stage-1 that enriches within-fold to feed the cofold | ❓ **Untested — the make-or-break question** |
+| Cofold **confirmation** (Stage 2) | ✅ Confirms 2/3 off-targets; discriminates within-fold (AUROC 0.909); antibody-specific (pembrolizumab control passes) — **three independent validations** |
+| Cheap **embedding / surface** shortlisting (Stage 1) | ❌ Fails within-fold enrichment (~0.58–0.62 ≈ chance) |
+| Antibody-only polyreactivity ("variant is sticky") | ✅ Viable, but doesn't *name* the off-target |
 
-Interesting inversion: embedding ranks VEGFR2 okay but cofold can't confirm it; cofold nails ULBP2/FZD5 but embedding ranks them at/below chance. The expensive cofold is the stronger, more reliable discriminator — but it can't be run proteome-wide, so a working cheap Stage-1 is required and not yet found.
+**Reframe:** hosted cofold ≈ **$0.20 each** → a curated few-hundred-protein reference set ≈ **$50–150/antibody**, trivial vs a wet-lab specificity screen (~$10–30k). The pivot spec's premise that cofold is "too expensive to run against every self-protein" (hence a cheap pre-filter is required) is **wrong at these prices.** Drop the broken Stage-1; cofold the whole curated set directly.
 
-## Open checks (in progress)
+**Revised pipeline:** Stage 0 curate (bounds recall) → **cofold ALL** → rank by PAE_IF / epitope-reproducibility against the calibrated panel (PD-1 ceiling / lysozyme floor). **Limits:** VEGFR2-class (weakest) off-targets missed → imperfect recall; within-fold false positives (SMO); recall bounded by curation.
 
-1. **Does cofold *discriminate* within fold?** Cofold the fold-matched decoys of a confirmed family (FZD5 vs other Frizzled CRDs) and compute cofold-based within-family AUROC. Tests whether FZD5's confident interface is *special* vs its relatives, or whether all Frizzleds cofold confidently (i.e., cofold is a real discriminator, not just a "cofoldable-antigen" detector).
-2. **Does a surface method pass the benchmark where embedding failed?** Score the fold-matched benchmark with a surface-complementarity / SASA-restricted method (AlphaFold-DB structures) and compare within-family AUROC to the 0.58 embedding baseline.
+**Bottom line: viable as a validated cofold-based off-target screen for a curated reference set** — not the original embedding-triage design, but empirically defensible.
+
+## Next steps → the build plan lives in [`plan.md`](plan.md)
+
+The active, detailed build plan — the **representative-set off-target screen** (cluster candidates → cofold representatives to discover the shortlist → screen all candidates against it), with the module list, cost model, quantitative K-sizing, and anchor-validation steps — is in **`plan.md`**. This file (`findings.md`) is the evidence/verdict record that plan builds on. Carry-over items folded into the plan: freeze the calibrated scoring rig; resolve the VEGFR2 wrong-epitope caveat; second anchor (ABT-736→PF4) for generalization; recall/false-positive handling. Separate follow-up (out of scope): a learned cheap interaction filter distilled from cofold labels ("Option C").
+
+## Non-goals / dropped
+
+- Cross-PLM or same-space **embedding ranking** (broken + fails fold-matched test).
+- **Surface-complementarity pre-filter** (fails fold-matched test at these prices — cofold-all is cheaper than making a filter work).
+- Claiming **in-silico confirmation of the weakest off-targets** (VEGFR2-class) — honestly out of reach; wet lab confirms.
 
 ## Reproducibility
 
-Scripts in scratchpad: `spike.py` (Exp 2), `analyze_all.py` (Exp 4 metrics), `build_benchmark.py` + `benchmark_antigens.json` (Exp 5), `prep_*.py` (input builders). Cofold runs under `scratchpad/boltz-runs/cofold-*`; idempotency keys `cofold-shr1210-*` (re-runnable without new charges).
+Scripts in scratchpad: `spike.py` (Exp 2), `analyze_all.py` (Exp 4 metrics), `build_benchmark.py` + `benchmark_antigens.json` (Exp 5), `analyze_pembro.py` (Exp 8), `surface_score.py` (Exp 7), `prep_*.py` (input builders). Cofold runs under `scratchpad/boltz-runs/cofold-*`; idempotency keys `cofold-*` (re-runnable without new charges). Tooling: conda env `crossflag-spike`, `boltz-api` CLI (boltz.bio, OAuth).

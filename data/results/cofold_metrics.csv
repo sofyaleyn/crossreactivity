@@ -1,0 +1,25 @@
+run,antibody,antigen,role,num_samples,iptm_max,iptm_mean,protein_iptm_max,ptm_max,complex_plddt_max,structure_confidence_max,binding_confidence,PAE_IF_mean,epitope_reprod,prediction_id
+cofold-fzd1,SHR-1210 WT,FZD1 CRD,within-fold decoy (FZD5 family),5,0.948,0.872,0.948,0.964,0.937,0.939,0.0483,7.66,0.885,sab_pred_tCq1frp13OxiuHhV2BPw
+cofold-fzd10,SHR-1210 WT,FZD10 CRD,within-fold decoy (FZD5 family),5,0.902,0.868,0.902,0.933,0.942,0.934,0.0348,8.24,0.756,sab_pred_ECei524MPCY2prYrlRvN
+cofold-fzd2,SHR-1210 WT,FZD2 CRD,within-fold decoy (FZD5 family),5,0.894,0.832,0.894,0.928,0.937,0.926,0.0357,10.36,0.607,sab_pred_A8Ydz1ePg5rzQTMS2dUo
+cofold-fzd3,SHR-1210 WT,FZD3 CRD,within-fold decoy (FZD5 family),5,0.841,0.74,0.841,0.892,0.929,0.896,0.0152,15.41,0.232,sab_pred_69BB3HNlfCKjtmEttpcU
+cofold-fzd4,SHR-1210 WT,FZD4 CRD,within-fold decoy (FZD5 family),5,0.949,0.802,0.949,0.964,0.934,0.929,0.0137,11.93,0.509,sab_pred_WYAOOgksazzW1zbEcyhN
+cofold-fzd5,SHR-1210 WT,FZD5 CRD,off-target,5,0.952,0.915,0.952,0.966,0.935,0.937,0.0572,5.69,0.66,sab_pred_PodfEOGDaUgakryFCwHs
+cofold-fzd6,SHR-1210 WT,FZD6 CRD,within-fold decoy (FZD5 family),5,0.825,0.738,0.825,0.877,0.927,0.907,0.0242,16.06,0.289,sab_pred_qDGksASLWOoCMdxciTuC
+cofold-fzd7,SHR-1210 WT,FZD7 CRD,within-fold decoy (FZD5 family),5,0.889,0.807,0.889,0.924,0.937,0.919,0.3678,11.31,0.299,sab_pred_rrJGCLGy0qhTZg4LHwnb
+cofold-fzd8,SHR-1210 WT,FZD8 CRD,within-fold decoy (FZD5 family),5,0.898,0.82,0.898,0.929,0.923,0.91,0.0752,10.32,0.707,sab_pred_04wkkQPRpMCfAGTEj3wj
+cofold-fzd9,SHR-1210 WT,FZD9 CRD,within-fold decoy (FZD5 family),5,0.862,0.813,0.862,0.905,0.935,0.913,0.081,11.03,0.513,sab_pred_2Pubj7rJVUMtFsiBJGNT
+cofold-lyz,SHR-1210 WT,lysozyme (HEL),non-binder / floor,5,0.869,0.781,0.869,0.909,0.927,0.914,0.0047,12.38,0.446,sab_pred_m1xl1avfrFJQesGPvBuH
+cofold-mut,SHR-1210 germlined,VEGFR2 D2-3,germlined variant,5,0.852,0.753,0.852,0.892,0.911,0.897,0.0,13.41,0.512,sab_pred_INOjr3GfOVHmf0Druh3o
+cofold-mut-tmpl,SHR-1210 germlined,VEGFR2 D2-3 +3V2A template,"germlined, templated",5,0.832,0.65,0.832,0.874,0.922,0.896,0.0,17.87,0.068,sab_pred_q4ukuXOixTvifxPEkEny
+cofold-pd1,SHR-1210 WT,PD-1 (IgV),cognate target / ceiling,5,0.91,0.887,0.91,0.938,0.938,0.933,0.0018,7.24,0.936,sab_pred_vgiZ49FZ5Q67ELvWe9uy
+cofold-pembro-fzd5,pembrolizumab,FZD5 CRD,Ab control,5,0.755,0.678,0.755,0.827,0.932,0.889,0.0072,18.55,0.217,sab_pred_dykpVwhlJ0LlPWge8usG
+cofold-pembro-pd1,pembrolizumab,PD-1 (IgV),Ab control - shared target,5,0.963,0.958,0.963,0.972,0.966,0.965,0.701,3.61,0.968,sab_pred_KVjpweOCJSMNpYcnEjaH
+cofold-pembro-ulbp2,pembrolizumab,ULBP2 ectodomain,Ab control,5,0.901,0.741,0.901,0.925,0.883,0.868,0.0311,13.87,0.341,sab_pred_tcYHjwQUk2K0EBQ7e22R
+cofold-pembro-vegfr2,pembrolizumab,VEGFR2 D2-3,Ab control,5,0.762,0.692,0.762,0.823,0.94,0.899,0.0001,16.46,0.642,sab_pred_cqITNUDAOMakNkMPfAqG
+cofold-sfrp1,SHR-1210 WT,SFRP1 CRD,within-fold decoy (FZD5 family),5,0.894,0.792,0.894,0.925,0.921,0.91,0.008,12.05,0.266,sab_pred_MMhtR8e95nm7SHpU3WhD
+cofold-smo,SHR-1210 WT,SMO CRD,within-fold decoy (FZD5 family),5,0.968,0.928,0.968,0.977,0.938,0.944,0.1864,4.98,0.652,sab_pred_gY2qCjnoQBDRCKbtS9Ur
+cofold-ulbp2,SHR-1210 WT,ULBP2 ectodomain,off-target,5,0.94,0.916,0.94,0.955,0.894,0.899,0.3644,5.74,0.893,sab_pred_PrDZsAmtCljuDAaQzEhq
+cofold-wt,SHR-1210 WT,VEGFR2 D2-3,off-target,5,0.883,0.778,0.883,0.896,0.912,0.902,0.0,11.55,0.43,sab_pred_zlgaq2gRdX5DSi5ov0KX
+cofold-wt-tmpl,SHR-1210 WT,VEGFR2 D2-3 +3V2A template,"off-target, templated",5,0.766,0.647,0.766,0.826,0.912,0.875,0.0,17.62,0.302,sab_pred_N5yBg2m14LjrKtIywe9y
+smoke-trpcage-aspirin,(Trp-cage),aspirin (ligand),pipeline smoke test,1,0.457,0.457,0,0.742,0.857,0.777,0.2996,,,sab_pred_8rHAz8qiW6vkZoDuPXbh

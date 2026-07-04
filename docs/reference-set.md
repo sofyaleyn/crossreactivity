@@ -1,8 +1,8 @@
 # Reference set — assembly instructions
 
-This document is an executable brief for the agent that assembles CrossFlag's self-protein reference set. The output is `data/reference/self_proteins.csv` — a three-layer set consumed by the embedding pipeline (`src/crossflag/reference/build_set.py`).
+> **✅ CURRENT (2026-07-04), with one correction.** The *assembly* below remains valid and produces the active `data/reference/self_proteins.csv` (2,896 surface proteins) used as **Stage 0** of the cofold screen. **Ignore** the references below to "the embedding pipeline" and `mvp-spec.md §Data` — both superseded. The set is now consumed by the **Boltz-2 cofold screen** in [`../plan.md`](../plan.md); the layer flags (`layer_A/B/C`, severity) still apply for prioritizing hits.
 
-Read [mvp-spec.md](mvp-spec.md) §Data for how this set is *used*; this file is only about how it's *built*.
+This document is an executable brief for the agent that assembles CrossFlag's self-protein reference set. The output is `data/reference/self_proteins.csv` — a three-layer set (surface proteins + sequences + clinical-severity layers).
 
 ---
 

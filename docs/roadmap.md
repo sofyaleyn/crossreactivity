@@ -1,5 +1,7 @@
 # Roadmap — ranked steps and tools
 
+> **⚠️ SUPERSEDED (2026-07-04).** The Phase-1 embedding rung was found broken and the ladder reordered (cofold is the validated primary signal, not a top-of-funnel extra). See [`findings.md`](findings.md) and [`pivot-spec.md`](pivot-spec.md). Kept for history.
+
 Read before the specs. Ranks every pipeline step and tool, marks the MVP / extension boundary, gives a 15h budget. Abbreviations in `glossary.md`.
 
 ---

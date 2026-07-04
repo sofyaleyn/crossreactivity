@@ -1,0 +1,247 @@
+{
+  "method": "esm_paratope_cosine",
+  "scores": {
+    "P35968": 0.8610209226608276,
+    "P17948": 0.8692306876182556,
+    "P35916": 0.8675798773765564,
+    "P00533": 0.8268853425979614,
+    "P04626": 0.8321831226348877,
+    "P21860": 0.8288185000419617,
+    "P06213": 0.8535053133964539,
+    "P08069": 0.8391046524047852,
+    "P16234": 0.8504452705383301,
+    "P09619": 0.8633000254631042,
+    "P10721": 0.852993369102478,
+    "P36888": 0.8470459580421448,
+    "P08581": 0.8455556631088257,
+    "P30530": 0.819106936454773,
+    "P11362": 0.849152684211731,
+    "Q13467": 0.7842390537261963,
+    "Q9UP38": 0.7885931730270386,
+    "Q14332": 0.7726004123687744,
+    "Q9NPG1": 0.816503643989563,
+    "Q9ULV1": 0.744685173034668,
+    "O60353": 0.8371654748916626,
+    "O75084": 0.7776147127151489,
+    "Q9H461": 0.7727201581001282,
+    "O00144": 0.7526076436042786,
+    "Q9ULW2": 0.7537660598754883,
+    "Q99835": 0.8386773467063904,
+    "Q8N474": 0.8006540536880493,
+    "Q9BZM5": 0.8414691686630249,
+    "Q9BZM6": 0.8255373239517212,
+    "Q9BZM4": 0.8253979682922363,
+    "Q8TD07": 0.8212307095527649,
+    "Q6H3X3": 0.8354727029800415,
+    "Q29983": 0.860568642616272,
+    "Q29980": 0.8630741238594055,
+    "P04439": 0.8675333261489868,
+    "P13747": 0.868943452835083,
+    "P15813": 0.8436238169670105,
+    "Q30201": 0.8503497838973999,
+    "P55899": 0.8356337547302246,
+    "Q95460": 0.8562413454055786
+  },
+  "labels": {
+    "P35968": [
+      "RTK/Ig-receptor",
+      "VEGFR2",
+      true
+    ],
+    "P17948": [
+      "RTK/Ig-receptor",
+      "VEGFR1",
+      false
+    ],
+    "P35916": [
+      "RTK/Ig-receptor",
+      "VEGFR3",
+      false
+    ],
+    "P00533": [
+      "RTK/Ig-receptor",
+      "EGFR",
+      false
+    ],
+    "P04626": [
+      "RTK/Ig-receptor",
+      "HER2",
+      false
+    ],
+    "P21860": [
+      "RTK/Ig-receptor",
+      "HER3",
+      false
+    ],
+    "P06213": [
+      "RTK/Ig-receptor",
+      "INSR",
+      false
+    ],
+    "P08069": [
+      "RTK/Ig-receptor",
+      "IGF1R",
+      false
+    ],
+    "P16234": [
+      "RTK/Ig-receptor",
+      "PDGFRA",
+      false
+    ],
+    "P09619": [
+      "RTK/Ig-receptor",
+      "PDGFRB",
+      false
+    ],
+    "P10721": [
+      "RTK/Ig-receptor",
+      "KIT",
+      false
+    ],
+    "P36888": [
+      "RTK/Ig-receptor",
+      "FLT3",
+      false
+    ],
+    "P08581": [
+      "RTK/Ig-receptor",
+      "MET",
+      false
+    ],
+    "P30530": [
+      "RTK/Ig-receptor",
+      "AXL",
+      false
+    ],
+    "P11362": [
+      "RTK/Ig-receptor",
+      "FGFR1",
+      false
+    ],
+    "Q13467": [
+      "Frizzled/CRD",
+      "FZD5",
+      true
+    ],
+    "Q9UP38": [
+      "Frizzled/CRD",
+      "FZD1",
+      false
+    ],
+    "Q14332": [
+      "Frizzled/CRD",
+      "FZD2",
+      false
+    ],
+    "Q9NPG1": [
+      "Frizzled/CRD",
+      "FZD3",
+      false
+    ],
+    "Q9ULV1": [
+      "Frizzled/CRD",
+      "FZD4",
+      false
+    ],
+    "O60353": [
+      "Frizzled/CRD",
+      "FZD6",
+      false
+    ],
+    "O75084": [
+      "Frizzled/CRD",
+      "FZD7",
+      false
+    ],
+    "Q9H461": [
+      "Frizzled/CRD",
+      "FZD8",
+      false
+    ],
+    "O00144": [
+      "Frizzled/CRD",
+      "FZD9",
+      false
+    ],
+    "Q9ULW2": [
+      "Frizzled/CRD",
+      "FZD10",
+      false
+    ],
+    "Q99835": [
+      "Frizzled/CRD",
+      "SMO",
+      false
+    ],
+    "Q8N474": [
+      "Frizzled/CRD",
+      "SFRP1",
+      false
+    ],
+    "Q9BZM5": [
+      "MHC-I-like",
+      "ULBP2",
+      true
+    ],
+    "Q9BZM6": [
+      "MHC-I-like",
+      "ULBP1",
+      false
+    ],
+    "Q9BZM4": [
+      "MHC-I-like",
+      "ULBP3",
+      false
+    ],
+    "Q8TD07": [
+      "MHC-I-like",
+      "ULBP4",
+      false
+    ],
+    "Q6H3X3": [
+      "MHC-I-like",
+      "ULBP5",
+      false
+    ],
+    "Q29983": [
+      "MHC-I-like",
+      "MICA",
+      false
+    ],
+    "Q29980": [
+      "MHC-I-like",
+      "MICB",
+      false
+    ],
+    "P04439": [
+      "MHC-I-like",
+      "HLA-A",
+      false
+    ],
+    "P13747": [
+      "MHC-I-like",
+      "HLA-E",
+      false
+    ],
+    "P15813": [
+      "MHC-I-like",
+      "CD1D",
+      false
+    ],
+    "Q30201": [
+      "MHC-I-like",
+      "HFE",
+      false
+    ],
+    "P55899": [
+      "MHC-I-like",
+      "FcRn",
+      false
+    ],
+    "Q95460": [
+      "MHC-I-like",
+      "MR1",
+      false
+    ]
+  }
+}
