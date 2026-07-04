@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crossflag"
+version = "0.1.0"
+description = "Panel-level CDR cross-reactivity triage for therapeutic antibodies"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Loose dependency ranges. Pin exact versions during the build (HANDOFF step 0)
+# into requirements.lock.txt via `pip freeze`.
+dependencies = [
+    "biopython",
+    "pandas",
+    "requests",
+    "numpy",
+]
+
+[project.optional-dependencies]
+# Embedding + ranking (MVP). ANARCI is conda-only (bioconda) — install separately.
+embed = [
+    "antiberty",
+    "ablang2",
+    "fair-esm",
+]
+# Confirmation ladder (Phase 2). GPU recommended for boltz.
+structure = [
+    "igfold",
+    "boltz",
+]
+dev = [
+    "pytest",
+    "ruff",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+src = ["src", "tests"]
+line-length = 100

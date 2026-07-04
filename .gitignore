@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Reference-set working data (regenerable — see docs/reference-set.md)
+# raw downloads (SURFY/CSPA xlsx, UniProt fetches) and deterministic intermediates.
+# Committed final outputs (data/reference/self_proteins.csv, background/benign_proteins.csv,
+# seeds/) are NOT ignored.
+data/reference/raw/
+data/reference/build/
+data/reference/index/
+
+# OS / editor
+.DS_Store

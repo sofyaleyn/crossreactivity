@@ -1,6 +1,6 @@
 # HANDOFF — build instructions for Claude Code
 
-This file is the executable brief. It turns the specs into an ordered build with explicit module contracts and acceptance tests. Read `docs/mvp-spec.md` and `docs/extensions-spec.md` for rationale; build from here.
+This file is the executable brief. It turns the specs into an ordered build with explicit module contracts and acceptance tests. Read [docs/mvp-spec.md](docs/mvp-spec.md) and [docs/extensions-spec.md](docs/extensions-spec.md) for rationale; build from here.
 
 **Goal:** an antibody CDR cross-reactivity triage tool, validated on the SHR-1210 → VEGFR2 anchor. Rank a variant panel by antibody-PLM ↔ antigen-PLM embedding similarity (MVP), then confirm top suspects with IgFold surface comparison and Boltz-2 cofolding (extensions).
 
@@ -15,17 +15,17 @@ This file is the executable brief. It turns the specs into an ordered build with
 ## Environment
 
 - Python 3.10+. Fresh venv/conda env.
-- `pip install biopython antiberty ablang2 fair-esm igfold boltz`
-- `conda install -c bioconda anarci` (HMMER dependency; UNIX/macOS).
+- `pip install -e ".[embed,structure,dev]"` (deps declared in `pyproject.toml`; `embed`/`structure` are the MVP and confirmation-ladder extras).
+- `conda install -c bioconda anarci` (HMMER dependency; UNIX/macOS — not pip-installable, so it's not in `pyproject.toml`).
 - GPU needed for Boltz-2 (rung 3) and dMaSIF (rung 2 primary). Rung-2 has a CPU fallback (APBS/MSMS). Confirm GPU early.
-- Pin versions in `requirements.txt` as you install.
+- Pin the exact resolved env into `requirements.lock.txt` (`pip freeze > requirements.lock.txt`) as you install.
 
 ---
 
 ## Build order
 
 ### Step 0 — scaffold + hour-zero verification
-Create the package skeleton (`src/crossflag/...` per README tree), `requirements.txt`, `tests/`. Then run the verification harness before building logic:
+Create the package skeleton (`src/crossflag/...` per README tree), `pyproject.toml`, `tests/`. Then run the verification harness before building logic:
 
 - ANARCI on SHR-1210 VH → CDR-H3 extracts as `QLYYFDYW`.
 - AntiBERTy (or AbLang2) returns an embedding for SHR-1210 VH/VL.
@@ -38,8 +38,9 @@ If any fail, stop and fix — everything downstream depends on these.
 - `anchor/shr1210_vh.fasta`, `shr1210_vl.fasta` (sequences in README).
 - `anchor/variants/` — WT + CDR-germlining mutants from Finlay et al. (encode each as a VH/VL FASTA pair; if exact mutant sequences are unavailable, generate light-chain CDR→germline revertants and label them clearly as reconstructed).
 - `anchor/offtargets/` — VEGFR2, FZD5, ULBP2 sequences + PDB IDs (VEGFR2: 4ASD/1VR2).
-- `curated/self_proteins.csv` — schema in mvp-spec §Data; VEGFR2/FZD5/ULBP2 flagged `is_anchor_offtarget=True`.
-- `background/benign_proteins.csv` — housekeeping/serum surface proteins.
+- `reference/self_proteins.csv` — schema in mvp-spec §Data; VEGFR2/FZD5/ULBP2 flagged `is_anchor_offtarget=True`. Built by the `crossflag.reference` pipeline (see Step 5 and [docs/reference-set.md](docs/reference-set.md)); raw downloads land in `reference/raw/` and intermediates in `reference/build/` (both gitignored).
+- `reference/background/benign_proteins.csv` — housekeeping/serum surface proteins.
+- **Known gap:** Layer B (AAgAtlas autoantigens) is not yet built — `self_proteins.csv` is currently Layer A + the small Layer C set. See `crossflag/reference/layer_b.py`.
 
 ### Step 2 — `extract/cdrs.py`
 Contract:
@@ -66,7 +67,16 @@ embed_antigen(sequence: str, surface_region: list[int] | None) -> np.ndarray | l
 ESM-2. If `surface_region` given, pool those residues; else sliding-window sub-vectors over the chain. Cache.
 
 ### Step 5 — `reference/build_set.py`
-Load `curated/self_proteins.csv`, embed every protein (step 4), persist an embedding index (`.npz` or FAISS). Same for the background set.
+The `crossflag.reference` package assembles the layered self-protein set (see [docs/reference-set.md](docs/reference-set.md)). `build_set.py` orchestrates the layer modules in order:
+```
+layer_a → background → (layer_b, TODO) → layer_c → merge → embed
+```
+- `layer_a.py` — SURFY + CSPA base + anchor injection → `reference/build/self_proteins_layer_a.csv`.
+- `background.py` — sample benign families from Layer A → `reference/background/benign_proteins.csv`.
+- `layer_c.py` — fill sequences into the hand-curated mimicry seed → `reference/build/layer_c_mimicry_seed_filled.csv`.
+- `merge.py` — merge layers by UniProt ID → `reference/self_proteins.csv`.
+- `paths.py` — single source of truth for all `data/reference/` locations (repo-root-anchored).
+Then embed every protein (step 4) and persist an embedding index (`.npz` or FAISS) into `reference/index/`. Same for the background set. Run: `python -m crossflag.reference.build_set`.
 
 ### Step 6 — `rank/embedding_rank.py`
 Contract:
@@ -99,6 +109,10 @@ Wrap each callable as a `skills/*.md` skill (input schema, invocation, output pa
 ---
 
 ## Acceptance tests (`tests/`)
+
+These are the code-level `pytest` contracts. The narrated demo and the canonical numeric
+pass thresholds (the three "Beats") live in [docs/demo-run.md](docs/demo-run.md) — that is the
+single source of truth for "what passing looks like."
 
 `test_cdr_extract.py`
 ```
