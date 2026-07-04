@@ -59,18 +59,15 @@ Calibrated against a **PD-1 cognate ceiling** and a **lysozyme non-binder floor*
 
 ## How this scales (productization — *not* built in this demo)
 
-```
-  antibody Fv ──▶ cofold vs curated self-protein reference set (few hundred)
-                        │
-                        ├─▶ calibrated panel (PD-1 ceiling / lysozyme floor)
-                        ▼
-              ranked verdict table ──▶ named confirmation assay per hit
-                        │
-   (scale-out, per plan.md — representative-set clustering, discovery +
-    panel screens, saturation/Chao1 coverage) ──▶ 1000-candidate panel
-```
+![Representative-set scaling pipeline: cluster candidates → discovery-screen representatives for the off-target shortlist → screen all candidates against the shortlist](figures/pipeline.svg)
 
-The demo is the calibrated single-antibody core. The representative-set scaling path to a 1000-candidate panel is described in [`plan.md`](../plan.md) and is deliberately **out of scope here** — this demo proves the core signal is real, robust, and specific.
+The demo is the calibrated single-antibody core. To de-risk a whole panel without the full candidate×target grid, the [`plan.md`](../plan.md) path does three things:
+
+1. **Cluster candidates** by paratope biochemistry (CDR charge/hydrophobicity/aromatics, weighting H3/L3) → **K ≈ 10 representatives**.
+2. **Discovery screen** — cofold the K representatives × the 2,896-protein surfaceome → union of calibrated hits = the shared **off-target shortlist** (~20 proteins); a saturation/Chao1 coverage check adds representatives until recall ≥ 95%.
+3. **Panel screen** — cofold **every** candidate against the shortlist only → per-candidate off-target profile → rank + name the confirmation assay → wet-lab plate.
+
+Because variants of one lead share ~all their off-targets, this scales with the number of clusters K (saturation-bounded), not with panel size × set size: **~$4–7k per 100-candidate panel vs ~$58k for the full grid** ([`plan.md`](../plan.md) cost model). Deliberately **out of scope here** — the demo proves the core signal is real, robust, and specific.
 
 ---
 

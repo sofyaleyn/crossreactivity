@@ -13,7 +13,7 @@ from __future__ import annotations
 import base64
 import json
 
-from . import panel, paths, run
+from . import diagram, panel, paths, run
 
 TITLE = "CrossFlag — off-target cofold screen"
 
@@ -113,6 +113,7 @@ def build_html() -> str:
         trows=trows,
         figs=figs,
         structure_figs=structure_figs,
+        pipeline_svg=diagram.build_svg(),
         thr_pae=panel.PAE_IF_CONFIRM,
         thr_rep=panel.REPROD_CONFIRM,
         data_json=json.dumps(data_block, indent=2),
@@ -178,6 +179,8 @@ _TEMPLATE = """<!doctype html>
   .prov {{ display:block; color:var(--muted); font-size:.74rem; margin-top:6px;
     font-variant-numeric:tabular-nums; }}
   .tablecard {{ overflow-x:auto; }}
+  .svgwrap {{ overflow-x:auto; }}
+  .svgwrap svg {{ min-width:760px; width:100%; height:auto; display:block; }}
   table {{ width:100%; border-collapse:collapse; font-size:.92rem; min-width:560px; }}
   th, td {{ text-align:left; padding:8px 10px; border-bottom:1px solid var(--grid); }}
   th {{ color:var(--ink2); font-weight:600; font-size:.82rem; text-transform:uppercase;
@@ -236,6 +239,16 @@ _TEMPLATE = """<!doctype html>
 
 <h2>What the interface actually looks like</h2>
 {structure_figs}
+
+<h2>How this scales — productization (not built in this demo)</h2>
+<div class="card">
+  <div class="svgwrap">{pipeline_svg}</div>
+  <figcaption>The demo proves the calibrated single-antibody core. To de-risk a whole
+  <b>100–1000-candidate panel</b> without the full candidate×target grid, cluster the
+  candidates, cofold a few representatives to discover the shared off-target shortlist,
+  then screen every candidate against just that shortlist. Full method + cost model in
+  <b>plan.md</b>.<span class="prov" data-source="plan.md">source: plan.md (representative-set scaling path)</span></figcaption>
+</div>
 
 <footer>
   <p><b>Triage, not certification.</b> Cofold is confirmation <i>evidence</i>, not

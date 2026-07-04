@@ -13,7 +13,7 @@ from __future__ import annotations
 
 import sys
 
-from . import dashboard, figures, paths, run
+from . import dashboard, diagram, figures, paths, run
 
 
 def main() -> int:
@@ -22,6 +22,7 @@ def main() -> int:
     print("[1/3] figures ...")
     for name in figures.build_all():
         print(f"      demo/figures/{name}")
+    print(f"      demo/figures/{diagram.build()}")
 
     print("[2/3] verdict table ...")
     table = run.build_table()

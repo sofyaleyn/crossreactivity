@@ -1,0 +1,72 @@
+<svg class="pipeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 452" width="100%" role="img" aria-label="Representative-set off-target screening pipeline">
+
+<style>
+.pipeline-svg .box  { fill:#fbfbfa; }
+.pipeline-svg .ink  { fill:#17170b; }
+.pipeline-svg .ink2 { fill:#52514e; }
+.pipeline-svg .line { stroke:#898781; }
+.pipeline-svg .bar  { fill:#f1f0ea; }
+@media (prefers-color-scheme: dark) {
+  .pipeline-svg .box  { fill:#1f1f1e; }
+  .pipeline-svg .ink  { fill:#f5f5f0; }
+  .pipeline-svg .ink2 { fill:#c3c2b7; }
+  .pipeline-svg .line { stroke:#a7a69f; }
+  .pipeline-svg .bar  { fill:#262624; }
+}
+:root[data-theme="dark"] .pipeline-svg .box  { fill:#1f1f1e; }
+:root[data-theme="dark"] .pipeline-svg .ink  { fill:#f5f5f0; }
+:root[data-theme="dark"] .pipeline-svg .ink2 { fill:#c3c2b7; }
+:root[data-theme="dark"] .pipeline-svg .line { stroke:#a7a69f; }
+:root[data-theme="dark"] .pipeline-svg .bar  { fill:#262624; }
+:root[data-theme="light"] .pipeline-svg .box  { fill:#fbfbfa; }
+:root[data-theme="light"] .pipeline-svg .ink  { fill:#17170b; }
+:root[data-theme="light"] .pipeline-svg .ink2 { fill:#52514e; }
+:root[data-theme="light"] .pipeline-svg .line { stroke:#898781; }
+:root[data-theme="light"] .pipeline-svg .bar  { fill:#f1f0ea; }
+</style>
+<rect class="bar" x="30" y="10" width="1100" height="36" rx="8"/>
+<text class="ink" x="580.0" y="34" font-size="19" font-weight="700" text-anchor="middle">How it scales to a 100–1000-candidate panel — without the full grid</text>
+<rect class="bar" x="30" y="52" width="1100" height="34" rx="8"/>
+<text class="ink2" x="580.0" y="74" font-size="12.5" font-style="italic" text-anchor="middle">Variants of one lead share ~all their off-targets — so cofold a few representatives to find the shortlist, then screen every candidate against just that shortlist.</text>
+<rect class="box" x="30" y="122" width="320" height="206" rx="14" stroke="#2a78d6" stroke-width="2"/>
+<rect class="box" x="420" y="122" width="320" height="206" rx="14" stroke="#1baf7a" stroke-width="2"/>
+<rect class="box" x="810" y="122" width="320" height="206" rx="14" stroke="#0ca30c" stroke-width="2"/>
+<circle cx="56" cy="150" r="13" fill="#2a78d6"/><text x="56" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<text class="ink" x="80" y="155" font-size="15" font-weight="700">Cluster candidates</text>
+<text class="ink2" x="48" y="184" font-size="11.5" font-weight="normal">Input: 100–1000 Fv variants</text>
+<text class="ink2" x="48" y="201" font-size="11.5" font-weight="normal">of one antibody lead.</text>
+<text class="ink2" x="48" y="218" font-size="11.5" font-weight="normal"></text>
+<text class="ink2" x="48" y="235" font-size="11.5" font-weight="normal">Fingerprint each paratope —</text>
+<text class="ink2" x="48" y="252" font-size="11.5" font-weight="normal">CDR charge · hydrophobicity ·</text>
+<text class="ink2" x="48" y="269" font-size="11.5" font-weight="normal">aromatics · length (weight H3/L3).</text>
+<text class="ink2" x="48" y="286" font-size="11.5" font-weight="normal">k-medoids / sphere-exclusion.</text>
+<text class="ink" x="48" y="312" font-size="13" font-weight="700" fill="#2a78d6">→ K ≈ 10 representatives</text>
+<circle cx="446" cy="150" r="13" fill="#1baf7a"/><text x="446" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<text class="ink" x="470" y="155" font-size="15" font-weight="700">Discover off-target shortlist</text>
+<text class="ink2" x="438" y="184" font-size="11.5" font-weight="normal">Cofold the K reps ×</text>
+<text class="ink2" x="438" y="201" font-size="11.5" font-weight="normal">2,896 self-proteins (surfaceome),</text>
+<text class="ink2" x="438" y="218" font-size="11.5" font-weight="normal">scored vs the calibrated panel.</text>
+<text class="ink2" x="438" y="235" font-size="11.5" font-weight="normal"></text>
+<text class="ink2" x="438" y="252" font-size="11.5" font-weight="normal">Union of hits = SHORTLIST</text>
+<text class="ink2" x="438" y="269" font-size="11.5" font-weight="normal">(~20 proteins).</text>
+<circle cx="446" cy="304" r="13" fill="#c67f00"/><text x="446" y="308.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text class="ink2" x="470" y="308" font-size="10.5">saturation / Chao1 → add reps</text>
+<text class="ink2" x="470" y="320" font-size="10.5">until recall ≥ 95%</text>
+<circle cx="836" cy="150" r="13" fill="#0ca30c"/><text x="836" y="154.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text class="ink" x="860" y="155" font-size="15" font-weight="700">Screen all candidates</text>
+<text class="ink2" x="828" y="184" font-size="11.5" font-weight="normal">Cofold every candidate ×</text>
+<text class="ink2" x="828" y="201" font-size="11.5" font-weight="normal">the shortlist only —</text>
+<text class="ink2" x="828" y="218" font-size="11.5" font-weight="normal">not the full grid.</text>
+<text class="ink2" x="828" y="235" font-size="11.5" font-weight="normal"></text>
+<text class="ink2" x="828" y="252" font-size="11.5" font-weight="normal">→ per-candidate off-target profile.</text>
+<circle cx="836" cy="304" r="13" fill="#0ca30c"/><text x="836" y="308.5" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text class="ink2" x="860" y="308" font-size="10.5">rank + name confirmation assay</text>
+<text class="ink2" x="860" y="320" font-size="10.5">→ prioritized wet-lab plate</text>
+<line class="line" x1="350" y1="225.0" x2="414" y2="225.0" stroke-width="2.5"/><path d="M 420 225.0 l -11 -6 v 12 z" fill="#898781"/>
+<line class="line" x1="740" y1="225.0" x2="804" y2="225.0" stroke-width="2.5"/><path d="M 810 225.0 l -11 -6 v 12 z" fill="#898781"/>
+<rect class="bar" x="30" y="346" width="1100" height="56" rx="10"/>
+<text class="ink" x="580.0" y="369" font-size="13" font-weight="700" text-anchor="middle">Cost per ~100-candidate panel: <tspan fill="#0ca30c">~$4–7k</tspan>  vs full 100×2,896 grid <tspan fill="#c67f00">~$58k</tspan>  vs wet-lab MPA screen $10–30k</text>
+<text class="ink2" x="580.0" y="390" font-size="11.5" text-anchor="middle">Scales with K (saturation-bounded), not with panel size × reference-set size.</text>
+<rect class="bar" x="30" y="414" width="1100" height="28" rx="8"/>
+<text class="ink2" x="580.0" y="432" font-size="10.5" text-anchor="middle" font-style="italic">Productization path (plan.md), Boltz-2 cofold confirmer validated in this demo · numbers quoted from plan.md · not built here.</text>
+</svg>
