@@ -73,32 +73,48 @@ Expected CDR-H3 `QLYYFDYW`, CDR-L3 `QQVYSIPWT` (ANARCI confirms). No HLA, no pMH
 
 ```
 crossflag/
-├── README.md                       ← this file
-├── HANDOFF.md                      ← build order + acceptance tests for Claude Code (START HERE to build)
-├── LICENSE
-├── requirements.txt
+├── README.md                       ← this file (overview + repo map)
+├── HANDOFF.md                      ← build order + module contracts for Claude Code (START HERE to build)
+├── pyproject.toml                  ← packaging (src layout), deps, pytest/ruff config
+├── .gitignore
 ├── docs/
-│   ├── glossary.md                 ← abbreviations expanded
 │   ├── roadmap.md                  ← ranked steps + tools; MVP → extensions  (READ FIRST)
 │   ├── mvp-spec.md                 ← Phase 1: PLM-embedding panel ranking
 │   ├── extensions-spec.md          ← Phase 2: surface fingerprint + Boltz-2 cofolding
+│   ├── reference-set.md            ← how the curated self-protein set is BUILT (layers A/B/C)
+│   ├── demo-run.md                 ← MVP acceptance script (Beats 1–3) — canonical pass thresholds
+│   ├── glossary.md                 ← abbreviations expanded
 │   └── tools.md                    ← every tool: role, install, API, license, skill status
-├── data/
+├── data/                           ← DATA ONLY (no executable code lives here)
 │   ├── anchor/
 │   │   ├── shr1210_vh.fasta
 │   │   ├── shr1210_vl.fasta
 │   │   ├── variants/               ← CDR-germlining mutants (Finlay et al.)
 │   │   └── offtargets/             ← VEGFR2, FZD5, ULBP2 sequences + PDB IDs
-│   ├── curated/
-│   │   └── self_proteins.csv       ← curated self-protein reference set (seq + PDB/AF ref)
-│   └── background/
-│       └── benign_proteins.csv     ← non-cross-reactive self-proteins (calibration)
+│   └── reference/                  ← curated self-protein reference set (inputs + outputs)
+│       ├── raw/                    ← downloaded sources (gitignored, regenerable)
+│       │   ├── surfaceome/         ← SURFY + CSPA xlsx, seq_cache.tsv
+│       │   └── fasta/              ← per-accession UniProt sequence fetches
+│       ├── seeds/                  ← hand-curated inputs, committed (provenance)
+│       │   └── layer_c_mimicry_seed.csv
+│       ├── build/                  ← intermediates (gitignored, deterministic)
+│       ├── self_proteins.csv       ← curated reference set — final output (committed)
+│       ├── background/
+│       │   └── benign_proteins.csv ← non-cross-reactive self-proteins (calibration, committed)
+│       └── index/                  ← ESM-2 embedding cache (.npz / FAISS; gitignored)
 ├── src/crossflag/
 │   ├── extract/cdrs.py             ← ANARCI/ANARCII → CDR annotation
 │   ├── embed/
 │   │   ├── antibody.py             ← AntiBERTy / AbLang2 embeddings (variant side)
 │   │   └── antigen.py              ← ESM-2 embeddings (self-protein side)
-│   ├── reference/build_set.py      ← assemble curated self-protein set
+│   ├── reference/                  ← reference-set build pipeline (see docs/reference-set.md)
+│   │   ├── paths.py                ← single source of truth for data/ locations (repo-root-anchored)
+│   │   ├── build_set.py            ← orchestrator: A → anchor → background → B → C → merge → embed
+│   │   ├── layer_a.py              ← SURFY + CSPA cell-surface base
+│   │   ├── layer_b.py              ← AAgAtlas autoantigens (TODO: not yet implemented)
+│   │   ├── layer_c.py              ← hand-curated pathogen-mimicry seed fill
+│   │   ├── background.py           ← benign background sampling (calibration)
+│   │   └── merge.py                ← merge layers → self_proteins.csv
 │   ├── rank/
 │   │   ├── embedding_rank.py       ← rung 1: embedding-space similarity + calibration
 │   │   └── panel.py                ← panel assembly + ranking
@@ -125,9 +141,10 @@ crossflag/
 
 ## Where to start
 
-- **To build:** read `HANDOFF.md` — it gives Claude Code the build order, module contracts, and acceptance tests.
-- **To understand:** `docs/roadmap.md` → `docs/mvp-spec.md` → `docs/extensions-spec.md`.
-- **Terminology:** `docs/glossary.md`. **Tools/install:** `docs/tools.md`.
+- **To build:** read [HANDOFF.md](HANDOFF.md) — it gives Claude Code the build order and module contracts.
+- **To understand:** [docs/roadmap.md](docs/roadmap.md) → [docs/mvp-spec.md](docs/mvp-spec.md) → [docs/extensions-spec.md](docs/extensions-spec.md).
+- **Reference set:** [docs/reference-set.md](docs/reference-set.md) (how it's built). **Demo / acceptance:** [docs/demo-run.md](docs/demo-run.md).
+- **Terminology:** [docs/glossary.md](docs/glossary.md). **Tools/install:** [docs/tools.md](docs/tools.md).
 
 ## Design constraint: everything is a programmatic skill
 
