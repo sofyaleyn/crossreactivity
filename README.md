@@ -1,0 +1,128 @@
+# CrossFlag
+
+**Panel-level CDR cross-reactivity triage for therapeutic antibodies.**
+
+Given a panel of antibody candidates (or CDR variants of one lead), CrossFlag ranks which variants are most likely to cross-react with a self-protein, corroborates the top suspects with 3D surface comparison, confirms the highest-risk pairs by cofolding the antibody against the flagged self-protein, and names the assay to run first.
+
+> *"Feed us your antibody panel. We embed each variant's binding region with an antibody language model, rank the panel against a self-protein reference set, confirm the top suspects by cofolding, and tell you which variant to advance and which assay confirms it — before you spend a wet-lab specificity screen."*
+
+CDR = complementarity-determining region (the antibody loops that contact antigen). PLM = protein language model.
+
+---
+
+## The problem
+
+Antibody CDR-mediated off-target binding (polyspecificity) is the largest single cause of biologic drug failure in preclinical and early clinical development. About 33% of antibody lead candidates bind at least one unintended self-protein (Norden et al., mAbs 2024). For cytotoxic modalities — ADCs (antibody-drug conjugates), bispecifics, CAR-T-targeting antibodies — a CDR that cross-reacts with a self-protein can be fatal.
+
+The critical fact for our design: **CDR cross-reactivity is driven by surface shape and chemistry, not sequence identity.** Documented cases cross-react with as low as 7% sequence identity between on- and off-target. Any method that scores raw sequence similarity is close to blind to the real signal. CrossFlag is built around learned representations and 3D structure instead.
+
+## How it differs from existing tools
+
+Whole-proteome scanners (ARDitox, Dec 2025; Tope-seq, Jan 2026) take one candidate and scan the full proteome. CrossFlag differs on two axes:
+
+1. **Curated self-protein reference set** (surfaces, not the whole proteome) — precision over recall.
+2. **Panel-level agentic triage with a confirmation ladder** — rank the panel, then spend expensive compute (cofolding) only on the top suspects.
+
+## The evidence ladder
+
+CrossFlag stacks three independent signals, cheap to expensive, so nothing costly runs on the whole set:
+
+```
+  1. PLM-embedding similarity   →  rank the whole panel        (cheap, all variants)
+  2. 3D surface fingerprint     →  corroborate the top flags   (medium, top ~10)
+  3. Boltz-2 cofolding          →  confirm the top suspects    (expensive, top ~5)
+```
+
+Each rung answers a sharper question: *looks similar → presents a similar surface → actually docks.*
+
+## The anchor (validation) case
+
+**SHR-1210 (camrelizumab, anti-PD-1) → VEGFR2 off-target → capillary hemangioma in patients.**
+
+SHR-1210 is a humanized IgG4κ anti-PD-1 antibody that caused an unusual capillary hemangioma in trials — not seen with other anti-PD-1s. Receptor proteome screening traced it to CDR-mediated binding to **VEGFR2** (plus FZD5, ULBP2). VEGFR2 agonism drives the hemangioma; a VEGFR2 antagonist rescued patients, confirming the mechanism. CDR germlining ablated VEGFR2 binding while preserving PD-1 affinity — a ready-made variant panel.
+
+This gives us: a named drug, named self-protein, CDR-confirmed mechanism, human adverse event, and a real WT-plus-mutants panel.
+
+### Anchor sequences (public — Thera-SAbDab / US11208484B2)
+
+```
+Heavy Chain Fv (VH):
+EVQLVESGGGLVQPGGSLRLSCAASGFTFSSYMMSWVRQAPGKGLEWVATISGGGANTYYPDSVKG
+RFTISRDNAKNSLYLQMNSLRAEDTAVYYCARQLYYFDYWGQGTTVTVSS
+
+Light Chain Fv (VL):
+DIQMTQSPSSLSASVGDRVTITCLASQTIGTWLTWYQQKPGKAPKLLIYTATSLADGVPSRFSGSGS
+GTDFTLTISSLQPEDFATYYCQQVYSIPWTFGGGTKVEIK
+```
+
+Expected CDR-H3 `QLYYFDYW`, CDR-L3 `QQVYSIPWT` (ANARCI confirms). No HLA, no pMHC, no presentation gate — antibodies bind surfaces directly.
+
+---
+
+## Repo structure
+
+```
+crossflag/
+├── README.md                       ← this file
+├── HANDOFF.md                      ← build order + acceptance tests for Claude Code (START HERE to build)
+├── LICENSE
+├── requirements.txt
+├── docs/
+│   ├── glossary.md                 ← abbreviations expanded
+│   ├── roadmap.md                  ← ranked steps + tools; MVP → extensions  (READ FIRST)
+│   ├── mvp-spec.md                 ← Phase 1: PLM-embedding panel ranking
+│   ├── extensions-spec.md          ← Phase 2: surface fingerprint + Boltz-2 cofolding
+│   └── tools.md                    ← every tool: role, install, API, license, skill status
+├── data/
+│   ├── anchor/
+│   │   ├── shr1210_vh.fasta
+│   │   ├── shr1210_vl.fasta
+│   │   ├── variants/               ← CDR-germlining mutants (Finlay et al.)
+│   │   └── offtargets/             ← VEGFR2, FZD5, ULBP2 sequences + PDB IDs
+│   ├── curated/
+│   │   └── self_proteins.csv       ← curated self-protein reference set (seq + PDB/AF ref)
+│   └── background/
+│       └── benign_proteins.csv     ← non-cross-reactive self-proteins (calibration)
+├── src/crossflag/
+│   ├── extract/cdrs.py             ← ANARCI/ANARCII → CDR annotation
+│   ├── embed/
+│   │   ├── antibody.py             ← AntiBERTy / AbLang2 embeddings (variant side)
+│   │   └── antigen.py              ← ESM-2 embeddings (self-protein side)
+│   ├── reference/build_set.py      ← assemble curated self-protein set
+│   ├── rank/
+│   │   ├── embedding_rank.py       ← rung 1: embedding-space similarity + calibration
+│   │   └── panel.py                ← panel assembly + ranking
+│   ├── structure/
+│   │   ├── fold.py                 ← IgFold antibody structure (rung 2 input)
+│   │   ├── surface.py              ← dMaSIF / APBS surface fingerprint (rung 2)
+│   │   └── cofold.py               ← Boltz-2 cofolding + affinity (rung 3)
+│   ├── assay/map.py                ← self-protein → confirmation assay map
+│   ├── agent/report.py             ← LLM narration + recommendation
+│   └── pipeline.py                 ← end-to-end orchestration
+├── skills/                         ← agent-skill wrappers (all programmatic)
+│   ├── anarci_extract.md
+│   ├── antibody_embed.md
+│   ├── antigen_embed.md
+│   ├── embedding_rank.md
+│   ├── igfold_surface.md           (extension)
+│   └── boltz_cofold.md             (extension)
+├── notebooks/anchor_validation.ipynb
+└── tests/
+    ├── test_cdr_extract.py         ← CDR-H3 == QLYYFDYW
+    ├── test_panel_rank.py          ← VEGFR2 ranks near top for WT
+    └── test_cofold_gate.py         ← WT+VEGFR2 interface confidence > germlined mutant
+```
+
+## Where to start
+
+- **To build:** read `HANDOFF.md` — it gives Claude Code the build order, module contracts, and acceptance tests.
+- **To understand:** `docs/roadmap.md` → `docs/mvp-spec.md` → `docs/extensions-spec.md`.
+- **Terminology:** `docs/glossary.md`. **Tools/install:** `docs/tools.md`.
+
+## Design constraint: everything is a programmatic skill
+
+Every tool runs locally or via a callable API and is wrapped as an agent skill. Web-form tools (PepSim, Expitope 2.0) are excluded by design.
+
+## Success criterion (single, binary)
+
+On the SHR-1210 panel: CrossFlag ranks **VEGFR2 near the top of the flag list for wild-type SHR-1210**, ranks a CDR-germlining mutant as cleaner, and — for the top suspect — the Boltz-2 cofold shows a confident WT–VEGFR2 interface that collapses for the germlined mutant. From antibody sequence alone.
