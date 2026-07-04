@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(python3 build_layer_c.py)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -sL -o /dev/null -w \"surfaceome github raw: %{http_code}\\\\n\" \"https://raw.githubusercontent.com/steveneschrich/surfaceome/master/DESCRIPTION\")",
+      "Bash(curl -sL -o /dev/null -w \"wlab surfaceome page: %{http_code}\\\\n\" \"https://wlab.ethz.ch/surfaceome/\")",
+      "Bash(curl -sL -w \"\\\\nuniprot cell-surface query HTTP: %{http_code}\\\\n\" \"https://rest.uniprot.org/uniprotkb/search?query=%28cc_scl_term%3ASL-0243%29+AND+%28organism_id%3A9606%29+AND+%28reviewed%3Atrue%29&format=tsv&fields=accession&size=1\")",
+      "Bash(curl -sL \"https://api.github.com/repos/steveneschrich/surfaceome/git/trees/master?recursive=1\")",
+      "Bash(curl -sL \"https://api.github.com/repos/steveneschrich/surfaceome\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('default_branch:', d.get\\('default_branch','?'\\)\\); print\\('full_name:', d.get\\('full_name','NOT FOUND'\\)\\)\")",
+      "Bash(curl -sL \"https://api.github.com/repos/steveneschrich/surfaceome/git/trees/main?recursive=1\")",
+      "Bash(mkdir -p raw_surfaceome)",
+      "Bash(curl -sL -o raw_surfaceome/surfy_table_S3.xlsx \"https://raw.githubusercontent.com/steveneschrich/surfaceome/main/data-raw/surfy/table_S3_surfaceome.xlsx\")",
+      "Bash(curl -sL -o raw_surfaceome/cspa_S2_File.xlsx \"https://raw.githubusercontent.com/steveneschrich/surfaceome/main/data-raw/cspa/S2_File.xlsx\")",
+      "Bash(file raw_surfaceome/*.xlsx)",
+      "Bash(pip install *)"
+    ]
+  }
+}

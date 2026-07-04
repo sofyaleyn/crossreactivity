@@ -20,6 +20,18 @@ Bg:     data/background/benign_proteins.csv
 
 Pipeline: CDR extraction → AntiBERTy/AbLang2 paratope embedding → cosine similarity vs. every self-protein in the reference set → background-calibrated risk → ranked flag list.
 
+### What Beat 1 is actually measuring (read before you present it)
+
+The paratope vector (AntiBERTy/AbLang2) and the antigen vector (ESM-2) come from two separately-trained models, and binding is *complementarity*, not resemblance — so this cosine is **not** a binding prediction, and we never present it as one. What makes it a usable signal is narrower and honest:
+
+Both models are trained on protein sequences, so both encode the same underlying biophysical vocabulary — hydrophobicity, charge, aromatic content, local structural propensity. Two very different objects can still be described in that shared chemistry. Calibrated against the benign background (see [mvp-spec.md](mvp-spec.md) §[4]), the cross-model cosine is therefore a **fuzzy proxy** for a single claim:
+
+> *"This paratope's chemistry is unusually enriched for the kind of chemistry present on this antigen's surface, relative to proteins we know are safe."*
+
+That is a **smoke detector, not a binding model.** It is cheap, it runs on the entire panel in one pass, and it is *allowed to be wrong* — because every suspect it surfaces is re-checked by the surface and cofolding rungs downstream. Beat 1 earns a ranked shortlist; Beats 2–3 earn the verdict.
+
+**The version that would make sense as a true binding signal** — a possible upgrade, not the MVP — is a nearest-neighbor search over *known antibody–self-protein binding pairs* rather than over bare self-protein sequences: *similar paratopes bind similar things.* That comparison is same-model (no cross-space mismatch) and it respects complementarity by transfer — the known binder already demonstrated the fit, so we're only flagging lookalikes. It needs a curated set of known binders we don't have in the MVP window (see [extensions-spec.md](extensions-spec.md) Phase 3).
+
 ### Pass criteria (all must hold)
 
 1. **All three known off-targets appear in the top-N flags:**

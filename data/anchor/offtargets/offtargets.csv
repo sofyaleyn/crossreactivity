@@ -1,0 +1,4 @@
+protein_id,gene_symbol,name,uniprot_id,fasta,pdb_ref,is_anchor_offtarget,source
+VEGFR2,KDR,Vascular endothelial growth factor receptor 2,P35968,VEGFR2_KDR_P35968.fasta,4ASD;1VR2,True,Finlay et al. 2019
+FZD5,FZD5,Frizzled-5,Q13467,FZD5_Q13467.fasta,,True,Finlay et al. 2019
+ULBP2,ULBP2,UL16-binding protein 2,Q9BZM5,ULBP2_Q9BZM5.fasta,,True,Finlay et al. 2019

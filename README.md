@@ -35,6 +35,16 @@ CrossFlag stacks three independent signals, cheap to expensive, so nothing costl
 
 Each rung answers a sharper question: *looks similar → presents a similar surface → actually docks.*
 
+### What rung 1 is really measuring (and what it is not)
+
+Rung 1 is a triage signal, not a binding predictor — and it's worth being precise about why. The paratope vector (an antibody model, AntiBERTy/AbLang2) and the antigen vector (a general protein model, ESM-2) come from two separately-trained models, and binding is *complementarity* — opposite shapes and charges fitting together — not resemblance. So a cosine between those two vectors is not a physical binding score and we never treat it as one.
+
+What it *can* pick up is narrower and honest. Both models are trained on protein sequences, so both encode the same underlying biophysical vocabulary — hydrophobicity, charge, aromatic content, local structural propensity. Two very different objects can still be characterized by the same underlying chemistry. Calibrated against a benign background, the cross-model cosine becomes a fuzzy proxy for one claim: *"this paratope's chemistry is unusually enriched for the kind of chemistry present on this antigen's surface, relative to proteins we know are safe."*
+
+That is a **smoke detector, not a binding model.** It's cheap, it runs on the whole panel in a single pass, and it's allowed to be wrong — because every suspect it surfaces is re-checked by the surface and cofolding rungs. Rung 1 buys a ranked shortlist; the ladder above it earns the verdict.
+
+The version that would be a true binding signal — an upgrade beyond the MVP — is a nearest-neighbor search over *known antibody–self-protein binding pairs* rather than bare self-protein sequences: **similar paratopes bind similar things.** That comparison stays within one model (no cross-space mismatch) and respects complementarity by transfer — a known binder has already demonstrated the fit, so we're only flagging lookalikes. It requires a curated set of known binders we don't yet have (Phase 3).
+
 ## The anchor (validation) case
 
 **SHR-1210 (camrelizumab, anti-PD-1) → VEGFR2 off-target → capillary hemangioma in patients.**
