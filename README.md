@@ -4,10 +4,13 @@
 
 > **⚠️ STATUS (2026-07-04): the design described below is superseded.** An empirical viability study found the original embedding-similarity method broken and validated a replacement — a **Boltz-2 cofold screen** against a curated reference set, ranked on a calibrated panel (true-target ceiling / non-binder floor).
 >
+> **▶ Runnable demo:** **[`demo/`](demo/README.md)** — one offline command (`make demo`) regenerates a dashboard + interface figures + a verdict table showing the validated result: SHR-1210's known off-targets (FZD5, ULBP2) recovered from sequence alone, discriminated within-fold (AUROC 0.909) and shown to be antibody-specific. Start here to *see* the result.
+>
 > **Read in this order:**
-> 1. **[`plan.md`](plan.md)** — the active build plan (representative-set off-target screen). **Build from this.**
-> 2. **[`findings.md`](findings.md)** — what was tested, the evidence, and the current verdict (the plan rests on this).
-> 3. **[`glossary.md`](docs/glossary.md)** — terminology.
+> 1. **[`demo/README.md`](demo/README.md)** — the ~5-minute pitch + one-command offline demo of the validated result.
+> 2. **[`plan.md`](plan.md)** — the active build plan (representative-set off-target screen). **Build from this.**
+> 3. **[`findings.md`](findings.md)** — what was tested, the evidence, and the current verdict (the plan rests on this).
+> 4. **[`glossary.md`](docs/glossary.md)** — terminology.
 >
 > `mvp-spec.md`, `demo-run.md`, `HANDOFF.md`, `roadmap.md`, `tools.md`, and the rest of this README are the **original, now-superseded** design, kept for history.
 

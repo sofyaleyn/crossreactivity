@@ -1,0 +1,52 @@
+[
+  {
+    "run": "cofold-fzd5",
+    "antigen": "FZD5",
+    "PAE_IF": 5.69,
+    "epitope_reprod": 0.66,
+    "verdict": "confirmed",
+    "read": "confirmed",
+    "confirmation_assay": "Wnt/beta-catenin (TCF/LEF) reporter + FZD-family SPR panel",
+    "prediction_id": "sab_pred_PodfEOGDaUgakryFCwHs"
+  },
+  {
+    "run": "cofold-ulbp2",
+    "antigen": "ULBP2",
+    "PAE_IF": 5.74,
+    "epitope_reprod": 0.893,
+    "verdict": "confirmed",
+    "read": "confirmed",
+    "confirmation_assay": "NKG2D-ligand cell-surface binding / ULBP2 SPR",
+    "prediction_id": "sab_pred_PrDZsAmtCljuDAaQzEhq"
+  },
+  {
+    "run": "cofold-pd1",
+    "antigen": "PD-1",
+    "PAE_IF": 7.24,
+    "epitope_reprod": 0.936,
+    "verdict": "ceiling",
+    "read": "ceiling (cognate)",
+    "confirmation_assay": "PD-1 blockade reporter bioassay (cognate target)",
+    "prediction_id": "sab_pred_vgiZ49FZ5Q67ELvWe9uy"
+  },
+  {
+    "run": "cofold-wt",
+    "antigen": "VEGFR2",
+    "PAE_IF": 11.55,
+    "epitope_reprod": 0.43,
+    "verdict": "missed",
+    "read": "missed (weakest)",
+    "confirmation_assay": "VEGFR2 ectodomain SPR / receptor-proteome array",
+    "prediction_id": "sab_pred_zlgaq2gRdX5DSi5ov0KX"
+  },
+  {
+    "run": "cofold-lyz",
+    "antigen": "lysozyme",
+    "PAE_IF": 12.38,
+    "epitope_reprod": 0.446,
+    "verdict": "floor",
+    "read": "floor (non-binder)",
+    "confirmation_assay": "n/a \u2014 specificity floor control (non-binder)",
+    "prediction_id": "sab_pred_m1xl1avfrFJQesGPvBuH"
+  }
+]
