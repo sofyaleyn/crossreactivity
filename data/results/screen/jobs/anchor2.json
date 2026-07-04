@@ -1,0 +1,2416 @@
+{
+  "name": "anchor2",
+  "antibody": {
+    "H": "EVKLVESGGGLVKPGGSLRLSCAASGFTFSSYAMSWVRQAPGKGLEWVASIHNRGTIFYLDSVKGRFTISRDNVRNTLYLQMNSLRAEDTAVYYCTRGRSNSYAMDYWGQGTSVTVSS",
+    "L": "DVLVTQSPLSLPVTPGEPASISCRSTQTLVHRNGDTYLEWYLQKPGQSPQSLIYKVSNRFSGVPDRFSGSGSGTDFTLKISRVEAEDVGVYYCFQGSHVPYTFGQGTKLEIKR"
+  },
+  "antigens": [
+    {
+      "run": "screen-anchor2-PF4",
+      "uniprot_id": "P02776",
+      "gene": "PF4",
+      "seq": "EAEEDGDLQCLCVKTTSQVRPRHITSLEVIKAGPHCPTAQLIATLKNGRKICLDLQAPLYKKIIKKLLES",
+      "is_positive": true
+    },
+    {
+      "run": "screen-anchor2-P03999",
+      "uniprot_id": "P03999",
+      "gene": "OPN1SW",
+      "seq": "MSEEEFYLFKNISSVGPWDGPQYHIAPVWA"
+    },
+    {
+      "run": "screen-anchor2-Q8NH55",
+      "uniprot_id": "Q8NH55",
+      "gene": "OR52E5",
+      "seq": "MLHTNNTQFHPSTFLVVGVPGLEDVHVWIG"
+    },
+    {
+      "run": "screen-anchor2-A6NDH6",
+      "uniprot_id": "A6NDH6",
+      "gene": "OR5H15",
+      "seq": "RLTFCNSNIVHHIYCDTIPLSKISCTDSSIN"
+    },
+    {
+      "run": "screen-anchor2-P46094",
+      "uniprot_id": "P46094",
+      "gene": "XCR1",
+      "seq": "MESSGNPESTTFFYYDLQSQPCENQAWVFAT"
+    },
+    {
+      "run": "screen-anchor2-Q8NHB1",
+      "uniprot_id": "Q8NHB1",
+      "gene": "OR2V1",
+      "seq": "MGRWVNQSYTDGFFLLGIFSHSQTDLVLFSA"
+    },
+    {
+      "run": "screen-anchor2-Q9H342",
+      "uniprot_id": "Q9H342",
+      "gene": "OR51J1",
+      "seq": "MKISNNSLGFLPTTFILVGIPGLESEHLWIS"
+    },
+    {
+      "run": "screen-anchor2-A6NM76",
+      "uniprot_id": "A6NM76",
+      "gene": "OR6C76",
+      "seq": "DFCDSNVIDHFTCDSAPLLQISCTDTSTLELM"
+    },
+    {
+      "run": "screen-anchor2-P41231",
+      "uniprot_id": "P41231",
+      "gene": "P2RY2",
+      "seq": "MAADLGPWNDTINGTWDGDELGYRCRFNEDFK"
+    },
+    {
+      "run": "screen-anchor2-Q7Z2H8",
+      "uniprot_id": "Q7Z2H8",
+      "gene": "SLC36A1",
+      "seq": "YLQFGANIQGSITLNLPNCWLYQSVKLLYSIG"
+    },
+    {
+      "run": "screen-anchor2-Q9NYW2",
+      "uniprot_id": "Q9NYW2",
+      "gene": "TAS2R8",
+      "seq": "SCDYRFHAIAKHKRNITEMFHVSKIPYFEPLT"
+    },
+    {
+      "run": "screen-anchor2-P11166",
+      "uniprot_id": "P11166",
+      "gene": "SLC2A1",
+      "seq": "NAPQKVIEEFYNQTWVHRYGESILPTTLTTLWS"
+    },
+    {
+      "run": "screen-anchor2-Q8NFJ5",
+      "uniprot_id": "Q8NFJ5",
+      "gene": "GPRC5A",
+      "seq": "MATTVPDGCRNGLKSKYYRLCDKAEAWGIVLET"
+    },
+    {
+      "run": "screen-anchor2-Q9NTQ9",
+      "uniprot_id": "Q9NTQ9",
+      "gene": "GJB4",
+      "seq": "EEVWDDEQKDFVCNTKQPGCPNVCYDEFFPVSH"
+    },
+    {
+      "run": "screen-anchor2-P29275",
+      "uniprot_id": "P29275",
+      "gene": "ADORA2B",
+      "seq": "NSKDSATNNCTEPWDGTTNESCCLVKCLFENVVP"
+    },
+    {
+      "run": "screen-anchor2-Q8IUW5",
+      "uniprot_id": "Q8IUW5",
+      "gene": "RELL1",
+      "seq": "SPLVAPDNGSSRTLHSRTETTPSPSNDTGNGHPE"
+    },
+    {
+      "run": "screen-anchor2-O43511",
+      "uniprot_id": "O43511",
+      "gene": "SLC26A4",
+      "seq": "PDEHFLVSSSNGTVLNTTMIDTAARDTARVLIASA"
+    },
+    {
+      "run": "screen-anchor2-Q6PEY0",
+      "uniprot_id": "Q6PEY0",
+      "gene": "GJB7",
+      "seq": "EHVWKDEQKEFECNSRQPGCKNVCFDDFFPISQVR"
+    },
+    {
+      "run": "screen-anchor2-Q96RN1",
+      "uniprot_id": "Q96RN1",
+      "gene": "SLC26A8",
+      "seq": "NNGQLVMGSFVKNEFSAPSYLMGYNKSLSVVATTT"
+    },
+    {
+      "run": "screen-anchor2-O14842",
+      "uniprot_id": "O14842",
+      "gene": "FFAR1",
+      "seq": "GLEAPGGWLDHSNTSLGINTPVNGSPVCLEAWDPAS"
+    },
+    {
+      "run": "screen-anchor2-P30954",
+      "uniprot_id": "P30954",
+      "gene": "OR10J1",
+      "seq": "MLLCFRFGNQSMKRENFTLITDFVFQGFSSFHEQQI"
+    },
+    {
+      "run": "screen-anchor2-Q6PXP3",
+      "uniprot_id": "Q6PXP3",
+      "gene": "SLC2A7",
+      "seq": "SVVNTPHKVFKSFYNETYFERHATFMDGKLMLLLWS"
+    },
+    {
+      "run": "screen-anchor2-Q8NGI0",
+      "uniprot_id": "Q8NGI0",
+      "gene": "OR52N2",
+      "seq": "LLTKRLPYCRGNFIPHTYCDHMSVAKVSCGNFKVNA"
+    },
+    {
+      "run": "screen-anchor2-Q8NGJ6",
+      "uniprot_id": "Q8NGJ6",
+      "gene": "OR51A4",
+      "seq": "FTLRNLRYCKKNQLSHSYCLHQDVMKLACSDNRIDV"
+    },
+    {
+      "run": "screen-anchor2-Q8NGK4",
+      "uniprot_id": "Q8NGK4",
+      "gene": "OR52K1",
+      "seq": "FLLRRFHYCRGPVIAHCYCEHMAVVRLACGDTSFNN"
+    },
+    {
+      "run": "screen-anchor2-Q8NGM8",
+      "uniprot_id": "Q8NGM8",
+      "gene": "OR6M1",
+      "seq": "IVVTRLPYCRKEINHFFCDIAPLLQVACINTHLIEK"
+    },
+    {
+      "run": "screen-anchor2-Q8NGV0",
+      "uniprot_id": "Q8NGV0",
+      "gene": "OR2Y1",
+      "seq": "QTGLAMAMPLCGHRLNHFFCEMPVFLKLACADTEGT"
+    },
+    {
+      "run": "screen-anchor2-Q8NH57",
+      "uniprot_id": "Q8NH57",
+      "gene": "OR52P1P",
+      "seq": "FLIGRLNFCQSHVILHTYCEHMAVVKLACGDTRPNR"
+    },
+    {
+      "run": "screen-anchor2-Q8NH83",
+      "uniprot_id": "Q8NH83",
+      "gene": "OR4A5",
+      "seq": "QIVVYSLPFCGPNVIVHFSCDMHPLLELACTDTYFI"
+    },
+    {
+      "run": "screen-anchor2-Q8WZ94",
+      "uniprot_id": "Q8WZ94",
+      "gene": "OR5P3",
+      "seq": "GCLLRLSFCGPNKVNHFFCDYSPLLKLACSHDFTFE"
+    },
+    {
+      "run": "screen-anchor2-Q9BXE9",
+      "uniprot_id": "Q9BXE9",
+      "gene": "VN1R3",
+      "seq": "TGKWNSINSTKTNDYGYCSGGSRSRIPHSLHIVLLS"
+    },
+    {
+      "run": "screen-anchor2-Q9H346",
+      "uniprot_id": "Q9H346",
+      "gene": "OR52D1",
+      "seq": "FLLRRLPYCGHRVMTHTYCEHMGIARLACANITVNI"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5P1",
+      "uniprot_id": "Q9Y5P1",
+      "gene": "OR51B2",
+      "seq": "LRLFSFSYCKSHVITRAFCLHQEIMRLACADITFNR"
+    },
+    {
+      "run": "screen-anchor2-O60404",
+      "uniprot_id": "O60404",
+      "gene": "OR10H3",
+      "seq": "TMMVFHLTFCGSNVIHHFLCHVLSLLKLACGSKTSSV"
+    },
+    {
+      "run": "screen-anchor2-O76100",
+      "uniprot_id": "O76100",
+      "gene": "OR7A10",
+      "seq": "LMVLPLPFCTHMEIPHFFCEINQVVHLACSDTFLNDI"
+    },
+    {
+      "run": "screen-anchor2-P21730",
+      "uniprot_id": "P21730",
+      "gene": "C5AR1",
+      "seq": "MDSFNYTTPDYGHYDDKDTLDLNTPVDKTSNTLRVPD"
+    },
+    {
+      "run": "screen-anchor2-P41968",
+      "uniprot_id": "P41968",
+      "gene": "MC3R",
+      "seq": "MNASCCLPSVQPTLPNGSEHLQAPFFSNQSSSAFCEQ"
+    },
+    {
+      "run": "screen-anchor2-Q15612",
+      "uniprot_id": "Q15612",
+      "gene": "OR1Q1",
+      "seq": "HTFLIGQLIFCADNRIPHFFCDLYALMKISCTSTYLN"
+    },
+    {
+      "run": "screen-anchor2-Q5JQS5",
+      "uniprot_id": "Q5JQS5",
+      "gene": "OR2B11",
+      "seq": "QVVLTVQLPFCGRQVLNNFFCEVPAVIKLSCADTAVN"
+    },
+    {
+      "run": "screen-anchor2-Q6IF42",
+      "uniprot_id": "Q6IF42",
+      "gene": "OR2A2",
+      "seq": "HEILLLRLPFCGPRDVNHLFCEILSVLKLACADTWVN"
+    },
+    {
+      "run": "screen-anchor2-Q8N0Y3",
+      "uniprot_id": "Q8N0Y3",
+      "gene": "OR4N4",
+      "seq": "QVVLILRLPFCGPNQLDNFFCDVRQVIKLACTDMFVV"
+    },
+    {
+      "run": "screen-anchor2-Q8NG76",
+      "uniprot_id": "Q8NG76",
+      "gene": "OR2T33",
+      "seq": "QAVVTLSFPYCGAHEIDHFFCETPVLVRLACADTSVF"
+    },
+    {
+      "run": "screen-anchor2-Q8NG95",
+      "uniprot_id": "Q8NG95",
+      "gene": "OR7G3",
+      "seq": "LMVLQLTFCIDLEIPHFFCELAHILKLACSDVLINNI"
+    },
+    {
+      "run": "screen-anchor2-Q8NGA8",
+      "uniprot_id": "Q8NGA8",
+      "gene": "OR4F17",
+      "seq": "QLAFAVHLPFCGPNEVDSFYCDLPRVIKLACTDTYRL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGC4",
+      "uniprot_id": "Q8NGC4",
+      "gene": "OR10G3",
+      "seq": "ILTFRLPYCGPNQVDYFFCDIPAVLRLACADTTVNEL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGD3",
+      "uniprot_id": "Q8NGD3",
+      "gene": "OR4K5",
+      "seq": "QLSFTVNLPFCGPNVVDSFFCDLPRVTKLACLDSYII"
+    },
+    {
+      "run": "screen-anchor2-Q8NGE8",
+      "uniprot_id": "Q8NGE8",
+      "gene": "OR4D9",
+      "seq": "QISLLLPLPFCGPNVLDTFYCDVPQVLKLACTDTFTL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGG5",
+      "uniprot_id": "Q8NGG5",
+      "gene": "OR8K1",
+      "seq": "IKLFKLSFCGSNIISYFYCDCIPLMSILCSDTNELEL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGJ1",
+      "uniprot_id": "Q8NGJ1",
+      "gene": "OR4D6",
+      "seq": "QVILMLPFPFCGPNTLDAFYCYVLQVVKLACTDTFAL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGN1",
+      "uniprot_id": "Q8NGN1",
+      "gene": "OR6T1",
+      "seq": "VLMASLPFCGPNGIDHFFRDSWPLLRLSCGDTHLLKL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGP2",
+      "uniprot_id": "Q8NGP2",
+      "gene": "OR8J1",
+      "seq": "SYVFSVSYCSSNIINHFYCDNVPLLALSCSDTYLPET"
+    },
+    {
+      "run": "screen-anchor2-Q8NGS7",
+      "uniprot_id": "Q8NGS7",
+      "gene": "OR13C8",
+      "seq": "AFAMQLPFCANNVIKHFVCEILAILKLACADISINVI"
+    },
+    {
+      "run": "screen-anchor2-Q8NGU2",
+      "uniprot_id": "Q8NGU2",
+      "gene": "OR9A4",
+      "seq": "YVMFQLTYCKSNVVNNFFCDRGQLLKLSCNNTLFTEF"
+    },
+    {
+      "run": "screen-anchor2-Q8NGX9",
+      "uniprot_id": "Q8NGX9",
+      "gene": "OR6P1",
+      "seq": "LFISQLSYCGPNIINHFFCDISPLLNLTCSDKEQAEL"
+    },
+    {
+      "run": "screen-anchor2-Q8NGZ5",
+      "uniprot_id": "Q8NGZ5",
+      "gene": "OR2G2",
+      "seq": "QSTLTLQLPFCGHRQVDHFICEVPVLIKLACVGTTFN"
+    },
+    {
+      "run": "screen-anchor2-Q8NH05",
+      "uniprot_id": "Q8NH05",
+      "gene": "OR4Q3",
+      "seq": "QVILVIQLPFCGPNELDNFYCDVPQVIKLACMDTYVV"
+    },
+    {
+      "run": "screen-anchor2-Q8NH41",
+      "uniprot_id": "Q8NH41",
+      "gene": "OR4K15",
+      "seq": "QLAFTVNLPFCGPNKVDSFFCDLPLVTKLACIDTYVV"
+    },
+    {
+      "run": "screen-anchor2-Q8NH72",
+      "uniprot_id": "Q8NH72",
+      "gene": "OR4C6",
+      "seq": "QLLFMYQIPFCGPNIIDHFICDLFQLLTLACTDTHIL"
+    },
+    {
+      "run": "screen-anchor2-Q8WZ84",
+      "uniprot_id": "Q8WZ84",
+      "gene": "OR8D1",
+      "seq": "SAMMKLSFCKSHIINHYFCDVLPLLNLSCSNTHLNEL"
+    },
+    {
+      "run": "screen-anchor2-Q96R45",
+      "uniprot_id": "Q96R45",
+      "gene": "OR2A7",
+      "seq": "HLVLLLPLPFCRPQKIYHFFCEILAVLKLACADTHIN"
+    },
+    {
+      "run": "screen-anchor2-Q96RD0",
+      "uniprot_id": "Q96RD0",
+      "gene": "OR8B2",
+      "seq": "GCMLRLTFCSANIINHYLCDILPLLQLSCTSTYVNEV"
+    },
+    {
+      "run": "screen-anchor2-Q9H1D0",
+      "uniprot_id": "Q9H1D0",
+      "gene": "TRPV6",
+      "seq": "YRPLKPRTNNRTSPRDNTLLQQKLLQEAYMTPKDDIR"
+    },
+    {
+      "run": "screen-anchor2-Q9NQN1",
+      "uniprot_id": "Q9NQN1",
+      "gene": "OR2S2",
+      "seq": "HTSLAIQLPFCGDNVINHFTCEILAVLKLACADISIN"
+    },
+    {
+      "run": "screen-anchor2-Q9UGF7",
+      "uniprot_id": "Q9UGF7",
+      "gene": "OR12D3",
+      "seq": "VMTAHLSFCGSQKLNHFFYDVKPLLELACSDTLLNQW"
+    },
+    {
+      "run": "screen-anchor2-O43826",
+      "uniprot_id": "O43826",
+      "gene": "SLC37A4",
+      "seq": "HNEPADVGLRNLDPMPSEGKKGSLKEESTLQELLLSPY"
+    },
+    {
+      "run": "screen-anchor2-P28221",
+      "uniprot_id": "P28221",
+      "gene": "HTR1D",
+      "seq": "MSPLNQSAEGLPQEASNRSLNATETSEAWDPRTLQALK"
+    },
+    {
+      "run": "screen-anchor2-P47883",
+      "uniprot_id": "P47883",
+      "gene": "OR3A4P",
+      "seq": "QTVALSPLNFCGPNVINHFYCDLPQPFQLSCSSVHLNG"
+    },
+    {
+      "run": "screen-anchor2-P58170",
+      "uniprot_id": "P58170",
+      "gene": "OR1D5",
+      "seq": "LTFLLTRVTFCGPREIHYLFCDMYILLWLACSNTHIIH"
+    },
+    {
+      "run": "screen-anchor2-Q8NGN2",
+      "uniprot_id": "Q8NGN2",
+      "gene": "OR10S1",
+      "seq": "MTSRSVCEKMTMTTENPNQTVVSHFFLEGLRYTAKHSS"
+    },
+    {
+      "run": "screen-anchor2-Q8NGS2",
+      "uniprot_id": "Q8NGS2",
+      "gene": "OR1J2",
+      "seq": "HTLLLTRLSFCAANTIPHVFCDLAALLKLSCSDIFLNE"
+    },
+    {
+      "run": "screen-anchor2-Q8NHV5",
+      "uniprot_id": "Q8NHV5",
+      "gene": "C16orf52",
+      "seq": "NTGESAGALTVGLVRQCQTIHGRDRTCIPPRLPPEWVT"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5Y3",
+      "uniprot_id": "Q9Y5Y3",
+      "gene": "GPR45",
+      "seq": "MACNSTSLEAYTYLLLNTSNASDSGSTQLPAPLRISLA"
+    },
+    {
+      "run": "screen-anchor2-P40879",
+      "uniprot_id": "P40879",
+      "gene": "SLC26A3",
+      "seq": "VHVLVSQLKFIFQLTVPSHTDPVSIFKVLYSVFSQIEKT"
+    },
+    {
+      "run": "screen-anchor2-Q8NH61",
+      "uniprot_id": "Q8NH61",
+      "gene": "OR51F2",
+      "seq": "MTETSLSSQCFPMSVLNNTIAEPLIFLLMGIPGLKATQY"
+    },
+    {
+      "run": "screen-anchor2-P0C7N5",
+      "uniprot_id": "P0C7N5",
+      "gene": "OR8U9",
+      "seq": "RLSYCHSNIVNHFYCDDMPLLRLTCSDTRFKQLWIFACAG"
+    },
+    {
+      "run": "screen-anchor2-Q6NUT3",
+      "uniprot_id": "Q6NUT3",
+      "gene": "MFSD12",
+      "seq": "RERRRPHAEEPGEHTPLLAPATAQPLLLWKHWLREPAFYQ"
+    },
+    {
+      "run": "screen-anchor2-Q9H341",
+      "uniprot_id": "Q9H341",
+      "gene": "OR51M1",
+      "seq": "MSVQYSLSPQFMLLSNITQFSPIFYLTSFPGLEGIKHWIF"
+    },
+    {
+      "run": "screen-anchor2-P28336",
+      "uniprot_id": "P28336",
+      "gene": "NMBR",
+      "seq": "MPSKSLSNLSVTTGANESGSVPEGWERDFLPASDGTTTELV"
+    },
+    {
+      "run": "screen-anchor2-Q8IY34",
+      "uniprot_id": "Q8IY34",
+      "gene": "SLC15A3",
+      "seq": "PATAFPDGRSSFCGEMPASPLGPACPSAGCPRSSPSPYCAP"
+    },
+    {
+      "run": "screen-anchor2-Q92887",
+      "uniprot_id": "Q92887",
+      "gene": "ABCC2",
+      "seq": "FIGSNLWLSAWTSDSKIFNSTDYPASQRDMRVGVYGALGLA"
+    },
+    {
+      "run": "screen-anchor2-P55344",
+      "uniprot_id": "P55344",
+      "gene": "LIM2",
+      "seq": "TDHWMQYRLSGSFAHQGLWRYCLGNKCYLQTDSIAYWNATRA"
+    },
+    {
+      "run": "screen-anchor2-Q8NGI9",
+      "uniprot_id": "Q8NGI9",
+      "gene": "OR5A2",
+      "seq": "SSFIETYSVYQHDFCGPYMINHFFCDLPPVLALSCSDTFTSE"
+    },
+    {
+      "run": "screen-anchor2-Q96G91",
+      "uniprot_id": "Q96G91",
+      "gene": "P2RY11",
+      "seq": "MRVLNVDARRRWSTRCPSFADIAQATAALELGPYVGYQVMRG"
+    },
+    {
+      "run": "screen-anchor2-O00421",
+      "uniprot_id": "O00421",
+      "gene": "CCRL2",
+      "seq": "MANYTLAPEDEYDVLIEGELESDEAEQCDKYDAQALSAQLVPS"
+    },
+    {
+      "run": "screen-anchor2-Q15125",
+      "uniprot_id": "Q15125",
+      "gene": "EBP",
+      "seq": "RQHPLRFILQLVVSVGQIYGDVLYFLTEHRDGFQHGELGHPLY"
+    },
+    {
+      "run": "screen-anchor2-Q8NGR1",
+      "uniprot_id": "Q8NGR1",
+      "gene": "OR13A1",
+      "seq": "MKLWMESHLIVPETRPSPRMMSNQTLVTEFILQGFSEHPEYRV"
+    },
+    {
+      "run": "screen-anchor2-Q9GZQ6",
+      "uniprot_id": "Q9GZQ6",
+      "gene": "NPFFR1",
+      "seq": "MEGEPSQPPNSSWPLSQNGTNTEATPATNLTFSSYYQHTSPVA"
+    },
+    {
+      "run": "screen-anchor2-Q8NG94",
+      "uniprot_id": "Q8NG94",
+      "gene": "OR11H1",
+      "seq": "MCPLTLQVTGLMNVSEPNSSFAFVNEFILQGFSCEWTIQIFLFS"
+    },
+    {
+      "run": "screen-anchor2-A6NMS3",
+      "uniprot_id": "A6NMS3",
+      "gene": "OR5K4",
+      "seq": "GLLLRLTFCRSNKIHHFFCDILPLYRLSCTDPSINELMIYIFSIP"
+    },
+    {
+      "run": "screen-anchor2-P50052",
+      "uniprot_id": "P50052",
+      "gene": "AGTR2",
+      "seq": "MKGNSTLATTSKNITSGLHFGLVNISGNNESTLNCSQKPSDKHLD"
+    },
+    {
+      "run": "screen-anchor2-Q8NGP9",
+      "uniprot_id": "Q8NGP9",
+      "gene": "OR5AR1",
+      "seq": "TLTFSLSYCGSNIINHFFCEIPPLLALSCSDTYISEILLFSLCGF"
+    },
+    {
+      "run": "screen-anchor2-O14894",
+      "uniprot_id": "O14894",
+      "gene": "TM4SF5",
+      "seq": "LRNGPRCLMNGEWGYHFEDTAGAYLLNRTLWDRCEAPPRVVPWNVT"
+    },
+    {
+      "run": "screen-anchor2-Q8NGA4",
+      "uniprot_id": "Q8NGA4",
+      "gene": "GPR32P1",
+      "seq": "MNGVSEGTRGCSDRQPGALTQGHSCSRKMNASRCLSEEVGSLRPLT"
+    },
+    {
+      "run": "screen-anchor2-P08913",
+      "uniprot_id": "P08913",
+      "gene": "ADRA2A",
+      "seq": "MFRQEQPLAEGSFAPMGSLQPDAGNASWNGTEAPGGGARATPYSLQV"
+    },
+    {
+      "run": "screen-anchor2-Q9BY21",
+      "uniprot_id": "Q9BY21",
+      "gene": "GPR87",
+      "seq": "MGFNLTLAKLPNNELHGQESHNSGNRSDGPGKNTTLHNEFDTIVLPV"
+    },
+    {
+      "run": "screen-anchor2-P47775",
+      "uniprot_id": "P47775",
+      "gene": "GPR12",
+      "seq": "MNEDLKVNLSGLPRDYLDAAAAENISAAVSSRVPAVEPEPELVVNPWD"
+    },
+    {
+      "run": "screen-anchor2-Q9H2W1",
+      "uniprot_id": "Q9H2W1",
+      "gene": "MS4A6A",
+      "seq": "KQATLNPASLQCELDKNNIPTRSYVSYFYHDSLYTTDCYTAKASLAGT"
+    },
+    {
+      "run": "screen-anchor2-Q9BPV8",
+      "uniprot_id": "Q9BPV8",
+      "gene": "P2RY13",
+      "seq": "MTAAIRRQRELSILPKVTLEAMNTTVMQGFNRSERCPRDTRIVQLVFPA"
+    },
+    {
+      "run": "screen-anchor2-Q7Z7N9",
+      "uniprot_id": "Q7Z7N9",
+      "gene": "TMEM179B",
+      "seq": "SACILRFGTRSLCNSIISLNTTISCSEAQKIPWTPPGTALQFYSNLHNAE"
+    },
+    {
+      "run": "screen-anchor2-O94886",
+      "uniprot_id": "O94886",
+      "gene": "TMEM63A",
+      "seq": "MMDSPFLELWQSKAVSIREQLGLGDRPNDSYCYNSAKNSTVLQGVTFGGIP"
+    },
+    {
+      "run": "screen-anchor2-P04000",
+      "uniprot_id": "P04000",
+      "gene": "OPN1LW",
+      "seq": "MAQQWSLQRLAGRHPQDSYEDSTQSSIFTYTNSNSTRGPFEGPNYHIAPRWV"
+    },
+    {
+      "run": "screen-anchor2-Q6W5P4",
+      "uniprot_id": "Q6W5P4",
+      "gene": "NPSR1",
+      "seq": "MPANFTEGSFDSSGTGQTLDSSPVACTETVTFTEVVEGKEWGSFYYSFKTEQ"
+    },
+    {
+      "run": "screen-anchor2-P43115",
+      "uniprot_id": "P43115",
+      "gene": "PTGER3",
+      "seq": "MKETRGYGGDAPFCTRLNHSYTGMWAPERSAEARGNLTRPPGSGEDCGSVSVA"
+    },
+    {
+      "run": "screen-anchor2-Q32ZL2",
+      "uniprot_id": "Q32ZL2",
+      "gene": "LPPR5",
+      "seq": "VTGNLAPHFLALCKPNYTALGCQQYTQFISGEEACTGNPDLIMRARKTFPSKE"
+    },
+    {
+      "run": "screen-anchor2-O43614",
+      "uniprot_id": "O43614",
+      "gene": "HCRTR2",
+      "seq": "MSGTKLEDSPPCRNWSSASELNETQEPFLNPTDYDDEEFLRYLWREYLHPKEYE"
+    },
+    {
+      "run": "screen-anchor2-Q8NGF4",
+      "uniprot_id": "Q8NGF4",
+      "gene": "OR5AP2",
+      "seq": "AGCGNAAIHTGMTFRLSFCGSNRINHFYCDTPPLLKLSCSDTHFNGIVIMAFSS"
+    },
+    {
+      "run": "screen-anchor2-P32239",
+      "uniprot_id": "P32239",
+      "gene": "CCKBR",
+      "seq": "MELLKLNRSVQGTGPGPGASLCRPGAPLLNSSSVGNLSCEPPRIRGAGTRELELA"
+    },
+    {
+      "run": "screen-anchor2-Q9NS64",
+      "uniprot_id": "Q9NS64",
+      "gene": "RPRM",
+      "seq": "MNPALGNQTDVAGLFLANSSEALERAVRCCTQASVVTDDGFAEGGPDERSLYIMR"
+    },
+    {
+      "run": "screen-anchor2-Q6ZSM3",
+      "uniprot_id": "Q6ZSM3",
+      "gene": "SLC16A12",
+      "seq": "RLIKRMRKTQLQFIAKESDPKLQLWTNGSVAYSVARELDQKHGEPVATAVPGYSLT"
+    },
+    {
+      "run": "screen-anchor2-P08588",
+      "uniprot_id": "P08588",
+      "gene": "ADRB1",
+      "seq": "MGAGVLVLGASEPGNLSSAAPLPDGAATAARLLVPASPPASLLPPASESPEPLSQQW"
+    },
+    {
+      "run": "screen-anchor2-Q9H841",
+      "uniprot_id": "Q9H841",
+      "gene": "NIPAL2",
+      "seq": "TRNREKEHLQQSYIDFGNIPGKQMLDKIQPDSHSLSYGTLPDGSDSTKSQSGEKKEV"
+    },
+    {
+      "run": "screen-anchor2-Q8TDS5",
+      "uniprot_id": "Q8TDS5",
+      "gene": "OXER1",
+      "seq": "MELHNLSSPSPSLSSSVLPPSFSPSPSSAPSAFTTVGGSSGGPCHPTSSSLVSAFLAP"
+    },
+    {
+      "run": "screen-anchor2-O75508",
+      "uniprot_id": "O75508",
+      "gene": "CLDN11",
+      "seq": "VTTSTNDWVVTCGYTIPTCRKLDELGSKGLWADCVMATGLYHCKPLVDILILPGYVQACR"
+    },
+    {
+      "run": "screen-anchor2-Q9BS91",
+      "uniprot_id": "Q9BS91",
+      "gene": "SLC35A5",
+      "seq": "KTLQHNLAGRGFHHDAFFSPSNSCLLFRSECPRKDNCTAKEWTFPEAKWNTTARVFSHIR"
+    },
+    {
+      "run": "screen-anchor2-P49683",
+      "uniprot_id": "P49683",
+      "gene": "PRLHR",
+      "seq": "MASSTTRGPRVSDLFSGLPPAVTTPANQSAEASAGNGSVAGADAPAVTPFQSLQLVHQLKGL"
+    },
+    {
+      "run": "screen-anchor2-Q8WWG1",
+      "uniprot_id": "Q8WWG1",
+      "gene": "NRG4",
+      "seq": "MPTDHEEPCGPSHKSFCLNGGLCYVIPTIPSPFCRCVENYTGARCEEVFLPGSSIQTKSNLF"
+    },
+    {
+      "run": "screen-anchor2-O95342",
+      "uniprot_id": "O95342",
+      "gene": "ABCB11",
+      "seq": "GTMTDVFIDYDVELQELQIPGKACVNNTIVWTNSSLNQNMTNGTRCGLLNIESEMIKFASYYAG"
+    },
+    {
+      "run": "screen-anchor2-Q9H172",
+      "uniprot_id": "Q9H172",
+      "gene": "ABCG4",
+      "seq": "SFKTIPTYLQWSSYLSYVRYGFEGVILTIYGMERGDLTCLEERCPFREPQSILRALDVEDAKLY"
+    },
+    {
+      "run": "screen-anchor2-Q8N468",
+      "uniprot_id": "Q8N468",
+      "gene": "MFSD4",
+      "seq": "SKERLLTCCPQRRPLLLSADELALETQPPEKEDASSLPPKFQSHLGHEDLFSCCQRKNLRGAPYS"
+    },
+    {
+      "run": "screen-anchor2-A6NFC5",
+      "uniprot_id": "A6NFC5",
+      "gene": "TMEM235",
+      "seq": "DYWYILEVADAGNGSAWPGRAELLSSHSGLWRICEGQNGCIPLVDPFASESLDVSTSVQHLILLHRA"
+    },
+    {
+      "run": "screen-anchor2-Q6NVV3",
+      "uniprot_id": "Q6NVV3",
+      "gene": "NIPAL1",
+      "seq": "MGAQVRLPPGEPCREGYVLSLVCPNSSQAWCEITNVSQLLASPVLYTDLNYSINNLSISANVENKYS"
+    },
+    {
+      "run": "screen-anchor2-Q9NWF4",
+      "uniprot_id": "Q9NWF4",
+      "gene": "SLC52A1",
+      "seq": "RGLLLLLPSLPSVTTGGSGPELQLGSPGAEEEEKEEEEALPLQEPPSQAAGTIPGPDPEAHQLFSAHG"
+    },
+    {
+      "run": "screen-anchor2-Q5VXU1",
+      "uniprot_id": "Q5VXU1",
+      "gene": "NKAIN2",
+      "seq": "YLEAGDLSKETDLILTFNISMHRSWWMENGPGCTVTSVTPAPDWAPEDHRYITVSGCLLEYQYIEVAHSS"
+    },
+    {
+      "run": "screen-anchor2-Q8NEA5",
+      "uniprot_id": "Q8NEA5",
+      "gene": "C19orf18",
+      "seq": "LHPTGNITGLPGSKRSQPPRNITKEPKVFFHKTQLPGIQGAASRSTAASPTNPMKFLRNKAIIRHRPALVK"
+    },
+    {
+      "run": "screen-anchor2-Q7RTS6",
+      "uniprot_id": "Q7RTS6",
+      "gene": "OTOP2",
+      "seq": "ESLHRGPPGAEPHSTHPKEPCQDLTFTNLDALHTLSACPPNPGLVSPSPSDQREAVAIVSTPRSQWRRQCLK"
+    },
+    {
+      "run": "screen-anchor2-P46095",
+      "uniprot_id": "P46095",
+      "gene": "GPR6",
+      "seq": "MNASAASLNDSQVVVVAAEGAAAAATAAGGPDTGEWGPPAAAALGAGGGANGSLELSSQLSAGPPGLLLPAVNP"
+    },
+    {
+      "run": "screen-anchor2-P24530",
+      "uniprot_id": "P24530",
+      "gene": "EDNRB",
+      "seq": "EERGFPPDRATPLLQTAEIMTPPTKTLWPKGSNASLARSLAPAEVPKGDRTAGSPPRTISPPPCQGPIEIKETFK"
+    },
+    {
+      "run": "screen-anchor2-Q8N1N2",
+      "uniprot_id": "Q8N1N2",
+      "gene": "DYNAP",
+      "seq": "LVNNKGSANSSIVIQLSTNDGECVTVKPGTPSPACPPTMTTTSTVPASTATESTTSTATAATTSTEPITVAPTDHL"
+    },
+    {
+      "run": "screen-anchor2-P48067",
+      "uniprot_id": "P48067",
+      "gene": "SLC6A9",
+      "seq": "SSMTHVLPWAYCNNPWNTHDCAGVLDASNLTNGSRPAALPSNLSHLLNHSLQRTSPSEEYWRLYVLKLSDDIGNFGE"
+    },
+    {
+      "run": "screen-anchor2-Q8TDM5",
+      "uniprot_id": "Q8TDM5",
+      "gene": "SPACA4",
+      "seq": "VKDCVFCELTDSMQCPGTYMHCGDDEDCFTGHGVAPGTGPVINKGCLRATSCGLEEPVSYRGVTYSLTTNCCTGRLCN"
+    },
+    {
+      "run": "screen-anchor2-Q9UF02",
+      "uniprot_id": "Q9UF02",
+      "gene": "CACNG5",
+      "seq": "VYLFMKRYTAEDMYRPHPGFYRPRLSNCSDYSGQFLHPDAWVRGRSPSDISSEASLQMNSNYPALLKCPDYDQMSSSPC"
+    },
+    {
+      "run": "screen-anchor2-Q16553",
+      "uniprot_id": "Q16553",
+      "gene": "LY6E",
+      "seq": "LMCFSCLNQKSNLYCLKPTICSDQDNYCVTVSASAGIGNLVTFGHSLSKTCSPACPIPEGVNVGVASMGISCCQSFLCNFS"
+    },
+    {
+      "run": "screen-anchor2-P34969",
+      "uniprot_id": "P34969",
+      "gene": "HTR7",
+      "seq": "MMDVNSSGRPDLYGHLRSFLLPEVGRGLPDLSPDGGADPVAGSWAPHLLSEVTASPAPTWDAPPDNASGCGEQINYGRVEKVV"
+    },
+    {
+      "run": "screen-anchor2-O95868",
+      "uniprot_id": "O95868",
+      "gene": "LY6G6D",
+      "seq": "NRMRCYNCGGSPSSSCKEAVTTCGEGRPQPGLEQIKLPGNPPVTLIHQHPACVAAHHCNQVETESVGDVTYPAHRDCYLGDLCNS"
+    },
+    {
+      "run": "screen-anchor2-Q5XXA6",
+      "uniprot_id": "Q5XXA6",
+      "gene": "ANO1",
+      "seq": "SFTSDFIPRLVYLYMYSKNGTMHGFVNHTLSSFNVSDFQNGTAPNDPLDLGYEVQICRYKDYREPPWSENKYDISKDFWAVLAARLA"
+    },
+    {
+      "run": "screen-anchor2-Q6ZP80",
+      "uniprot_id": "Q6ZP80",
+      "gene": "TMEM182",
+      "seq": "SDYWLLATEVGRCSGEKNIENVTFHHEGFFWRCWFNGIVEENDSNIWKFWYTNQPPSKNCTHAYLSPYPFMRGEHNSTSYDSAVIYRG"
+    },
+    {
+      "run": "screen-anchor2-O94772",
+      "uniprot_id": "O94772",
+      "gene": "LY6H",
+      "seq": "LWCQDCTLTTNSSHCTPKQCQPSDTVCASVRITDPSSSRKDHSVNKMCASSCDFVKRHFFSDYLMGFINSGILKVDVDCCEKDLCNGAAG"
+    },
+    {
+      "run": "screen-anchor2-Q9H295",
+      "uniprot_id": "Q9H295",
+      "gene": "DCSTAMP",
+      "seq": "KGLLDGMTCNLRAKSFSIHFPLLKKYIEAIQWIYGLATPLSVFDDLVSWNQTLAVSLFSPSHVLEAQLNDSKGEVLSVLYQMATTTEVLSS"
+    },
+    {
+      "run": "screen-anchor2-Q4KMQ2",
+      "uniprot_id": "Q4KMQ2",
+      "gene": "ANO6",
+      "seq": "AFTSDMIPRLVYYWSFSVPPYGDHTSYTMEGYINNTLSIFKVADFKNKSKGNPYSDLGNHTTCRYRDFRYPPGHPQEYKHNIYYWHVIAAKLA"
+    },
+    {
+      "run": "screen-anchor2-Q96QE2",
+      "uniprot_id": "Q96QE2",
+      "gene": "SLC2A13",
+      "seq": "SAQVSPRITFKPIAPSGQNATCTRYSYCNECMLDPDCGFCYKMNKSTVIDSSCVPVNKASTNEAAWGRCENETKFKTEDIFWAYNFCPTPYSWT"
+    },
+    {
+      "run": "screen-anchor2-Q14118",
+      "uniprot_id": "Q14118",
+      "gene": "DAG1",
+      "seq": "SIVVEWTNNTLPLEPCPKEQIAGLSRRIAEDDGKPRPAFSNALEPDFKATSITVTGSGSCRHLQFIPVVPPRRVPSEAPPTEVPDRDPEKSSEDDV"
+    },
+    {
+      "run": "screen-anchor2-A8MVS5",
+      "uniprot_id": "A8MVS5",
+      "gene": "HIDE1",
+      "seq": "IRLVPPYPSSQEDPIHIACMAPGNFPGANFTLYRGGQVVQLLQAPTDQRGVTFNLSGGSSKAPGGPFHCQYGVLGELNQSQLSDLSEPVNVSFPVPTW"
+    },
+    {
+      "run": "screen-anchor2-Q6J4K2",
+      "uniprot_id": "Q6J4K2",
+      "gene": "SLC8B1",
+      "seq": "RGSLFCPMPVTPEILSDSEEDRVSSNTNSYDYGDEYRPLFFYQETTAQILVRALNPLDYMKWRRKSAYWKALKVFKLPVEFLLLLTVPVVDPDKDDQNWK"
+    },
+    {
+      "run": "screen-anchor2-P08962",
+      "uniprot_id": "P08962",
+      "gene": "CD63",
+      "seq": "AGYVFRDKVMSEFNNNFRQQMENYPKNNHTASILDRMQADFKCCGAANYTDWEKIPSMSKNRVPDSCCINVTVGCGINFNEKAIHKEGCVEKIGGWLRKNV"
+    },
+    {
+      "run": "screen-anchor2-O60635",
+      "uniprot_id": "O60635",
+      "gene": "TSPAN1",
+      "seq": "YTTMAEHFLTLLVVPAIKKDYGSQEDFTQVWNTTMKGLKCCGFTNYTDFEDSPYFKENSAFPPFCCNDNVTNTANETCTKQKAHDQKVEGCFNQLLYDIRTN"
+    },
+    {
+      "run": "screen-anchor2-Q04771",
+      "uniprot_id": "Q04771",
+      "gene": "ACVR1",
+      "seq": "MEDEKPKVNPKLYMCVCEGLSCGNEDHCEGQQCFSSLSINDGFHVYQKGCFQVYEQGKMTCKTPPSPGQAVECCQGDWCNRNITAQLPTKGKSFPGTQNFHLE"
+    },
+    {
+      "run": "screen-anchor2-Q9NQ90",
+      "uniprot_id": "Q9NQ90",
+      "gene": "ANO2",
+      "seq": "FKGRFVGRPGSYVYVFDGYRMEECAPGGCLMELCIQLSIIMLGKQLIQNNIFEIGVPKLKKLFRKLKDETEAGETDSAHSKHPEQWDLDYSLEPYTGLTPEYME"
+    },
+    {
+      "run": "screen-anchor2-A1L157",
+      "uniprot_id": "A1L157",
+      "gene": "TSPAN11",
+      "seq": "YYQRLSDELKQHLNRTLAENYGQPGATQITASVDRLQQDFKCCGSNSSADWQHSTYILLREAEGRQVPDSCCKTVVVRCGQRAHPSNIYKVEGGCLTKLEQFLADH"
+    },
+    {
+      "run": "screen-anchor2-P46721",
+      "uniprot_id": "P46721",
+      "gene": "SLCO1A2",
+      "seq": "FLMTCENSSVVGINTSYEGIPQDLYVENDIFADCNVDCNCPSKIWDPVCGNNGLSYLSACLAGCETSIGTGINMVFQNCSCIQTSGNSSAVLGLCDKGPDCSLMLQYF"
+    },
+    {
+      "run": "screen-anchor2-O60883",
+      "uniprot_id": "O60883",
+      "gene": "GPR37L1",
+      "seq": "APLHLGRHRAETQEQQSRSKRGTEDEEAKGVQQYVPEEWAEYPRPIHPAGLQPTKPLVATSPNPGKDGGTPDSGQELRGNLTGAPGQRLQIQNPLYPVTESSYSAYAIM"
+    },
+    {
+      "run": "screen-anchor2-P11912",
+      "uniprot_id": "P11912",
+      "gene": "CD79A",
+      "seq": "LWMHKVPASLMVSLGEDAHFQCPHNSSNNANVTWWRVLHGNYTWPPEFLGPGEDPNGTLIIQNVNKSHGGIYVCRVQEGNESYQQSCGTYLRVRQPPPRPFLDMGEGTKNR"
+    },
+    {
+      "run": "screen-anchor2-Q8TBE3",
+      "uniprot_id": "Q8TBE3",
+      "gene": "FNDC9",
+      "seq": "MNIEVGNISYTGAIISWSSSEPCLEDYYHIMYRPNWNSIFSGYLRYSFHHEEKVPRTISSVVLEHLAPSTLYFLCISCKKAAFPYRHYCTMFHTLDKSPLAPGSSLVDPQIS"
+    },
+    {
+      "run": "screen-anchor2-O60359",
+      "uniprot_id": "O60359",
+      "gene": "CACNG3",
+      "seq": "EKHQQLRAKSHSEFLKKSTFARLPPYRYRFRRRSSSRSTEPRSRDLSPISKGFHTIPSTDISMFTLSRDPSKITMGTLLNSDRDHAFLQFHNSTPKEFKESLHNNPANRRTTPV"
+    },
+    {
+      "run": "screen-anchor2-Q5JRV8",
+      "uniprot_id": "Q5JRV8",
+      "gene": "TMEM255A",
+      "seq": "DGVFAARHIDLKPLYANRCHYVPKTSQKEAEEVISSSTKNSPSTRVMRNLTQAAREVNCPHLSREFCTPRIRGNTCFCCDLYNCGNRVEITGGYYEYIDVSSCQDIIHLYHLLWSA"
+    },
+    {
+      "run": "screen-anchor2-Q8WVN6",
+      "uniprot_id": "Q8WVN6",
+      "gene": "SECTM1",
+      "seq": "QNEGWDSPICTEGVVSVSWGENTVMSCNISNAFSHVNIKLRAHGQESAIFNEVAPGYFSRDGWQLQVQGGVAQLVIKGARDSHAGLYMWHLVGHQRNNRQVTLEVSGAEPQSAPDTG"
+    },
+    {
+      "run": "screen-anchor2-A8MXK1",
+      "uniprot_id": "A8MXK1",
+      "gene": "VSTM5",
+      "seq": "LQSQGVSLYIPQATINATVKEDILLSVEYSCHGVPTIEWTYSSNWGTQKIVEWKPGTQANISQSHKDRVCTFDNGSIQLFSVGVRDSGYYVITVTERLGSSQFGTIVLHVSEILYEDLH"
+    },
+    {
+      "run": "screen-anchor2-Q8NBW4",
+      "uniprot_id": "Q8NBW4",
+      "gene": "SLC38A9",
+      "seq": "MANMNSDSRHLGTSEVDHERDPGPMNIQFEPSDLRSKRPFCIEPTNIVNVNHVIQRVSDHASAMNKRIHYYSRLTTPADKALIAPDHVVPAPEECYVYSPLGSAYKLQSYTEGYGKNTS"
+    },
+    {
+      "run": "screen-anchor2-Q495A1",
+      "uniprot_id": "Q495A1",
+      "gene": "TIGIT",
+      "seq": "MMTGTIETTGNISAEKGGSIILQCHLSSTTAQVTQVNWEQQDQLLAICNADLGWHISPSFKDRVAPGPGLGLTLQSLTVNDTGEYFCIYHTYPDGTYTGRIFLEVLESSVAEHGARFQIP"
+    },
+    {
+      "run": "screen-anchor2-Q17RY6",
+      "uniprot_id": "Q17RY6",
+      "gene": "LY6K",
+      "seq": "DANLTARQRDPEDSQRTDEGDNRVWCHVCERENTFECQNPRRCKWTEPYCVIAAVKIFPRFFMVAKQCSAGCAAMERPKPEEKRFLLEEPMPFFYLKCCKIRYCNLEGPPINSSVFKEYAG"
+    },
+    {
+      "run": "screen-anchor2-Q5PT55",
+      "uniprot_id": "Q5PT55",
+      "gene": "SLC10A5",
+      "seq": "RMSSLSFLNIEKTEILFFTKTEETILVSSSYENKRPNSSHLFVKIEDPKILQMVNVAKKISSDATNFTINLVTDEEGETNVTIQLWDSEGRQERLIEEIKNVKVKVLKQKDSLLQAPMHIDRN"
+    },
+    {
+      "run": "screen-anchor2-Q01151",
+      "uniprot_id": "Q01151",
+      "gene": "CD83",
+      "seq": "TPEVKVACSEDVDLPCTAPWDPQVPYTVSWVKLLEGGEERMETPQEDHLRGQHYHQKGQNGSFDAPNERPYSLKIRNTTSCNSGTYRCTLQDPDGQRNLSGKVILRVTGCPAQRKEETFKKYRAE"
+    },
+    {
+      "run": "screen-anchor2-P34741",
+      "uniprot_id": "P34741",
+      "gene": "SDC2",
+      "seq": "ESRAELTSDKDMYLDNSSIEEASGVYPIDDDDYASASGSGADEDVESPELTTSRPLPKILLTSAAPKVETTTLNIQNKIPAQTKSPEETDKEKVHLSDSERKMDPAEEDTNVYTEKHSDSLFKRTE"
+    },
+    {
+      "run": "screen-anchor2-Q7Z6A9",
+      "uniprot_id": "Q7Z6A9",
+      "gene": "BTLA",
+      "seq": "KESCDVQLYIKRQSEHSILAGDPFELECPVKYCANRPHVTWCKLNGTTCVKLEDRQTSWKEEKNISFFILHFEPVLPNDNGSYRCSANFQSNLIESHSTTLYVTDVKSASERPSKDEMASRPWLLYR"
+    },
+    {
+      "run": "screen-anchor2-Q96BF3",
+      "uniprot_id": "Q96BF3",
+      "gene": "TMIGD2",
+      "seq": "LSVQQGPNLLQVRQGSQATLVCQVDQATAWERLRVKWTKDGAILCQPYITNGSLSLGVCGPQGRLSWQAPSHLTLQLDPVSLNHSGAYVCWAAVEIPELEEAEGNITRLFVDPDDPTQNRNRIASFPG"
+    },
+    {
+      "run": "screen-anchor2-Q9UNG2",
+      "uniprot_id": "Q9UNG2",
+      "gene": "TNFSF18",
+      "seq": "LQLETAKEPCMAKFGPLPSKWQMASSEPPCVNKVSDWKLEILQNGLYLIYGQVAPNANYNDVAPFEVRLYKNKDMIQTLTNKSKIQNVGGTYELHVGDTIDLIFNSEHQVLKNNTYWGIILLANPQFIS"
+    },
+    {
+      "run": "screen-anchor2-P18433",
+      "uniprot_id": "P18433",
+      "gene": "PTPRA",
+      "seq": "NNATTVAPSVGITRLINSSTAEPVKEEAKTSNPTSSLTSLSVAPTFSPNITLGPTYLTTVNSSDSDNGTTRTASTNSIGITISPNGTWLPDNQFTDARTEPWEGNSSTAATTPETFPPSGNSDSKDRRDETP"
+    },
+    {
+      "run": "screen-anchor2-Q9UHP7",
+      "uniprot_id": "Q9UHP7",
+      "gene": "CLEC2D",
+      "seq": "RANCHQEPSVCLQAACPESWIGFQRKCFYFSDDTKNWTSSQRFCDSQDADLAQVESFQELNFLLRYKGPSDHWIGLSREQGQPWKWINGTEWTRQFPILGAGECAYLNDKGASSARHYTERKWICSKSDIHV"
+    },
+    {
+      "run": "screen-anchor2-O43497",
+      "uniprot_id": "O43497",
+      "gene": "CACNA1G",
+      "seq": "GLLRNRCFLPENFSLPLSVDLERYYQTENEDESPFICSQPRENGMRSCRSVPTLRGDGGGGPPCGLDYEAYNSSSNTTCVNWNQYYTNCSAGEHNPFKGAINFDNIGYAWIAIFQVITLEGWVDIMYFVMDAHSFY"
+    },
+    {
+      "run": "screen-anchor2-Q07108",
+      "uniprot_id": "Q07108",
+      "gene": "CD69",
+      "seq": "SVGQYNCPGQYTFSMPSDSHVSSCSEDWVGYQRKCYFISTVKRSWTSAQNACSEHGATLAVIDSEKDMNFLKRYAGREEHWVGLKKEPGHPWKWSNGKEFNNWFNVTGSDKCVFLKNTEVSSMECEKNLYWICNKPYK"
+    },
+    {
+      "run": "screen-anchor2-Q8N131",
+      "uniprot_id": "Q8N131",
+      "gene": "TMEM123",
+      "seq": "HESAAMAASANIENSGLPHNSSANSTETLQHVPSDHTNETSNSTVKPPTSVASDSSNTTVTTMKPTAASNTTTPGMVSTNMTSTTLKSTPKTTSVSQNTSQISTSTMTVTHNSSVTSAASSVTITTTMHSEAKKGSKFDT"
+    },
+    {
+      "run": "screen-anchor2-Q9NS68",
+      "uniprot_id": "Q9NS68",
+      "gene": "TNFRSF19",
+      "seq": "ESGDCRQQEFRDRSGNCVPCNQCGPGMELSKECGFGYGEDAQCVTCRLHRFKEDWGFQKCKPCLDCAVVNRFQKANCSATSDAICGDCLPGFYRKTKLVGFQDMECVPCGDPPPPYEPHCASKVNLVKIASTASSPRDTAL"
+    },
+    {
+      "run": "screen-anchor2-P52798",
+      "uniprot_id": "P52798",
+      "gene": "EFNA4",
+      "seq": "LRHVVYWNSSNPRLLRGDAVVELGLNDYLDIVCPHYEGPGPPEGPETFALYMVDWPGYESCQAEGPRAYKRWVCSLPFGHVQFSEKIQRFTPFSLGFEFLPGETYYYISVPTPESSGQCLRLQVSVCCKERKSESAHPVGSPGES"
+    },
+    {
+      "run": "screen-anchor2-Q6UXZ3",
+      "uniprot_id": "Q6UXZ3",
+      "gene": "CD300LD",
+      "seq": "AKITGPTTVNGSEQGSLTVQCAYGSGWETYLKWRCQGADWNYCNILVKTNGSEQEVKKNRVSIRDNQKNHVFTVTMENLKRDDADSYWCGTERPGIDLGVKVQVTINPGTQTAVSEWTTTTASLAFTAAATQKTSSPLTRSPLKSTH"
+    },
+    {
+      "run": "screen-anchor2-H3BS89",
+      "uniprot_id": "H3BS89",
+      "gene": "TMEM178B",
+      "seq": "VAICSDHWYETDARKHRDRCKAFNTRRVDPGFIYNNNNNLPLRASRSRLDRWEGKLLRARNRRQLFAMSPADECSRQYNSTNMGLWRKCHRQGFDPEIAALIRKGEIERCTYIKYHYSSATIPRNLTFNITKTIRQDEWHALHLRRMT"
+    },
+    {
+      "run": "screen-anchor2-A6NJW9",
+      "uniprot_id": "A6NJW9",
+      "gene": "CD8BP",
+      "seq": "NSVLQQTPAYIKVQTNKMVMLSCEAKISLSNMCIYWLRQRQAPSSDSHHEFLTLWDSAKGTIHGEEVEQEKIAVFRDASRFILNLTSVKPEDSGIYFCMIVGSPELTFGKGTQLSVVDFLPTTAQPTKKSTLKKRVCRLPRPETQKGPLCSP"
+    },
+    {
+      "run": "screen-anchor2-P32970",
+      "uniprot_id": "P32970",
+      "gene": "CD70",
+      "seq": "QRFAQAQQQLPLESLGWDVAELQLNHTGPQQDPRLYWQGGPALGRSFLHGPELDKGQLRIHRDGIYMVHIQVTLAICSSTTASRHHPTTLAVGICSPASRSISLLRLSFHQGCTIASQRLTPLARGDTLCTNLTGTLLPSRNTDETFFGVQWVRP"
+    },
+    {
+      "run": "screen-anchor2-Q8IW00",
+      "uniprot_id": "Q8IW00",
+      "gene": "VSTM4",
+      "seq": "LNVTVSPGPVVDYLEGENATLLCHVSQKRRKDSLLAVRWFFAHSFDSQEALMVKMTKLRVVQYYGNFSRSAKRRRLRLLEEQRGALYRLSVLTLQPSDQGHYVCRVQEISRHRNKWTAWSNGSSATEMRVISLKASEESSFEKTKETWAFFEDLYVY"
+    },
+    {
+      "run": "screen-anchor2-Q12918",
+      "uniprot_id": "Q12918",
+      "gene": "KLRB1",
+      "seq": "QKSSIEKCSVDIQQSRNKTTERPGLLNCPIYWQQLREKCLLFSHTVNPWNNSLADCSTKESSLLLIRDKDELIHTQNLIRDKAILFWIGLNFSLSEKNWKWINGSFLNSNDLEIRGDAKENSCISISQTSVYSEYCSTEIRWICQKELTPVRNKVYPDS"
+    },
+    {
+      "run": "screen-anchor2-F2Z333",
+      "uniprot_id": "F2Z333",
+      "gene": "C1orf233",
+      "seq": "AAPTPPGWEPTPDAPWCPYKVLPEGPEAGGGRLCFRSPARGFRCQAPGCVLHAPAGRSLRASVLRNRSVLLQWRLAPAAARRVRAFALNCSWRGAYTRFPCERVLLGASCRDYLLPDVHDSVLYRLCLQPLPLRAGPAAAAPETPEPAECVEFTAEPAGMQD"
+    },
+    {
+      "run": "screen-anchor2-Q9UGN4",
+      "uniprot_id": "Q9UGN4",
+      "gene": "CD300A",
+      "seq": "LSKCRTVAGPVGGSLSVQCPYEKEHRTLNKYWCRPPQIFLCDKIVETKGSAGKRNGRVSIRDSPANLSFTVTLENLTEEDAGTYWCGVDTPWLRDFHDPVVEVEVSVFPASTSMTPASITAAKTSTITTAFPPVSSTTLFAVGATHSASIQEETEEVVNSQLP"
+    },
+    {
+      "run": "screen-anchor2-Q92581",
+      "uniprot_id": "Q92581",
+      "gene": "SLC9A6",
+      "seq": "LHIRVGVDSDQEHLGVPENERRTTKAESAWLFRMWYNFDHNYLKPLLTHSGPPLTTTLPACCGPIARCLTSPQAYENQEQLKDDDSDLILNDGDISLTYGDSTVNTEPATSSAPRRFMGNSSEDALDRELAFGDHELVIRGTRLVLPMDDSEPPLNLLDNTRHGPA"
+    },
+    {
+      "run": "screen-anchor2-Q8IUH8",
+      "uniprot_id": "Q8IUH8",
+      "gene": "SPPL2C",
+      "seq": "ACRQELSLFWTGQGRAKMCGLGCAPSAGSRQKQEGAADAHTASTLERGTSRGAGDLDSNPGEDTTEIVTISENEATNPEDRSDSSEGWSDAHLDPNELPFIPPGASEELMPLMPMAMLIPLMPLMPPPSELGHVHAQAQAHETGLPWAGLHKRKGLKVRKSMSTQAPL"
+    },
+    {
+      "run": "screen-anchor2-P32971",
+      "uniprot_id": "P32971",
+      "gene": "TNFSF8",
+      "seq": "QRTDSIPNSPDNVPLKGGNCSEDLLCILKRAPFKKSWAYLQVAKHLNKTKLSWNKDGILHGVRYQDGNLVIQFPGLYFIICQLQFLVQCPNNSVDLKLELLINKHIKKQALVTVCESGMQTKHVYQNLSQFLLDYLQVNTTISVNVDTFQYIDTSTFPLENVLSIFLYSNSD"
+    },
+    {
+      "run": "screen-anchor2-O95838",
+      "uniprot_id": "O95838",
+      "gene": "GLP2R",
+      "seq": "MKLGSSRAGPGRGSAGLLPGVHELPMGIPAPWGTSPLSFHRKCSLWAPGRPFLTLVLLVSIKQVTGSLLEETTRKWAQYKQACLRDLLKEPSGIFCNGTFDQYVCWPHSSPGNVSVPCPSYLPWWSEESSGRAYRHCLAQGTWQTIENATDIWQDDSECSENHSFKQNVDRYA"
+    },
+    {
+      "run": "screen-anchor2-Q13261",
+      "uniprot_id": "Q13261",
+      "gene": "IL15RA",
+      "seq": "ITCPPPMSVEHADIWVKSYSLYSRERYICNSGFKRKAGTSSLTECVLNKATNVAHWTTPSLKCIRDPALVHQRPAPPSTVTTAGVTPQPESLSPSGKEPAASSPSSNNTAATTAAIVPGSQLMPSKSPSTGTTEISSHESSHGTPSQTTAKNWELTASASHQPPGVYPQGHSDTT"
+    },
+    {
+      "run": "screen-anchor2-Q6P4Q7",
+      "uniprot_id": "Q6P4Q7",
+      "gene": "CNNM4",
+      "seq": "MAPVGGGGRPVGGPARGRLLLAAPVLLVLLWALGARGQGSPQQGTIVGMRLASCNKSCGTNPDGIIFVSEGSTVNLRLYGYSLGNISSNLISFTEVDDAETLHKSTSCLELTKDLVVQQLVNVSRGNTSGVLVVLTKFLRRSESMKLYALCTRAQPDGPWLKWTDKDSLLFMVEEPGR"
+    },
+    {
+      "run": "screen-anchor2-Q9HD20",
+      "uniprot_id": "Q9HD20",
+      "gene": "ATP13A1",
+      "seq": "YSVFTLSMLVAFEASLVQQQMRNMSEIRKMGNKPHMIQVYRSRKWRPIASDEIVPGDIVSIGRSPQENLVPCDVLLLRGRCIVDEAMLTGESVPQMKEPIEDLSPDRVLDLQADSRLHVIFGGTKVVQHIPPQKATTGLKPVDSGCVAYVLRTGFNTSQGKLLRTILFGVKRVTANNLE"
+    },
+    {
+      "run": "screen-anchor2-Q9BXN2",
+      "uniprot_id": "Q9BXN2",
+      "gene": "CLEC7A",
+      "seq": "TMAIWRSNSGSNTLENGYFLSRNKENHSQPTQSSLEDSVTPTKAVKTTGVLSSPCPPNWIIYEKSCYLFSMSLNSWDGSKRQCWQLGSNLLKIDSSNELGFIVKQVSSQPDNSFWIGLSRPQTEVPWLWEDGSTFSSNLFQIRTTATQENPSPNCVWIHVSVIYDQLCSVPSYSICEKKFSM"
+    },
+    {
+      "run": "screen-anchor2-O75015",
+      "uniprot_id": "O75015",
+      "gene": "FCGR3B",
+      "seq": "GMRTEDLPKAVVFLEPQWYSVLEKDSVTLKCQGAYSPEDNSTQWFHNENLISSQASSYFIDAATVNDSGEYRCQTNLSTLSDPVQLEVHIGWLLLQAPRWVFKEEDPIHLRCHSWKNTALHKVTYLQNGKDRKYFHHNSDFHIPKATLKDSGSYFCRGLVGSKNVSSETVNITITQGLAVSTIS"
+    },
+    {
+      "run": "screen-anchor2-Q6PIZ9",
+      "uniprot_id": "Q6PIZ9",
+      "gene": "TRAT1",
+      "seq": "MSGISGCPFFLWGLLALLGLALVISLIFNISHYVEKQRQDKMYSYSSDHTRVDEYYIEDTPIYGNLDDMISEPMDENCYEQMKARPEKSVNKMQEATPSAQATNETQMCYASLDHSVKGKRRKPRKQNTHFSDKDGDEQLHAIDASVSKTTLVDSFSPESQAVEENIHDDPIRLFGLIRAKREPIN"
+    },
+    {
+      "run": "screen-anchor2-P21583",
+      "uniprot_id": "P21583",
+      "gene": "KITLG",
+      "seq": "EGICRNRVTNNVKDVTKLVANLPKDYMITLKYVPGMDVLPSHCWISEMVVQLSDSLTDLLDKFSNISEGLSNYSIIDKLVNIVDDLVECVKENSSKDLKKSFKSPEPRLFTPEEFFRIFNRSIDAFKDFVVASETSDCVVSSTLSPEKDSRVSVTKPFMLPPVAASSLRNDSSSSNRKAKNPPGDSSLH"
+    },
+    {
+      "run": "screen-anchor2-Q9Y287",
+      "uniprot_id": "Q9Y287",
+      "gene": "ITM2B",
+      "seq": "YKYFALQPDDVYYCGIKYIKDDVILNEPSADAPAALYQTIEENIKIFEEEEVEFISVPVPEFADSDPANIVHDFNKKLTAYLDLNLDKCYVIPLNTSIVMPPRNLLELLINIKAGTYLPQSYLIHEHMVITDRIENIDHLGFFIYRLCHDKETYKLQRRETIKGIQKREASNCFAIRHFENKFAVETLICS"
+    },
+    {
+      "run": "screen-anchor2-Q9NQX7",
+      "uniprot_id": "Q9NQX7",
+      "gene": "ITM2C",
+      "seq": "SVYIYRYFFLAQLARDNFFRCGVLYEDSLSSQVRTQMELEEDVKIYLDENYERINVPVPQFGGGDPADIIHDFQRGLTAYHDISLDKCYVIELNTTIVLPPRNFWELLMNVKRGTYLPQTYIIQEEMVVTEHVSDKEALGSFIYHLCNGKDTYRLRRRATRRRINKRGAKNCNAIRHFENTFVVETLICGVV"
+    },
+    {
+      "run": "screen-anchor2-O95150",
+      "uniprot_id": "O95150",
+      "gene": "TNFSF15",
+      "seq": "SQLRAQGEACVQFQALKGQEFAPSHQQVYAPLRADGDKPRAHLTVVRQTPTQHFKNQFPALHWEHELGLAFTKNRMNYTNKFLLIPESGDYFIYSQVTFRGMTSECSEIRQAGRPNKPDSITVVITKVTDSYPEPTQLLMGTKSVCEVGSNWFQPIYLGAMFSLQEGDKLMVNVSDISLVDYTKEDKTFFGAFLL"
+    },
+    {
+      "run": "screen-anchor2-Q6UX82",
+      "uniprot_id": "Q6UX82",
+      "gene": "LYPD8",
+      "seq": "LSCVQCNSWEKSCVNSIASECPSHANTSCISSSASSSLETPVRLYQNMFCSAENCSEETHITAFTVHVSAEEHFHFVSQCCQGKECSNTSDALDPPLKNVSSNAECPACYESNGTSCHGKPWKCYEEEQCVFLVAELKNDIESKSLVLKGCSNVSNATCQFLSGENKTLGGVIFRKFECANVNSLTPTSAPTTSHN"
+    },
+    {
+      "run": "screen-anchor2-P01920",
+      "uniprot_id": "P01920",
+      "gene": "HLA-DQB1",
+      "seq": "RDSPEDFVYQFKAMCYFTNGTERVRYVTRYIYNREEYARFDSDVEVYRAVTPLGPPDAEYWNSQKEVLERTRAELDTVCRHNYQLELRTTLQRRVEPTVTISPSRTEALNHHNLLVCSVTDFYPAQIKVRWFRNDQEETTGVVSTPLIRNGDWTFQILVMLEMTPQHGDVYTCHVEHPSLQNPITVEWRAQSESAQSK"
+    },
+    {
+      "run": "screen-anchor2-P79483",
+      "uniprot_id": "P79483",
+      "gene": "HLA-DRB3",
+      "seq": "GDTRPRFLELRKSECHFFNGTERVRYLDRYFHNQEEFLRFDSDVGEYRAVTELGRPVAESWNSQKDLLEQKRGRVDNYCRHNYGVGESFTVQRRVHPQVTVYPAKTQPLQHHNLLVCSVSGFYPGSIEVRWFRNGQEEKAGVVSTGLIQNGDWTFQTLVMLETVPRSGEVYTCQVEHPSVTSALTVEWRARSESAQSK"
+    },
+    {
+      "run": "screen-anchor2-Q9GIY3",
+      "uniprot_id": "Q9GIY3",
+      "gene": "HLA-DRB1",
+      "seq": "GDTRPRFLWQPKRECHFFNGTERVRFLDRYFYNQEESVRFDSDVGEFRAVTELGRPDAEYWNSQKDILEQARAAVDTYCRHNYGVVESFTVQRRVQPKVTVYPSKTQPLQHHNLLVCSVSGFYPGSIEVRWFLNGQEEKAGMVSTGLIQNGDWTFQTLVMLETVPRSGEVYTCQVEHPSVTSPLTVEWRARSESAQSK"
+    },
+    {
+      "run": "screen-anchor2-Q8NAU1",
+      "uniprot_id": "Q8NAU1",
+      "gene": "FNDC5",
+      "seq": "MQAARGGAGRPERPGRPGRGPERERERPPGAGAASPCAAPGLPAGGATIHPGSPSAWPPRARAALRLWLGCVCFALVQADSPSAPVNVTVRHLKANSAVVSWDVLEDEVVIGFAISQQKKDVRMLRFIQEVNTTTRSCALWDLEEDTEYIVHVQAISIQGQSPASEPVLFKTPREAEKMASKNKDEVTMKEMGRNQQLRT"
+    },
+    {
+      "run": "screen-anchor2-P41217",
+      "uniprot_id": "P41217",
+      "gene": "CD200",
+      "seq": "QVQVVTQDEREQLYTPASLKCSLQNAQEALIVTWQKKKAVSPENMVTFSENHGVVIQPAYKDKINITQLGLQNSTITFWNITLEDEGCYMCLFNTFGFGKISGTACLTVYVQPIVSLHYKFSEDHLNITCSATARPAPMVFWKVPRSGIENSTVTLSHPNGTTSVTSILHIKDPKNQVGKEVICQVLHLGTVTDFKQTVNKG"
+    },
+    {
+      "run": "screen-anchor2-Q9NQ25",
+      "uniprot_id": "Q9NQ25",
+      "gene": "SLAMF7",
+      "seq": "SGPVKELVGSVGGAVTFPLKSKVKQVDSIVWTFNTTPLVTIQPEGGTIIVTQNRNRERVDFPDGGYSLKLSKLKKNDSGIYYVGIYSSSLQQPSTQEYVLHVYEHLSKPKVTMGLQSNKNGTCVTNLTCCMEHGEEDVIYTWKALGQAANESHNGSILPISWRWGESDMTFICVARNPVSRNFSSPILARKLCEGAADDPDSSM"
+    },
+    {
+      "run": "screen-anchor2-Q9UJQ1",
+      "uniprot_id": "Q9UJQ1",
+      "gene": "LAMP5",
+      "seq": "EQEVENLSGLSTNPEKDIFVVRENGTTCLMAEFAAKFIVPYDVWASNYVDLITEQADIALTRGAEVKGRCGHSQSELQVFWVDRAYALKMLFVKESHNMSKGPEATWRLSKVQFVYDSSEKTHFKDAVSAGKHTANSHHLSALVTPAGKSYECQAQQTISLASSDPQKTVTMILSAVHIQPFDIISDFVFSEEHKCPVDEREQLEE"
+    },
+    {
+      "run": "screen-anchor2-Q9H2B4",
+      "uniprot_id": "Q9H2B4",
+      "gene": "SLC26A1",
+      "seq": "ILSLLSLAGRTQRPRTALLARIGDTAFYEDATEFEGLVPEPGVRVFRFGGPLYYANKDFFLQSLYSLTGLDAGCMAARRKEGGSETGVGEGGPAQGEDLGPVSTRAALVPAAAGFHTVVIDCAPLLFLDAAGVSTLQDLRRDYGALGISLLLACCSPPVRDILSRGGFLGEGPGDTAEEEQLFLSVHDAVQTARARHRELEATDAHL"
+    },
+    {
+      "run": "screen-anchor2-Q9BZW8",
+      "uniprot_id": "Q9BZW8",
+      "gene": "CD244",
+      "seq": "CQGSADHVVSISGVPLQLQPNSIQTKVDSIAWKKLLPSQNGFHHILKWENGSLPSNTSNDRFSFIVKNLSLLIKAAQQQDSGLYCLEVTSISGKVQTATFQVFVFESLLPDKVEKPRLQGQGKILDRGRCQVALSCLVSRDGNVSYAWYRGSKLIQTAGNLTYLDEEVDINGTHTYTCNVSNPVSWESHTLNLTQDCQNAHQEFRFWP"
+    },
+    {
+      "run": "screen-anchor2-P98172",
+      "uniprot_id": "P98172",
+      "gene": "EFNB1",
+      "seq": "LAKNLEPVSWSSLNPKFLSGKGLVIYPKIGDKLDIICPRAEAGRPYEYYKLYLVRPEQAAACSTVLDPNVLVTCNRPEQEIRFTIKFQEFSPNYMGLEFKKHHDYYITSTSNGSLEGLENREGGVCRTRTMKIIMKVGQDPNAVTPEQLTTSRPSKEADNTVKMATQAPGSRGSLGDSDGKHETVNQEEKSGPGASGGSSGDPDGFFNSK"
+    },
+    {
+      "run": "screen-anchor2-P48060",
+      "uniprot_id": "P48060",
+      "gene": "GLIPR1",
+      "seq": "ANILPDIENEDFIKDCVRIHNKFRSEVKPTASDMLYMTWDPALAQIAKAWASNCQFSHNTRLKPPHKLHPNFTSLGENIWTGSVPIFSVSSAITNWYDEIQDYDFKTRICKKVCGHYTQVVWADSYKVGCAVQFCPKVSGFDALSNGAHFICNYGPGGNYPTWPYKRGATCSACPNNDKCLDNLCVNRQRDQVKRYYSVVYPGWPIYPRNR"
+    },
+    {
+      "run": "screen-anchor2-Q2HXU8",
+      "uniprot_id": "Q2HXU8",
+      "gene": "CLEC12B",
+      "seq": "LQISNDINSDSEKLSQLQKTIQQQQDNLSQQLGNSNNLSMEEEFLKSQISSVLKRQEQMAIKLCQELIIHTSDHRCNPCPKMWQWYQNSCYYFTTNEEKTWANSRKDCIDKNSTLVKIDSLEEKDFLMSQPLLMFSFFWLGLSWDSSGRSWFWEDGSVPSPSLFSTKELDQINGSKGCAYFQKGNIYISRCSAEIFWICEKTAAPVKTEDLD"
+    },
+    {
+      "run": "screen-anchor2-Q9HBE5",
+      "uniprot_id": "Q9HBE5",
+      "gene": "IL21R",
+      "seq": "CPDLVCYTDYLQTVICILEMWNLHPSTLTLTWQDQYEELKDEATSCSLHRSAHNATHATYTCHMDVFHFMADDIFSVNITDQSGNYSQECGSFLLAESIKPAPPFNVTVTFSGQYNISWRSDYEDPAFYMLKGKLQYELQYRNRGDPWAVSPRRKLISVDSRSVSLLPLEFRKDSSYELQVRAGPMPGSSYQGTWSEWSDPVIFQTQSEELKE"
+    },
+    {
+      "run": "screen-anchor2-P29965",
+      "uniprot_id": "P29965",
+      "gene": "CD40LG",
+      "seq": "HRRLDKIEDERNLHEDFVFMKTIQRCNTGERSLSLLNCEEIKSQFEGFVKDIMLNKEETKKENSFEMQKGDQNPQIAAHVISEASSKTTSVLQWAEKGYYTMSNNLVTLENGKQLTVKRQGLYYIYAQVTFCSNREASSQAPFIASLCLKSPGRFERILLRAANTHSSAKPCGQQSIHLGGVFELQPGASVFVNVTDPSQVSHGTGFTSFGLLKL"
+    },
+    {
+      "run": "screen-anchor2-Q6Q8B3",
+      "uniprot_id": "Q6Q8B3",
+      "gene": "CD200R1L",
+      "seq": "GKQMTQNYSTIFAEGNISQPVLMDINAVLCCPPIALRNLIIITWEIILRGQPSCTKAYKKETNETKETNCTVERITWVSRPDQNSDLQIRPVDTTHDGYYRGIVVTPDGNFHRGYHLQVLVTPEVNLFQSRNITAVCKAVTGKPAAQISWIPEGSILATKQEYWGNGTVTVKSTCPWEGHKSTVTCHVSHLTGNKSLSVKLNSGLRTSGSPALSLL"
+    },
+    {
+      "run": "screen-anchor2-Q8NHK3",
+      "uniprot_id": "Q8NHK3",
+      "gene": "KIR2DL5B",
+      "seq": "HEGGQDKPLLSAWPSAVVPRGGHVTLLCRSRLGFTIFSLYKEDGVPVPELYNKIFWKSILMGPVTPAHAGTYRCRGSHPRSPIEWSAPSNPLVIVVTGLFGKPSLSAQPGPTVRTGENVTLSCSSRSSFDMYHLSREGRAHEPRLPAVPSVDGTFQADFPLGPATHGGTYTCFSSLHDSPYEWSDPSDPLLVSVTGNSSSSSSSPTEPSSKTGIRRH"
+    },
+    {
+      "run": "screen-anchor2-Q96A28",
+      "uniprot_id": "Q96A28",
+      "gene": "SLAMF9",
+      "seq": "RRLWRWCGSEEVVAVLQESISLPLEIPPDEEVENIIWSSHKSLATVVPGKEGHPATIMVTNPHYQGQVSFLDPSYSLHISNLSWEDSGLYQAQVNLRTSQISTMQQYNICVYRWLSEPQITVNFESSGEGACSMSLVCSVEKAGMDMTYSWLSRGDSTYTFHEGPVLSTSWRPGDSALSYTCRANNPISNVSSCPIPDGPFYADPNYASEKPSTAFCL"
+    },
+    {
+      "run": "screen-anchor2-P32297",
+      "uniprot_id": "P32297",
+      "gene": "CHRNA3",
+      "seq": "SEAEHRLFERLFEDYNEIIRPVANVSDPVIIHFEVSMSQLVKVDEVNQIMETNLWLKQIWNDYKLKWNPSDYGGAEFMRVPAQKIWKPDIVLYNNAVGDFQVDDKTKALLKYTGEVTWIPPAIFKSSCKIDVTYFPFDYQNCTMKFGSWSYDKAKIDLVLIGSSMNLKDYWESGEWAIIKAPGYKHDIKYNCCEEIYPDITYSLYIRRLPLFYTINLII"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5Y7",
+      "uniprot_id": "Q9Y5Y7",
+      "gene": "LYVE1",
+      "seq": "LVQGSLRAEELSIQVSCRIMGITLVSKKANQQLNFTEAKEACRLLGLSLAGKDQVETALKASFETCSYGWVGDGFVVISRISPNPKCGKNGVGVLIWKVPVSRQFAAYCYNSSDTWTNSCIPEIITTKDPIFNTQTATQTTEFIVSDSTYSVASPYSTIPAPTTTPPAPASTSIPRRKKLICVTEVFMETSTMSTETEPFVENKAAFKNEAAGFGGVPT"
+    },
+    {
+      "run": "screen-anchor2-Q9NZQ7",
+      "uniprot_id": "Q9NZQ7",
+      "gene": "CD274",
+      "seq": "FTVTVPKDLYVVEYGSNMTIECKFPVEKQLDLAALIVYWEMEDKNIIQFVHGEEDLKVQHSSYRQRARLLKDQLSLGNAALQITDVKLQDAGVYRCMISYGGADYKRITVKVNAPYNKINQRILVVDPVTSEHELTCQAEGYPKAEVIWTSSDHQVLSGKTTTTNSKREEKLFNVTSTLRINTTTNEIFYCTFRRLDPEENHTAELVIPELPLAHPPNER"
+    },
+    {
+      "run": "screen-anchor2-Q99706",
+      "uniprot_id": "Q99706",
+      "gene": "KIR2DL4",
+      "seq": "WAHVGGQDKPFCSAWPSAVVPQGGHVTLRCHYRRGFNIFTLYKKDGVPVPELYNRIFWNSFLISPVTPAHAGTYRCRGFHPHSPTEWSAPSNPLVIMVTGLYEKPSLTARPGPTVRAGENVTLSCSSQSSFDIYHLSREGEAHELRLPAVPSINGTFQADFPLGPATHGETYRCFGSFHGSPYEWSDPSDPLPVSVTGNPSSSWPSPTEPSFKTGIARHLH"
+    },
+    {
+      "run": "screen-anchor2-A5X5Y0",
+      "uniprot_id": "A5X5Y0",
+      "gene": "HTR3E",
+      "seq": "VTFTINCSGFGQHGADPTALNSVFNRKPFRPVTNISVPTQVNISFAMSAILDVNEQLHLLSSFLWLEMVWDNPFISWNPEECEGITKMSMAAKNLWLPDIFIIELMDVDKTPKGLTAYVSNEGRIRYKKPMKVDSICNLDIFYFPFDQQNCTLTFSSFLYTVDSMLLDMEKEVWEITDASRNILQTHGEWELLGLSKATAKLSRGGNLYDQIVFYVAIRRRPS"
+    },
+    {
+      "run": "screen-anchor2-P04233",
+      "uniprot_id": "P04233",
+      "gene": "CD74",
+      "seq": "QQQGRLDKLTVTSQNLQLENLRMKLPKPPKPVSKMRMATPLLMQALPMGALPQGPMQNATKYGNMTEDHVMHLLQNADPLKVYPPLKGSFPENLRHLKNTMETIDWKVFESWMHHWLLFEMSRHSLEQKPTDAPPKVLTKCQEEVSHIPAVHPGSFRPKCDENGNYLPLQCYGSIGYCWCVFPNGTEVPNTRSRGHHNCSESLELEDPSSGLGVTKQDLGPVPM"
+    },
+    {
+      "run": "screen-anchor2-P48169",
+      "uniprot_id": "P48169",
+      "gene": "GABRA4",
+      "seq": "QNQKEEKLCTENFTRILDSLLDGYDNRLRPGFGGPVTEVKTDIYVTSFGPVSDVEMEYTMDVFFRQTWIDKRLKYDGPIEILRLNNMMVTKVWTPDTFFRNGKKSVSHNMTAPNKLFRIMRNGTILYTMRLTISAECPMRLVDFPMDGHACPLKFGSYAYPKSEMIYTWTKGPEKSVEVPKESSSLVQYDLIGQTVSSETIKSITGEYIVMTVYFHLRRKMGYF"
+    },
+    {
+      "run": "screen-anchor2-Q5VW38",
+      "uniprot_id": "Q5VW38",
+      "gene": "GPR107",
+      "seq": "RVHHLALKDDVRHKVHLNTFGFFKDGYMVVNVSSLSLNEPEDKDVTIGFSLDRTKNDGFSSYLDEDVNYCILKKQSVSVTLLILDISRSEVRVKSPPEAGTQLPKIIFSRDEKVLGQSQEPNVNPASAGNQTQKTQDGGKSKRSTVDSKAMGEKSFSVHNNGGAVSFQFFFNISTDDQEGLYSLYFHKCLGKELPSDKFTFSLDIEITEKNPDSYLSAGEIPLP"
+    },
+    {
+      "run": "screen-anchor2-A6NI73",
+      "uniprot_id": "A6NI73",
+      "gene": "LILRA5",
+      "seq": "GNLSKATLWAEPGSVISRGNSVTIRCQGTLEAQEYRLVKEGSPEPWDTQNPLEPKNKARFSIPSMTEHHAGRYRCYYYSPAGWSEPSDPLELVVTGFYNKPTLSALPSPVVTSGENVTLQCGSRLRFDRFILTEEGDHKLSWTLDSQLTPSGQFQALFPVGPVTPSHRWMLRCYGSRRHILQVWSEPSDLLEIPVSGAADNLSPSQNKSDSGTASHLQDYAVENLIR"
+    },
+    {
+      "run": "screen-anchor2-P31644",
+      "uniprot_id": "P31644",
+      "gene": "GABRA5",
+      "seq": "QMPTSSVKDETNDNITIFTRILDGLLDGYDNRLRPGLGERITQVRTDIYVTSFGPVSDTEMEYTIDVFFRQSWKDERLRFKGPMQRLPLNNLLASKIWTPDTFFHNGKKSIAHNMTTPNKLLRLEDDGTLLYTMRLTISAECPMQLEDFPMDAHACPLKFGSYAYPNSEVVYVWTNGSTKSVVVAEDGSRLNQYHLMGQTVGTENISTSTGEYTIMTAHFHLKRKIGYF"
+    },
+    {
+      "run": "screen-anchor2-Q16585",
+      "uniprot_id": "Q16585",
+      "gene": "SGCB",
+      "seq": "WAVIRIGPNGCDSMEFHESGLLRFKQVSDMGVIHPLYKSTVGGRRNENLVITGNNQPIVFQQGTTKLSVENNKTSITSDIGMQFFDPRTQNILFSTDYETHEFHLPSGVKSLNVQKASTERITSNATSDLNIKVDGRAIVRGNEGVFIMGKTIEFHMGGNMELKAENSIILNGSVMVSTTRLPSSSSGDQLGSGDWVRYKLCMCADGTLFKVQVTSQNMGCQISDNPCGNTH"
+    },
+    {
+      "run": "screen-anchor2-Q92629",
+      "uniprot_id": "Q92629",
+      "gene": "SGCD",
+      "seq": "KVMNFTIDGMGNLRITEKGLKLEGDSEFLQPLYAKEIQSRPGNALYFKSARNVTVNILNDQTKVLTQLITGPKAVEAYGKKFEVKTVSGKLLFSADNNEVVVGAERLRVLGAEGTVFPKSIETPNVRADPFKELRLESPTRSLVMEAPKGVEINAEAGNMEATCRTELRLESKDGEIKLDAAKIRLPRLPHGSYTPTGTRQKVFEICVCANGRLFLSQAGAGSTCQINTSVCL"
+    },
+    {
+      "run": "screen-anchor2-Q15762",
+      "uniprot_id": "Q15762",
+      "gene": "CD226",
+      "seq": "EEVLWHTSVPFAENMSLECVYPSMGILTQVEWFKIGTQQDSIAIFSPTHGMVIRKPYAERVYFLNSTMASNNMTLFFRNASEDDVGYYSCSLYTYPQGTWQKVIQVVQSDSFEAAVPSNSHIVSEPGKNVTLTCQPQMTWPVQAVRWEKIQPRQIDLLTYCNLVHGRNFTSKFPRQIVSNCSHGRWSVIVIPDVTVSDSGLYRCYLQASAGENETFVMRLTVAEGKTDNQYTLFVA"
+    },
+    {
+      "run": "screen-anchor2-Q6UWI2",
+      "uniprot_id": "Q6UWI2",
+      "gene": "PARM1",
+      "seq": "LPTSAPLSVSLPTNIVPPTTIWTSSPQNTDADTASPSNGTHNNSVLPVTASAPTSLLPKNISIESREEEITSPGSNWEGTNTDPSPSGFSSTSGGVHLTTTLEEHSSGTPEAGVAATLSQSAAEPPTLISPQAPASSPSSLSTSPPEVFSASVTTNHSSTVTSTQPTGAPTAPESPTEESSSDHTPTSHATAEPVPQEKTPPTTVSGKVMCELIDMETTTTFPRVIMQEVEHALSSGS"
+    },
+    {
+      "run": "screen-anchor2-P31785",
+      "uniprot_id": "P31785",
+      "gene": "IL2RG",
+      "seq": "LNTTILTPNGNEDTTADFFLTTMPTDSLSVSTLPLPEVQCFVFNVEYMNCTWNSSSEPQPTNLTLHYWYKNSDNDKVQKCSHYLFSEEITSGCQLQKKEIHLYQTFVVQLQDPREPRRQATQMLKLQNLVIPWAPENLTLHKLSESQLELNWNNRFLNHCLEHLVQYRTDWDHSWTEQSVDYRHKFSLPSVDGQKRYTFRVRSRFNPLCGSAQHWSEWSHPIHWGSNTSKENPFLFALEA"
+    },
+    {
+      "run": "screen-anchor2-Q6ZMC9",
+      "uniprot_id": "Q6ZMC9",
+      "gene": "SIGLEC15",
+      "seq": "FVRTKIDTTENLLNTEVHSSPAQRWSMQVPPEVSAEAGDAAVLPCTFTHPHRHYDGPLTAIWRAGEPYAGPQVFRCAAARGSELCQTALSLHGRFRLLGNPRRNDLSLRVERLALADDRRYFCRVEFAGDVHDRYESRHGVRLHVTAAPRIVNISVLPSPAHAFRALCTAEGEPPPALAWSGPALGNSLAAVRSPREGHGHLVTAELPALTHDGRYTCTAANSLGRSEASVYLFRFHGASGAST"
+    },
+    {
+      "run": "screen-anchor2-Q9HCN6",
+      "uniprot_id": "Q9HCN6",
+      "gene": "GP6",
+      "seq": "QSGPLPKPSLQALPSSLVPLEKPVTLRCQGPPGVDLYRLEKLSSSRYQDQAVLFIPAMKRSLAGRYRCSYQNGSLWSLPSDQLELVATGVFAKPSLSAQPGPAVSSGGDVTLQCQTRYGFDQFALYKEGDPAPYKNPERWYRASFPIITVTAAHSGTYRCYSFSSRDPYLWSAPSDPLELVVTGTSVTPSRLPTEPPSPVAEFSEATAELTVSFTNEVFTTETSRSITASPKESDSPAGPARQYYTK"
+    },
+    {
+      "run": "screen-anchor2-O15118",
+      "uniprot_id": "O15118",
+      "gene": "NPC1",
+      "seq": "RVTTNPVDLWSAPSSQARLEKEYFDQHFGPFFRTEQLIIRAPLTDKHIYQPYPSGADVPFGPPLDIQILHQVLDLQIAIENITASYDNETVTLQDICLAPLSPYNTNCTILSVLNYFQNSHSVLDHKKGDDFFVYADYHTHFLYCVRAPASLNDTSLLHDPCLGTFGGPVFPWLVLGGYDDQNYNNATALVITFPVNNYYNDTEKLQRAQAWEKEFINFVKNYKNPNLTISFTAERSIEDELNRESDSD"
+    },
+    {
+      "run": "screen-anchor2-Q5JXA9",
+      "uniprot_id": "Q5JXA9",
+      "gene": "SIRPB2",
+      "seq": "QSSRNDWQVLQPEGPMLVAEGETLLLRCMVVGSCTDGMIKWVKVSTQDQQEIYNFKRGSFPGVMPMIQRTSEPLNCDYSIYIHNVTREHTGTYHCVRFDGLSEHSEMKSDEGTSVLVKGAGDPEPDLWIIQPQELVLGTTGDTVFLNCTVLGDGPPGPIRWFQGAGLSREAIYNFGGISHPKETAVQASNNDFSILLQNVSSEDAGTYYCVKFQRKPNRQYLSGQGTSLKVKAKSTSSKEAEFTSEPATEMSPTG"
+    },
+    {
+      "run": "screen-anchor2-Q9GZZ7",
+      "uniprot_id": "Q9GZZ7",
+      "gene": "GFRA4",
+      "seq": "VGGNRCVDAAEACTADARCQRLRSEYVAQCLGRAAQGGCPRARCRRALRRFFARGPPALTHALLFCPCAGPACAERRRQTFVPSCAFSGPGPAPPSCLEPLNFCERSRVCRCARAAAGPWRGWGRGLSPAHRPPAAQASPPGLSGLVHPSAQRPRRLPAGPGRPLPARLRGPRGVPAGTAVTPNYVDNVSARVAPWCDCGASGNRREDCEAFRGLFTRNRCLDGAIQAFASGWPPVLLDQLNPQGDPEHSLLQVSSTG"
+    },
+    {
+      "run": "screen-anchor2-P30301",
+      "uniprot_id": "P30301",
+      "gene": "MIP",
+      "seq": "MWELRSASFWRAIFAEFFATLFYVFFGLGSSLRWAPGPLHVLQVAMAFGLALATLVQSVGHISGAHVNPAVTFAFLVGSQMSLLRAFCYMAAQLLGAVAGAAVLYSVTPPAVRGNLALNTLHPAVSVGQATTVEIFLTLQFVLCIFATYDERRNGQLGSVALAVGFSLALGHLFGMYYTGAGMNPARSFAPAILTGNFTNHWVYWVGPIIGGGLGSLLYDFLLFPRLKSISERLSVLKGAKPDVSNGQPEVTGEPVELNTQAL"
+    },
+    {
+      "run": "screen-anchor2-P29972",
+      "uniprot_id": "P29972",
+      "gene": "AQP1",
+      "seq": "MASEFKKKLFWRAVVAEFLATTLFVFISIGSALGFKYPVGNNQTAVQDNVKVSLAFGLSIATLAQSVGHISGAHLNPAVTLGLLLSCQISIFRALMYIIAQCVGAIVATAILSGITSSLTGNSLGRNDLADGVNSGQGLGIEIIGTLQLVLCVLATTDRRRRDLGGSAPLAIGLSVALGHLLAIDYTGCGINPARSFGSAVITHNFSNHWIFWVGPFIGGALAVLIYDFILAPRSSDLTDRVKVWTSGQVEEYDLDADDINSRVEMKPK"
+    },
+    {
+      "run": "screen-anchor2-Q9UHC9",
+      "uniprot_id": "Q9UHC9",
+      "gene": "NPC1L1",
+      "seq": "SVGLDQELALPKDSYLLDYFLFLNRYFEVGAPVYFVTTLGYNFSSEAGMNAICSSAGCNNFSFTQKIQYATEFPEQSYLAIPASSWVDDFIDWLTPSSCCRLYISGPNKDKFCPSTVNSLNCLKNCMSITMGSVRPSVEQFHKYLPWFLNDRPNIKCPKGGLAAYSTSVNLTSDGQVLDTVAILSPRLEYSGTISAHCNLYLLDSTSRFMAYHKPLKNSQDYTEALRAARELAANITADLRKVPGTDPAFEVFPYTITNVFYEQYLTILPEG"
+    },
+    {
+      "run": "screen-anchor2-Q9NS93",
+      "uniprot_id": "Q9NS93",
+      "gene": "TM7SF3",
+      "seq": "AEVFGNSSEGLIEFSVGKFRYFELNRPFPEEAILHDISSNVTFLIFQIHSQYQNTTVSFSPTLLSNSSETGTASGLVFILRPEQSTCTWYLGTSGIQPVQNMAILLSYSERDPVPGGCNLEFDLDIDPNIYLEYNFFETTIKFAPANLGYARGVDPPPCDAGTDQDSRWRLQYDVYQYFLPENDLTEEMLLKHLQRMVSVPQVKASALKVVTLTANDKTSVSFSSLPGQGVIYNVIVWDPFLNTSAAYIPAHTYACSFEAGEGSCASLGRVSSK"
+    },
+    {
+      "run": "screen-anchor2-O43570",
+      "uniprot_id": "O43570",
+      "gene": "CA12",
+      "seq": "APVNGSKWTYFGPDGENSWSKKYPSCGGLLQSPIDLHSDILQYDASLTPLEFQGYNLSANKQFLLTNNGHSVKLNLPSDMHIQGLQSRYSATQLHLHWGNPNDPHGSEHTVSGQHFAAELHIVHYNSDLYPDASTASNKSEGLAVLAVLIEMGSFNPSYDKIFSHLQHVKYKGQEAFVPGFNIEELLPERTAEYYRYRGSLTTPPCNPTVLWTVFRNPVQISQEQLLALETALYCTHMDDPSPREMINNFRQVQKFDERLVYTSFSQVQVCTAAGLS"
+    },
+    {
+      "run": "screen-anchor2-P80370",
+      "uniprot_id": "P80370",
+      "gene": "DLK1",
+      "seq": "AECFPACNPQNGFCEDDNVCRCQPGWQGPLCDQCVTSPGCLHGLCGEPGQCICTDGWDGELCDRDVRACSSAPCANNRTCVSLDDGLYECSCAPGYSGKDCQKKDGPCVINGSPCQHGGTCVDDEGRASHASCLCPPGFSGNFCEIVANSCTPNPCENDGVCTDIGGDFRCRCPAGFIDKTCSRPVTNCASSPCQNGGTCLQHTQVSYECLCKPEFTGLTCVKKRALSPQQVTRLPSGYGLAYRLTPGVHELPVQQPEHRILKVSMKELNKKTPLLTEGQ"
+    },
+    {
+      "run": "screen-anchor2-Q9HCC8",
+      "uniprot_id": "Q9HCC8",
+      "gene": "GDPD2",
+      "seq": "SSPCIMEPRDLPPKPGLVGHRGAPMLAPENTLMSLRKTAECGATVFETDVMVSSDGVPFLMHDEHLSRTTNVASVFPTRITAHSSDFSWTELKRLNAGSWFLERRPFWGAKPLAGPDQKEAESQTVPALEELLEEAAALNLSIMFDLRRPPQNHTYYDTFVIQTLETVLNARVPQAMVFWLPDEDRANVQRRAPGMRQIYGRQGGNRTERPQFLNLPYQDLPLLDIKALHKDNVSVNLFVVNKPWLFSLLWCAGVDSVTTNDCQLLQQMRYPIWLITPQTY"
+    },
+    {
+      "run": "screen-anchor2-P01891",
+      "uniprot_id": "P01891",
+      "gene": "HLA-A",
+      "seq": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEAGSHTIQIMYGCDVGSDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHEAEQLRAYLDGTCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-P10314",
+      "uniprot_id": "P10314",
+      "gene": "HLA-A",
+      "seq": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEAGSHTIQIMYGCDVGSDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHEAEQLRAYLDGTCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-P16190",
+      "uniprot_id": "P16190",
+      "gene": "HLA-A",
+      "seq": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEAGSHTIQIMYGCDVGSDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHEAEQLRAYLDGTCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-P30455",
+      "uniprot_id": "P30455",
+      "gene": "HLA-A",
+      "seq": "GSHSMRYFFTSVSRPGRGEPRFIAVGYVDDTQFVRFDSDAASQRMEPRAPWIEQEGPEYWDQETRNVKAQSQTDRVDLGTLRGYYNQSEAGSHTIQIMYGCDVGSDGRFLRGYRQDAYDGKDYIALNEDLRSWTAADMAAQITKRKWEAAHEAEQLRAYLDGTCVEWLRRYLENGKETLQRTDPPKTHMTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWELSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-P30508",
+      "uniprot_id": "P30508",
+      "gene": "HLA-C",
+      "seq": "CSHSMRYFDTAVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPRGEPRAPWVEQEGPEYWDRETQKYKRQAQADRVSLRNLRGYYNQSEDGSHTLQRMSGCDLGPDGRLLRGYDQSAYDGKDYIALNEDLRSWTAADTAAQITQRKLEAARAAEQLRAYLEGTCVEWLRRYLENGKETLQRAEPPKTHVTHHPLSDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHMQHEGLQEPLTLSWEPSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-Q29960",
+      "uniprot_id": "Q29960",
+      "gene": "HLA-C",
+      "seq": "CSHSMRYFDTAVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPRGEPRAPWVEQEGPEYWDRETQKYKRQAQADRVSLRNLRGYYNQSEDGSHTLQRMSGCDLGPDGRLLRGYDQSAYDGKDYIALNEDLRSWTAADTAAQITQRKLEAARAAEQLRAYLEGTCVEWLRRYLENGKETLQRAEPPKTHVTHHPLSDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDGTFQKWAAVVVPSGQEQRYTCHMQHEGLQEPLTLSWEPSSQPTIPI"
+    },
+    {
+      "run": "screen-anchor2-O43490",
+      "uniprot_id": "O43490",
+      "gene": "PROM1",
+      "seq": "GANVEKLICEPYTSKELFRVLDTPYLLNEDWEYYLSGKLFNKSKMKLTFEQVYSDCKKNRGTYGTLHLQNSFNISEHLNINEHTGSISSELESLKVNLNIFLLGAAGRKNLQDFAACGIDRMNYDSYLAQTGKSPAGVNLLSFAYDLEAKANSLPPGNLRNSLKRDAQTIKTIHQQRVLPIEQSLSTLYQSVKILQRTGNGLLERVTRILASLDFAQNFITNNTSSVIIEETKKYGRTIIGYFEHYLQWIEFSISEKVASCKPVATALDTAVDVFLCSYIIDPLN"
+    },
+    {
+      "run": "screen-anchor2-P18465",
+      "uniprot_id": "P18465",
+      "gene": "HLA-B",
+      "seq": "GSHSMRYFYTSVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPREEPRAPWIEQEGPEYWDRNTQIYKAQAQTDRESLRNLRGYYNQSEAGSHTLQSMYGCDVGPDGRLLRGHDQYAYDGKDYIALNEDLRSWTAADTAAQITQRKWEAAREAEQRRAYLEGECVEWLRRYLENGKDKLERADPPKTHVTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEPSSQSTVPIV"
+    },
+    {
+      "run": "screen-anchor2-P30479",
+      "uniprot_id": "P30479",
+      "gene": "HLA-B",
+      "seq": "GSHSMRYFYTSVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPREEPRAPWIEQEGPEYWDRNTQIYKAQAQTDRESLRNLRGYYNQSEAGSHTLQSMYGCDVGPDGRLLRGHDQYAYDGKDYIALNEDLRSWTAADTAAQITQRKWEAAREAEQRRAYLEGECVEWLRRYLENGKDKLERADPPKTHVTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEPSSQSTVPIV"
+    },
+    {
+      "run": "screen-anchor2-P30487",
+      "uniprot_id": "P30487",
+      "gene": "HLA-B",
+      "seq": "GSHSMRYFYTSVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPREEPRAPWIEQEGPEYWDRNTQIYKAQAQTDRESLRNLRGYYNQSEAGSHTLQSMYGCDVGPDGRLLRGHDQYAYDGKDYIALNEDLRSWTAADTAAQITQRKWEAAREAEQRRAYLEGECVEWLRRYLENGKDKLERADPPKTHVTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEPSSQSTVPIV"
+    },
+    {
+      "run": "screen-anchor2-P30498",
+      "uniprot_id": "P30498",
+      "gene": "HLA-B",
+      "seq": "GSHSMRYFYTSVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPREEPRAPWIEQEGPEYWDRNTQIYKAQAQTDRESLRNLRGYYNQSEAGSHTLQSMYGCDVGPDGRLLRGHDQYAYDGKDYIALNEDLRSWTAADTAAQITQRKWEAAREAEQRRAYLEGECVEWLRRYLENGKDKLERADPPKTHVTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEPSSQSTVPIV"
+    },
+    {
+      "run": "screen-anchor2-Q31610",
+      "uniprot_id": "Q31610",
+      "gene": "HLA-B",
+      "seq": "GSHSMRYFYTSVSRPGRGEPRFISVGYVDDTQFVRFDSDAASPREEPRAPWIEQEGPEYWDRNTQIYKAQAQTDRESLRNLRGYYNQSEAGSHTLQSMYGCDVGPDGRLLRGHDQYAYDGKDYIALNEDLRSWTAADTAAQITQRKWEAAREAEQRRAYLEGECVEWLRRYLENGKDKLERADPPKTHVTHHPISDHEATLRCWALGFYPAEITLTWQRDGEDQTQDTELVETRPAGDRTFQKWAAVVVPSGEEQRYTCHVQHEGLPKPLTLRWEPSSQSTVPIV"
+    },
+    {
+      "run": "screen-anchor2-P26951",
+      "uniprot_id": "P26951",
+      "gene": "IL3RA",
+      "seq": "TKEDPNPPITNLRMKAKAQQLTWDLNRNVTDIECVKDADYSMPAVNNSYCQFGAISLCEVTNYTVRVANPPFSTWILFPENSGKPWAGAENLTCWIHDVDFLSCSWAVGPGAPADVQYDLYLNVANRRQQYECLHYKTDAQGTRIGCRFDDISRLSSGSQSSHILVRGRSAAFGIPCTDKFVVFSQIEILTPPNMTAKCNKTHSFMHWKMRSHFNRKFRYELQIQKRMQPVITEQVRDRTSFQLLNPGTYTVQIRARERVYEFLSAWSTPQRFECDQEEGANTRAWR"
+    },
+    {
+      "run": "screen-anchor2-Q96PL2",
+      "uniprot_id": "Q96PL2",
+      "gene": "TECTB",
+      "seq": "KSCAPNKADVILVFCYPKTIITKIPECPYGWEVHQLALGGLCYNGVHEGGYYQFVIPDLSPKNKSYCGTQSEYKPPIYHFYSHIVSNDTTVIVKNQPVNYSFSCTYHSTYLVNQAAFDQRVATVHVKNGSMGTFESQLSLNFYTNAKFSIKKEAPFVLEASEIGSDLFAGVEAKGLSIRFKVVLNSCWATPSADFMYPLQWQLINKGCPTDETVLVHENGRDHRATFQFNAFRFQNIPKLSKVWLHCETFICDSEKLSCPVTCDKRKRLLRDQTGGVLVVELSLRSRG"
+    },
+    {
+      "run": "screen-anchor2-Q96H15",
+      "uniprot_id": "Q96H15",
+      "gene": "TIMD4",
+      "seq": "ETVVTEVLGHRVTLPCLYSSWSHNSNSMCWGKDQCPYSGCKEALIRTDGMRVTSRKSAKYRLQGTIPRGDVSLTILNPSESDSGVYCCRIEVPGWFNDVKINVRLNLQRASTTTHRTATTTTRRTTTTSPTTTRQMTTTPAALPTTVVTTPDLTTGTPLQMTTIAVFTTANTCLSLTPSTLPEEATGLLTPEPSKEGPILTAESETVLPSDSWSSVESTSADTVLLTSKESKVWDLPSTSHVSMWKTSDSVSSPQPGASDTAVPEQNKTTKTGQMDGIPMSMKNEMPISQ"
+    },
+    {
+      "run": "screen-anchor2-A7MBM2",
+      "uniprot_id": "A7MBM2",
+      "gene": "DISP2",
+      "seq": "ARLPDFSKPLLGFEPRDTDIGSKLVVWRALQALTGPRKLLFLSPDLELNSSSSHNTLRPAPRGSAQESAVRPRRMVEPLEDRRQENFFCGPPEKSYAKLVFMSTSSGSLWNLHAIHSMCRMEQDQIRSHTSFGALCQRTAANQCCPSWSLGNYLAVLSNRSSCLDTTQADAARTLALLRTCALYYHSGALVPSCLGPGQNKSPRCAQVPTKCSQSSAIYQLLHFLLDRDFLSPQTTDYQVPSLKYSLLFLPTPKGASLMDIYLDRLATPWGLADNYTSVTGMDLGLKQELLRH"
+    },
+    {
+      "run": "screen-anchor2-Q8N743",
+      "uniprot_id": "Q8N743",
+      "gene": "KIR3DL3",
+      "seq": "QDKPFLSAWPGTVVSEGQHVTLQCRSRLGFNEFSLSKEDGMPVPELYNRIFRNSFLMGPVTPAHAGTYRCCSSHPHSPTGWSAPSNPVVIMVTGVHRKPSLLAHPGPLVKSGETVILQCWSDVRFERFLLHREGITEDPLRLVGQLHDAGSQVNYSMGPMTPALAGTYRCFGSVTHLPYELSAPSDPLDIVVVGLYGKPSLSAQPGPTVQAGENVTLSCSSRSLFDIYHLSREAEAGELRLTAVLRVNGTFQANFPLGPVTHGGNYRCFGSFRALPHAWSDPSDPLPVSVTGNSRHL"
+    },
+    {
+      "run": "screen-anchor2-Q14242",
+      "uniprot_id": "Q14242",
+      "gene": "SELPLG",
+      "seq": "LQLWDTWADEAEKALGPLLARDRRQATEYEYLDYDFLPETEPPEMLRNSTDTTPLTGPGTPESTTVEPAARRSTGLDAGGAVTELTTELANMGNLSTDSAAMEIQTTQPAATEAQTTQPVPTEAQTTPLAATEAQTTRLTATEAQTTPLAATEAQTTPPAATEAQTTQPTGLEAQTTAPAAMEAQTTAPAAMEAQTTPPAAMEAQTTQTTAMEAQTTAPEATEAQTTQPTATEAQTTPLAAMEALSTEPSATEALSMEPTTKRGLFIPFSVSSVTHKGIPMAASNLSVNYPVGAPDHISVKQC"
+    },
+    {
+      "run": "screen-anchor2-P15529",
+      "uniprot_id": "P15529",
+      "gene": "CD46",
+      "seq": "CEEPPTFEAMELIGKPKPYYEIGERVDYKCKKGYFYIPPLATHTICDRNHTWLPVSDDACYRETCPYIRDPLNGQAVPANGTYEFGYQMHFICNEGYYLIGEEILYCELKGSVAIWSGKPPICEKVLCTPPPKIKNGKHTFSEVEVFEYLDAVTYSCDPAPGPDPFSLIGESTIYCGDNSVWSRAAPECKVVKCRFPVVENGKQISGFGKKFYYKATVMFECDKGFYLDGSDTIVCDSNSTWDPPVPKCLKVLPPSSTKPPALSHSVSTSSTTKSPASSASGPRPTYKPPVSNYPGYPKPEEGILDSLD"
+    },
+    {
+      "run": "screen-anchor2-P0C626",
+      "uniprot_id": "P0C626",
+      "gene": "OR5G3",
+      "seq": "MEDKNQTVVTEFLLLGLTDHPYQKIVLFFMFLFVYLITLGGNLGMITLIWIDPRLHTPMYFFLRHLSFVDICSSSSVVPKMLCNIFAEKKDITFLGCAAQMWFFGLFEAAECFLLAAMAYDRYVAICKPLLYTLIMSQQVCMQLVVGPYAMALISTMTHTIFTFCLPFCGSNIINHFFCDIFPLLSLACADTWVNKFVLFVLAGAIGVLSGLIIMVSYICILMTILKIQTADGKQKAFFTCFSHLAAVSILYGTLFLIYVRPSSSSSLGIYKVISLFYTVVIPMVNPLIYSLRNKEVKDAFRRKIERKKFIIGR"
+    },
+    {
+      "run": "screen-anchor2-P33765",
+      "uniprot_id": "P33765",
+      "gene": "ADORA3",
+      "seq": "MPNNSTALSLANVTYITMEIFIGLCAIVGNVLVICVVKLNPSLQTTTFYFIVSLALADIAVGVLVMPLAIVVSLGITIHFYSCLFMTCLLLIFTHASIMSLLAIAVDRYLRVKLTVRYKRVTTHRRIWLALGLCWLVSFLVGLTPMFGWNMKLTSEYHRNVTFLSCQFVSVMRMDYMVYFSFLTWIFIPLVVMCAIYLDIFYIIRNKLSLNLSNSKETGAFYGREFKTAKSLFLVLFLFALSWLPLSIINCIIYFNGEVPQLVLYMGILLSHANSMMNPIVYAYKIKKFKETYLLILKACVVCHPSDSLDTSIEKNSE"
+    },
+    {
+      "run": "screen-anchor2-P43630",
+      "uniprot_id": "P43630",
+      "gene": "KIR3DL2",
+      "seq": "LMGGQDKPFLSARPSTVVPRGGHVALQCHYRRGFNNFMLYKEDRSHVPIFHGRIFQESFIMGPVTPAHAGTYRCRGSRPHSLTGWSAPSNPLVIMVTGNHRKPSLLAHPGPLLKSGETVILQCWSDVMFEHFFLHREGISEDPSRLVGQIHDGVSKANFSIGPLMPVLAGTYRCYGSVPHSPYQLSAPSDPLDIVITGLYEKPSLSAQPGPTVQAGENVTLSCSSWSSYDIYHLSREGEAHERRLRAVPKVNRTFQADFPLGPATHGGTYRCFGSFRALPCVWSNSSDPLLVSVTGNPSSSWPSPTEPSSKSGICRHLH"
+    },
+    {
+      "run": "screen-anchor2-O43699",
+      "uniprot_id": "O43699",
+      "gene": "SIGLEC6",
+      "seq": "QERRFQLEGPESLTVQEGLCVLVPCRLPTTLPASYYGYGYWFLEGADVPVATNDPDEEVQEETRGRFHLLWDPRRKNCSLSIRDARRRDNAAYFFRLKSKWMKYGYTSSKLSVRVMALTHRPNISIPGTLESGHPSNLTCSVPWVCEQGTPPIFSWMSAAPTSLGPRTTQSSVLTITPRPQDHSTNLTCQVTFPGAGVTMERTIQLNVSYAPQKVAISIFQGNSAAFKILQNTSSLPVLEGQALRLLCDADGNPPAHLSWFQGFPALNATPISNTGVLELPQVGSAEEGDFTCRAQHPLGSLQISLSLFVHWKPEGRAGGV"
+    },
+    {
+      "run": "screen-anchor2-Q96LB2",
+      "uniprot_id": "Q96LB2",
+      "gene": "MRGPRX1",
+      "seq": "MDPTISTLDTELTPINGTEETLCYKQTLSLTVLTCIVSLVGLTGNAVVLWLLGCRMRRNAFSIYILNLAAADFLFLSGRLIYSLLSFISIPHTISKILYPVMMFSYFAGLSFLSAVSTERCLSVLWPIWYRCHRPTHLSAVVCVLLWALSLLRSILEWMLCGFLFSGADSAWCQTSDFITVAWLIFLCVVLCGSSLVLLIRILCGSRKIPLTRLYVTILLTVLVFLLCGLPFGIQFFLFLWIHVDREVLFCHVHLVSIFLSALNSSANPIIYFFVGSFRQRQNRQNLKLVLQRALQDASEVDEGGGQLPEEILELSGSRLEQ"
+    },
+    {
+      "run": "screen-anchor2-Q8NC67",
+      "uniprot_id": "Q8NC67",
+      "gene": "NETO2",
+      "seq": "IAVAQKTQDGQNIGIKHIPATQCGIWVRTSNGGHFASPNYPDSYPPNKECIYILEAAPRQRIELTFDEHYYIEPSFECRFDHLEVRDGPFGFSPLIDRYCGVKSPPLIRSTGRFMWIKFSSDEELEGLGFRAKYSFIPDPDFTYLGGILNPIPDCQFELSGADGIVRSSQVEQEEKTKPGQAVDCIWTIKATPKAKIYLRFLDYQMEHSNECKRNFVAVYDGSSSIENLKAKFCSTVANDVMLKTGIGVIRMWADEGSRLSRFRMLFTSFVEPPCTSSTFFCHSNMCINNSLVCNGVQNCAYPWDENHCKEKKKAGVFEQITKTH"
+    },
+    {
+      "run": "screen-anchor2-Q9H2X3",
+      "uniprot_id": "Q9H2X3",
+      "gene": "CLEC4M",
+      "seq": "QVSKVPSSLSQEQSEQDAIYQNLTQLKAAVGELSEKSKLQEIYQELTQLKAAVGELPEKSKLQEIYQELTRLKAAVGELPEKSKLQEIYQELTRLKAAVGELPEKSKLQEIYQELTRLKAAVGELPEKSKLQEIYQELTELKAAVGELPEKSKLQEIYQELTQLKAAVGELPDQSKQQQIYQELTDLKTAFERLCRHCPKDWTFFQGNCYFMSNSQRNWHDSVTACQEVRAQLVVIKTAEEQNFLQLQTSRSNRFSWMGLSDLNQEGTWQWVDGSPLSPSFQRYWNSGEPNNSGNEDCAEFSGSGWNDNRCDVDNYWICKKPAACFRDE"
+    },
+    {
+      "run": "screen-anchor2-Q9Y336",
+      "uniprot_id": "Q9Y336",
+      "gene": "SIGLEC9",
+      "seq": "QTSKLLTMQSSVTVQEGLCVHVPCSFSYPSHGWIYPGPVVHGYWFREGANTDQDAPVATNNPARAVWEETRDRFHLLGDPHTKNCTLSIRDARRSDAGRYFFRMEKGSIKWNYKHHRLSVNVTALTHRPNILIPGTLESGCPQNLTCSVPWACEQGTPPMISWIGTSVSPLDPSTTRSSVLTLIPQPQDHGTSLTCQVTFPGASVTTNKTVHLNVSYPPQNLTMTVFQGDGTVSTVLGNGSSLSLPEGQSLRLVCAVDAVDSNPPARLSLSWRGLTLCPSQPSNPGVLELPWVHLRDAAEFTCRAQNPLGSQQVYLNVSLQSKATSGVTQG"
+    },
+    {
+      "run": "screen-anchor2-P51654",
+      "uniprot_id": "P51654",
+      "gene": "GPC3",
+      "seq": "QPPPPPPDATCHQVRSFFQRLQPGLKWVPETPVPGSDLQVCLPKGPTCCSRKMEEKYQLTARLNMEQLLQSASMELKFLIIQNAAVFQEAFEIVVRHAKNYTNAMFKNNYPSLTPQAFEFVGEFFTDVSLYILGSDINVDDMVNELFDSLFPVIYTQLMNPGLPDSALDINECLRGARRDLKVFGNFPKLIMTQVSKSLQVTRIFLQALNLGIEVINTTDHLKFSKDCGRMLTRMWYCSYCQGLMMVKPCGGYCNVVMQGCMAGVVEIDKYWREYILSLEELVNGMYRIYDMENVLLGLFSTIHDSIQYVQKNAGKLTTTIGKLCAHSQQRQYR"
+    },
+    {
+      "run": "screen-anchor2-O95256",
+      "uniprot_id": "O95256",
+      "gene": "IL18RAP",
+      "seq": "FNISGCSTKKLLWTYSTRSEEEFVLFCDLPEPQKSHFCHRNRLSPKQVPEHLPFMGSNDLSDVQWYQQPSNGDPLEDIRKSYPHIIQDKCTLHFLTPGVNNSGSYICRPKMIKSPYDVACCVKMILEVKPQTNASCEYSASHKQDLLLGSTGSISCPSLSCQSDAQSPAVTWYKNGKLLSVERSNRIVVDEVYDYHQGTYVCDYTQSDTVSSWTVRAVVQVRTIVGDTKLKPDILDPVEDTLEVELGKPLTISCKARFGFERVFNPVIKWYIKDSDLEWEVSVPEAKSIKSTLKDEIIERNIILEKVTQRDLRRKFVCFVQNSIGNTTQSVQLKEKR"
+    },
+    {
+      "run": "screen-anchor2-Q9UJ42",
+      "uniprot_id": "Q9UJ42",
+      "gene": "GPR160",
+      "seq": "MTALSSENCSFQYQLRQTNQPLDVNYLLFLIILGKILLNILTLGMRRKNTCQNFMEYFCISLAFVDLLLLVNISIILYFRDFVLLSIRFTKYHICLFTQIISFTYGFLHYPVFLTACIDYCLNFSKTTKLSFKCQKLFYFFTVILIWISVLAYVLGDPAIYQSLKAQNAYSRHCPFYVSIQSYWLSFFMVMILFVAFITCWEEVTTLVQAIRITSYMNETILYFPFSSHSSYTVRSKKIFLSKLIVCFLSTWLPFVLLQVIIVLLKVQIPAYIEMNIPWLYFVNSFLIATVYWFNCHKLNLKDIGLPLDPFVNWKCCFIPLTIPNLEQIEKPISIMIC"
+    },
+    {
+      "run": "screen-anchor2-Q08ET2",
+      "uniprot_id": "Q08ET2",
+      "gene": "SIGLEC14",
+      "seq": "EKPVYELQVQKSVTVQEGLCVLVPCSFSYPWRSWYSSPPLYVYWFRDGEIPYYAEVVATNNPDRRVKPETQGRFRLLGDVQKKNCSLSIGDARMEDTGSYFFRVERGRDVKYSYQQNKLNLEVTALIEKPDIHFLEPLESGRPTRLSCSLPGSCEAGPPLTFSWTGNALSPLDPETTRSSELTLTPRPEDHGTNLTCQVKRQGAQVTTERTVQLNVSYAPQNLAISIFFRNGTGTALRILSNGMSVPIQEGQSLFLACTVDSNPPASLSWFREGKALNPSQTSMSGTLELPNIGAREGGEFTCRVQHPLGSQHLSFILSVQRSSSSCICVTEKQQGSWPLVL"
+    },
+    {
+      "run": "screen-anchor2-Q8WZA6",
+      "uniprot_id": "Q8WZA6",
+      "gene": "OR1E3",
+      "seq": "MMKKNQTMISEFLLLGLPIQPEQQNLFYALFLAVYLTTLLGNLLVIVLIRLDSHLHMPMYLCLSNLSFSDLCFSSVTMPKLLQNMQSQNPSIPFADCLAQMYFHLFYGVLESFLLVVMAYHCYVAICFPLHYTTIMSPKCCLGLLTLSWLLTTAHATLHTLLMARLSFCAENVIPHFFCDTSTLLKLACSNTQVNGWVMFFMGGLILVIPFLLLIMSCARIVSTILRVPSTGGIQKAFSTCGPHLSVVSLFYGTIIGLYLCPLTNHNTVKDTVMAVMYTGVTHMLNPFIYSLRNRDMRGNPGQSLQHKENFFVFKIVIVGILPLLNLVGVVKLIMKYHSKSVA"
+    },
+    {
+      "run": "screen-anchor2-P08887",
+      "uniprot_id": "P08887",
+      "gene": "IL6R",
+      "seq": "LAPRRCPAQEVARGVLTSLPGDSVTLTCPGVEPEDNATVHWVLRKPAAGSHPSRWAGMGRRLLLRSVQLHDSGNYSCYRAGRPAGTVHLLVDVPPEEPQLSCFRKSPLSNVVCEWGPRSTPSLTTKAVLLVRKFQNSPAEDFQEPCQYSQESQKFSCQLAVPEGDSSFYIVSMCVASSVGSKFSKTQTFQGCGILQPDPPANITVTAVARNPRWLSVTWQDPHSWNSSFYRLRFELRYRAERSKTFTTWMVKDLQHHCVIHDAWSGLRHVVQLRAQEEFGQGEWSEWSPEAMGTPWTESRSPPAENEVSTPMQALTTNKDDDNILFRDSANATSLPVQDSSSVPLP"
+    },
+    {
+      "run": "screen-anchor2-P06127",
+      "uniprot_id": "P06127",
+      "gene": "CD5",
+      "seq": "RLSWYDPDFQARLTRSNSKCQGQLEVYLKDGWHMVCSQSWGRSSKQWEDPSQASKVCQRLNCGVPLSLGPFLVTYTPQSSIICYGQLGSFSNCSHSRNDMCHSLGLTCLEPQKTTPPTTRPPPTTTPEPTAPPRLQLVAQSGGQHCAGVVEFYSGSLGGTISYEAQDKTQDLENFLCNNLQCGSFLKHLPETEAGRAQDPGEPREHQPLPIQWKIQNSSCTSLEHCFRKIKPQKSGRVLALLCSGFQPKVQSRLVGGSSICEGTVEVRQGAQWAALCDSSSARSSLRWEEVCREQQCGSVNSYRVLDAGDPTSRGLFCPHQKLSQCHELWERNSYCKKVFVTCQDPNP"
+    },
+    {
+      "run": "screen-anchor2-Q96FT7",
+      "uniprot_id": "Q96FT7",
+      "gene": "ASIC4",
+      "seq": "RGYLTRPHLVAMDPAAPAPVAGFPAVTLCNINRFRHSALSDADIFHLANLTGLPPKDRDGHRAAGLRYPEPDMVDILNRTGHQLADMLKSCNFSGHHCSASNFSVVYTRYGKCYTFNADPRSSLPSRAGGMGSGLEIMLDIQQEEYLPIWRETNETSFEAGIRVQIHSQEEPPYIHQLGFGVSPGFQTFVSCQEQRLTYLPQPWGNCRAESELREPELQGYSAYSVSACRLRCEKEAVLQRCHCRMVHMPGNETICPPNIYIECADHTLDSLGGGPEGPCFCPTPCNLTRYGKEISMVRIPNRGSARYLARKYNRNETYIRENFLVLDVFFEALTSEAMEQRAAYGLSA"
+    },
+    {
+      "run": "screen-anchor2-Q15722",
+      "uniprot_id": "Q15722",
+      "gene": "LTB4R",
+      "seq": "MNTTSSAAPPSLGVEFISLLAIILLSVALAVGLPGNSFVVWSILKRMQKRSVTALMVLNLALADLAVLLTAPFFLHFLAQGTWSFGLAGCRLCHYVCGVSMYASVLLITAMSLDRSLAVARPFVSQKLRTKAMARRVLAGIWVLSFLLATPVLAYRTVVPWKTNMSLCFPRYPSEGHRAFHLIFEAVTGFLLPFLAVVASYSDIGRRLQARRFRRSRRTGRLVVLIILTFAAFWLPYHVVNLAEAGRALAGQAAGLGLVGKRLSLARNVLIALAFLSSSVNPVLYACAGGGLLRSAGVGFVAKLLEGTGSEASSTRRGGSLGQTARSGPAALEPGPSESLTASSPLKLNELN"
+    },
+    {
+      "run": "screen-anchor2-P11362",
+      "uniprot_id": "P11362",
+      "gene": "FGFR1",
+      "seq": "RPSPTLPEQAQPWGAPVEVESFLVHPGDLLQLRCRLRDDVQSINWLRDGVQLAESNRTRITGEEVEVQDSVPADSGLYACVTSSPSGSDTTYFSVNVSDALPSSEDDDDDDDSSSEEKETDNTKPNRMPVAPYWTSPEKMEKKLHAVPAAKTVKFKCPSSGTPNPTLRWLKNGKEFKPDHRIGGYKVRYATWSIIMDSVVPSDKGNYTCIVENEYGSINHTYQLDVVERSPHRPILQAGLPANKTVALGSNVEFMCKVYSDPQPHIQWLKHIEVNGSKIGPDNLPYVQILKTAGVNTTDKEMEVLHLRNVSFEDAGEYTCLAGNSIGLSHHSAWLTVLEALEERPAVMTSPLYLE"
+    },
+    {
+      "run": "screen-anchor2-Q86SJ2",
+      "uniprot_id": "Q86SJ2",
+      "gene": "AMIGO2",
+      "seq": "VCPTACICATDIVSCTNKNLSKVPGNLFRLIKRLDLSYNRIGLLDSEWIPVSFAKLNTLILRHNNITSISTGSFSTTPNLKCLDLSSNKLKTVKNAVFQELKVLEVLLLYNNHISYLDPSAFGGLSQLQKLYLSGNFLTQFPMDLYVGRFKLAELMFLDVSYNRIPSMPMHHINLVPGKQLRGIYLHGNPFVCDCSLYSLLVFWYRRHFSSVMDFKNDYTCRLWSDSRHSRQVLLLQDSFMNCSDSIINGSFRALGFIHEAQVGERLMVHCDSKTGNANTDFIWVGPDNRLLEPDKEMENFYVFHNGSLVIESPRFEDAGVYSCIAMNKQRLLNETVDVTINVSNFTVSRSHAHEAFNT"
+    },
+    {
+      "run": "screen-anchor2-P21754",
+      "uniprot_id": "P21754",
+      "gene": "ZP3",
+      "seq": "QPLWLLQGGASHPETSVQPVLVECQEATLMVMVSKDLFGTGKLIRAADLTLGPEACEPLVSMDTEDVVRFEVGLHECGNSMQVTDDALVYSTFLLHDPRPVGNLSIVRTNRAEIPIECRYPRQGNVSSQAILPTWLPFRTTVFSEEKLTFSLRLMEENWNAEKRSPTFHLGDAAHLQAEIHTGSHVPLRLFVDHCVATPTPDQNASPYHTIVDFHGCLVDGLTDASSAFKVPRPGPDTLQFTVDVFHFANDSRNMIYITCHLKVTLAEQDPDELNKACSFSKPSNSWFPVEGSADICQCCNKGDCGTPSHSRRQPHVMSQWSRSASRNRRHVTEEADVTVGPLIFLDRRGDHEVEQWALPSDTSV"
+    },
+    {
+      "run": "screen-anchor2-O60755",
+      "uniprot_id": "O60755",
+      "gene": "GALR3",
+      "seq": "MADAQNISLDSPGSVGAVAVPVVFALIFLLGTVGNGLVLAVLLQPGPSAWQEPGSTTDLFILNLAVADLCFILCCVPFQATIYTLDAWLFGALVCKAVHLLIYLTMYASSFTLAAVSVDRYLAVRHPLRSRALRTPRNARAAVGLVWLLAALFSAPYLSYYGTVRYGALELCVPAWEDARRRALDVATFAAGYLLPVAVVSLAYGRTLRFLWAAVGPAGAAAAEARRRATGRAGRAMLAVAALYALCWGPHHALILCFWYGRFAFSPATYACRLASHCLAYANSCLNPLVYALASRHFRARFRRLWPCGRRRRHRARRALRRVRPASSGPPGCPGDARPSGRLLAGGGQGPEPREGPVHGGEAARGPE"
+    },
+    {
+      "run": "screen-anchor2-Q96MU8",
+      "uniprot_id": "Q96MU8",
+      "gene": "KREMEN1",
+      "seq": "RPAPSPGLGPECFTANGADYRGTQNWTALQGGKPCLFWNETFQHPYNTLKYPNGEGGLGEHNYCRNPDGDVSPWCYVAEHEDGVYWKYCEIPACQMPGNLGCYKDHGNPPPLTGTSKTSNKLTIQTCISFCRSQRFKFAGMESGYACFCGNNPDYWKYGEAASTECNSVCFGDHTQPCGGDGRIILFDTLVGACGGNYSAMSSVVYSPDFPDTYATGRVCYWTIRVPGASHIHFSFPLFDIRDSADMVELLDGYTHRVLARFHGRSRPPLSFNVSLDFVILYFFSDRINQAQGFAVLYQAVKEELPQERPAVNQTVAEVITEQANLSVSAARSSKVLYVITTSPSHPPQTVPGSNSWAPPMGAGSHRVEGWT"
+    },
+    {
+      "run": "screen-anchor2-O60235",
+      "uniprot_id": "O60235",
+      "gene": "TMPRSS11D",
+      "seq": "AFDQKSYFYRSSFQLLNVEYNSQLNSPATQEYRTLSGRIESLITKTFKESNLRNQFIRAHVAKLRQDGSGVRADVVMKFQFTRNNNGASMKSRIESVLRQMLNNSGNLEINPSTEITSLTDQAAANWLINECGAGPDLITLSEQRILGGTEAEEGSWPWQVSLRLNNAHHCGGSLINNMWILTAAHCFRSNSNPRDWIATSGISTTFPKLRMRVRNILIHNNYKSATHENDIALVRLENSVTFTKDIHSVCLPAATQNIPPGSTAYVTGWGAQEYAGHTVPELRQGQVRIISNDVCNAPHSYNGAILSGMLCAGVPQGGVDACQGDSGGPLVQEDSRRLWFIVGIVSWGDQCGLPDKPGVYTRVTAYLDWIRQQTGI"
+    },
+    {
+      "run": "screen-anchor2-Q8N0Z9",
+      "uniprot_id": "Q8N0Z9",
+      "gene": "VSIG10",
+      "seq": "VVIGEVHENVTLHCGNISGLRGQVTWYRNNSEPVFLLSSNSSLRPAEPRFSLVDATSLHIESLSLGDEGIYTCQEILNVTQWFQVWLQVASGPYQIEVHIVATGTLPNGTLYAARGSQVDFSCNSSSRPPPVVEWWFQALNSSSESFGHNLTVNFFSLLLISPNLQGNYTCLALNQLSKRHRKVTTELLVYYPPPSAPQCWAQMASGSFMLQLTCRWDGGYPDPDFLWIEEPGGVIVGKSKLGVEMLSESQLSDGKKFKCVTSHIVGPESGASCMVQIRGPSLLSEPMKTCFTGGNVTLTCQVSGAYPPAKILWLRNLTQPEVIIQPSSRHLITQDGQNSTLTIHNCSQDLDEGYYICRADSPVGVREMEIWLSVKEPLNIGG"
+    },
+    {
+      "run": "screen-anchor2-P43119",
+      "uniprot_id": "P43119",
+      "gene": "PTGIR",
+      "seq": "MADSCRNLTYVRGSVGPATSTLMFVAGVVGNGLALGILSARRPARPSAFAVLVTGLAATDLLGTSFLSPAVFVAYARNSSLLGLARGGPALCDAFAFAMTFFGLASMLILFAMAVERCLALSHPYLYAQLDGPRCARLALPAIYAFCVLFCALPLLGLGQHQQYCPGSWCFLRMRWAQPGGAAFSLAYAGLVALLVAAIFLCNGSVTLSLCRMYRQQKRHQGSLGPRPRTGEDEVDHLILLALMTVVMAVCSLPLTIRCFTQAVAPDSSSEMGDLLAFRFYAFNPILDPWVFILFRKAVFQRLKLWVCCLCLGPAHGDSQTPLSQLASGRRDPRAPSAPVGKEGSCVPLSAWGEGQVEPLPPTQQSSGSAVGTSSKAEASVACSLC"
+    },
+    {
+      "run": "screen-anchor2-Q86VH5",
+      "uniprot_id": "Q86VH5",
+      "gene": "LRRTM3",
+      "seq": "ERGCPKGCRCEGKMVYCESQKLQEIPSSISAGCLGLSLRYNSLQKLKYNQFKGLNQLTWLYLDHNHISNIDENAFNGIRRLKELILSSNRISYFLNNTFRPVTNLRNLDLSYNQLHSLGSEQFRGLRKLLSLHLRSNSLRTIPVRIFQDCRNLELLDLGYNRIRSLARNVFAGMIRLKELHLEHNQFSKLNLALFPRLVSLQNLYLQWNKISVIGQTMSWTWSSLQRLDLSGNEIEAFSGPSVFQCVPNLQRLNLDSNKLTFIGQEILDSWISLNDISLAGNIWECSRNICSLVNWLKSFKGLRENTIICASPKELQGVNVIDAVKNYSICGKSTTERFDLARALPKPTFKPKLPRPKHESKPPLPPTVGATEPGPETDADAEHISFHK"
+    },
+    {
+      "run": "screen-anchor2-O95196",
+      "uniprot_id": "O95196",
+      "gene": "CSPG5",
+      "seq": "VPAREAGSAVEAEELVKGSPAWEPPANDTREEAGPPAAGEDEASWTAPGGELAGPEEVLQESAAVTGTAWLEADSPGLGGVTAEAGSGDAQALPATLQAPHEVLGQSIMPPAIPEATEASGPPSPTPGDKLSPASELPKESPLEVWLNLGGSTPDPQGPELTYPFQGTLEPQPASDIIDIDYFEGLDGEGRGADLGSFPGSPGTSENHPDTEGETPSWSLLDLYDDFTPFDESDFYPTTSFYDDLDEEEEEEEDDKDAVGGGDLEDENELLVPTGKPGLGPGTGQPTSRWHAVPPQHTLGSVPGSSIALRPRPGEPGRDLASSENGTECRSGFVRHNGSCRSVCDLFPSYCHNGGQCYLVENIGAFCRCNTQDYIWHKGMRCESIITDFQVMC"
+    },
+    {
+      "run": "screen-anchor2-Q96J65",
+      "uniprot_id": "Q96J65",
+      "gene": "ABCC12",
+      "seq": "SIKAMAEANVSLRRMKKILIDKSPPSYITQPEDPDTVLLLANATLTWEHEASRKSTPKKLQNQKRHLCKKQRSEAYSERSPPAKGATGPEEQSDSLKSVLHSISFVVRKGKILGICGNVGSGKSSLLAALLGQMQLQKGVVAVNGTLAYVSQQAWIFHGNVRENILFGEKYDHQRYQHTVRVCGLQKDLSNLPYGDLTEIGERGLNLSGGQRQRISLARAVYSDRQLYLLDDPLSAVDAHVGKHVFEECIKKTLRGKTVVLVTHQLQFLESCDEVILLEDGEICEKGTHKELMEERGRYAKLIHNLRGLQFKDPEHLYNAAMVEAFKESPAEREEDAGIIVLAPGNEKDEGKESETGSEFVDTKVPEHQLIQTESPQEGTVTWKTYHTYIKASG"
+    },
+    {
+      "run": "screen-anchor2-P34981",
+      "uniprot_id": "P34981",
+      "gene": "TRHR",
+      "seq": "MENETVSELNQTQLQPRAVVALEYQVVTILLVLIICGLGIVGNIMVVLVVMRTKHMRTPTNCYLVSLAVADLMVLVAAGLPNITDSIYGSWVYGYVGCLCITYLQYLGINASSCSITAFTIERYIAICHPIKAQFLCTFSRAKKIIIFVWAFTSLYCMLWFFLLDLNISTYKDAIVISCGYKISRNYYSPIYLMDFGVFYVVPMILATVLYGFIARILFLNPIPSDPKENSKTWKNDSTHQNTNLNVNTSNRCFNSTVSSRKQVTKMLAVVVILFALLWMPYRTLVVVNSFLSSPFQENWFLLFCRICIYLNSAINPVIYNLMSQKFRAAFRKLCNCKQKPTEKPANYSVALNYSVIKESDHFSTELDDITVTDTYLSATKVSFDDTCLASEVSFSQS"
+    },
+    {
+      "run": "screen-anchor2-Q14162",
+      "uniprot_id": "Q14162",
+      "gene": "SCARF1",
+      "seq": "SELDPKGQHVCVASSPSAELQCCAGWRQKDQECTIPICEGPDACQKDEVCVKPGLCRCKPGFFGAHCSSRCPGQYWGPDCRESCPCHPHGQCEPATGACQCQADRWGARCEFPCACGPHGRCDPATGVCHCEPGWWSSTCRRPCQCNTAAARCEQATGACVCKPGWWGRRCSFRCNCHGSPCEQDSGRCACRPGWWGPECQQQCECVRGRCSAASGECTCPPGFRGARCELPCPAGSHGVQCAHSCGRCKHNEPCSPDTGSCESCEPGWNGTQCQQPCLPGTFGESCEQQCPHCRHGEACEPDTGHCQRCDPGWLGPRCEDPCPTGTFGEDCGSTCPTCVQGSCDTVTGDCVCSAGYWGPSCNASCPAGFHGNNCSVPCECPEGLCHPVSGSCQPGSGSRDT"
+    },
+    {
+      "run": "screen-anchor2-P25092",
+      "uniprot_id": "P25092",
+      "gene": "GUCY2C",
+      "seq": "SQVSQNCHNGSYEISVLMMGNSAFAEPLKNLEDAVNEGLEIVRGRLQNAGLNVTVNATFMYSDGLIHNSGDCRSSTCEGLDLLRKISNAQRMGCVLIGPSCTYSTFQMYLDTELSYPMISAGSFGLSCDYKETLTRLMSPARKLMYFLVNFWKTNDLPFKTYSWSTSYVYKNGTETEDCFWYLNALEASVSYFSHELGFKVVLRQDKEFQDILMDHNRKSNVIIMCGGPEFLYKLKGDRAVAEDIVIILVDLFNDQYFEDNVTAPDYMKNVLVLTLSPGNSLLNSSFSRNLSPTKRDFALAYLNGILLFGHMLKIFLENGENITTPKFAHAFRNLTFEGYDGPVTLDDWGDVDSTMVLLYTSVDTKKYKVLLTYDTHVNKTYPVDMSPTFTWKNSKLPNDITGRGPQ"
+    },
+    {
+      "run": "screen-anchor2-Q6PJF5",
+      "uniprot_id": "Q6PJF5",
+      "gene": "RHBDF2",
+      "seq": "MASADKNGGSVSSVSSSRLQSRKPPNLSITIPPPEKETQAPGEQDSMLPEGFQNRRLKKSQPRTWAAHTTACPPSFLPKRKNPAYLKSVSLQEPRSRWQESSEKRPGFRRQASLSQSIRKGAAQWFGVSGDWEGQRQQWQRRSLHHCSMRYGRLKASCQRDLELPSQEAPSFQGTESPKPCKMPKIVDPLARGRAFRHPEEMDRPHAPHPPLTPGVLSLTSFTSVRSGYSHLPRRKRMSVAHMSLQAAAALLKGRSVLDATGQRCRVVKRSFAFPSFLEEDVVDGADTFDSSFFSKEEMSSMPDDVFESPPLSASYFRGIPHSASPVSPDGVQIPLKEYGRAPVPGPRRGKRIASKVKHFAFDRKKRHYGLGVVGNWLNRSYRRSISSTVQRQLESFDSHRPYFTYWLT"
+    },
+    {
+      "run": "screen-anchor2-Q9HBW9",
+      "uniprot_id": "Q9HBW9",
+      "gene": "ELTD1",
+      "seq": "QNCTKTPCLPNAKCEIRNGIEACYCNMGFSGNGVTICEDDNECGNLTQSCGENANCTNTEGSYYCMCVPGFRSSSNQDRFITNDGTVCIENVNANCHLDNVCIAANINKTLTKIRSIKEPVALLQEVYRNSVTDLSPTDIITYIEILAESSSLLGYKNNTISAKDTLSNSTLTEFVKTVNNFVQRDTFVVWDKLSVNHRRTHLTKLMHTVEQATLRISQSFQKTTEFDTNSTDIALKVFFFDSYNMKHIHPHMNMDGDYINIFPKRKAAYDSNGNVAVAFVYYKSIGPLLSSSDNFLLKPQNYDNSEEEERVISSVISVSMSSNPPTLYELEKITFTLSHRKVTDRYRSLCAFWNYSPDTMNGSWSSEGCELTYSNETHTSCRCNHLTHFAILMSSGPSIGIKDYNILTRITQ"
+    },
+    {
+      "run": "screen-anchor2-Q3MIW9",
+      "uniprot_id": "Q3MIW9",
+      "gene": "DPCR1",
+      "seq": "TTFQEYQKTGELSTSDHIFPLTPGLVYSIPFDHIVLHSGQRPPELPKSTEIHEQKRHCNTTRHSKPTDKPTGNSKTIDHKSSTDNHEAPPTSEENSSNQGKDPMIRNQRSVDPADSTTTHKESAGKKHITPAPKSKINCRKSTTGKSTVTRKSDKTGRPLEKSMSTLDKTSTSSHKTTTSFHNSGNSQTKQKSTSFPEKITAASKTTYKTTGTPEESEKTEDSRTTVASDKLLTKTTKNIQETISANELTQSLAEPTEHGGRTANENNTPSPAEPTENRERTANENKKTICTKGKNTPVPEKPTENLGNTTLTTETIKAPVKSTENPEKTAAVTKTIKPSVKVTGDKSLTTTSSHLNKTEVTHQVPTGSFTLITSRTKLSSITSEATGNESHPYLNKDGSQKGIHAGQMGENDSFPAWA"
+    },
+    {
+      "run": "screen-anchor2-Q9UK23",
+      "uniprot_id": "Q9UK23",
+      "gene": "NAGPA",
+      "seq": "LDSGASRDDDLLLPYPRARARLPRDCTRVRAGNREHESWPPPPATPGAGGLAVRTFVSHFRDRAVAGHLTRAVEPLRTFSVLEPGGPGGCAARRRATVEETARAADCRVAQNGGFFRMNSGECLGNVVSDERRVSSSGGLQNAQFGIRRDGTLVTGYLSEEEVLDTENPFVQLLSGVVWLIRNGSIYINESQATECDETQETGSFSKFVNVISARTAIGHDRKGQLVLFHADGQTEQRGINLWEMAEFLLKQDVVNAINLDGGGSATFVLNGTLASYPSDHCQDNMWRCPRQVSTVVCVHEPRCQPPDCHGHGTCVDGHCQCTGHFWRGPGCDELDCGPSNCSQHGLCTETGCRCDAGWTGSNCSEECPLGWHGPGCQRPCKCEHHCPCDPKTGNCSVSRVKQCLQPPEATLRAGELSFFTRT"
+    },
+    {
+      "run": "screen-anchor2-P30530",
+      "uniprot_id": "P30530",
+      "gene": "AXL",
+      "seq": "APRGTQAEESPFVGNPGNITGARGLTGTLRCQLQVQGEPPEVHWLRDGQILELADSTQTQVPLGEDEQDDWIVVSQLRITSLQLSDTGQYQCLVFLGHQTFVSQPGYVGLEGLPYFLEEPEDRTVAANTPFNLSCQAQGPPEPVDLLWLQDAVPLATAPGHGPQRSLHVPGLNKTSSFSCEAHNAKGVTTSRTATITVLPQQPRNLHLVSRQPTELEVAWTPGLSGIYPLTHCTLQAVLSDDGMGIQAGEPDPPEEPLTSQASVPPHQLRLGSLHPHTPYHIRVACTSSQGPSSWTHWLPVETPEGVPLGPPENISATRNGSQAFVHWQEPRAPLQGTLLGYRLAYQGQDTPEVLMDIGLRQEVTLELQGDGSVSNLTVCVAAYTAAGDGPWSLPVPLEAWRPGQAQPVHQLVKEPSTPAFSWPWW"
+    },
+    {
+      "run": "screen-anchor2-P50281",
+      "uniprot_id": "P50281",
+      "gene": "MMP14",
+      "seq": "YAIQGLKWQHNEITFCIQNYTPKVGEYATYEAIRKAFRVWESATPLRFREVPYAYIREGHEKQADIMIFFAEGFHGDSTPFDGEGGFLAHAYFPGPNIGGDTHFDSAEPWTVRNEDLNGNDIFLVAVHELGHALGLEHSSDPSAIMAPFYQWMDTENFVLPDDDRRGIQQLYGGESGFPTKMPPQPRTTSRPSVPDKPKNPTYGPNICDGNFDTVAMLRGEMFVFKERWFWRVRNNQVMDGYPMPIGQFWRGLPASINTAYERKDGKFVFFKGDKHWVFDEASLEPGYPKHIKELGRGLPTDKIDAALFWMPNGKTYFFRGNKYYRFNEELRAVDSEYPKNIKVWEGIPESPRGSFMGSDEVFTYFYKGNKYWKFNNQKLKVEPGYPKSALRDWMGCPSGGRPDEGTEEETEVIIIEVDEEGGGAVSAAA"
+    },
+    {
+      "run": "screen-anchor2-Q8WWV6",
+      "uniprot_id": "Q8WWV6",
+      "gene": "FCAMR",
+      "seq": "LPQKRPHPRWLWEGSLPSRTHLRAMGTLRPSSPLCWREESSFAAPNSLKGSRLVSGEPGGAVTIQCHYAPSSVNRHQRKYWCRLGPPRWICQTIVSTNQYTHHRYRDRVALTDFPQRGLFVVRLSQLSPDDIGCYLCGIGSENNMLFLSMNLTISAGPASTLPTATPAAGELTMRSYGTASPVANRWTPGTTQTLGQGTAWDTVASTPGTSKTTASAEGRRTPGATRPAAPGTGSWAEGSVKAPAPIPESPPSKSRSMSNTTEGVWEGTRSSVTNRARASKDRREMTTTKADRPREDIEGVRIALDAAKKVLGTIGPPALVSETLAWEILPQATPVSKQQSQGSIGETTPAAGMWTLGTPAADVWILGTPAADVWTSMEAASGEGSAAGDLDAATGDRGPQATLSQTPAVGPWGPPGKESSVKRTFPEDESSSR"
+    },
+    {
+      "run": "screen-anchor2-Q5ZPR3",
+      "uniprot_id": "Q5ZPR3",
+      "gene": "CD276",
+      "seq": "LEVQVPEDPVVALVGTDATLCCSFSPEPGFSLAQLNLIWQLTDTKQLVHSFAEGQDQGSAYANRTALFPDLLAQGNASLRLQRVRVADEGSFTCFVSIRDFGSAAVSLQVAAPYSKPSMTLEPNKDLRPGDTVTITCSSYQGYPEAEVFWQDGQGVPLTGNVTTSQMANEQGLFDVHSILRVVLGANGTYSCLVRNPVLQQDAHSSVTITPQRSPTGAVEVQVPEDPVVALVGTDATLRCSFSPEPGFSLAQLNLIWQLTDTKQLVHSFTEGRDQGSAYANRTALFPDLLAQGNASLRLQRVRVADEGSFTCFVSIRDFGSAAVSLQVAAPYSKPSMTLEPNKDLRPGDTVTITCSSYRGYPEAEVFWQDGQGVPLTGNVTTSQMANEQGLFDVHSVLRVVLGANGTYSCLVRNPVLQQDAHGSVTITGQPMTFPPEA"
+    },
+    {
+      "run": "screen-anchor2-P16066",
+      "uniprot_id": "P16066",
+      "gene": "NPR1",
+      "seq": "GNLTVAVVLPLANTSYPWSWARVGPAVELALAQVKARPDLLPGWTVRTVLGSSENALGVCSDTAAPLAAVDLKWEHNPAVFLGPGCVYAAAPVGRFTAHWRVPLLTAGAPALGFGVKDEYALTTRAGPSYAKLGDFVAALHRRLGWERQALMLYAYRPGDEEHCFFLVEGLFMRVRDRLNITVDHLEFAEDDLSHYTRLLRTMPRKGRVIYICSSPDAFRTLMLLALEAGLCGEDYVFFHLDIFGQSLQGGQGPAPRRPWERGDGQDVSARQAFQAAKIITYKDPDNPEYLEFLKQLKHLAYEQFNFTMEDGLVNTIPASFHDGLLLYIQAVTETLAHGGTVTDGENITQRMWNRSFQGVTGYLKIDSSGDRETDFSLWDMDPENGAFRVVLNYNGTSQELVAVSGRKLNWPLGYPPPDIPKCGFDNEDPACNQDHLSTLE"
+    },
+    {
+      "run": "screen-anchor2-O94911",
+      "uniprot_id": "O94911",
+      "gene": "ABCA8",
+      "seq": "YFEKILPNEYGHRRPPLFFLKSSFWSQTQKTDHVALEDEMDADPSFHDSFEQAPPEFQGKEAIRIRNVTKEYKGKPDKIEALKDLVFDIYEGQITAILGHSGAGKSTLLNILSGLSVPTKGSVTIYNNKLSEMADLENLSKLTGVCPQSNVQFDFLTVRENLRLFAKIKGILPQEVDKEIQRVLLELEMKNIQDVLAQNLSGGQKRKLTFGIAILGDPQIFLLDEPTAGLDPFSRHQVWNLLKERKTDRVILFSTQFMDEADILADRKVFLSQGKLKCAGSSLFLKKKWGIGYHLSLQLNEICVEENITSLVKQHIPDAKLSAKSEGKLIYTLPLERTNKFPELYKDLDSYPDLGIENYGVSMTTLNEVFLKLEGKSTINESDIAILGEVQAEKADDTERLVEMEQVLSSLNKMRKTIGGVALWRQQICAIARVRLLKLKHERKAL"
+    },
+    {
+      "run": "screen-anchor2-Q4VNC0",
+      "uniprot_id": "Q4VNC0",
+      "gene": "ATP13A5",
+      "seq": "NVYAQKRLKKKKIFCISPQRINMCGQINLVCFDKTGTLTEDGLDLWGTVPTADNCFQEAHSFASGQAVPWSPLCAAMASCHSLILLNGTIQGDPLDLKMFEGTAWKMEDCIVDSCKFGTSVSNIIKPGPKASKSPVEAIITLCQFPFSSSLQRMSVIAQLAGENHFHVYMKGAPEMVARFCRSETVPKNFPQELRSYTVQGFRVIALAHKTLKMGNLSEVEHLAREKVESELTFLGLLIMENRLKKETKLVLKELSEARIRTVMITGDNLQTAITVAKNSEMIPPGSQVIIVEADEPEEFVPASVTWQLVENQETGPGKKEIYMHTGNSSTPRGEGGSCYHFAMSGKSYQVIFQHFNSLLPKILVNGTVFARMSPGQKSSLIEEFQKLNYYVGMCGDGANDCGALKAAHAGISLSEQEASVASPFTSKTTNIQCVPHLIREGRAALVSS"
+    },
+    {
+      "run": "screen-anchor2-P17643",
+      "uniprot_id": "P17643",
+      "gene": "TYRP1",
+      "seq": "QFPRQCATVEALRSGMCCPDLSPVSGPGTDRCGSSSGRGRCEAVTADSRPHSPQYPHDGRDDREVWPLRFFNRTCHCNGNFSGHNCGTCRPGWRGAACDQRVLIVRRNLLDLSKEEKNHFVRALDMAKRTTHPLFVIATRRSEEILGPDGNTPQFENISIYNYFVWTHYYSVKKTFLGVGQESFGEVDFSHEGPAFLTWHRYHLLRLEKDMQEMLQEPSFSLPYWNFATGKNVCDICTDDLMGSRSNFDSTLISPNSVFSQWRVVCDSLEDYDTLGTLCNSTEDGPIRRNPAGNVARPMVQRLPEPQDVAQCLEVGLFDTPPFYSNSTNSFRNTVEGYSDPTGKYDPAVRSLHNLAHLFLNGTGGQTHLSPNDPIFVLLHTFTDAVFDEWLRRYNADISTFPLENAPIGHNRQYNMVPFWPPVTNTEMFVTAPDNLGYTYEIQWPSREFSVPE"
+    },
+    {
+      "run": "screen-anchor2-P37088",
+      "uniprot_id": "P37088",
+      "gene": "SCNN1A",
+      "seq": "GEYFSYPVSLNINLNSDKLVFPAVTICTLNPYRYPEIKEELEELDRITEQTLFDLYKYSSFTTLVAGSRSRRDLRGTLPHPLQRLRVPPPPHGARRARSVASSLRDNNPQVDWKDWKIGFQLCNQNKSDCFYQTYSSGVDAVREWYRFHYINILSRLPETLPSLEEDTLGNFIFACRFNQVSCNQANYSHFHHPMYGNCYTFNDKNNSNLWMSSMPGINNGLSLMLRAEQNDFIPLLSTVTGARVMVHGQDEPAFMDDGGFNLRPGVETSISMRKETLDRLGGDYGDCTKNGSDVPVENLYPSKYTQQVCIHSCFQESMIKECGCAYIFYPRPQNVEYCDYRKHSSWGYCYYKLQVDFSSDHLGCFTKCRKPCSVTSYQLSAGYSRWPSVTSQEWVFQMLSRQNNYTVNNKRNGVAKVNIFFKELNYKTNSESPSVTMVTLLSNLGSQWSLWFGSS"
+    },
+    {
+      "run": "screen-anchor2-P11229",
+      "uniprot_id": "P11229",
+      "gene": "CHRM1",
+      "seq": "MNTSAPPAVSPNITVLAPGKGPWQVAFIGITTGLLSLATVTGNLLVLISFKVNTELKTVNNYFLLSLACADLIIGTFSMNLYTTYLLMGHWALGTLACDLWLALDYVASNASVMNLLLISFDRYFSVTRPLSYRAKRTPRRAALMIGLAWLVSFVLWAPAILFWQYLVGERTVLAGQCYIQFLSQPIITFGTAMAAFYLPVTVMCTLYWRIYRETENRARELAALQGSETPGKGGGSSSSSERSQPGAEGSPETPPGRCCRCCRAPRLLQAYSWKEEEEEDEGSMESLTSSEGEEPGSEVVIKMPMVDPEAQAPTKQPPRSSPNTVKRPTKKGRDRAGKGQKPRGKEQLAKRKTFSLVKEKKAARTLSAILLAFILTWTPYNIMVLVSTFCKDCVPETLWELGYWLCYVNSTINPMCYALCNKAFRDTFRLLLLCRWDKRRWRKIPKRPGSVHRTPSRQC"
+    },
+    {
+      "run": "screen-anchor2-P09603",
+      "uniprot_id": "P09603",
+      "gene": "CSF1",
+      "seq": "EEVSEYCSHMIGSGHLQSLQRLIDSQMETSCQITFEFVDQEQLKDPVCYLKKAFLLVQDIMEDTMRFRDNTPNAIAIVQLQELSLRLKSCFTKDYEEHDKACVRTFYETPLQLLEKVKNVFNETKNLLDKDWNIFSKNCNNSFAECSSQDVVTKPDCNCLYPKAIPSSDPASVSPHQPLAPSMAPVAGLTWEDSEGTEGSSLLPGEQPLHTVDPGSAKQRPPRSTCQSFEPPETPVVKDSTIGGSPQPRPSVGAFNPGMEDILDSAMGTNWVPEEASGEASEIPVPQGTELSPSRPGGGSMQTEPARPSNFLSASSPLPASAKGQQPADVTGTALPRVGPVRPTGQDWNHTPQKTDHPSALLRDPPEPGSPRISSLRPQGLSNPSTLSAQPQLSRSHSSGSVLPLGELEGRRSTRDRRSPAEPEGGPASEGAARPLPRFNSVPLTDTGHERQSEGSFSPQLQES"
+    },
+    {
+      "run": "screen-anchor2-Q9NYJ7",
+      "uniprot_id": "Q9NYJ7",
+      "gene": "DLL3",
+      "seq": "AGVFELQIHSFGPGPGPGAPRSPCSARLPCRLFFRVCLKPGLSEEAAESPCALGAALSARGPVYTEQPGAPAPDLPLPDGLLQVPFRDAWPGTFSFIIETWREELGDQIGGPAWSLLARVAGRRRLAAGGPWARDIQRAGAWELRFSYRARCEPPAVGTACTRLCRPRSAPSRCGPGLRPCAPLEDECEAPLVCRAGCSPEHGFCEQPGECRCLEGWTGPLCTVPVSTSSCLSPRGPSSATTGCLVPGPGPCDGNPCANGGSCSETPRSFECTCPRGFYGLRCEVSGVTCADGPCFNGGLCVGGADPDSAYICHCPPGFQGSNCEKRVDRCSLQPCRNGGLCLDLGHALRCRCRAGFAGPRCEHDLDDCAGRACANGGTCVEGGGAHRCSCALGFGGRDCRERADPCAARPCAHGGRCYAHFSGLVCACAPGYMGARCEFPVHPDGASALPAAPPGLRPGDPQRYL"
+    },
+    {
+      "run": "screen-anchor2-O15146",
+      "uniprot_id": "O15146",
+      "gene": "MUSK",
+      "seq": "LPKAPVITTPLETVDALVEEVATFMCAVESYPQPEISWTRNKILIKLFDTRYSIRENGQLLTILSVEDSDDGIYCCTANNGVGGAVESCGALQVKMKPKITRPPINVKIIEGLKAVLPCTTMGNPKPSVSWIKGDSPLRENSRIAVLESGSLRIHNVQKEDAGQYRCVAKNSLGTAYSKVVKLEVEVFARILRAPESHNVTFGSFVTLHCTATGIPVPTITWIENGNAVSSGSIQESVKDRVIDSRLQLFITKPGLYTCIATNKHGEKFSTAKAAATISIAEWSKPQKDNKGYCAQYRGEVCNAVLAKDALVFLNTSYADPEEAQELLVHTAWNELKVVSPVCRPAAEALLCNHIFQECSPGVVPTPIPICREYCLAVKELFCAKEWLVMEEKTHRGLYRSEMHLLSVPECSKLPSMHWDPTACARLPHLDYNKENLKTFPPMTSSKPSVDIPNLPSSSSSSFSVSPTYSMT"
+    },
+    {
+      "run": "screen-anchor2-Q9UKF5",
+      "uniprot_id": "Q9UKF5",
+      "gene": "ADAM29",
+      "seq": "WIHFRIVEIVVVIDNYLYIRYERNDSKLLEDLYVIVNIVDSILDVIGVKVLLFGLEIWTNKNLIVVDDVRKSVHLYCKWKSENITPRMQHDTSHLFTTLGLRGLSGIGAFRGMCTPHRSCAIVTFMNKTLGTFSIAVAHHLGHNLGMNHDEDTCRCSQPRCIMHEGNPPITKFSNCSYGDFWEYTVERTKCLLETVHTKDIFNVKRCGNGVVEEGEECDCGPLKHCAKDPCCLSNCTLTDGSTCAFGLCCKDCKFLPSGKVCRKEVNECDLPEWCNGTSHKCPDDFYVEDGIPCKERGYCYEKSCHDRNEQCRRIFGAGANTASETCYKELNTLGDRVGHCGIKNATYIKCNISDVQCGRIQCENVTEIPNMSDHTTVHWARFNDIMCWSTDYHLGMKGPDIGEVKDGTECGIDHICIHRHCVHITILNSNCSPAFCNKRGICNNKHHCHCNYLWDPPNCLIKGYGGSVDSGPPPKRKKKK"
+    },
+    {
+      "run": "screen-anchor2-P10696",
+      "uniprot_id": "P10696",
+      "gene": "ALPPL2",
+      "seq": "IIPVEEENPDFWNRQAAEALGAAKKLQPAQTAAKNLIIFLGDGMGVSTVTAARILKGQKKDKLGPETFLAMDRFPYVALSKTYSVDKHVPDSGATATAYLCGVKGNFQTIGLSAAARFNQCNTTRGNEVISVMNRAKKAGKSVGVVTTTRVQHASPAGAYAHTVNRNWYSDADVPASARQEGCQDIATQLISNMDIDVILGGGRKYMFPMGTPDPEYPDDYSQGGTRLDGKNLVQEWLAKHQGARYVWNRTELLQASLDPSVTHLMGLFEPGDMKYEIHRDSTLDPSLMEMTEAALLLLSRNPRGFFLFVEGGRIDHGHHESRAYRALTETIMFDDAIERAGQLTSEEDTLSLVTADHSHVFSFGGYPLRGSSIFGLAPGKARDRKAYTVLLYGNGPGYVLKDGARPDVTESESGSPEYRQQSAVPLDGETHAGEDVAVFARGPQAHLVHGVQEQTFIAHVMAFAACLEPYTACDLAPRAGTTD"
+    },
+    {
+      "run": "screen-anchor2-O43506",
+      "uniprot_id": "O43506",
+      "gene": "ADAM20",
+      "seq": "RFVELVVVVDNIRYLFSQSNATTVQHEVFNVVNIVDSFYHPLEVDVILTGIDIWTASNPLPTSGDLDNVLEDFSIWKNYNLNNRLQHDVAHLFIKDTQGMKLGVAYVKGICQNPFNTGVDVFEDNRLVVFAITLGHELGHNLGMQHDTQWCVCELQWCIMHAYRKVTTKFSNCSYAQYWDSTISSGLCIQPPPYPGNIFRLKYCGNLVVEEGEECDCGTIRQCAKDPCCLLNCTLHPGAACAFGICCKDCKFLPSGTLCRQQVGECDLPEWCNGTSHQCPDDVYVQDGISCNVNAFCYEKTCNNHDIQCKEIFGQDARSASQSCYQEINTQGNRFGHCGIVGTTYVKCWTPDIMCGRVQCENVGVIPNLIEHSTVQQFHLNDTTCWGTDYHLGMAIPDIGEVKDGTVCGPEKICIRKKCASMVHLSQACQPKTCNMRGICNNKQHCHCNHEWAPPYCKDKGYGGSADSGPPPKNNMEGLNVMGKLRY"
+    },
+    {
+      "run": "screen-anchor2-Q9BY79",
+      "uniprot_id": "Q9BY79",
+      "gene": "MFRP",
+      "seq": "QLQAAPPSGASHSPLPAGGLTTTTTTPTITTSQAAGTPKGQQESGVSPSPQSTCGGLLSGPRGFFSSPNYPDPYPPNTHCVWHIQVATDHAIQLKIEALSIESVASCLFDRLELSPEPEGPLLRVCGRVPPPTLNTNASHLLVVFVSDSSVEGFGFHAWYQAMAPGRGSCAHDEFRCDQLICLLPDSVCDGFANCADGSDETNCSAKFSGCGGNLTGLQGTFSTPSYLQQYPHQLLCTWHISVPAGHSIELQFHNFSLEAQDECKFDYVEVYETSSSGAFSLLGRFCGAEPPPHLVSSHHELAVLFRTDHGISSGGFSATYLAFNATENPCGPSELSCQAGGCKGVQWMCDMWRDCTDGSDDNCSGPLFPPPELACEPVQVEMCLGLSYNTTAFPNIWVGMITQEEVVEVLSGYKSLTSLPCYQHFRRLLCGLLVPRCTPLGSVLPPCRSVCQEAEHQCQSGLALLGTPWPFNCNRLPEAADLEACAQP"
+    },
+    {
+      "run": "screen-anchor2-Q9HCJ1",
+      "uniprot_id": "Q9HCJ1",
+      "gene": "ANKH",
+      "seq": "MVKFPALTHYWPLIRFLVPLGITNIAIDFGEQALNRGIAAVKEDAVEMLASYGLAYSLMKFFTGPMSDFKNVGLVFVNSKRDRTKAVLCMVVAGAIAAVFHTLIAYSDLGYYIINKLHHVDESVGSKTRRAFLYLAAFPFMDAMAWTHAGILLKHKYSFLVGCASISDVIAQVVFVAILLHSHLECREPLLIPILSLYMGALVRCTTLCLGYYKNIHDIIPDRSGPELGGDATIRKMLSFWWPLALILATQRISRPIVNLFVSRDLGGSSAATEAVAILTATYPVGHMPYGWLTEIRAVYPAFDKNNPSNKLVSTSNTVTAAHIKKFTFVCMALSLTLCFVMFWTPNVSEKILIDIIGVDFAFAELCVVPLRIFSFFPVPVTVRAHLTGWLMTLKKTFVLAPSSVLRIIVLIASLVVLPYLGVHGATLGVGSLLAGFVGESTMVAIAACYVYRKQKKKMENESATEGEDSAMTDMPPTEEVTDIVEMREENE"
+    },
+    {
+      "run": "screen-anchor2-Q9H013",
+      "uniprot_id": "Q9H013",
+      "gene": "ADAM19",
+      "seq": "REDLNSMKYVELYLVADYLEFQKNRRDQDATKHKLIEIANYVDKFYRSLNIRIALVGLEVWTHGNMCEVSENPYSTLWSFLSWRRKLLAQKYHDNAQLITGMSFHGTTIGLAPLMAMCSVYQSGGVNMDHSENAIGVAATMAHEMGHNFGMTHDSADCCSASAADGGCIMAAATGHPFPKVFNGCNRRELDRYLQSGGGMCLSNMPDTRMLYGGRRCGNGYLEDGEECDCGEEEECNNPCCNASNCTLRPGAECAHGSCCHQCKLLAPGTLCREQARQCDLPEFCTGKSPHCPTNFYQMDGTPCEGGQAYCYNGMCLTYQEQCQQLWGPGARPAPDLCFEKVNVAGDTFGNCGKDMNGEHRKCNMRDAKCGKIQCQSSEARPLESNAVPIDTTIIMNGRQIQCRGTHVYRGPEEEGDMLDPGLVMTGTKCGYNHICFEGQCRNTSFFETEGCGKKCNGHGVCNNNQNCHCLPGWAPPFCNTPGHGGSIDSGPMPPES"
+    },
+    {
+      "run": "screen-anchor2-Q13740",
+      "uniprot_id": "Q13740",
+      "gene": "ALCAM",
+      "seq": "WYTVNSAYGDTIIIPCRLDVPQNLMFGKWKYEKPDGSPVFIAFRSSTKKSVQYDDVPEYKDRLNLSENYTLSISNARISDEKRFVCMLVTEDNVFEAPTIVKVFKQPSKPEIVSKALFLETEQLKKLGDCISEDSYPDGNITWYRNGKVLHPLEGAVVIIFKKEMDPVTQLYTMTSTLEYKTTKADIQMPFTCSVTYYGPSGQKTIHSEQAVFDIYYPTEQVTIQVLPPKNAIKEGDNITLKCLGNGNPPPEEFLFYLPGQPEGIRSSNTYTLTDVRRNATGDYKCSLIDKKSMIASTAITVHYLDLSLNPSGEVTRQIGDALPVSCTISASRNATVVWMKDNIRLRSSPSFSSLHYQDAGNYVCETALQEVEGLKKRESLTLIVEGKPQIKMTKKTDPSGLSKTIICHVEGFPKPAIQWTITGSGSVINQTEESPYINGRYYSKIIISPEENVTLTCTAENQLERTVNSLNVSAISIPEHDEADEISDENREKVNDQAK"
+    },
+    {
+      "run": "screen-anchor2-Q9NR61",
+      "uniprot_id": "Q9NR61",
+      "gene": "DLL4",
+      "seq": "SGVFQLQLQEFINERGVLASGRPCEPGCRTFFRVCLKHFQAVVSPGPCTFGTVSTPVLGTNSFAVRDDSSGGGRNPLQLPFNFTWPGTFSLIIEAWHAPGDDLRPEALPPDALISKIAIQGSLAVGQNWLLDEQTSTLTRLRYSYRVICSDNYYGDNCSRLCKKRNDHFGHYVCQPDGNLSCLPGWTGEYCQQPICLSGCHEQNGYCSKPAECLCRPGWQGRLCNECIPHNGCRHGTCSTPWQCTCDEGWGGLFCDQDLNYCTHHSPCKNGATCSNSGQRSYTCTCRPGYTGVDCELELSECDSNPCRNGGSCKDQEDGYHCLCPPGYYGLHCEHSTLSCADSPCFNGGSCRERNQGANYACECPPNFTGSNCEKKVDRCTSNPCANGGQCLNRGPSRMCRCRPGFTGTYCELHVSDCARNPCAHGGTCHDLENGLMCTCPAGFSGRRCEVRTSIDACASSPCFNRATCYTDLSTDTFVCNCPYGFVGSRCEFPVGLPPSFPW"
+    },
+    {
+      "run": "screen-anchor2-Q9P2V4",
+      "uniprot_id": "Q9P2V4",
+      "gene": "LRIT1",
+      "seq": "FCPSQCSCSLHIMGDGSKARTVVCNDPDMTLPPASIPPDTSRLRLERTAIRRVPGEAFRPLGRLEQLWLPYNALSELNALMLRGLRRLRELRLPGNRLAAFPWAALRDAPKLRLLDLQANRLSAVPAEAARFLENLTFLDLSSNQLMRLPQELIVSWAHLETGIFPPGHHPRRVLGLQDNPWACDCRLYDLVHLLDGWAPNLAFIETELRCASPRSLAGVAFSQLELRKCQGPELHPGVASIRSLLGGTALLRCGATGVPGPEMSWRRANGRPLNGTVHQEVSSDGTSWTLLGLPAVSHLDSGDYICQAKNFLGASETVISLIVTEPPTSTEHSGSPGALWARTGGGGEAAAYNNKLVARHVPQIPKPAVLATGPSVPSTKEELTLEHFQMDALGELSDGRAGPSEARMVRSVKVVGDTYHSVSLVWKAPQAKNTTAFSVLYAVFGQHSMRRVIVQPGKTRVTITGLLPKTKYVACVCVQGLVPRKEQCVIFSTNEVVDAENTQQ"
+    },
+    {
+      "run": "screen-anchor2-Q01650",
+      "uniprot_id": "Q01650",
+      "gene": "SLC7A5",
+      "seq": "MAGAGPKRRALAAPAAEEKEEAREKMLAAKSADGSAPAGEGEGVTLQRNITLLNGVAIIVGTIIGSGIFVTPTGVLKEAGSPGLALVVWAACGVFSIVGALCYAELGTTISKSGGDYAYMLEVYGSLPAFLKLWIELLIIRPSSQYIVALVFATYLLKPLFPTCPVPEEAAKLVACLCVLLLTAVNCYSVKAATRVQDAFAAAKLLALALIILLGFVQIGKGDVSNLDPNFSFEGTKLDVGNIVLALYSGLFAYGGWNYLNFVTEEMINPYRNLPLAIIISLPIVTLVYVLTNLAYFTTLSTEQMLSSEAVAVDFGNYHLGVMSWIIPVFVGLSCFGSVNGSLFTSSRLFFVGSREGHLPSILSMIHPQLLTPVPSLVFTCVMTLLYAFSKDIFSVINFFSFFNWLCVALAIIGMIWLRHRKPELERPIKVNLALPVFFILACLFLIAVSFWKTPVECGIGFTIILSGLPVYFFGVWWKNKPKWLLQGIFSTTVLCQKLMQVVPQET"
+    },
+    {
+      "run": "screen-anchor2-Q9Y3Q7",
+      "uniprot_id": "Q9Y3Q7",
+      "gene": "ADAM18",
+      "seq": "NLSKLLPQYLEIYIIVEKALYDYMGSEMMAVTQKIVQVIGLVNTMFTQFKLTVILSSLELWSNENQISTSGDADDILQRFLAWKRDYLILRPHDIAYLLVYRKHPKYVGATFPGTVCNKSYDAGIAMYPDAIGLEGFSVIIAQLLGLNVGLTYDDITQCFCLRATCIMNHEAVSASGRKIFSNCSMHDYRYFVSKFETKCLQKLSNLQPLHQNQPVCGNGILESNEECDCGNKNECQFKKCCDYNTCKLKGSVKCGSGPCCTSKCELSIAGTPCRKSIDPECDFTEYCNGTSSNCVPDTYALNGRLCKLGTAYCYNGQCQTTDNQCAKIFGKGAQGAPFACFKEVNSLHERSENCGFKNSQPLPCERKDVLCGKLACVQPHKNANKSDAQSTVYSYIQDHVCVSIATGSSMRSDGTDNAYVADGTMCGPEMYCVNKTCRKVHLMGYNCNATTKCKGKGICNNFGNCQCFPGHRPPDCKFQFGSPGGSIDDGNFQKSGDFYTEKGYNTHWNN"
+    },
+    {
+      "run": "screen-anchor2-Q9ULH4",
+      "uniprot_id": "Q9ULH4",
+      "gene": "LRFN2",
+      "seq": "CPKYCVCQNLSESLGTLCPSKGLLFVPPDIDRRTVELRLGGNFIIHISRQDFANMTGLVDLTLSRNTISHIQPFSFLDLESLRSLHLDSNRLPSLGEDTLRGLVNLQHLIVNNNQLGGIADEAFEDFLLTLEDLDLSYNNLHGLPWDSVRRMVNLHQLSLDHNLLDHIAEGTFADLQKLARLDLTSNRLQKLPPDPIFARSQASALTATPFAPPLSFSFGGNPLHCNCELLWLRRLERDDDLETCGSPGGLKGRYFWHVREEEFVCEPPLITQHTHKLLVLEGQAATLKCKAIGDPSPLIHWVAPDDRLVGNSSRTAVYDNGTLDIFITTSQDSGAFTCIAANAAGEATAMVEVSIVQLPHLSNSTSRTAPPKSRLSDITGSSKTSRGGGGSGGGEPPKSPPERAVLVSEVTTTSALVKWSVSKSAPRVKMYQLQYNCSDDEVLIYRMIPASNKAFVVNNLVSGTGYDLCVLAMWDDTATTLTATNIVGCAQFFTKADYPQCQSMHSQILGGTM"
+    },
+    {
+      "run": "screen-anchor2-P42261",
+      "uniprot_id": "P42261",
+      "gene": "GRIA1",
+      "seq": "ANFPNNIQIGGLFPNQQSQEHAAFRFALSQLTEPPKLLPQIDIVNISDSFEMTYRFCSQFSKGVYAIFGFYERRTVNMLTSFCGALHVCFITPSFPVDTSNQFVLQLRPELQDALISIIDHYKWQKFVYIYDADRGLSVLQKVLDTAAEKNWQVTAVNILTTTEEGYRMLFQDLEKKKERLVVVDCESERLNAILGQIIKLEKNGIGYHYILANLGFMDIDLNKFKESGANVTGFQLVNYTDTIPAKIMQQWKNSDARDHTRVDWKRPKYTSALTYDGVKVMAEAFQSLRRQRIDISRRGNAGDCLANPAVPWGQGIDIQRALQQVRFEGLTGNVQFNEKGRRTNYTLHVIEMKHDGIRKIGYWNEDDKFVPAATDAQAGGDNSSVQNRTYIVTTILEDPYVMLKKNANQFEGNDRYEGYCVELAAEIAKHVGYSYRLEIVSDGKYGARDPDTKAWNGMVGELVYGRADVAVAPLTITLVREEVIDFSKPFMSLGISIMIKKPQKSKPGVFSFLDPLA"
+    },
+    {
+      "run": "screen-anchor2-O42043",
+      "uniprot_id": "O42043",
+      "gene": "ERVK-18",
+      "seq": "MVTPVTWMDNPIEVYVNDSVWVPGPTDDRCPAKPEEEGMMINISIGYHYPPICLGRAPGCLMPAVQNWLVEVPTVSPNSRFTYHMVSGMSLRPRVNCLQDFSYQRSLKFRPKGKTCPKEIPKGSKNTEVLVWEECVANSVVILQNNEFGTIIDWAPRGQFYHNCSGQTQSCPSAQVSPAVDSDLTESLDKHKHKKLQSFYLWEWEEKGISTPRPKIISPVSGPEHPELWRLTVASHHIRIWSGNQTLETRYRKPFYTIDLNSILTVPLQSCVKPPYMLVVGNIVIKPASQTITCENCRLFTCIDSTFNWQHRILLVRAREGMWIPVSTDRPWEASPSIHILTEILKGVLNRSKRFIFTLIAVIMGLIAVTATAAVAGVALHSSVQSVNFVNYWQKNSTRLWNSQSSIDQKLASQINDLRQTVIWMGDRLMTLEHHFQLQCDWNTSDFCITPQIYNESEHHWDMVRRHLQGREDNLTLDISKLKEQIFEASKAHLNLVPGTEAIAGVADGLANLNPVTWIKT"
+    },
+    {
+      "run": "screen-anchor2-P21589",
+      "uniprot_id": "P21589",
+      "gene": "NT5E",
+      "seq": "WELTILHTNDVHSRLEQTSEDSSKCVNASRCMGGVARLFTKVQQIRRAEPNVLLLDAGDQYQGTIWFTVYKGAEVAHFMNALRYDAMALGNHEFDNGVEGLIEPLLKEAKFPILSANIKAKGPLASQISGLYLPYKVLPVGDEVVGIVGYTSKETPFLSNPGTNLVFEDEITALQPEVDKLKTLNVNKIIALGHSGFEMDKLIAQKVRGVDVVVGGHSNTFLYTGNPPSKEVPAGKYPFIVTSDDGRKVPVVQAYAFGKYLGYLKIEFDERGNVISSHGNPILLNSSIPEDPSIKADINKWRIKLDNYSTQELGKTIVYLDGSSQSCRFRECNMGNLICDAMINNNLRHTDEMFWNHVSMCILNGGGIRSPIDERNNGTITWENLAAVLPFGGTFDLVQLKGSTLKKAFEHSVHRYGQSTGEFLQVGGIHVVYDLSRKPGDRVVKLDVLCTKCRVPSYDPLKMDEVYKVILPNFLANGGDGFQMIKDELLRHDSGDQDINVVSTYISKMKVIYPAVEGRIKFS"
+    },
+    {
+      "run": "screen-anchor2-Q16099",
+      "uniprot_id": "Q16099",
+      "gene": "GRIK4",
+      "seq": "SPHSLRIAAILDDPMECSRGERLSITLAKNRINRAPERLGKAKVEVDIFELLRDSEYETAETMCQILPKGVVAVLGPSSSPASSSIISNICGEKEVPHFKVAPEEFVKFQFQRFTTLNLHPSNTDISVAVAGILNFFNCTTACLICAKAECLLNLEKLLRQFLISKDTLSVRMLDDTRDPTPLLKEIRDDKTATIIIHANASMSHTILLKAAELGMVSAYYTYIFTNLEFSLQRMDSLVDDRVNILGFSIFNQSHAFFQEFAQSLNQSWQENCDHVPFTGPALSSALLFDAVYAVVTAVQELNRSQEIGVKPLSCGSAQIWQHGTSLMNYLRMVELEGLTGHIEFNSKGQRSNYALKILQFTRNGFRQIGQWHVAEGLSMDSHLYASNISDTLFNTTLVVTTILENPYLMLKGNHQEMEGNDRYEGFCVDMLKELAEILRFNYKIRLVGDGVYGVPEANGTWTGMVGELIARKADLAVAGLTITAEREKVIDFSKPFMTLGISILYRVHMGRKPGYFSFLDPFSP"
+    },
+    {
+      "run": "screen-anchor2-Q9UF33",
+      "uniprot_id": "Q9UF33",
+      "gene": "EPHA6",
+      "seq": "WPGDCSHVSNNQVVLLDTTTVLGELGWKTYPLNGWDAITEMDEHNRPIHTYQVCNVMEPNQNNWLRTNWISRDAAQKIYVEMKFTLRDCNSIPWVLGTCKETFNLFYMESDESHGIKFKPNQYTKIDTIAADESFTQMDLGDRILKLNTEIREVGPIERKGFYLAFQDIGACIALVSVRVFYKKCPFTVRNLAMFPDTIPRVDSSSLVEVRGSCVKSAEERDTPKLYCGADGDWLVPLGRCICSTGYEEIEGSCHACRPGFYKAFAGNTKCSKCPPHSLTYMEATSVCQCEKGYFRAEKDPPSMACTRPPSAPRNVVFNINETALILEWSPPSDTGGRKDLTYSVICKKCGLDTSQCEDCGGGLRFIPRHTGLINNSVIVLDFVSHVNYTFEIEAMNGVSELSFSPKPFTAITVTTDQDAPSLIGVVRKDWASQNSIALSWQAPAFSNGAILDYEIKYYEKEHEQLTYSSTRSKAPSVIITGLKPATKYVFHIRVRTATGYSGYSQKFEFETGDETSDMAAEQGQILV"
+    },
+    {
+      "run": "screen-anchor2-Q5JZY3",
+      "uniprot_id": "Q5JZY3",
+      "gene": "EPHA10",
+      "seq": "EEVILLDSKASQAELGWTALPSNGWEEISGVDEHDRPIRTYQVCNVLEPNQDNWLQTGWISRGRGQRIFVELQFTLRDCSSIPGAAGTCKETFNVYYLETEADLGRGRPRLGGSRPRKIDTIAADESFTQGDLGERKMKLNTEVREIGPLSRRGFHLAFQDVGACVALVSVRVYYKQCRATVRGLATFPATAAESAFSTLVEVAGTCVAHSEGEPGSPPRMHCGADGEWLVPVGRCSCSAGFQERGDFCEACPPGFYKVSPRRPLCSPCPEHSRALENASTFCVCQDSYARSPTDPPSASCTRPPSAPRDLQYSLSRSPLVLRLRWLPPADSGGRSDVTYSLLCLRCGREGPAGACEPCGPRVAFLPRQAGLRERAATLLHLRPGARYTVRVAALNGVSGPAAAAGTTYAQVTVSTGPGAPWEEDEIRRDRVEPQSVSLSWREPIPAGAPGANDTEYEIRYYEKGQSEQTYSMVKTGAPTVTVTNLKPATRYVFQIRAASPGPSWEAQSFNPSIEVQTLGEAASGSRDQSPA"
+    },
+    {
+      "run": "screen-anchor2-Q14957",
+      "uniprot_id": "Q14957",
+      "gene": "GRIN2C",
+      "seq": "GLGPGQGEQGMTVAVVFSSSGPPQAQFRARLTPQSFLDLPLEIQPLTVGVNTTNPSSLLTQICGLLGAAHVHGIVFEDNVDTEAVAQILDFISSQTHVPILSISGGSAVVLTPKEPGSAFLQLGVSLEQQLQVLFKVLEEYDWSAFAVITSLHPGHALFLEGVRAVADASHVSWRLLDVVTLELGPGGPRARTQRLLRQLDAPVFVAYCSREEAEVLFAEAAQAGLVGPGHVWLVPNLALGSTDAPPATFPVGLISVVTESWRLSLRQKVRDGVAILALGAHSYWRQHGTLPAPAGDCRVHPGPVSPAREAFYRHLLNVTWEGRDFSFSPGGYLVQPTMVVIALNRHRLWEMVGRWEHGVLYMKYPVWPRYSASLQPVVDSRHLTVATLEERPFVIVESPDPGTGGCVPNTVPCRRQSNHTFSSGDVAPYTKLCCKGFCIDILKKLARVVKFSYDLYLVTNGKHGKRVRGVWNGMIGEVYYKRADMAIGSLTINEERSEIVDFSVPFVETGISVMVARSNGTVSPSAFLEPYSPA"
+    },
+    {
+      "run": "screen-anchor2-P58401",
+      "uniprot_id": "P58401",
+      "gene": "NRXN2",
+      "seq": "ARVSSSLSTTHHVHHFHSKHGTVPIAINRMPFLTRGGHAGTTYIFGKGGALITYTWPPNDRPSTRMDRLAVGFSTHQRSAVLVRVDSASGLGDYLQLHIDQGTVGVIFNVGTDDITIDEPNAIVSDGKYHVVRFTRSGGNATLQVDSWPVNERYPAGNFDNERLAIARQRIPYRLGRVVDEWLLDKGRQLTIFNSQAAIKIGGRDQGRPFQGQVSGLYYNGLKVLALAAESDPNVRTEGHLRLVGEGPSVLLSAETTATTLLADMATTIMETTTTMATTTTRRGRSPTLRDSTTQNTDDLLVASAECPSDDEDLEECEPSTGGELILPIITEDSLDPPPVATRSPFVPPPPTFYPFLTGVGATQDTLPPPAARRPPSGGPCQAERDDSDCEEPIEASGFASGEVFDSSLPPTDDEDFYTTFPLVTDRTTLLSPRKPAPRPNLRTDGATGAPGVLFAPSAPAPNLPAGKMNHRDPLQPLLENPPLGPGAPTSFEPRRPPPLRPGVTSAPGFPHLPTANPTGPGERGPPGAVEVIRESSSTT"
+    },
+    {
+      "run": "screen-anchor2-Q9UKH3",
+      "uniprot_id": "Q9UKH3",
+      "gene": "ERVK-9",
+      "seq": "LPMPAGAAAANYTNWAYVPFPPLIRAVTWMDNPIEVYVNDSVWVPGPIDDRCPAKPEEEGMMINISIGYRYPICLGRAPGCLMPAVQNWLVEVPIVSPICRFTYHMVSGMSLRPRVNYLQDFSYQRSLKFRPKGKPCPKEIPKESKNTEVLVWEECVANSAVILQNNEFGTIIDWTPQGQFYHNCSGQTQSCPSAQVSPAVDSDLTESLDKHKHKKLQSFYPWEWGEKGISTPRPKIISPVSGPEHPELWRLTVASHHIRIWSGNQTLETRDRKPFYTVDLNSSLTLPLQSCVKPPYMLVVGNIVIKPDSQTITCENCRLLTCIDSTFNWQHRILLVRAREGVWIPVSMDRPWEASPSIHILTEVLKGVLNRSKRFIFTLIAVIMGLIAVTATAAVAGVALHSSVQSVNFVNDGQKNSTRLWNSQSSIDQKLANQINDLRQTVIWMGDRLMSLEHRFQLQCDWNTSDFCITPQIYNESEHHWDMVRRHLQGREDNLTLDISKLKEQIFEASKAHLNLVPGTEAIAGVADGLANLNPVTWVKT"
+    },
+    {
+      "run": "screen-anchor2-Q8NA29",
+      "uniprot_id": "Q8NA29",
+      "gene": "MFSD2A",
+      "seq": "MAKGEGAESGSAAGLLPTSILQSTERPAQVKKEPKKKKQQLSVCNKLCYALGGAPYQVTGCALGFFLQIYLLDVAQKDEEVVFCFSSFQVGPFSASIILFVGRAWDAITDPLVGLCISKSPWTCLGRLMPWIIFSTPLAVIAYFLIWFVPDFPHGQTYWYLLFYCLFETMVTCFHVPYSALTMFISTEQTERDSATAYRMTVEVLGTVLGTAIQGQIVGQADTPCFQDLNSSTVASQSANHTHGTTSHRETQKAYLLAAGVIVCIYIICAVILILGVREQREPYEAQQSEPIAYFRGLRLVMSHGPYIKLITGFLFTSLAFMLVEGNFVLFCTYTLGFRNEFQNLLLAIMLSATLTIPIWQWFLTRFGKKTAVYVGISSAVPFLILVALMESNLIITYAVAVAAGISVAAAFLLPWSMLPDVIDDFHLKQPHFHGTEPIFFSFYVFFTKFASGVSLGISTLSLDFAGYQTRGCSQPERVKFTLNMLVTMAPIVLILLGLLLFKMYPIDEERRRQNKKALQALRDEASSSGCSETDSTELASIL"
+    },
+    {
+      "run": "screen-anchor2-P10809",
+      "uniprot_id": "P10809",
+      "gene": "HSPD1",
+      "seq": "AKDVKFGADARALMLQGVDLLADAVAVTMGPKGRTVIIEQSWGSPKVTKDGVTVAKSIDLKDKYKNIGAKLVQDVANNTNEEAGDGTTTATVLARSIAKEGFEKISKGANPVEIRRGVMLAVDAVIAELKKQSKPVTTPEEIAQVATISANGDKEIGNIISDAMKKVGRKGVITVKDGKTLNDELEIIEGMKFDRGYISPYFINTSKGQKCEFQDAYVLLSEKKISSIQSIVPALEIANAHRKPLVIIAEDVDGEALSTLVLNRLKVGLQVVAVKAPGFGDNRKNQLKDMAIATGGAVFGEEGLTLNLEDVQPHDLGKVGEVIVTKDDAMLLKGKGDKAQIEKRIQEIIEQLDVTTSEYEKEKLNERLAKLSDGVAVLKVGGTSDVEVNEKKDRVTDALNATRAAVEEGIVLGGGCALLRCIPALDSLTPANEDQKIGIEIIKRTLKIPAMTIAKNAGVEGSLIVEKIMQSSSEVGYDAMAGDFVNMVEKGIIDPTKVVRTALLDAAGVASLLTTAEVVVTEIPKEEKDPGMGAMGGMGGGMGGGMF"
+    },
+    {
+      "run": "screen-anchor2-Q12770",
+      "uniprot_id": "Q12770",
+      "gene": "SCAP",
+      "seq": "RVLCPRNYGQLGGGPGRRRRGELPCDDYGYAPPETEIVPLVLRGHLMDIECLASDGMLLVSCCLAGHVCVWDAQTGDCLTRIPRPGRQRRDSGVGSGLEAQESWERLSDGGKAGPEEPGDSPPLRHRPRGPPPPSLFGDQPDLTCLIDTNFSAQPRSSQPTQPEPRHRAVCGRSRDSPGYDFSCLVQRVYQEEGLAAVCTPALRPPSPGPVLSQAPEDEGGSPEKGSPSLAWAPSAEGSIWSLELQGNLIVVGRSSGRLEVWDAIEGVLCCSSEEVSSGITALVFLDKRIVAARLNGSLDFFSLETHTALSPLQFRGTPGRGSSPASPVYSSSDTVACHLTHTVPCAHQKPITALKAAAGRLVTGSQDHTLRVFRLEDSCCLFTLQGHSGAITTVYIDQTMVLASGGQDGAICLWDVLTGSRVSHVFAHRGDVTSLTCTTSCVISSGLDDLISIWDRSTGIKFYSIQQDLGCGASLGVISDNLLVTGGQGCVSFWDLNYGDLLQTVYLGKNSEAQPARQILVLDNAAIVCNFGSELSLVYVPSVLEKLD"
+    },
+    {
+      "run": "screen-anchor2-Q6EMK4",
+      "uniprot_id": "Q6EMK4",
+      "gene": "VASN",
+      "seq": "CPSGCQCSQPQTVFCTARQGTTVPRDVPPDTVGLYVFENGITMLDAGSFAGLPGLQLLDLSQNQIASLPSGVFQPLANLSNLDLTANRLHEITNETFRGLRRLERLYLGKNRIRHIQPGAFDTLDRLLELKLQDNELRALPPLRLPRLLLLDLSHNSLLALEPGILDTANVEALRLAGLGLQQLDEGLFSRLRNLHDLDVSDNQLERVPPVIRGLRGLTRLRLAGNTRIAQLRPEDLAGLAALQELDVSNLSLQALPGDLSGLFPRLRLLAAARNPFNCVCPLSWFGPWVRESHVTLASPEETRCHFPPKNAGRLLLELDYADFGCPATTTTATVPTTRPVVREPTALSSSLAPTWLSPTEPATEAPSPPSTAPPTVGPVPQPQDCPPSTCLNGGTCHLGTRHHLACLCPEGFTGLYCESQMGQGTRPSPTPVTPRPPRSLTLGIEPVSPTSLRVGLQRYLQGSSVQLRSLRLTYRNLSGPDKRLVTLRLPASLAEYTVTQLRPNATYSVCVMPLGPGRVPEGEEACGEAHTPPAVHSNHAPVTQAREGNLP"
+    },
+    {
+      "run": "screen-anchor2-Q13634",
+      "uniprot_id": "Q13634",
+      "gene": "CDH18",
+      "seq": "GWVWNQFFVLEEHMGPDPQYVGKLHSNSDKGDGSVKYILTGEGAGTIFIIDDTTGDIHSTKSLDREQKTHYVLHAQAIDRRTNKPLEPESEFIIKVQDINDNAPKFTDGPYIVTVPEMSDMGTSVLQVTATDADDPTYGNSARVVYSILQGQPYFSVDPKTGVIRTALHNMDREAREHYSVVIQAKDMAGQVGGLSGSTTVNITLTDVNDNPPRFPQKHYQLYVPESAQVGSAVGKIKANDADTGSNADMTYSIINGDGMGIFSISTDKETREGILSLKKPLNYEKKKSYTLNIEGANTHLDFRFSHLGPFKDATMLKIIVGDVDEPPLFSMPSYLMEVYENAKIGTVVGTVLAQDPDSTNSLVRYFINYNVEDDRFFNIDANTGTIRTTKVLDREETPWYNITVTASEIDNPDLLSHVTVGIRVLDVNDNPPELAREYDIIVCENSKPGQVIHTISATDKDDFANGPRFNFFLDERLPVNPNFTLKDNEDNTASILTRRRRFSRTVQDVYYLPIMISDGGIPSLSSSSTLTIRVCACERDGRVRTCHAEAFLSS"
+    },
+    {
+      "run": "screen-anchor2-Q96P31",
+      "uniprot_id": "Q96P31",
+      "gene": "FCRL3",
+      "seq": "GVAPKAVLLLNPPWSTAFKGEKVALICSSISHSLAQGDTYWYHDEKLLKIKHDKIQITEPGNYQCKTRGSSLSDAVHVEFSPDWLILQALHPVFEGDNVILRCQGKDNKNTHQKVYYKDGKQLPNSYNLEKITVNSVSRDNSKYHCTAYRKFYILDIEVTSKPLNIQVQELFLHPVLRASSSTPIEGSPMTLTCETQLSPQRPDVQLQFSLFRDSQTLGLGWSRSPRLQIPAMWTEDSGSYWCEVETVTHSIKKRSLRSQIRVQRVPVSNVNLEIRPTGGQLIEGENMVLICSVAQGSGTVTFSWHKEGRVRSLGRKTQRSLLAELHVLTVKESDAGRYYCAADNVHSPILSTWIRVTVRIPVSHPVLTFRAPRAHTVVGDLLELHCESLRGSPPILYRFYHEDVTLGNSSAPSGGGASFNLSLTAEHSGNYSCDADNGLGAQHSHGVSLRVTVPVSRPVLTLRAPGAQAVVGDLLELHCESLRGSFPILYWFYHEDDTLGNISAHSGGGASFNLSLTTEHSGNYSCEADNGLGAQHSKVVTLNVTGTSRNRTGLT"
+    },
+    {
+      "run": "screen-anchor2-Q9Y6N8",
+      "uniprot_id": "Q9Y6N8",
+      "gene": "CDH10",
+      "seq": "GWMWNQFFLLEEYTGSDYQYVGKLHSDQDKGDGSLKYILSGDGAGTLFIIDEKTGDIHATRRIDREEKAFYTLRAQAINRRTLRPVEPESEFVIKIHDINDNEPTFPEEIYTASVPEMSVVGTSVVQVTATDADDPSYGNSARVIYSILQGQPYFSVEPETGIIRTALPNMNRENREQYQVVIQAKDMGGQMGGLSGTTTVNITLTDVNDNPPRFPQNTIHLRVLESSPVGTAIGSVKATDADTGKNAEVEYRIIDGDGTDMFDIVTEKDTQEGIITVKKPLDYESRRLYTLKVEAENTHVDPRFYYLGPFKDTTIVKISIEDVDEPPVFSRSSYLFEVHEDIEVGTIIGTVMARDPDSISSPIRFSLDRHTDLDRIFNIHSGNGSLYTSKPLDRELSQWHNLTVIAAEINNPKETTRVAVFVRILDVNDNAPQFAVFYDTFVCENARPGQLIQTISAVDKDDPLGGQKFFFSLAAVNPNFTVQDNEDNTARILTRKNGFNRHEISTYLLPVVISDNDYPIQSSTGTLTIRVCACDSQGNMQSCSAEALLLPAGLSTGA"
+    },
+    {
+      "run": "screen-anchor2-P17813",
+      "uniprot_id": "P17813",
+      "gene": "ENG",
+      "seq": "ETVHCDLQPVGPERGEVTYTTSQVSKGCVAQAPNAILEVHVLFLEFPTGPSQLELTLQASKQNGTWPREVLLVLSVNSSVFLHLQALGIPLHLAYNSSLVTFQEPPGVNTTELPSFPKTQILEWAAERGPITSAAELNDPQSILLRLGQAQGSLSFCMLEASQDMGRTLEWRPRTPALVRGCHLEGVAGHKEAHILRVLPGHSAGPRTVTVKVELSCAPGDLDAVLILQGPPYVSWLIDANHNMQIWTTGEYSFKIFPEKNIRGFKLPDTPQGLLGEARMLNASIVASFVELPLASIVSLHASSCGGRLQTSPAPIQTTPPKDTCSPELLMSLIQTKCADDAMTLVLKKELVAHLKCTITGLTFWDPSCEAEDRGDKFVLRSAYSSCGMQVSASMISNEAVVNILSSSSPQRKKVHCLNMDSLSFQLGLYLSPHFLQASNTIEPGQQSFVQVRVSPSVSEFLLQLDSCHLDLGPEGGTVELIQGRAAKGNCVSLLSPSPEGDPRFSFLLHFYTVPIPKTGTLSCTVALRPKTGSQDQEVHRTVFMRLNIISPDLSGCTSKG"
+    },
+    {
+      "run": "screen-anchor2-P19022",
+      "uniprot_id": "P19022",
+      "gene": "CDH2",
+      "seq": "DWVIPPINLPENSRGPFPQELVRIRSDRDKNLSLRYSVTGPGADQPPTGIFIINPISGQLSVTKPLDREQIARFHLRAHAVDINGNQVENPIDIVINVIDMNDNRPEFLHQVWNGTVPEGSKPGTYVMTVTAIDADDPNALNGMLRYRIVSQAPSTPSPNMFTINNETGDIITVAAGLDREKVQQYTLIIQATDMEGNPTYGLSNTATAVITVTDVNDNPPEFTAMTFYGEVPENRVDIIVANLTVTDKDQPHTPAWNAVYRISGGDPTGRFAIQTDPNSNDGLVTVVKPIDFETNRMFVLTVAAENQVPLAKGIQHPPQSTATVSVTVIDVNENPYFAPNPKIIRQEEGLHAGTMLTTFTAQDPDRYMQQNIRYTKLSDPANWLKIDPVNGQITTIAVLDRESPNVKNNIYNATFLASDNGIPPMSGTGTLQIYLLDINDNAPQVLPQEAETCETPDPNSINITALDYDIDPNAGPFAFDLPLSPVTIKRNWTITRLNGDFAQLNLKIKFLEAGIYEVPIIITDSGNPPKSNISILRVKVCQCDSNGDCTDVDRIVGAGLGTGA"
+    },
+    {
+      "run": "screen-anchor2-Q6UXK2",
+      "uniprot_id": "Q6UXK2",
+      "gene": "ISLR2",
+      "seq": "SCPEPCACVDKYAHQFADCAYKELREVPEGLPANVTTLSLSANKITVLRRGAFADVTQVTSLWLAHNEVRTVEPGALAVLSQLKNLDLSHNFISSFPWSDLRNLSALQLLKMNHNRLGSLPRDALGALPDLRSLRINNNRLRTLAPGTFDALSALSHLQLYHNPFHCGCGLVWLQAWAASTRVSLPEPDSIACASPPALQGVPVYRLPALPCAPPSVHLSAEPPLEAPGTPLRAGLAFVLHCIADGHPTPRLQWQLQIPGGTVVLEPPVLSGEDDGVGAEEGEGEGDGDLLTQTQAQTPTPAPAWPAPPATPRFLALANGSLLVPLLSAKEAGVYTCRAHNELGANSTSIRVAVAATGPPKHAPGAGGEPDGQAPTSERKSTAKGRGNSVLPSKPEGKIKGQGLAKVSILGETETEPEEDTSEGEEAEDQILADPAEEQRCGNGDPSRYVSNHAFNQSAELKPHVFELGVIALDVAEREARVQLTPLAARWGPGPGGAGGAPRPGRRPLRLLYLCPAGGGAAVQWSRVEEGVNAYWFRGLRPGTNYSVCLALAGEACHVQVVFSTKKELPS"
+    },
+    {
+      "run": "screen-anchor2-Q07837",
+      "uniprot_id": "Q07837",
+      "gene": "SLC3A1",
+      "seq": "ALSPKCLDWWQEGPMYQIYPRSFKDSNKDGNGDLKGIQDKLDYITALNIKTVWITSFYKSSLKDFRYGVEDFREVDPIFGTMEDFENLVAAIHDKGLKLIIDFIPNHTSDKHIWFQLSRTRTGKYTDYYIWHDCTHENGKTIPPNNWLSVYGNSSWHFDEVRNQCYFHQFMKEQPDLNFRNPDVQEEIKEILRFWLTKGVDGFSLDAVKFLLEAKHLRDEIQVNKTQIPDTVTQYSELYHDFTTTQVGMHDIVRSFRQTMDQYSTEPGRYRFMGTEAYAESIDRTVMYYGLPFIQEADFPFNNYLSMLDTVSGNSVYEVITSWMENMPEGKWPNWMIGGPDSSRLTSRLGNQYVNVMNMLLFTLPGTPITYYGEEIGMGNIVAANLNESYDINTLRSKSPMQWDNSSNAGFSEASNTWLPTNSDYHTVNVDVQKTQPRSALKLYQDLSLLHANELLLNRGWFCHLRNDSHYVVYTRELDGIDRIFIVVLNFGESTLLNLHNMISGLPAKMRIRLSTNSADKGSKVDTSGIFLDKGEGLIFEHNTKNLLHRQTAFRDRCFVSNRACYSSVLNILYTSC"
+    },
+    {
+      "run": "screen-anchor2-Q9H5Y7",
+      "uniprot_id": "Q9H5Y7",
+      "gene": "SLITRK6",
+      "seq": "SRGSCDSLCNCEEKDGTMLINCEAKGIKMVSEISVPPSRPFQLSLLNNGLTMLHTNDFSGLTNAISIHLGFNNIADIEIGAFNGLGLLKQLHINHNSLEILKEDTFHGLENLEFLQADNNFITVIEPSAFSKLNRLKVLILNDNAIESLPPNIFRFVPLTHLDLRGNQLQTLPYVGFLEHIGRILDLQLEDNKWACNCDLLQLKTWLENMPPQSIIGDVVCNSPPFFKGSILSRLKKESICPTPPVYEEHEDPSGSLHLAATSSINDSRMSTKTTSILKLPTKAPGLIPYITKPSTQLPGPYCPIPCNCKVLSPSGLLIHCQERNIESLSDLRPPPQNPRKLILAGNIIHSLMKSDLVEYFTLEMLHLGNNRIEVLEEGSFMNLTRLQKLYLNGNHLTKLSKGMFLGLHNLEYLYLEYNAIKEILPGTFNPMPKLKVLYLNNNLLQVLPPHIFSGVPLTKVNLKTNQFTHLPVSNILDDLDLLTQIDLEDNPWDCSCDLVGLQQWIQKLSKNTVTDDILCTSPGHLDKKELKALNSEILCPGLVNNPSMPTQTSYLMVTTPATTTNTADTILRSLTDAVPLS"
+    },
+    {
+      "run": "screen-anchor2-Q8IZP9",
+      "uniprot_id": "Q8IZP9",
+      "gene": "GPR64",
+      "seq": "LEEDTDNSSLSPPPAKLSVVSFAPSSNGTPEVETTSLNDVTLSLLPSNETEKTKITIVKTFNASGVKPQRNICNLSSICNDSAFFRGEIMFQYDKESTVPQNQHITNGTLTGVLSLSELKRSELNKTLQTLSETYFIMCATAEAQSTLNCTFTIKLNNTMNACAVIAALERVKIRPMEHCCCSVRIPCPSSPEELEKLQCDLQDPIVCLADHPRGPPFSSSQSIPVVPRATVLSQVPKATSFAEPPDYSPVTHNVPSPIGEIQPLSPQPSAPIASSPAIDMPPQSETISSPMPQTHVSGTPPPVKASFSSPTVSAPANVNTTSAPPVQTDIVNTSSISDLENQVLQMEKALSLGSLEPNLAGEMINQVSRLLHSPPDMLAPLAQRLLKVVDDIGLQLNFSNTTISLTSPSLALAVIRVNASSFNTTTFVAQDPANLQVSLETQAPENSIGTITLPSSLMNNLPAHDMELASRVQFNFFETPALFQDPSLENLSLISYVISSSVANLTVRNLTRNVTVTLKHINPSQDELTVRCVFWDLGRNGGRGGWSDNGCSVKDRRLNETICTCSHLTSFGVLLDLSRTSVLPAQMMA"
+    },
+    {
+      "run": "screen-anchor2-Q99665",
+      "uniprot_id": "Q99665",
+      "gene": "IL12RB2",
+      "seq": "KIDACKRGDVTVKPSHVILLGSTVNITCSLKPRQGCFHYSRRNKLILYKFDRRINFHHGHSLNSQVTGLPLGTTLFVCKLACINSDEIQICGAEIFVGVAPEQPQNLSCIQKGEQGTVACTWERGRDTHLYTEYTLQLSGPKNLTWQKQCKDIYCDYLDFGINLTPESPESNFTAKVTAVNSLGSSSSLPSTFTFLDIVRPLPPWDIRIKFQKASVSRCTLYWRDEGLVLLNRLRYRPSNSRLWNMVNVTKAKGRHDLLDLKPFTEYEFQISSKLHLYKGSWSDWSESLRAQTPEEEPTGMLDVWYMKRHIDYSRQQISLFWKNLSVSEARGKILHYQVTLQELTGGKAMTQNITGHTSWTTVIPRTGNWAVAVSAANSKGSSLPTRINIMNLCEAGLLAPRQVSANSEGMDNILVTWQPPRKDPSAVQEYVVEWRELHPGGDTQVPLNWLRSRPYNVSALISENIKSYICYEIRVYALSGDQGGCSSILGNSKHKAPLSGPHINAITEEKGSILISWNSIPVQEQMGCLLHYRIYWKERDSNSQPQLCEIPYRVSQNSHPINSLQPRVTYVLWMTALTAAGESSHGNEREFCLQGKAN"
+    },
+    {
+      "run": "screen-anchor2-O75326",
+      "uniprot_id": "O75326",
+      "gene": "SEMA7A",
+      "seq": "QGHLRSGPRIFAVWKGHVGQDRVDFGQTEPHTVLFHEPGSSSVWVGGRGKVYLFDFPEGKNASVRTVNIGSTKGSCLDKRDCENYITLLERRSEGLLACGTNARHPSCWNLVNGTVVPLGEMRGYAPFSPDENSLVLFEGDEVYSTIRKQEYNGKIPRFRRIRGESELYTSDTVMQNPQFIKATIVHQDQAYDDKIYYFFREDNPDKNPEAPLNVSRVAQLCRGDQGGESSLSVSKWNTFLKAMLVCSDAATNKNFNRLQDVFLLPDPSGQWRDTRVYGVFSNPWNYSAVCVYSLGDIDKVFRTSSLKGYHSSLPNPRPGKCLPDQQPIPTETFQVADRHPEVAQRVEPMGPLKTPLFHSKYHYQKVAVHRMQASHGETFHVLYLTTDRGTIHKVVEPGEQEHSFAFNIMEIQPFRRAAAIQTMSLDAERRKLYVSSQWEVSQVPLDLCEVYGGGCHGCLMSRDPYCGWDQGRCISIYSSERSVLQSINPAEPHKECPNPKPDKAPLQKVSLAPNSRYYLSCPMESRHATYSWRHKENVEQSCEPGHQSPNCILFIENLTAQQYGHYFCEAQEGSYFREAQHWQLLPEDGIMAEHLLGHACALA"
+    },
+    {
+      "run": "screen-anchor2-P07949",
+      "uniprot_id": "P07949",
+      "gene": "RET",
+      "seq": "LYFSRDAYWEKLYVDQAAGTPLLYVHALRDAPEEVPSFRLGQHLYGTYRTRLHENNWICIQEDTGLLYLNRSLDHSSWEKLSVRNRGFPLLTVYLKVFLSPTSLREGECQWPGCARVYFSFFNTSFPACSSLKPRELCFPETRPSFRIRENRPPGTFHQFRLLPVQFLCPNISVAYRLLEGEGLPFRCAPDSLEVSTRWALDREQREKYELVAVCTVHAGAREEVVMVPFPVTVYDEDDSAPTFPAGVDTASAVVEFKRKEDTVVATLRVFDADVVPASGELVRRYTSTLLPGDTWAQQTFRVEHWPNETSVQANGSFVRATVHDYRLVLNRNLSISENRTMQLAVLVNDSDFQGPGAGVLLLHFNVSVLPVSLHLPSTYSLSVSRRARRFAQIGKVCVENCQAFSGINVQYKLHSSGANCSTLGVVTSAEDTSGILFVNDTKALRRPKCAELHYMVVATDQQTSRQAQAQLLVTVEGSYVAEEAGCPLSCAVSKRRLECEECGGLGSPTGRCEWRQGDGKGITRNFSTCSPSTKTCPDGHCDVVETQDINICPQDCLRGSIVGGHEPGEPRGIKAGYGTCNCFPEEEKCFCEPEDIQDPLCDELCR"
+    },
+    {
+      "run": "screen-anchor2-O60602",
+      "uniprot_id": "O60602",
+      "gene": "TLR5",
+      "seq": "IPSCSFDGRIAFYRFCNLTQVPQVLNTTERLLLSFNYIRTVTASSFPFLEQLQLLELGSQYTPLTIDKEAFRNLPNLRILDLGSSKIYFLHPDAFQGLFHLFELRLYFCGLSDAVLKDGYFRNLKALTRLDLSKNQIRSLYLHPSFGKLNSLKSIDFSSNQIFLVCEHELEPLQGKTLSFFSLAANSLYSRVSVDWGKCMNPFRNMVLEILDVSGNGWTVDITGNFSNAISKSQAFSLILAHHIMGAGFGFHNIKDPDQNTFAGLARSSVRHLDLSHGFVFSLNSRVFETLKDLKVLNLAYNKINKIADEAFYGLDNLQVLNLSYNLLGELYSSNFYGLPKVAYIDLQKNHIAIIQDQTFKFLEKLQTLDLRDNALTTIHFIPSIPDIFLSGNKLVTLPKINLTANLIHLSENRLENLDILYFLLRVPHLQILILNQNRFSSCSGDQTPSENPSLEQLFLGENMLQLAWETELCWDVFEGLSHLQVLYLNHNYLNSLPPGVFSHLTALRGLSLNSNRLTVLSHNDLPANLEILDISRNQLLAPNPDVFVSLSVLDITHNKFICECELSTFINWLNHTNVTIAGPPADIYCVYPDSFSGVSLFSLSTEGCDEEEVLKSLK"
+    },
+    {
+      "run": "screen-anchor2-O94933",
+      "uniprot_id": "O94933",
+      "gene": "SLITRK3",
+      "seq": "TPIPLIEDSEEIDEPCFDPCYCEVKESLFHIHCDSKGFTNISQITEFWSRPFKLYLQRNSMRKLYTNSFLHLNNAVSINLGNNALQDIQTGAFNGLKILKRLYLHENKLDVFRNDTFLGLESLEYLQADYNVIKRIESGAFRNLSKLRVLILNDNLIPMLPTNLFKAVSLTHLDLRGNRLKVLFYRGMLDHIGRSLMELQLEENPWNCTCEIVQLKSWLERIPYTALVGDITCETPFHFHGKDLREIRKTELCPLLSDSEVEASLGIPHSSSSKENAWPTKPSSMLSSVHFTASSVEYKSSNKQPKPTKQPRTPRPPSTSQALYPGPNQPPIAPYQTRPPIPIICPTGCTCNLHINDLGLTVNCKERGFNNISELLPRPLNAKKLYLSSNLIQKIYRSDFWNFSSLDLLHLGNNRISYVQDGAFINLPNLKSLFLNGNDIEKLTPGMFRGLQSLHYLYFEFNVIREIQPAAFSLMPNLKLLFLNNNLLRTLPTDAFAGTSLARLNLRKNYFLYLPVAGVLEHLNAIVQIDLNENPWDCTCDLVPFKQWIETISSVSVVGDVLCRSPENLTHRDVRTIELEVLCPEMLHVAPAGESPAQPGDSHLIGAPTSASPYEFSPPGGPVPLS"
+    },
+    {
+      "run": "screen-anchor2-Q86YC3",
+      "uniprot_id": "Q86YC3",
+      "gene": "NRROS",
+      "seq": "WRNRSGTATAASQGVCKLVGGAADCRGQSLASVPSSLPPHARMLTLDANPLKTLWNHSLQPYPLLESLSLHSCHLERISRGAFQEQGHLRSLVLGDNCLSENYEETAAALHALPGLRRLDLSGNALTEDMAALMLQNLSSLRSVSLAGNTIMRLDDSVFEGLERLRELDLQRNYIFEIEGGAFDGLAELRHLNLAFNNLPCIVDFGLTRLRVLNVSYNVLEWFLATGGEAAFELETLDLSHNQLLFFPLLPQYSKLRTLLLRDNNMGFYRDLYNTSSPREMVAQFLLVDGNVTNITTVSLWEEFSSSDLADLRFLDMSQNQFQYLPDGFLRKMPSLSHLNLHQNCLMTLHIREHEPPGALTELDLSHNQLSELHLAPGLASCLGSLRLFNLSSNQLLGVPPGLFANARNITTLDMSHNQISLCPLPAASDRVGPPSCVDFRNMASLRSLSLEGCGLGALPDCPFQGTSLTYLDLSSNWGVLNGSLAPLQDVAPMLQVLSLRNMGLHSSFMALDFSGFGNLRDLDLSGNCLTTFPRFGGSLALETLDLRRNSLTALPQKAVSEQLSRGLRTIYLSQNPYDCCGVDGWGALQHGQTVADWAMVTCNLSSKIIRVTELPGGVPRDCKWERLDLGL"
+    },
+    {
+      "run": "screen-anchor2-P26012",
+      "uniprot_id": "P26012",
+      "gene": "ITGB8",
+      "seq": "EDNRCASSNAASCARCLALGPECGWCVQEDFISGGSRSERCDIVSNLISKGCSVDSIEYPSVHVIIPTENEINTQVTPGEVSIQLRPGAEANFMLKVHPLKKYPVDLYYLVDVSASMHNNIEKLNSVGNDLSRKMAFFSRDFRLGFGSYVDKTVSPYISIHPERIHNQCSDYNLDCMPPHGYIHVLSLTENITEFEKAVHRQKISGNIDTPEGGFDAMLQAAVCESHIGWRKEAKRLLLVMTDQTSHLALDSKLAGIVVPNDGNCHLKNNVYVKSTTMEHPSLGQLSEKLIDNNINVIFAVQGKQFHWYKDLLPLLPGTIAGEIESKAANLNNLVVEAYQKLISEVKVQVENQVQGIYFNITAICPDGSRKPGMEGCRNVTSNDEVLFNVTVTMKKCDVTGGKNYAIIKPIGFNETAKIHIHRNCSCQCEDNRGPKGKCVDETFLDSKCFQCDENKCHFDEDQFSSESCKSHKDQPVCSGRGVCVCGKCSCHKIKLGKVYGKYCEKDDFSCPYHHGNLCAGHGECEAGRCQCFSGWEGDRCQCPSAAAQHCVNSKGQVCSGRGTCVCGRCECTDPRSIGRFCEHCPTCYTACKENWNCMQCLHPHNLSQAILDQCKTSCALMEQQHYVDQTSECFSSPSYLR"
+    },
+    {
+      "run": "screen-anchor2-Q9H2U9",
+      "uniprot_id": "Q9H2U9",
+      "gene": "ADAM7",
+      "seq": "KFILGVEGQQLVRPKKLPLIQKRDTGHTHDDDILKTYEEELLYEIKLNRKTLVLHLLRSREFLGSNYSETFYSMKGEAFTRHPQIMDHCFYQGSIVHEYDSAASISTCNGLRGFFRINDQRYLIEPVKYSDEGEHLVFKYNLRVPYGANYSCTELNFTRKTVPGDNESEEDSKIKGIHDEKYVELFIVADDTVYRRNGHPHNKLRNRIWGMVNFVNMIYKTLNIHVTLVGIEIWTHEDKIELYSNIETTLLRFSFWQEKILKTRKDFDHVVLLSGKWLYSHVQGISYPGGMCLPYYSTSIIKDLLPDTNIIANRMAHQLGHNLGMQHDEFPCTCPSGKCVMDSDGSIPALKFSKCSQNQYHQYLKDYKPTCMLNIPFPYNFHDFQFCGNKKLDEGEECDCGPAQECTNPCCDAHTCVLKPGFTCAEGECCESCQIKKAGSICRPAKDECDFPEMCTGHSPACPKDQFRVNGFPCKNSEGYCFMGKCPTREDQCSELFDDEAIESHDICYKMNTKGNKFGYCKNKENRFLPCEEKDVRCGKIYCTGGELSSLLGEDKTYHLKDPQKNATVKCKTIFLYHDSTDIGLVASGTKCGEGMVCNNGECLNMEKVYISTNCPSQCNENPVDGHGLQCHCEEGQAPVACEETLHVTN"
+    },
+    {
+      "run": "screen-anchor2-Q9NTN9",
+      "uniprot_id": "Q9NTN9",
+      "gene": "SEMA4G",
+      "seq": "VPGPSLRRPSRELDATPRMTIPYEELSGTRHFKGQAQNYSTLLLEEASARLLVGARGALFSLSANDIGDGAHKEIHWEASPEMQSKCHQKGKNNQTECFNHVRFLQRLNSTHLYACGTHAFQPLCAAIDAEAFTLPTSFEEGKEKCPYDPARGFTGLIIDGGLYTATRYEFRSIPDIRRSRHPHSLRTEETPMHWLNDAEFVFSVLVRESKASAVGDDDKVYYFFTERATEEGSGSFTQSRSSHRVARVARVCKGDLGGKKILQKKWTSFLKARLICHIPLYETLRGVCSLDAETSSRTHFYAAFTLSTQWKTLEASAICRYDLAEIQAVFAGPYMEYQDGSRRWGRYEGGVPEPRPGSCITDSLRSQGYNSSQDLPSLVLDFVKLHPLMARPVVPTRGRPLLLKRNIRYTHLTGTPVTTPAGPTYDLLFLGTADGWIHKAVVLGSGMHIIEETQVFRESQSVENLVISLLQHSLYVGAPSGVIQLPLSSCSRYRSCYDCILARDPYCGWDPGTHACAAATTIANRTALIQDIERGNRGCESSRDTGPPPPLKTRSVLRGDDVLLPCDQPSNLARALWLLNGSMGLSDGQGGYRVGVDGLLVTDAQPEHSGNYGCYAEENGLRTLLASYSLTVRPATPAPAPKAPATPGAQLAPDVRL"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5E3",
+      "uniprot_id": "Q9Y5E3",
+      "gene": "PCDHB6",
+      "seq": "ESIQYSVLEETESGTFVANLTKDLGLRVGELASRGARVVFKGNRQHLQFDPQTHDLLLNEKLDREELCGSTEPCVLPFQVLLENPLQFFQASLRVRDINDHAPEFPAREMLLKISEITMPGKIFPLKMAHDLDTGSNGLQRYTISSNPHFHVLTRNRSEGRKFPELVLDKPLDREEQPQLRLTLIALDGGSPPRSGTSEIQIQVLDINDNVPEFAQELYEAQVPENNPLGSLVITVSARDLDAGSFGKVSYALFQVDDVNQPFEINAITGEIRLRKALDFEEIQSYDVDVEATDGGGLSGKCSLVVRVLDVNDNAPELTMSFFISLIPENLPEITVAVFSVSDADSGHNQQVICSIENNLPFLLRPSVENFYTLVTEGALDRESRAEYNITITVTDLGTPRLKTQQSITVQVSDVNDNAPAFTQTSYTLFVRENNSPALHIGSVSATDRDSGINAQVTYSLLPPQDPHLPLSSLVSINADNGHLFALRSLDYEALQSFEFRVGATDRGSPALSSEALVRLLVLDANDNSPFVLYPLQNGSAPCTELVPRAAEPGYLVTKVVAVDGDSGQNAWLSYQLLKATELGLFGVWAHNGEVRTARLLSERDAAKHRLVVLVKDNGEPPRSATATLHVLLVDGFSQPYLPLPEAAPAQAQADSLTVYL"
+    },
+    {
+      "run": "screen-anchor2-Q9UN66",
+      "uniprot_id": "Q9UN66",
+      "gene": "PCDHB8",
+      "seq": "EPRSYSVVEETEGSSFVTNLAKDLGLEQREFSRRGVRVVSRGNKLHLQLNQETADLLLNEKLDREDLCGHTEPCVLRFQVLLESPFEFFQAELQVIDINDHSPVFLDKQMLVKVSESSPPGTAFPLKNAEDLDIGQNNIENYIISPNSYFRVLTRKRSDGRKYPELVLDKALDREEEAELRLTLTALDGGSPPRSGTAQVYIEVVDVNDNAPEFEQPFYRVQISEDSPISFLVVKVSATDVDTGVNGEISYSLFQASDEISKTFKVDFLTGEIRLKKQLDFEKFQSYEVNIEARDAGGFSGKCTVLIQVIDVNDHAPEVTMSAFTSPIPENAPETVVALFSVSDLDSGENGKISCSIQEDLPFLLKSSVGNFYTLLTETPLDRESRAEYNVTITVTDLGTPRLTTHLNMTVLVSDVNDNAPAFTQTSYTLFVRENNSPALHIGSVSATDRDSGTNAQVTYSLLPPQDPHLPLASLVSINTDNGHLFALRSLDYEALQAFEFRVGASDRGSPALSSEALVRVLVLDANDNSPFVLYPLQNGSAPCTELVPRAAEPGYLVTKVVAVDGDSGQNAWLSYQLLKATEPGLFGVWAHNGEVRTARLLSERDAAKQRLVVLVKDNGEPPCSATATLHVLLVDGFSQPYLPLPEAAPAQGQADSLTVYL"
+    },
+    {
+      "run": "screen-anchor2-Q8NFZ4",
+      "uniprot_id": "Q8NFZ4",
+      "gene": "NLGN2",
+      "seq": "QRGGGGPGGGAPGGPGLGLGSLGEERFPVVNTAYGRVRGVRRELNNEILGPVVQFLGVPYATPPLGARRFQPPEAPASWPGVRNATTLPPACPQNLHGALPAIMLPVWFTDNLEAAATYVQNQSEDCLYLNLYVPTEDGPLTKKRDEATLNPPDTDIRDPGKKPVMLFLHGGSYMEGTGNMFDGSVLAAYGNVIVATLNYRLGVLGFLSTGDQAAKGNYGLLDQIQALRWLSENIAHFGGDPERITIFGSGAGASCVNLLILSHHSEGLFQKAIAQSGTAISSWSVNYQPLKYTRLLAAKVGCDREDSAEAVECLRRKPSRELVDQDVQPARYHIAFGPVVDGDVVPDDPEILMQQGEFLNYDMLIGVNQGEGLKFVEDSAESEDGVSASAFDFTVSNFVDNLYGYPEGKDVLRETIKFMYTDWADRDNGEMRRKTLLALFTDHQWVAPAVATAKLHADYQSPVYFYTFYHHCQAEGRPEWADAAHGDELPYVFGVPMVGATDLFPCNFSKNDVMLSAVVMTYWTNFAKTGDPNQPVPQDTKFIHTKPNRFEEVVWSKFNSKEKQYLHIGLKPRVRDNYRANKVAFWLELVPHLHNLHTELFTTTTRLPPYATRWPPRPPAGAPGTRRPPPPATLPPEPEPEPGPRAYDRFPGDSRDYSTELS"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5E6",
+      "uniprot_id": "Q9Y5E6",
+      "gene": "PCDHB3",
+      "seq": "GSESRRYSVAEEKEKGFLIANLAKDLGLRVEELAARGAQVVSKGNKQHFQLSHQTGDLLLNEKLDREELCGPTEPCILHFQILLQNPLQFVTNELRIIDVNDHSPVFFENEMHLKILESTLPGTVIPLGNAEDLDVGRNSLQNYTITPNSHFHVLTRSRRDGRKYPELVLDKALDPEEQPELSLTLTALDGGSPPRSGTAQINIQVLDINDNAPEFAQPLYEVAVLENTPVNSVIVTVSASDLDTGSFGTISYAFFHASEEIRKTFQLNPITGDMQLVKYLNFEAINSYEVDIEAKDGGGLSGKSTVIVQVVDVNDNPPELTLSSVNSPIPENSGETVLAVFSVSDLDSGDNGRVMCSIENNLPFFLKPSVENFYTLVSEGALDRETRSEYNITITITDLGTPRLKTKYNITVLVSDVNDNAPAFTQISYTLFVRENNSPALHIGSVSATDRDSGTNAQVTYSLLPPQDPHLPLSSLVSINADNGHLFALRSLDYEALQAFEFRVGATDRGSPALSSEALVRVLVLDANDNSPFVLYPLQNGSAPCTELVPRAAEPGYLVTKVVAVDGDSGQNAWLSYQLLKATEPGLFGVWAHNGEVRTARLLSERDAAKHRLVVLVKDNGEPPRSATATLHVLLVDGFSQPYLPLPEAAPAQAQADLLTVYL"
+    },
+    {
+      "run": "screen-anchor2-Q9Y5G9",
+      "uniprot_id": "Q9Y5G9",
+      "gene": "PCDHGA4",
+      "seq": "EQILYSVFEEQEEGSVVGNIAKDLGLAPRELAERGVRIVSRGRTQLFALNPRSGTLVTAGRIDREELCDRSPNCVTNLEILLEDTVKILRVEVEIIDVNDNPPSFGTEQREIKVAENENPGARFPLPEAFDPDVGVNSLQGYQLNSNGYFSLDVQSGADGIKYPELVLERALDREEEAVHHLVLTAFDGGDPVRSGTARILIILVDTNDNAPVFTQPEYHVSVRENVPVGTRLLTVKATDPDEGANGDVTYSFRKVRDKISQLFQLNSLSGDITILGGLDYEDSGFYDIDVEAHDGPGLRARSKVLVTVLDENDNAPEVTVTSLTSSVQESSSPGTVIALFNVHDSDSGGNGLVTCSIPDNLPFTLEKTYGNYYRLLTHRTLDREEVSEYNITVTATDQGTPPLSTETHISLQVMDINDNPPTFPHASYSAYIPENNPRGASILSMTAQDPDSGDNARITYSLAEDTFQGAPLSSYVSINSNTGILYALCSFDYEQFRDLQLLMTASDSGDPPLSSNVSLSLFVLDQNDNVPEILYPTFPTDGSTGVELAPRSADSGYLVTKVVAVDRDSGQNAWLSYSLLKSSEPGLFAVGLHTGEVRTARALLDRDALKQRLVVVVQDHGQPPLSATVTLTVAVADSIPDVLADLGSLKPSADPDDSGLTLY"
+    },
+    {
+      "run": "screen-anchor2-Q9UN67",
+      "uniprot_id": "Q9UN67",
+      "gene": "PCDHB10",
+      "seq": "GSGFGRYSVTEETEKGSFVVNLAKDLGLAEGELAARGTRVVSDDNKQYLLLDSHTGNLLTNEKLDREKLCGPKEPCMLYFQILMDDPFQIYRAELRVRDINDHAPVFQDKETVLKISENTAEGTAFRLERAQDPDGGLNGIQNYTISPNSFFHINISGGDEGMIYPELVLDKALDREEQGELSLTLTALDGGSPSRSGTSTVRIVVLDVNDNAPQFAQALYETQAPENSPIGFLIVKVWAEDVDSGVNAEVSYSFFDASENIRTTFQINPFSGEIFLRELLDYELVNSYKINIQAMDGGGLSARCRVLVEVLDTNDNPPELIVSSFSNSVAENSPETPLAVFKINDRDSGENGKMVCYIQENLPFLLKPSVENFYILITEGALDREIRAEYNITITVTDLGTPRLKTEHNITVLVSDVNDNAPAFTQTSYTLFVRENNSPALHIGSVSATDRDSGTNAQVTYSLLPPQDPHLPLASLVSINADNGHLFALRSLDYEALQAFEFRVGATDRGSPALSREALVRVLVLDANDNSPFVLYPLQNGSAPCTELVPRAAEPGYLVTKVVAVDGDSGQNAWLSYQLLKATEPGLFGVWAHNGEVRTARLLSERDAAKHRLVVLVKDNGEPPRSATATLHLLLVDGFSQPYLPLPEAAPAQAQAEADLLTVYL"
+    },
+    {
+      "run": "screen-anchor2-Q9UN74",
+      "uniprot_id": "Q9UN74",
+      "gene": "PCDHA4",
+      "seq": "QLHYSVSEEAKHGTFVGRIAQDLGLELAELVPRLFRVASKGRGGLLEVNLQNGILFVNSRIDREELCRRSAECSIHLEVIVDRPLQVFHVDVEVRDINDNPPVFPATQKNLSIAESRPLDSRFPLEGASDADIGENALLTYRLSPNEYFSLEKPPDDELVKGLGLILRKSLDREEAPEIFLVLTATDGGKPELTGTVQLLITVLDANDNAPAFDRTIYKVRLLENVPNGTLVIKLNASDLDEGLNGDIVYSFSNDISPNVKSKFHIDPITGQIIVKGYIDFEESKSYEIIVEGIDKGQLPLSGHCRVIVEVEDNNDNVPDLEFKSLSLPIREDAPLGTVIALISVSDKDMGVNGLVTCSLTSHVPFKLVSTFKNYYSLVLDSALDRESVSAYELVVTARDGGSPSLWATASVSVEVADVNDNAPAFAQPEYTVFVKENNPPGCHIFTVSAWDADAQENALVSYSLVERRVGERALSSYVSVHAESGKVYALQPLDHEELELLQFQVTARDAGVPPLGSNVTLQVFVLDENDNAPALLAPRAGGTGGAVSELVPWSVGVGHVVAKVRAVDADSGYNAWLSYELQPGTGGARIPFRVGLYTGEISTTRALDETDAPRHRLLVLVKDHGEPALTATATVLVSLVESGQAPKASSRALVGAVGPDAALVDVN"
+    },
+    {
+      "run": "screen-anchor2-Q13443",
+      "uniprot_id": "Q13443",
+      "gene": "ADAM9",
+      "seq": "AARPGFQQTSHLSSYEIITPWRLTRERREAPRPYSKQVSYVIQAEGKEHIIHLERNKDLLPEDFVVYTYNKEGTLITDHPNIQNHCHYRGYVEGVHNSSIALSDCFGLRGLLHLENASYGIEPLQNSSHFEHIIYRMDDVYKEPLKCGVSNKDIEKETAKDEEEEPPSMTQLLRRRRAVLPQTRYVELFIVVDKERYDMMGRNQTAVREEMILLANYLDSMYIMLNIRIVLVGLEIWTNGNLINIVGGAGDVLGNFVQWREKFLITRRRHDSAQLVLKKGFGGTAGMAFVGTVCSRSHAGGINVFGQITVETFASIVAHELGHNLGMNHDDGRDCSCGAKSCIMNSGASGSRNFSSCSAEDFEKLTLNKGGNCLLNIPKPDEAYSAPSCGNKLVDAGEECDCGTPKECELDPCCEGSTCKLKSFAECAYGDCCKDCRFLPGGTLCRGKTSECDVPEYCNGSSQFCQPDVFIQNGYPCQNNKAYCYNGMCQYYDAQCQVIFGSKAKAAPKDCFIEVNSKGDRFGNCGFSGNEYKKCATGNALCGKLQCENVQEIPVFGIVPAIIQTPSRGTKCWGVDFQLGSDVPDPGMVNEGTKCGAGKICRNFQCVDASVLNYDCDVQKKCHGHGVCNSNKNCHCENGWAPPNCETKGYGGSVDSGPTYNEMNTALRD"
+    },
+    {
+      "run": "screen-anchor2-Q9HCL0",
+      "uniprot_id": "Q9HCL0",
+      "gene": "PCDH18",
+      "seq": "KNLKYRIYEEQRVGSVIARLSEDVADVLLKLPNPSTVRFRAMQRGNSPLLVVNEDNGEISIGATIDREQLCQKNLNCSIEFDVITLPTEHLQLFHIEVEVLDINDNSPQFSRSLIPIEISESAAVGTRIPLDSAFDPDVGENSLHTYSLSANDFFNIEVRTRTDGAKYAELIVVRELDRELKSSYELQLTASDMGVPQRSGSSILKISISDSNDNSPAFEQQSYIIQLLENSPVGTLLLDLNATDPDEGANGKIVYSFSSHVSPKIMETFKIDSERGHLTLFKQVDYEITKSYEIDVQAQDLGPNSIPAHCKIIIKVVDVNDNKPEININLMSPGKEEISYIFEGDPIDTFVALVRVQDKDSGLNGEIVCKLHGHGHFKLQKTYENNYLILTNATLDREKRSEYSLTVIAEDRGTPSLSTVKHFTVQINDINDNPPHFQRSRYEFVISENNSPGAYITTVTATDPDLGENGQVTYTILESFILGSSITTYVTIDPSNGAIYALRIFDHEEVSQITFVVEARDGGSPKQLVSNTTVVLTIIDENDNVPVVIGPALRNNTAEITIPKGAESGFHVTRIRAIDRDSGVNAELSCAIVAGNEENIFIIDPRSCDIHTNVSMDSVPYTEWELSVIIQDKGNPQLHTKVLLKCMIFEYAESVTSTAMTSVSQASLDVS"
+    },
+    {
+      "run": "screen-anchor2-O15394",
+      "uniprot_id": "O15394",
+      "gene": "NCAM2",
+      "seq": "LLQVTISLSKVELSVGESKFFTCTAIGEPESIDWYNPQGEKIISTQRVVVQKEGVRSRLTIYNANIEDAGIYRCQATDAKGQTQEATVVLEIYQKLTFREVVSPQEFKQGEDAEVVCRVSSSPAPAVSWLYHNEEVTTISDNRFAMLANNNLQILNINKSDEGIYRCEGRVEARGEIDFRDIIVIVNVPPAISMPQKSFNATAERGEEMTFSCRASGSPEPAISWFRNGKLIEENEKYILKGSNTELTVRNIINSDGGPYVCRATNKAGEDEKQAFLQVFVQPHIIQLKNETTYENGQVTLVCDAEGEPIPEITWKRAVDGFTFTEGDKSLDGRIEVKGQHGSSSLHIKDVKLSDSGRYDCEAASRIGGHQKSMYLDIEYAPKFISNQTIYYSWEGNPINISCDVKSNPPASIHWRRDKLVLPAKNTTNLKTYSTGRKMILEIAPTSDNDFGRYNCTATNHIGTRFQEYILALADVPSSPYGVKIIELSQTTAKVSFNKPDSHGGVPIHHYQVDVKEVASEIWKIVRSHGVQTMVVLNNLEPNTTYEIRVAAVNGKGQGDYSKIEIFQTLPVREPSPPSIHGQPSSGKSFKLSITKQDDGGAPILEYIVKYRSKDKEDQWLEKKVQGNKDHIILEHLQWTMGYEVQITAANRLGYSEPTVYEFSMPPKPNIIKDTLFN"
+    },
+    {
+      "run": "screen-anchor2-Q96JP9",
+      "uniprot_id": "Q96JP9",
+      "gene": "CDHR1",
+      "seq": "QANFAPHFFDNGVGSTNGNMALFSLPEDTPVGSHVYTLNGTDPEGDPISYHISFDPSTRSVFSVDPTFGNITLVEELDREREDEIEAIISISDGLNLVAEKVVILVTDANDEAPRFIQEPYVALVPEDIPAGSIIFKVHAVDRDTGSGGSVTYFLQNLHSPFAVDRHSGVLRLQAGATLDYERSRTHYITVVAKDGGGRLHGADVVFSATTTVTVNVEDVQDMAPVFVGTPYYGYVYEDTLPGSEVLKVVAMDGDRGKPNRILYSLVNGNDGAFEINETSGAISITQSPAQLQREVYELHVQVTEMSPAGSPAAQATVPVTIRIVDLNNHPPTFYGESGPQNRFELSMNEHPPQGEILRGLKITVNDSDQGANAKFNLQLVGPRGIFRVVPQTVLNEAQVTIIVENSAAIDFEKSKVLTFKLLAVEVNTPEKFSSTADVVIQLLDTNDNVPKFDSLYYVARIPENAPGGSSVVAVTAVDPDTGPWGEVKYSTYGTGADLFLIHPSTGLIYTQPWASLDAEATARYNFYVKAEDMEGKYSVAEVFITLLDVNDHPPQFGKSVQKKTMVLGTPVKIEAIDEDAEEPNNLVDYSITHAEPANVFDINSHTGEIWLKNSIRSLDALHNITPGRDCLWSLEVQAKDRGSPSFSTTALLKIDITDAETLSRSPMAAFLIQTKDNPMK"
+    },
+    {
+      "run": "screen-anchor2-P08582",
+      "uniprot_id": "P08582",
+      "gene": "MFI2",
+      "seq": "GMEVRWCATSDPEQHKCGNMSEAFREAGIQPSLLCVRGTSADHCVQLIAAQEADAITLDGGAIYEAGKEHGLKPVVGEVYDQEVGTSYYAVAVVRRSSHVTIDTLKGVKSCHTGINRTVGWNVPVGYLVESGRLSVMGCDVLKAVSDYFGGSCVPGAGETSYSESLCRLCRGDSSGEGVCDKSPLERYYDYSGAFRCLAEGAGDVAFVKHSTVLENTDGKTLPSWGQALLSQDFELLCRDGSRADVTEWRQCHLARVPAHAVVVRADTDGGLIFRLLNEGQRLFSHEGSSFQMFSSEAYGQKDLLFKDSTSELVPIATQTYEAWLGHEYLHAMKGLLCDPNRLPPYLRWCVLSTPEIQKCGDMAVAFRRQRLKPEIQCVSAKSPQHCMERIQAEQVDAVTLSGEDIYTAGKTYGLVPAAGEHYAPEDSSNSYYVVAVVRRDSSHAFTLDELRGKRSCHAGFGSPAGWDVPVGALIQRGFIRPKDCDVLTAVSEFFNASCVPVNNPKNYPSSLCALCVGDEQGRNKCVGNSQERYYGYRGAFRCLVENAGDVAFVRHTTVFDNTNGHNSEPWAAELRSEDYELLCPNGARAEVSQFAACNLAQIPPHAVMVRPDTNIFTVYGLLDKAQDLFGDDHNKNGFKMFDSSNYHGQDLLFKDATVRAVPVGEKTTYRGWLGLDYVAALEGMSSQQC"
+    },
+    {
+      "run": "screen-anchor2-P13591",
+      "uniprot_id": "P13591",
+      "gene": "NCAM1",
+      "seq": "LQVDIVPSQGEISVGESKFFLCQVAGDAKDKDISWFSPNGEKLTPNQQRISVVWNDDSSSTLTIYNANIDDAGIYKCVVTGEDGSESEATVNVKIFQKLMFKNAPTPQEFREGEDAVIVCDVVSSLPPTIIWKHKGRDVILKKDVRFIVLSNNYLQIRGIKKTDEGTYRCEGRILARGEINFKDIQVIVNVPPTIQARQNIVNATANLGQSVTLVCDAEGFPEPTMSWTKDGEQIEQEEDDEKYIFSDDSSQLTIKKVDKNDEAEYICIAENKAGEQDATIHLKVFAKPKITYVENQTAMELEEQVTLTCEASGDPIPSITWRTSTRNISSEEKASWTRPEKQETLDGHMVVRSHARVSSLTLKSIQYTDAGEYICTASNTIGQDSQSMYLEVQYAPKLQGPVAVYTWEGNQVNITCEVFAYPSATISWFRDGQLLPSSNYSNIKIYNTPSASYLEVTPDSENDFGNYNCTAVNRIGQESLEFILVQADTPSSPSIDQVEPYSSTAQVQFDEPEATGGVPILKYKAEWRAVGEEVWHSKWYDAKEASMEGIVTIVGLKPETTYAVRLAALNGKGLGEISAASEFKTQPVQGEPSAPKLEGQMGEDGNSIKVNLIKQDDGGSPIRHYLVRYRALSSEWKPEIRLPSGSDHVMLKSLDWNAEYEVYVVAENQQGKSKAAHFVFRTSAQPTAIPANGSPTSG"
+    },
+    {
+      "run": "screen-anchor2-Q9UQQ1",
+      "uniprot_id": "Q9UQQ1",
+      "gene": "NAALADL1",
+      "seq": "PKKANSLAPQDLDLEILETVMGQLDAHRIRENLRELSREPHLASSPRDEDLVQLLLQRWKDPESGLDSAEASTYEVLLSFPSQEQPNVVDIVGPTGGIIHSCHRTEENVTGEQGGPDVVQPYAAYAPSGTPQGLLVYANRGAEEDFKELQTQGIKLEGTIALTRYGGVGRGAKAVNAAKHGVAGVLVYTDPADINDGLSSPDETFPNSWYLPPSGVERGSYYEYFGDPLTPYLPAVPSSFRVDLANVSGFPPIPTQPIGFQDARDLLCNLNGTLAPATWQGALGCHYRLGPGFRPDGDFPADSQVNVSVYNRLELRNSSNVLGIIRGAVEPDRYVLYGNHRDSWVHGAVDPSSGTAVLLELSRVLGTLLKKGTWRPRRSIVFASWGAEEFGLIGSTEFTEEFFNKLQERTVAYINVDISVFANATLRVQGTPPVQSVVFSATKEIRSPGPGDLSIYDNWIRYFNRSSPVYGLVPSLGSLGAGSDYAPFVHFLGISSMDIAYTYDRSKTSARIYPTYHTAFDTFDYVDKFLDPGFSSHQAVARTAGSVILRLSDSFFLPLKVSDYSETLRSFLQAAQQDLGALLEQHSISLGPLVTAVEKFEAEAAALGQRISTLQKGSPDPLQVRMLNDQLMLLERTFLNPRAFPEERYYSHVLWAPRTGSVVTFPGLSNACSRARDTASGSEAWAEVQRQLSIVVTALEGAAATLRPVADL"
+    },
+    {
+      "run": "screen-anchor2-O14522",
+      "uniprot_id": "O14522",
+      "gene": "PTPRT",
+      "seq": "QSAAGGCSFDEHYSNCGYSVALGTNGFTWEQINTWEKPMLDQAVPTGSFMMVNSSGRASGQKAHLLLPTLKENDTHCIDFHYYFSSRDRSSPGALNVYVKVNGGPQGNPVWNVSGVVTEGWVKAELAISTFWPHFYQVIFESVSLKGHPGYIAVDEVRVLAHPCRKAPHFLRLQNVEVNVGQNATFQCIAGGKWSQHDKLWLQQWNGRDTALMVTRVVNHRRFSATVSVADTAQRSVSKYRCVIRSDGGSGVSNYAELIVKEPPTPIAPPELLAVGATYLWIKPNANSIIGDGPIILKEVEYRTTTGTWAETHIVDSPNYKLWHLDPDVEYEIRVLLTRPGEGGTGPPGPPLTTRTKCADPVHGPQNVEIVDIRARQLTLQWEPFGYAVTRCHSYNLTVQYQYVFNQQQYEAEEVIQTSSHYTLRGLRPFMTIRLRLLLSNPEGRMESEELVVQTEEDVPGAVPLESIQGGPFEEKIYIQWKPPNETNGVITLYEINYKAVGSLDPSADLSSQRGKVFKLRNETHHLFVGLYPGTTYSFTIKASTAKGFGPPVTTRIATKISAPSMPEYDTDTPLNETDTTITVMLKPAQSRGAPVSVYQLVVKEERLQKSRRAADIIECFSVPVSYRNASSLDSLHYFAAELKPANLPVTQPFTVGDNKTYNGYWNPPLSPLKSYSIYFQALSKANGETKINCVRLATKGASTQNSNTVEPEKQVDNTVKM"
+    },
+    {
+      "run": "screen-anchor2-P16109",
+      "uniprot_id": "P16109",
+      "gene": "SELP",
+      "seq": "WTYHYSTKAYSWNISRKYCQNRYTDLVAIQNKNEIDYLNKVLPYYSSYYWIGIRKNNKTWTWVGTKKALTNEAENWADNEPNNKRNNEDCVEIYIKSPSAPGKWNDEHCLKKKHALCYTASCQDMSCSKQGECLETIGNYTCSCYPGFYGPECEYVRECGELELPQHVLMNCSHPLGNFSFNSQCSFHCTDGYQVNGPSKLECLASGIWTNKPPQCLAAQCPPLKIPERGNMTCLHSAKAFQHQSSCSFSCEEGFALVGPEVVQCTASGVWTAPAPVCKAVQCQHLEAPSEGTMDCVHPLTAFAYGSSCKFECQPGYRVRGLDMLRCIDSGHWSAPLPTCEAISCEPLESPVHGSMDCSPSLRAFQYDTNCSFRCAEGFMLRGADIVRCDNLGQWTAPAPVCQALQCQDLPVPNEARVNCSHPFGAFRYQSVCSFTCNEGLLLVGASVLQCLATGNWNSVPPECQAIPCTPLLSPQNGTMTCVQPLGSSSYKSTCQFICDEGYSLSGPERLDCTRSGRWTDSPPMCEAIKCPELFAPEQGSLDCSDTRGEFNVGSTCHFSCDNGFKLEGPNNVECTTSGRWSATPPTCKGIASLPTPGVQCPALTTPGQGTMYCRHHPGTFGFNTTCYFGCNAGFTLIGDSTLSCRPSGQWTAVTPACRAVKCSELHVNKPIAMNCSNLWGNFSYGSICSFHCLEGQLLNGSAQTACQENGHWSTTVPTCQAGPLTIQEA"
+    },
+    {
+      "run": "screen-anchor2-Q16853",
+      "uniprot_id": "Q16853",
+      "gene": "AOC3",
+      "seq": "GRGGDGGEPSQLPHCPSVSPSAQPWTHPGQSQLFADLSREELTAVMRFLTQRLGPGLVDAAQARPSDNCVFSVELQLPPKAAALAHLDRGSPPPAREALAIVFFGRQPQPNVSELVVGPLPHPSYMRDVTVERHGGPLPYHRRPVLFQEYLDIDQMIFNRELPQASGLLHHCCFYKHRGRNLVTMTTAPRGLQSGDRATWFGLYYNISGAGFFLHHVGLELLVNHKALDPARWTIQKVFYQGRYYDSLAQLEAQFEAGLVNVVLIPDNGTGGSWSLKSPVPPGPAPPLQFYPQGPRFSVQGSRVASSLWTFSFGLGAFSGPRIFDVRFQGERLVYEISLQEALAIYGGNSPAAMTTRYVDGGFGMGKYTTPLTRGVDCPYLATYVDWHFLLESQAPKTIRDAFCVFEQNQGLPLRRHHSDLYSHYFGGLAETVLVVRSMSTLLNYDYVWDTVFHPSGAIEIRFYATGYISSAFLFGATGKYGNQVSEHTLGTVHTHSAHFKVDLDVAGLENWVWAEDMVFVPMAVPWSPEHQLQRLQVTRKLLEMEEQAAFLVGSATPRYLYLASNHSNKWGHPRGYRIQMLSFAGEPLPQNSSMARGFSWERYQLAVTQRKEEEPSSSSVFNQNDPWAPTVDFSDFINNETIAGKDLVAWVTAGFLHIPHAEDIPNTVTVGNGVGFFLRPYNFFDEDPSFYSADSIYFRGDQDAGACEVNPLACLPQAAACAPDLPAFSHGGFSHN"
+    },
+    {
+      "run": "screen-anchor2-P42658",
+      "uniprot_id": "P42658",
+      "gene": "DPP6",
+      "seq": "LTPAEDNSLSQKKKVTVEDLFSEDFKIHDPEAKWISDTEFIYREQKGTVRLWNVETNTSTVLIEGKKIESLRAIRYEISPDREYALFSYNVEPIYQHSYTGYYVLSKIPHGDPQSLDPPEVSNAKLQYAGWGPKGQQLIFIFENNIYYCAHVGKQAIRVVSTGKEGVIYNGLSDWLYEEEILKTHIAHWWSPDGTRLAYAAINDSRVPIMELPTYTGSIYPTVKPYHYPKAGSENPSISLHVIGLNGPTHDLEMMPPDDPRMREYYITMVKWATSTKVAVTWLNRAQNVSILTLCDATTGVCTKKHEDESEAWLHRQNEEPVFSKDGRKFFFIRAIPQGGRGKFYHITVSSSQPNSSNDNIQSITSGDWDVTKILAYDEKGNKIYFLSTEDLPRRRQLYSANTVGNFNRQCLSCDLVENCTYFSASFSHSMDFFLLKCEGPGVPMVTVHNTTDKKKMFDLETNEHVKKAINDRQMPKVEYRDIEIDDYNLPMQILKPATFTDTTHYPLLLVVDGTPGSQSVAEKFEVSWETVMVSSHGAVVVKCDGRGSGFQGTKLLHEVRRRLGLLEEKDQMEAVRTMLKEQYIDRTRVAVFGKDYGGYLSTYILPAKGENQGQTFTCGSALSPITDFKLYASAFSERYLGLHGLDNRAYEMTKVAHRVSALEEQQFLIIHPTADEKIHFQHTAELITQLIRGKANYSLQIYPDESHYFTSSSLKQHLYRSIINFFVECFRIQDKLLTVTAKEDEEED"
+    },
+    {
+      "run": "screen-anchor2-Q12864",
+      "uniprot_id": "Q12864",
+      "gene": "CDH17",
+      "seq": "QEGKFSGPLKPMTFSIYEGQEPSQIIFQFKANPPAVTFELTGETDNIFVIEREGLLYYNRALDRETRSTHNLQVAALDANGIIVEGPVPITIKVKDINDNRPTFLQSKYEGSVRQNSRPGKPFLYVNATDLDDPATPNGQLYYQIVIQLPMINNVMYFQINNKTGAISLTREGSQELNPAKNPSYNLVISVKDMGGQSENSFSDTTSVDIIVTENIWKAPKPVEMVENSTDPHPIKITQVRWNDPGAQYSLVDKEKLPRFPFSIDQEGDIYVTQPLDREEKDAYVFYAVAKDEYGKPLSYPLEIHVKVKDINDNPPTCPSPVTVFEVQENERLGNSIGTLTAHDRDEENTANSFLNYRIVEQTPKLPMDGLFLIQTYAGMLQLAKQSLKKQDTPQYNLTIEVSDKDFKTLCFVQINVIDINDQIPIFEKSDYGNLTLAEDTNIGSTILTIQATDADEPFTGSSKILYHIIKGDSEGRLGVDTDPHTNTGYVIIKKPLDFETAAVSNIVFKAENPEPLVFGVKYNASSFAKFTLIVTDVNEAPQFSQHVFQAKVSEDVAIGTKVGNVTAKDPEGLDISYSLRGDTRGWLKIDHVTGEIFSVAPLDREAGSPYRVQVVATEVGGSSLSSVSEFHLILMDVNDNPPRLAKDYTGLFFCHPLSAPGSLIFEATDDDQHLFRGPHFTFSLGSGSLQNDWEVSKINGTHARLSTRHTEFEEREYVVLIRINDGGRPPLEGIVSLPVTFCSCVEGSCFRPAGHQTGIPTVGM"
+    },
+    {
+      "run": "screen-anchor2-Q14114",
+      "uniprot_id": "Q14114",
+      "gene": "LRP8",
+      "seq": "GPAKDCEKDQFQCRNERCIPSVWRCDEDDDCLDHSDEDDCPKKTCADSDFTCDNGHCIHERWKCDGEEECPDGSDESEATCTKQVCPAEKLSCGPTSHKCVPASWRCDGEKDCEGGADEAGCATLCAPHEFQCGNRSCLAAVFVCDGDDDCGDGSDERGCADPACGPREFRCGGDGGGACIPERWVCDRQFDCEDRSDEAAELCGRPGPGATSAPAACATASQFACRSGECVHLGWRCDGDRDCKDKSDEADCPLGTCRGDEFQCGDGTCVLAIKHCNQEQDCPDGSDEAGCLQGLNECLHNNGGCSHICTDLKIGFECTCPAGFQLLDQKTCGDIDECKDPDACSQICVNYKGYFKCECYPGYEMDLLTKNCKAAAGKSPSLIFTNRHEVRRIDLVKRNYSRLIPMLKNVVALDVEVATNRIYWCDLSYRKIYSAYMDKASDPKEQEVLIDEQLHSPEGLAVDWVHKHIYWTDSGNKTISVATVDGGRRRTLFSRNLSEPRAIAVDPLRGFMYWSDWGDQAKIEKSGLNGVDRQTLVSDNIEWPNGITLDLLSQRLYWVDSKLHQLSSIDFSGGNRKTLISSTDFLSHPFGIAVFEDKVFWTDLENEAIFSANRLNGLEISILAENLNNPHDIVIFHELKQPRAPDACELSVQPNGGCEYLCLPAPQISSHSPKYTCACPDTMWLGPDMKRCYRAPQSTSTTTLASTMTRTVPATTRAPGTTVHRSTYQNHSTETPSLTAAVPSSVSVPRAPSISPSTLSPATSNHSQHYANEDSKMGSTVTAA"
+    },
+    {
+      "run": "screen-anchor2-Q08174",
+      "uniprot_id": "Q08174",
+      "gene": "PCDH1",
+      "seq": "TRVVYKVPEEQPPNTLIGSLAADYGFPDVGHLYKLEVGAPYLRVDGKTGDIFTTETSIDREGLRECQNQLPGDPCILEFEVSITDLVQNGSPRLLEGQIEVQDINDNTPNFASPVITLAIPENTNIGSLFPIPLASDRDAGPNGVASYELQAGPEAQELFGLQVAEDQEEKQPQLIVMGNLDRERWDSYDLTIKVQDGGSPPRASSALLRVTVLDTNDNAPKFERPSYEAELSENSPIGHSVIQVKANDSDQGANAEIEYTFHQAPEVVRRLLRLDRNTGLITVQGPVDREDLSTLRFSVLAKDRGTNPKSARAQVVVTVKDMNDNAPTIEIRGIGLVTHQDGMANISEDVAEETAVALVQVSDRDEGENAAVTCVVAGDVPFQLRQASETGSDSKKKYFLQTTTPLDYEKVKDYTIEIVAVDSGNPPLSSTNSLKVQVVDVNDNAPVFTQSVTEVAFPENNKPGEVIAEITASDADSGSNAELVYSLEPEPAAKGLFTISPETGEIQVKTSLDREQRESYELKVVAADRGSPSLQGTATVLVNVLDCNDNDPKFMLSGYNFSVMENMPALSPVGMVTVIDGDKGENAQVQLSVEQDNGDFVIQNGTGTILSSLSFDREQQSTYTFQLKAVDGGVPPRSAYVGVTINVLDENDNAPYITAPSNTSHKLLTPQTRLGETVSQVAAEDFDSGVNAELIYSIAGGNPYGLFQIGSHSGAITLEKEIERRHHGLHRLVVKVSDRGKPPRYGTALVHLYVNETLANRTLLETLLGHSLDTPLDIDIAGDPEYERSKQRGN"
+    },
+    {
+      "run": "screen-anchor2-Q9BZA8",
+      "uniprot_id": "Q9BZA8",
+      "gene": "PCDH11Y",
+      "seq": "TNCHKCLLSGTYIFAVLLVCVVFHSGAQEKNYTIREEIPENVLIGNLLKDLNLSLIPNKSLTTTMQFKLVYKTGDVPLIRIEEDTGEIFTTGARIDREKLCAGIPRDEHCFYEVEVAILPDEIFRLVKIRFLIEDINDNAPLFPATVINISIPENSAINSKYTLPAAVDPDVGINGVQNYELIKSQNIFGLDVIETPEGDKMPQLIVQKELDREEKDTYVMKVKVEDGGFPQRSSTAILQVSVTDTNDNHPVFKETEIEVSIPENAPVGTSVTQLHATDADIGENAKIHFSFSNLVSNIARRLFHLNATTGLITIKEPLDREETPNHKLLVLASDGGLMPARAMVLVNVTDVNDNVPSIDIRYIVNPVNDTVVLSENIPLNTKIALITVTDKDADHNGRVTCFTDHEIPFRLRPVFSNQFLLENAAYLDYESTKEYAIKLLAADAGKPPLNQSAMLFIKVKDENDNAPVFTQSFVTVSIPENNSPGIQLMKVSATDADSGPNAEINYLLGPDAPPEFSLDRRTGMLTVVKKLDREKEDKYLFTILAKDNGVPPLTSNVTVFVSIIDQNDNSPVFTHNEYKFYVPENLPRHGTVGLITVTDPDYGDNSAVTLSILDENDDFTIDSQTGVIRPNISFDREKQESYTFYVKAEDGGRVSRSSSAKVTINVVDVNDNKPVFIVPPYNYSYELVLPSTNPGTVVFQVIAVDNDTGMNAEVRYSIVGGNTRDLFAIDQETGNITLMEKCDVTDLGLHRVLVKANDLGQPDSLFSVVIVNLFVNESVTNATLINELVRKSIEAPVTPNTEIADVSSPTSDYVK"
+    },
+    {
+      "run": "screen-anchor2-P07202",
+      "uniprot_id": "P07202",
+      "gene": "TPO",
+      "seq": "FFPFISRGKELLWGKPEESRVSSVLEESKRLVDTAMYATMQRNLKKRGILSPAQLLSFSKLPEPTSGVIARAAEIMETSIQAMKRKVNLKTQQSQHPTDALSEDLLSIIANMSGCLPYMLPPKCPNTCLANKYRPITGACNNRDHPRWGASNTALARWLPPVYEDGFSQPRGWNPGFLYNGFPLPPVREVTRHVIQVSNEVVTDDDRYSDLLMAWGQYIDHDIAFTPQSTSKAAFGGGADCQMTCENQNPCFPIQLPEEARPAAGTACLPFYRSSAACGTGDQGALFGNLSTANPRQQMNGLTSFLDASTVYGSSPALERQLRNWTSAEGLLRVHARLRDSGRAYLPFVPPRAPAACAPEPGIPGETRGPCFLAGDGRASEVPSLTALHTLWLREHNRLAAALKALNAHWSADAVYQEARKVVGALHQIITLRDYIPRILGPEAFQQYVGPYEGYDSTANPTVSNVFSTAAFRFGHATIHPLVRRLDASFQEHPDLPGLWLHQAFFSPWTLLRGGGLDPLIRGLLARPAKLQVQDQLMNEELTERLFVLSNSSTLDLASINLQRGRDHGLPGYNEWREFCGLPRLETPADLSTAIASRSVADKILDLYKHPDNIDVWLGGLAENFLPRARTGPLFACLIGKQMKALRDGDWFWWENSHVFTDAQRRELEKHSLSRVICDNTGLTRVPMDAFQVGKFPEDFESCDSITGMNLEAWRETFPQDDKCGFPESVENGDFVHCEESGRRVLVYSCRHGYELQGREQLTCTQEGWDFQPPLCKDVNECADGAHPPCHASARCRNTKGGFQCLCADPYELGDDGRTCVDSGRLPR"
+    },
+    {
+      "run": "screen-anchor2-Q96KG7",
+      "uniprot_id": "Q96KG7",
+      "gene": "MEGF10",
+      "seq": "LNLEDPNVCSHWESYSVTVQESYPHPFDQIYYTSCTDILNWFKCTRHRVSYRTAYRHGEKTMYRRKSQCCPGFYESGEMCVPHCADKCVHGRCIAPNTCQCEPGWGGTNCSSACDGDHWGPHCTSRCQCKNGALCNPITGACHCAAGFRGWRCEDRCEQGTYGNDCHQRCQCQNGATCDHVTGECRCPPGYTGAFCEDLCPPGKHGPQCEQRCPCQNGGVCHHVTGECSCPSGWMGTVCGQPCPEGRFGKNCSQECQCHNGGTCDAATGQCHCSPGYTGERCQDECPVGTYGVLCAETCQCVNGGKCYHVSGACLCEAGFAGERCEARLCPEGLYGIKCDKRCPCHLENTHSCHPMSGECACKPGWSGLYCNETCSPGFYGEACQQICSCQNGADCDSVTGKCTCAPGFKGIDCSTPCPLGTYGINCSSRCGCKNDAVCSPVDGSCTCKAGWHGVDCSIRCPSGTWGFGCNLTCQCLNGGACNTLDGTCTCAPGWRGEKCELPCQDGTYGLNCAERCDCSHADGCHPTTGHCRCLPGWSGVHCDSVCAEGRWGPNCSLPCYCKNGASCSPDDGICECAPGFRGTTCQRICSPGFYGHRCSQTCPQCVHSSGPCHHITGLCDCLPGFTGALCNEVCPSGRFGKNCAGICTCTNNGTCNPIDRSCQCYPGWIGSDCSQPCPPAHWGPNCIHTCNCHNGAFCSAYDGECKCTPGWTGLYCTQRCPLGFYGKDCALICQCQNGADCDHISGQCTCRTGFMGRHCEQKCPSGTYGYGCRQICDCLNNSTCDHITGTCYCSPGWKGARCDQAGVIIVGNLNSLSRTSTALPADSYQIG"
+    },
+    {
+      "run": "screen-anchor2-Q9Y6F6",
+      "uniprot_id": "Q9Y6F6",
+      "gene": "MRVI1",
+      "seq": "MGMDLTCPFGISPACGAQASWSIFGADAAEVPGTRGHSQQEAAMPHIPEDEEPPGEPQAAQSPAGQGPPAAGVSCSPTPTIVLTGDATSPEGETDKNLANRVHSPHKRLSHRHLKVSTASLTSVDPAGHIIDLVNDQLPDISISEEDKKKNLALLEEAKLVSERFLTRRGRKSRSSPGDSPSAVSPNLSPSASPTSSRSNSLTVPTPPGLDVCSGPPSPLPGAPPQQKGDEADVSSPHPGEPNVPKGLADRKQNDQRKVSQGRLAPRPPPVEKSKEIAIEQKENFDPLQYPETTPKGLAPVTNSSGKMALNSPQPGPVESELGKQLLKTGWEGSPLPRSPTQDAAGVGPPASQGRGPAGEPMGPEAGSKAELPPTVSRPPLLRGLSWDSGPEEPGPRLQKVLAKLPLAEEEKRFAGKAGGKLAKAPGLKDFQIQVQPVRMQKLTKLREEHILMRNQNLVGLKLPDLSEAAEQEKGLPSELSPAIEEEESKSGLDVMPNISDVLLRKLRVHRSLPGSAPPLTEKEVENVFVQLSLAFRNDSYTLESRINQAERERNLTEENTEKELENFKASITSSASLWHHCEHRETYQKLLEDIAVLHRLAARLSSRAEVVGAVRQEKRMSKATEVMMQYVENLKRTYEKDHAELMEFKKLANQNSSRSCGPSEDGVPRTARSMSLTLGKNMPRRRVSVAVVPKFNALNLPGQTPSSSSIPSLPALSESPNGKGSLPVTSALPALLENGKTNGDPDCEASAPALTLSCLEELSQETKARMEEEAYSKGFQEGLKKTKELQDLKEEEEEQKSESPEEPEEVEETEEEEKGPRSSKLEELVHFLQVMYPKLCQH"
+    },
+    {
+      "run": "screen-anchor2-Q96MS0",
+      "uniprot_id": "Q96MS0",
+      "gene": "ROBO3",
+      "seq": "GDISNSSELLLGFNSSLAALNHTLLPPGDPSLNGSRVGPEDAMPRIVEQPPDLLVSRGEPATLPCRAEGRPRPNIEWYKNGARVATVREDPRAHRLLLPSGALFFPRIVHGRRARPDEGVYTCVARNYLGAAASRNASLEVAVLRDDFRQSPGNVVVAVGEPAVLECVPPRGHPEPSVSWRKDGARLKEEEGRITIRGGKLMMSHTLKSDAGMYVCVASNMAGERESAAAEVMVLERPSFLRRPVNQVVLADAPVTFLCEVKGDPPPRLRWRKEDGELPTGRYEIRSDHSLWIGHVSAEDEGTYTCVAENSVGRAEASGSLSVHVPPQLVTQPQDQMAAPGESVAFQCETKGNPPPAIFWQKEGSQVLLFPSQSLQPTGRFSVSPRGQLNITAVQRGDAGYYVCQAVSVAGSILAKALLEIKGASLDGLPPVILQGPANQTLVLGSSVWLPCRVTGNPQPSVRWKKDGQWLQGDDLQFKTMANGTLYIANVQEMDMGFYSCVAKSSTGEATWSGWLKMREDWGVSPDPPTEPSSPPGAPSQPVVTEITKNSITLTWKPNPQTGAAVTSYVIEAFSPAAGNTWRTVADGVQLETHTVSGLQPNTIYLFLVRAVGAWGLSEPSPVSEPVRTQDSSPSRPVEDPWRGQQGLAEVAVRLQEPIVLGPRTLQVSWTVDGPVQLVQGFRVSWRVAGPEGGSWTMLDLQSPSQQSTVLRGLPPGTQIQIKVQAQGQEGLGAESLSVTRSIPEEAPSGPPQGVAVALGGDGNSSITVSWEPPLPSQQNGVITEYQIWCLGNESRFHLNRSAAGWARSAMLRGLVPGLLYRTLVAAATSAGVGVPSAPVLVQLPSPPDLEPGLEVGAGLAVRLARVLREP"
+    },
+    {
+      "run": "screen-anchor2-Q5SY80",
+      "uniprot_id": "Q5SY80",
+      "gene": "C1orf101",
+      "seq": "LWRYSTNSPNYRIFSTRSTIKLEYEGTLFTEWSVPETCFVLNKSSPTTELRCSSPGVHAIKPIVTGPDEEERYLFVESSHTCFLWYYRVRHFFNNFTQLITVWAYDPESADPDELLGNAEEPSINSIVLSTQMATLGQKPVIHTVLKRKVYSSNEKMRRGTWRIVVPMTKDDALKEIRGNQVTFQDCFIADFLILLTFPLLTIPEIPGYLPISSPRGSQLMASWDACVVASAVLVTDMETFHTTDSFKSWTRIRVPPDILSDDERRSVAHVILSRDGIVFLINGVLYIKSFRGFIRLGGIVNLPDGGITGISSRKWCWVNYLLKAKGRRSTFAVWTENEIYLGSILLKFARLVTTTELKNILSLSVTATLTIDRVEYTGHPLEIAVFLNYCTVCNVTKKIFLVIYNEDTKQWVSQDFTLDAPIDSVTMPHFTFSALPGLLLWNKHSIYYCYHNFTFTGILQTPAGHGNLSMLSNDSIIHEVFIDYYGDILVKMENNVIFYSKINTRDAVKLHLWTNYTTRAFIFLSTSGQTYFLYALDDGTIQIQDYPLHLEAQSIAFTTKDKCPYMAFHNNVAHVFYFLDKGEALTVWTQIVYPENTGLYVIVESYGPKILQESHEISFEAAFGYCTKTLTLTFYQNVDYERISDYFETQDKHTGLVLVQFRPSEYSKACPIAQKVFQIAVGCDDKKFIAIKGFSKKGCHHHDFSYVIEKSYLRHQPSKNLRVRYIWGEYGCPLRLDFTEKFQPVVQLFDDNGYVKDVEANFIVWEIHGRDDYSFNNTMAQSGCLHEAQTWKSMIELNKHLPLEEVWGPENYKHCFSYAIGKPGDLNQPYEIINSSNGNHIFWPMGHSGMYVFRVKILDPNYSFCNLTAMFAIETFGLIPSPS"
+    },
+    {
+      "run": "screen-anchor2-Q14DG7",
+      "uniprot_id": "Q14DG7",
+      "gene": "TMEM132B",
+      "seq": "MFGAASRMDTTAVCTGGVTESRGIVDSLQKFSSLPAYLPTNLHISNAEESFFLKEANQDLTRNSSLQARVEPFFIYRARTPPIINASYGPFSVEKIIPQELLLTSTAFGNMDKFPFNWKLKSHILDSSIYSNRPKVQTLFYVTGMGWDDSDLTEDLPCVKMFAFPEAREVAASCRLQGAPGLCVAELELLPEWFSSGLDLEPEEEIPALLGGTTMELFFTLYPADKAGQCPLEEEGKWENNIHSGLESPQQAFPARERIGSVVVYPTQDDLKWSLVSLDENVVISVPLNLVREGDTATFLVSLTSSSVADQFTLRIKAAAGVKITAVRVSSEDQWAVQEEIDNGSTQTSATLTCMGHRPDTQSRVNGSFYEILQVDFGIDNSSDLAGAQQITWQVEYPIEDSMSELVVSEIFVSQTTFVGIVPLAMDTEVLNTAILTGKPVSVPVKVVGVQEDGSVVDVSESVECKSADEDVIKVSNNCDSIFVNGKEMKSKVDTIVNFTHQHFTSQFEVTVWAPRLPLQIEISDTELSQIKGWRIPVAANRRPTRESDDEDDEEKKGRGCSLQYQHATVRVLTQFVAESPDLGQLTYMLGPDWQFDITDLVTEFMKVEEPKIAQLQDGRTLAGREPGITTVQVLSPLSDSILAEKTVIVLDDRVTIAELGVQLVAGMSLSLQPHRADKRAIVSTAAALDVLQSPQQEAIVSSWILFSDGSVTPLDIYDPKDYSVTVSSLDEMVVSVQANLESKWPIVVAEGEGQGPLIKLEMMISEPCQKTKRKSVLAVGKGNVKVKFEPSSDEHQGGSNDIEGINREYKDHLSNSIEREGNQERAVQEWFHRGTPVGQEESTNKSTTPQSPMEGKNKLLKSGGPDAFTSFPTQGKSPDPNNPSDLTVTSRGLTDLEIGMYA"
+    },
+    {
+      "run": "screen-anchor2-Q8NFP4",
+      "uniprot_id": "Q8NFP4",
+      "gene": "MDGA1",
+      "seq": "QGVYAPAQAQIVHAGQACVVKEDNISERVYTIREGDTLMLQCLVTGHPRPQVRWTKTAGSASDKFQETSVFNETLRIERIARTQGGRYYCKAENGVGVPAIKSIRVDVQYLDEPMLTVHQTVSDVRGNFYQEKTVFLRCTVNSNPPARFIWKRGSDTLSHSQDNGVDIYEPLYTQGETKVLKLKNLRPQDYASYTCQVSVRNVCGIPDKAITFRLTNTTAPPALKLSVNETLVVNPGENVTVQCLLTGGDPLPQLQWSHGPGPLPLGALAQGGTLSIPSVQARDSGYYNCTATNNVGNPAKKTVNLLVRSMKNATFQITPDVIKESENIQLGQDLKLSCHVDAVPQEKVTYQWFKNGKPARMSKRLLVTRNDPELPAVTSSLELIDLHFSDYGTYLCMASFPGAPVPDLSVEVNISSETVPPTISVPKGRAVVTVREGSPAELQCEVRGKPRPPVLWSRVDKEAALLPSGLPLEETPDGKLRLERVSRDMSGTYRCQTARYNGFNVRPREAQVQLNVQFPPEVEPSSQDVRQALGRPVLLRCSLLRGSPQRIASAVWRFKGQLLPPPPVVPAAAEAPDHAELRLDAVTRDSSGSYECSVSNDVGSAACLFQVSAKAYSPEFYFDTPNPTRSHKLSKNYSYVLQWTQREPDAVDPVLNYRLSIRQLNQHNAVVKAIPVRRVEKGQLLEYILTDLRVPHSYEVRLTPYTTFGAGDMASRIIHYTEPINSPNLSDNTCHFEDEKICGYTQDLTDNFDWTRQNALTQNPKRSPNTGPPTDISGTPEGYYMFIETSRPRELGDRARLVSPLYNASAKFYCVSFFYHMYGKHIGSLNLLVRSRNKGALDTHAWSLSGNKGNVWQQAHVPISPSGPFQIIFEGVRGPGYLGDIAIDDVTLKKGECPRKQTDPNKVVVMPGS"
+    },
+    {
+      "run": "screen-anchor2-Q93033",
+      "uniprot_id": "Q93033",
+      "gene": "CD101",
+      "seq": "QREVTVQKGPLFRAEGYPVSIGCNVTGHQGPSEQHFQWSVYLPTNPTQEVQIISTKDAAFSYAVYTQRVRSGDVYVERVQGNSVLLHISKLQMKDAGEYECHTPNTDEKYYGSYSAKTNLIVIPDTLSATMSSQTLGKEEGEPLALTCEASKATAQHTHLSVTWYLTQDGGGSQATEIISLSKDFILVPGPLYTERFAASDVQLNKLGPTTFRLSIERLQSSDQGQLFCEATEWIQDPDETWMFITKKQTDQTTLRIQPAVKDFQVNITADSLFAEGKPLELVCLVVSSGRDPQLQGIWFFNGTEIAHIDAGGVLGLKNDYKERASQGELQVSKLGPKAFSLKIFSLGPEDEGAYRCVVAEVMKTRTGSWQVLQRKQSPDSHVHLRKPAARSVVMSTKNKQQVVWEGETLAFLCKAGGAESPLSVSWWHIPRDQTQPEFVAGMGQDGIVQLGASYGVPSYHGNTRLEKMDWATFQLEITFTAITDSGTYECRVSEKSRNQARDLSWTQKISVTVKSLESSLQVSLMSRQPQVMLTNTFDLSCVVRAGYSDLKVPLTVTWQFQPASSHIFHQLIRITHNGTIEWGNFLSRFQKKTKVSQSLFRSQLLVHDATEEETGVYQCEVEVYDRNSLYNNRPPRASAISHPLRIAVTLPESKLKVNSRSQVQELSINSNTDIECSILSRSNGNLQLAIIWYFSPVSTNASWLKILEMDQTNVIKTGDEFHTPQRKQKFHTEKVSQDLFQLHILNVEDSDRGKYHCAVEEWLLSTNGTWHKLGEKKSGLTELKLKPTGSKVRVSKVYWTENVTEHREVAIRCSLESVGSSATLYSVMWYWNRENSGSKLLVHLQHDGLLEYGEEGLRRHLHCYRSSSTDFVLKLHQVEMEDAGMYWCRVAEWQLHGHPSKWINQASDESQRMVLTVLPSEPTLPSRICSSAP"
+    },
+    {
+      "run": "screen-anchor2-Q9UEF7",
+      "uniprot_id": "Q9UEF7",
+      "gene": "KL",
+      "seq": "EPGDGAQTWARFSRPPAPEAAGLFQGTFPDGFLWAVGSAAYQTEGGWQQHGKGASIWDTFTHHPLAPPGDSRNASLPLGAPSPLQPATGDVASDSYNNVFRDTEALRELGVTHYRFSISWARVLPNGSAGVPNREGLRYYRRLLERLRELGVQPVVTLYHWDLPQRLQDAYGGWANRALADHFRDYAELCFRHFGGQVKYWITIDNPYVVAWHGYATGRLAPGIRGSPRLGYLVAHNLLLAHAKVWHLYNTSFRPTQGGQVSIALSSHWINPRRMTDHSIKECQKSLDFVLGWFAKPVFIDGDYPESMKNNLSSILPDFTESEKKFIKGTADFFALCFGPTLSFQLLDPHMKFRQLESPNLRQLLSWIDLEFNHPQIFIVENGWFVSGTTKRDDAKYMYYLKKFIMETLKAIKLDGVDVIGYTAWSLMDGFEWHRGYSIRRGLFYVDFLSQDKMLLPKSSALFYQKLIEKNGFPPLPENQPLEGTFPCDFAWGVVDNYIQVDTTLSQFTDLNVYLWDVHHSKRLIKVDGVVTKKRKSYCVDFAAIQPQIALLQEMHVTHFRFSLDWALILPLGNQSQVNHTILQYYRCMASELVRVNITPVVALWQPMAPNQGLPRLLARQGAWENPYTALAFAEYARLCFQELGHHVKLWITMNEPYTRNMTYSAGHNLLKAHALAWHVYNEKFRHAQNGKISIALQADWIEPACPFSQKDKEVAERVLEFDIGWLAEPIFGSGDYPWVMRDWLNQRNNFLLPYFTEDEKKLIQGTFDFLALSHYTTILVDSEKEDPIKYNDYLEVQEMTDITWLNSPSQVAVVPWGLRKVLNWLKFKYGDLPMYIISNGIDDGLHAEDDQLRVYYMQNYINEALKAHILDGINLCGYFAYSFNDRTAPRFGLYRYAADQFEPKASMKHYRKIIDSNGFPGPETLERFCPEEFTVCTECSFFHTRKS"
+    },
+    {
+      "run": "screen-anchor2-Q9UKU6",
+      "uniprot_id": "Q9UKU6",
+      "gene": "TRHDE",
+      "seq": "SLRFDECGASATPGADGGPSGFPERGGNGSLPGSARRNHHAGGDSWQPEAGGVASPGTTSAQPPSEEEREPWEPWTQLRLSGHLKPLHYNLMLTAFMENFTFSGEVNVEIACRNATRYVVLHASRVAVEKVQLAEDRAFGAVPVAGFFLYPQTQVLVVVLNRTLDAQRNYNLKIIYNALIENELLGFFRSSYVLHGERRFLGVTQFSPTHARKAFPCFDEPIYKATFKISIKHQATYLSLSNMPVETSVFEEDGWVTDHFSQTPLMSTYYLAWAICNFTYRETTTKSGVVVRLYARPDAIRRGSGDYALHITKRLIEFYEDYFKVPYSLPKLDLLAVPKHPYAAMENWGLSIFVEQRILLDPSVSSISYLLDVTMVIVHEICHQWFGDLVTPVWWEDVWLKEGFAHYFEFVGTDYLYPGWNMEKQRFLTDVLHEVMLLDGLASSHPVSQEVLQATDIDRVFDWIAYKKGAALIRMLANFMGHSVFQRGLQDYLTIHKYGNAARNDLWNTLSEALKRNGKYVNIQEVMDQWTLQMGYPVITILGNTTAENRIIITQQHFIYDISAKTKALKLQNNSYLWQIPLTIVVGNRSHVSSEAIIWVSNKSEHHRITYLDKGSWLLGNINQTGYFRVNYDLRNWRLLIDQLIRNHEVLSVSNRAGLIDDAFSLARAGYLPQNIPLEIIRYLSEEKDFLPWHAASRALYPLDKLLDRMENYNIFNEYILKQVATTYIKLGWPKNNFNGSLVQASYQHEELRREVIMLACSFGNKHCHQQASTLISDWISSNRNRIPLNVRDIVYCTGVSLLDEDVWEFIWMKFHSTTAVSEKKILLEALTCSDDRNLLNRLLNLSLNSEVVLDQDAIDVIIHVARNPHGRDLAWKFFRDKWKILNTRYGEALFMNSKLISGVTEFLNTEGELKELKNFMKNYDGVAAASFSRAVETVEANVRWKMLYQDELFQWLGKALRH"
+    },
+    {
+      "run": "screen-anchor2-Q02246",
+      "uniprot_id": "Q02246",
+      "gene": "CNTN2",
+      "seq": "SQTTFGPVFEDQPLSVLFPEESTEEQVLLACRARASPPATYRWKMNGTEMKLEPGSRHQLVGGNLVIMNPTKAQDAGVYQCLASNPVGTVVSREAILRFGFLQEFSKEERDPVKAHEGWGVMLPCNPPAHYPGLSYRWLLNEFPNFIPTDGRHFVSQTTGNLYIARTNASDLGNYSCLATSHMDFSTKSVFSKFAQLNLAAEDTRLFAPSIKARFPAETYALVGQQVTLECFAFGNPVPRIKWRKVDGSLSPQWTTAEPTLQIPSVSFEDEGTYECEAENSKGRDTVQGRIIVQAQPEWLKVISDTEADIGSNLRWGCAAAGKPRPTVRWLRNGEPLASQNRVEVLAGDLRFSKLSLEDSGMYQCVAENKHGTIYASAELAVQALAPDFRLNPVRRLIPAARGGEILIPCQPRAAPKAVVLWSKGTEILVNSSRVTVTPDGTLIIRNISRSDEGKYTCFAENFMGKANSTGILSVRDATKITLAPSSADINLGDNLTLQCHASHDPTMDLTFTWTLDDFPIDFDKPGGHYRRTNVKETIGDLTILNAQLRHGGKYTCMAQTVVDSASKEATVLVRGPPGPPGGVVVRDIGDTTIQLSWSRGFDNHSPIAKYTLQARTPPAGKWKQVRTNPANIEGNAETAQVLGLTPWMDYEFRVIASNILGTGEPSGPSSKIRTREAAPSVAPSGLSGGGGAPGELIVNWTPMSREYQNGDGFGYLLSFRRQGSTHWQTARVPGADAQYFVYSNESVRPYTPFEVKIRSYNRRGDGPESLTALVYSAEEEPRVAPTKVWAKGVSSSEMNVTWEPVQQDMNGILLGYEIRYWKAGDKEAAADRVRTAGLDTSARVSGLHPNTKYHVTVRAYNRAGTGPASPSANATTMKPPPRRPPGNISWTFSSSSLSIKWDPVVPFRNESAVTGYKMLYQNDLHLTPTLHLTGKNWIEIPVPEDIGHALVQIRTTGPGGDGIPAEVHIVRNGGTSMMVEN"
+    },
+    {
+      "run": "screen-anchor2-O15031",
+      "uniprot_id": "O15031",
+      "gene": "PLXNB2",
+      "seq": "LRPRKLDFFRSEKELNHLAVDEASGVVYLGAVNALYQLDAKLQLEQQVATGPALDNKKCTPPIEASQCHEAEMTDNVNQLLLLDPPRKRLVECGSLFKGICALRALSNISLRLFYEDGSGEKSFVASNDEGVATVGLVSSTGPGGDRVLFVGKGNGPHDNGIIVSTRLLDRTDSREAFEAYTDHATYKAGYLSTNTQQFVAAFEDGPYVFFVFNQQDKHPARNRTLLARMCREDPNYYSYLEMDLQCRDPDIHAAAFGTCLAASVAAPGSGRVLYAVFSRDSRSSGGPGAGLCLFPLDKVHAKMEANRNACYTGTREARDIFYKPFHGDIQCGGHAPGSSKSFPCGSEHLPYPLGSRDGLRGTAVLQRGGLNLTAVTVAAENNHTVAFLGTSDGRILKVYLTPDGTSSEYDSILVEINKRVKRDLVLSGDLGSLYAMTQDKVFRLPVQECLSYPTCTQCRDSQDPYCGWCVVEGRCTRKAECPRAEEASHWLWSRSKSCVAVTSAQPQNMSRRAQGEVQLTVSPLPALSEEDELLCLFGESPPHPARVEGEAVICNSPSSIPVTPPGQDHVAVTIQLLLRRGNIFLTSYQYPFYDCRQAMSLEENLPCISCVSNRWTCQWDLRYHECREASPNPEDGIVRAHMEDSCPQFLGPSPLVIPMNHETDVNFQGKNLDTVKGSSLHVGSDLLKFMEPVTMQESGTFAFRTPKLSHDANETLPLHLYVKSYGKNIDSKLHVTLYNCSFGRSDCSLCRAANPDYRCAWCGGQSRCVYEALCNTTSECPPPVITRIQPETGPLGGGIRITILGSNLGVQAGDIQRISVAGRNCSFQPERYSVSTRIVCVIEAAETPFTGGVEVDVFGKLGRSPPNVQFTFQQPKPLSVEPQQGPQAGGTTLTIHGTHLDTGSQEDVRVTLNGVPCKVTKFGAQLQCVTGPQATRGQMLLEVSYGGSPVPNPGIFFTYRENPVLRAFEPLRSFASGGRSINVTGQGFSLIQRFAMVVI"
+    },
+    {
+      "run": "screen-anchor2-O75051",
+      "uniprot_id": "O75051",
+      "gene": "PLXNA2",
+      "seq": "MPQFSTFHSENRDWTFNHLTVHQGTGAVYVGAINRVYKLTGNLTIQVAHKTGPEEDNKSCYPPLIVQPCSEVLTLTNNVNKLLIIDYSENRLLACGSLYQGVCKLLRLDDLFILVEPSHKKEHYLSSVNKTGTMYGVIVRSEGEDGKLFIGTAVDGKQDYFPTLSSRKLPRDPESSAMLDYELHSDFVSSLIKIPSDTLALVSHFDIFYIYGFASGGFVYFLTVQPETPEGVAINSAGDLFYTSRIVRLCKDDPKFHSYVSLPFGCTRAGVEYRLLQAAYLAKPGDSLAQAFNITSQDDVLFAIFSKGQKQYHHPPDDSALCAFPIRAINLQIKERLQSCYQGEGNLELNWLLGKDVQCTKAPVPIDDNFCGLDINQPLGGSTPVEGLTLYTTSRDRMTSVASYVYNGYSVVFVGTKSGKLKKIRADGPPHGGVQYEMVSVLKDGSPILRDMAFSIDQRYLYVMSERQVTRVPVESCEQYTTCGECLSSGDPHCGWCALHNMCSRRDKCQQAWEPNRFAASISQCVSLAVHPSSISVSEHSRLLSLVVSDAPDLSAGIACAFGNLTEVEGQVSGSQVICISPGPKDVPVIPLDQDWFGLELQLRSKETGKIFVSTEFKFYNCSAHQLCLSCVNSAFRCHWCKYRNLCTHDPTTCSFQEGRINISEDCPQLVPTEEILIPVGEVKPITLKARNLPQPQSGQRGYECVLNIQGAIHRVPALRFNSSSVQCQNSSYQYDGMDISNLAVDFAVVWNGNFIIDNPQDLKVHLYKCAAQRESCGLCLKADRKFECGWCSGERRCTLHQHCTSPSSPWLDWSSHNVKCSNPQITEILTVSGPPEGGTRVTIHGVNLGLDFSEIAHHVQVAGVPCTPLPGEYIIAEQIVCEMGHALVGTTSGPVRLCIGECKPEFMTKSHQQYTFVNPSVLSLNPIRGPESGGTMVTITGHYLGAGSSVAVYLGNQTCEFYGRSMSEIVCVSPPSSNGLGPVPVSVSVDRAHVDSNLQ"
+    },
+    {
+      "run": "screen-anchor2-O75581",
+      "uniprot_id": "O75581",
+      "gene": "LRP6",
+      "seq": "APLLLYANRRDLRLVDATNGKENATIVVGGLEDAAAVDFVFSHGLIYWSDVSEEAIKRTEFNKTESVQNVVVSGLLSPDGLACDWLGEKLYWTDSETNRIEVSNLDGSLRKVLFWQELDQPRAIALDPSSGFMYWTDWGEVPKIERAGMDGSSRFIIINSEIYWPNGLTLDYEEQKLYWADAKLNFIHKSNLDGTNRQAVVKGSLPHPFALTLFEDILYWTDWSTHSILACNKYTGEGLREIHSDIFSPMDIHAFSQQRQPNATNPCGIDNGGCSHLCLMSPVKPFYQCACPTGVKLLENGKTCKDGATELLLLARRTDLRRISLDTPDFTDIVLQLEDIRHAIAIDYDPVEGYIYWTDDEVRAIRRSFIDGSGSQFVVTAQIAHPDGIAVDWVARNLYWTDTGTDRIEVTRLNGTMRKILISEDLEEPRAIVLDPMVGYMYWTDWGEIPKIERAALDGSDRVVLVNTSLGWPNGLALDYDEGKIYWGDAKTDKIEVMNTDGTGRRVLVEDKIPHIFGFTLLGDYVYWTDWQRRSIERVHKRSAEREVIIDQLPDLMGLKATNVHRVIGSNPCAEENGGCSHLCLYRPQGLRCACPIGFELISDMKTCIVPEAFLLFSRRADIRRISLETNNNNVAIPLTGVKEASALDFDVTDNRIYWTDISLKTISRAFMNGSALEHVVEFGLDYPEGMAVDWLGKNLYWADTGTNRIEVSKLDGQHRQVLVWKDLDSPRALALDPAEGFMYWTEWGGKPKIDRAAMDGSERTTLVPNVGRANGLTIDYAKRRLYWTDLDTNLIESSNMLGLNREVIADDLPHPFGLTQYQDYIYWTDWSRRSIERANKTSGQNRTIIQGHLDYVMDILVFHSSRQSGWNECASSNGHCSHLCLAVPVGGFVCGCPAHYSLNADNRTCSAPTTFLLFSQKSAINRMVIDEQQSPDIILPIHSLRNVRAIDYDPLDKQLYWIDSRQNMIRKAQEDGSQGFTVVVSSVPSQNLEIQPYDL"
+    },
+    {
+      "run": "screen-anchor2-P08F94",
+      "uniprot_id": "P08F94",
+      "gene": "PKHD1",
+      "seq": "HIEPEEGSLAGGTWITVIFDGLELGVLYPNNGSQLEIHLVNVNMVVPALRSVPCDVFPVFLDLPVVTCRTRSVLSEAHEGLYFLEAYFGGQLVSSPNPGPRDSCTFKFSKAQTPIVHQVYPPSGVPGKLIHVYGWIITGRLETFDFDAEYIDSPVILEAQGDKWVTPCSLINRQMGSCYPIQEDHGLGTLQCHVEGDYIGSQNVSFSVFNKGKSMVHKKAWLISAKQDLFLYQTHSEILSVFPETGSLGGRTNITITGDFFDNSAQVTIAGIPCDIRHVSPRKIECTTRAPGKDVRLTTPQPGNRGLLFEVGDAVEGLELTEATPGYRWQIVPNASSPFGFWSQEGQPFRARLSGFFVAPETNNYTFWIQADSQASLHFSWSEEPRTKVKVASISVGTADWFDSWEQNRDEGTWQQKTPKLELLGGAMYYLEAEHHGIAPSRGMRIGVQIHNTWLNPDVVTTYLREKHQIRVRAQRLPEVQVLNVSGRGNFFLTWDNVSSQPIPANATAHLIQTTIEELLAVKCKLEPLWSNILLRLGFERGPEVSNSDGDLTSGTEPFCGRFSLRQPRHLVLTPPAAQKGYRLDQYTHLCLAYKGHMNKILKMIVSFTIGFQNMVKNTTCDWSLTRTSPESWQFDCTDLWETCVRCFGDLQPPPANSPVLVHQINLLPLAQETGLFYVDEIIIADTNVTVSQADSGTARPGGNLVESVSVVGSPPVYSVTSWLAGCGTELPLITARSVPTEGTEEGSGLVLVTTQRRQRTSPPLGGHFRIQLPNTVISDVPVQISAHHLHQLLQNNADDFTSRYLNASDFTVKEDLYTCYEHVWTLSWSTQIGDLPNFIRVSDENLTGVNPAAATRVVYDGGVFLGPIFGDMLATANQHTQVVVRVNDVPAHCPGSCSFQYLQGSTPCVHSVWYSIDGDINLMIYITGTGFSGDSQFLQVTVNKTSCKVIFSNQTNVVCQTDLLPVGMHRILMLVRPSGLAISATGEDLFLNVKPRLDM"
+    },
+    {
+      "run": "screen-anchor2-P17927",
+      "uniprot_id": "P17927",
+      "gene": "CR1",
+      "seq": "QCNAPEWLPFARPTNLTDEFEFPIGTYLNYECRPGYSGRPFSIICLKNSVWTGAKDRCRRKSCRNPPDPVNGMVHVIKGIQFGSQIKYSCTKGYRLIGSSSATCIISGDTVIWDNETPICDRIPCGLPPTITNGDFISTNRENFHYGSVVTYRCNPGSGGRKVFELVGEPSIYCTSNDDQVGIWSGPAPQCIIPNKCTPPNVENGILVSDNRSLFSLNEVVEFRCQPGFVMKGPRRVKCQALNKWEPELPSCSRVCQPPPDVLHAERTQRDKDNFSPGQEVFYSCEPGYDLRGAASMRCTPQGDWSPAAPTCEVKSCDDFMGQLLNGRVLFPVNLQLGAKVDFVCDEGFQLKGSSASYCVLAGMESLWNSSVPVCEQIFCPSPPVIPNGRHTGKPLEVFPFGKTVNYTCDPHPDRGTSFDLIGESTIRCTSDPQGNGVWSSPAPRCGILGHCQAPDHFLFAKLKTQTNASDFPIGTSLKYECRPEYYGRPFSITCLDNLVWSSPKDVCKRKSCKTPPDPVNGMVHVITDIQVGSRINYSCTTGHRLIGHSSAECILSGNAAHWSTKPPICQRIPCGLPPTIANGDFISTNRENFHYGSVVTYRCNPGSGGRKVFELVGEPSIYCTSNDDQVGIWSGPAPQCIIPNKCTPPNVENGILVSDNRSLFSLNEVVEFRCQPGFVMKGPRRVKCQALNKWEPELPSCSRVCQPPPDVLHAERTQRDKDNFSPGQEVFYSCEPGYDLRGAASMRCTPQGDWSPAAPTCEVKSCDDFMGQLLNGRVLFPVNLQLGAKVDFVCDEGFQLKGSSASYCVLAGMESLWNSSVPVCEQIFCPSPPVIPNGRHTGKPLEVFPFGKAVNYTCDPHPDRGTSFDLIGESTIRCTSDPQGNGVWSSPAPRCGILGHCQAPDHFLFAKLKTQTNASDFPIGTSLKYECRPEYYGRPFSITCLDNLVWSSPKDVCKRKSCKTPPDPVNGMVHVITDIQVGSRINYSCTTGHRLIGHS"
+    },
+    {
+      "run": "screen-anchor2-P23471",
+      "uniprot_id": "P23471",
+      "gene": "PTPRZ1",
+      "seq": "YYRQQRKLVEEIGWSYTGALNQKNWGKKYPTCNSPKQSPINIDEDLTQVNVNLKKLKFQGWDKTSLENTFIHNTGKTVEINLTNDYRVSGGVSEMVFKASKITFHWGKCNMSSDGSEHSLEGQKFPLEMQIYCFDADRFSSFEEAVKGKGKLRALSILFEVGTEENLDFKAIIDGVESVSRFGKQAALDPFILLNLLPNSTDKYYIYNGSLTSPPCTDTVDWIVFKDTVSISESQLAVFCEVLTMQQSGYVMLMDYLQNNFREQQYKFSRQVFSSYTGKEEIHEAVCSSEPENVQADPENYTSLLVTWERPRVVYDTMIEKFAVLYQQLDGEDQTKHEFLTDGYQDLGAILNNLLPNMSYVLQIVAICTNGLYGKYSDQLIVDMPTDNPELDLFPELIGTEEIIKEEEEGKDIEEGAIVNPGRDSATNQIRKKEPQISTTTHYNRIGTKYNEAKTNRSPTRGSEFSGKGDVPNTSLNSTSQPVTKLATEKDISLTSQTVTELPPHTVEGTSASLNDGSKTVLRSPHMNLSGTAESLNTVSITEYEEESLLTSFKLDTGAEDSSGSSPATSAIPFISENISQGYIFSSENPETITYDVLIPESARNASEDSTSSGSEESLKDPSMEGNVWFPSSTDITAQPDVGSGRESFLQTNYTEIRVDESEKTTKSFSAGPVMSQGPSVTDLEMPHYSTFAYFPTEVTPHAFTPSSRQQDLVSTVNVVYSQTTQPVYNGETPLQPSYSSEVFPLVTPLLLDNQILNTTPAASSSDSALHATPVFPSVDVSFESILSSYDGAPLLPFSSASFSSELFRHLHTVSQILPQVTSATESDKVPLHASLPVAGGDLLLEPSLAQYSDVLSTTHAASETLEFGSESGVLYKTLMFSQVEPPSSDAMMHARSSGPEPSYALSDNEGSQHIFTVSYSSAIPVHDSVGVTYQGSLFSGPSHIPIPKSSLITPTASLLQPTHALSGDGEWSGASSDSEFLLPDTDGLTALNISSPVSV"
+    },
+    {
+      "run": "screen-anchor2-P78357",
+      "uniprot_id": "P78357",
+      "gene": "CNTNAP1",
+      "seq": "WGYYGCDEELVGPLYARSLGASSYYSLLTAPRFARLHGISGWSPRIGDPNPWLQIDLMKKHRIRAVATQGSFNSWDWVTRYMLLYGDRVDSWTPFYQRGHNSTFFGNVNESAVVRHDLHFHFTARYIRIVPLAWNPRGKIGLRLGLYGCPYKADILYFDGDDAISYRFPRGVSRSLWDVFAFSFKTEEKDGLLLHAEGAQGDYVTLELEGAHLLLHMSLGSSPIQPRPGHTTVSAGGVLNDQHWHYVRVDRFGRDVNFTLDGYVQRFILNGDFERLNLDTEMFIGGLVGAARKNLAYRHNFRGCIENVIFNRVNIADLAVRRHSRITFEGKVAFRCLDPVPHPINFGGPHNFVQVPGFPRRGRLAVSFRFRTWDLTGLLLFSRLGDGLGHVELTLSEGQVNVSIAQSGRKKLQFAAGYRLNDGFWHEVNFVAQENHAVISIDDVEGAEVRVSYPLLIRTGTSYFFGGCPKPASRWDCHSNQTAFHGCMELLKVDGQLVNLTLVEGRRLGFYAEVLFDTCGITDRCSPNMCEHDGRCYQSWDDFICYCELTGYKGETCHTPLYKESCEAYRLSGKTSGNFTIDPDGSGPLKPFVVYCDIRENRAWTVVRHDRLWTTRVTGSSMERPFLGAIQYWNASWEEVSALANASQHCEQWIEFSCYNSRLLNTAGGYPYSFWIGRNEEQHFYWGGSQPGIQRCACGLDRSCVDPALYCNCDADQPQWRTDKGLLTFVDHLPVTQVVIGDTNRSTSEAQFFLRPLRCYGDRNSWNTISFHTGAALRFPPIRANHSLDVSFYFRTSAPSGVFLENMGGPYCQWRRPYVRVELNTSRDVVFAFDVGNGDENLTVHSDDFEFNDDEWHLVRAEINVKQARLRVDHRPWVLRPMPLQTYIWMEYDQPLYVGSAELKRRPFVGCLRAMRLNGVTLNLEGRANASEGTSPNCTGHCAHPRLPCFHGGRCVERYSYYTCDCDLTAFDGPYCNHDIGGFFEPGTWMRYNLQSALRS"
+    },
+    {
+      "run": "screen-anchor2-Q13332",
+      "uniprot_id": "Q13332",
+      "gene": "PTPRS",
+      "seq": "EEPPRFIKEPKDQIGVSGGVASFVCQATGDPKPRVTWNKKGKKVNSQRFETIEFDESAGAVLRIQPLRTPRDENVYECVAQNSVGEITVHAKLTVLREDQLPSGFPNIDMGPQLKVVERTRTATMLCAASGNPDPEITWFKDFLPVDPSASNGRIKQLRSETFESTPIRGALQIESSEETDQGKYECVATNSAGVRYSSPANLYVRELREVRRVAPRFSILPMSHEIMPGGNVNITCVAVGSPMPYVKWMQGAEDLTPEDDMPVGRNVLELTDVKDSANYTCVAMSSLGVIEAVAQITVKSLPKAPGTPMVTENTATSITITWDSGNPDPVSYYVIEYKSKSQDGPYQIKEDITTTRYSIGGLSPNSEYEIWVSAVNSIGQGPPSESVVTRTGEQAPASAPRNVQARMLSATTMIVQWEEPVEPNGLIRGYRVYYTMEPEHPVGNWQKHNVDDSLLTTVGSLLEDETYTVRVLAFTSVGDGPLSDPIQVKTQQGVPGQPMNLRAEARSETSITLSWSPPRQESIIKYELLFREGDHGREVGRTFDPTTSYVVEDLKPNTEYAFRLAARSPQGLGAFTPVVRQRTLQSKPSAPPQDVKCVSVRSTAILVSWRPPPPETHNGALVGYSVRYRPLGSEDPEPKEVNGIPPTTTQILLEALEKWTQYRITTVAHTEVGPGPESSPVVVRTDEDVPSAPPRKVEAEALNATAIRVLWRSPAPGRQHGQIRGYQVHYVRMEGAEARGPPRIKDVMLADAQWETDDTAEYEMVITNLQPETAYSITVAAYTMKGDGARSKPKVVVTKGAVLGRPTLSVQQTPEGSLLARWEPPAGTAEDQVLGYRLQFGREDSTPLATLEFPPSEDRYTASGVHKGATYVFRLAARSRGGLGEEAAEVLSIPEDTPRGHPQILEAAGNASAGTVLLRWLPPVPAERNGAIVKYTVAVREAGALGPARETELPAAAEPGAENALTLQGLKPDTAYDLQVRAHTRRGPGPFSPPVRYRT"
+    },
+    {
+      "run": "screen-anchor2-Q5VV63",
+      "uniprot_id": "Q5VV63",
+      "gene": "ATRNL1",
+      "seq": "LYAQVSQSKPCERTGSCFSGRCVNSTCLCDPGWVGDQCQHCQGRFKLTEPSGYLTDGPINYKYKTKCTWLIEGYPNAVLRLRFNHFATECSWDHMYVYDGDSIYAPLIAVLSGLIVPEIRGNETVPEVVTTSGYALLHFFSDAAYNLTGFNIFYSINSCPNNCSGHGKCTTSVSVPSQVYCECDKYWKGEACDIPYCKANCGSPDHGYCDLTGEKLCVCNDSWQGPDCSLNVPSTESYWILPNVKPFSPSVGRASHKAVLHGKFMWVIGGYTFNYSSFQMVLNYNLESSIWNVGTPSRGPLQRYGHSLALYQENIFMYGGRIETNDGNVTDELWVFNIHSQSWSTKTPTVLGHGQQYAVEGHSAHIMELDSRDVVMIIIFGYSAIYGYTSSIQEYHISSNTWLVPETKGAIVQGGYGHTSVYDEITKSIYVHGGYKALPGNKYGLVDDLYKYEVNTKTWTILKESGFARYLHSAVLINGAMLIFGGNTHNDTSLSNGAKCFSADFLAYDIACDEWKILPKPNLHRDVNRFGHSAVVINGSMYIFGGFSSVLLNDILVYKPPNCKAFRDEELCKNAGPGIKCVWNKNHCESWESGNTNNILRAKCPPKTAASDDRCYRYADCASCTANTNGCQWCDDKKCISANSNCSMSVKNYTKCHVRNEQICNKLTSCKSCSLNLNCQWDQRQQECQALPAHLCGEGWSHIGDACLRVNSSRENYDNAKLYCYNLSGNLASLTTSKEVEFVLDEIQKYTQQKVSPWVGLRKINISYWGWEDMSPFTNTTLQWLPGEPNDSGFCAYLERAAVAGLKANPCTSMANGLVCEKPVVSPNQNARPCKKPCSLRTSCSNCTSNGMECMWCSSTKRCVDSNAYIISFPYGQCLEWQTATCSPQNCSGLRTCGQCLEQPGCGWCNDPSNTGRGHCIEGSSRGPMKLIGMHHSEMVLDTNLCPKEKNYEWSFIQCPACQCNGHSTCINNNVCEQCKNLTTGKQCQDCMPGYYGDPT"
+    },
+    {
+      "run": "screen-anchor2-Q6V0I7",
+      "uniprot_id": "Q6V0I7",
+      "gene": "FAT4",
+      "seq": "WVHGAEPRQVFQVLEEQPPGTLVGTIQTRPGFTYRLSESHALFAINSSTGALYTTSTIDRESLPSDVINLVVLSSAPTYPTEVRVLVRDLNDNAPVFPDPSIVVTFKEDSSSGRQVILDTATDSDIGSNGVDHRSYRIIRGNEAGRFRLDITLNPSGEGAFLHLVSKGGLDREVTPQYQLLVEVEDKGEPKRRGYLQVNVTVQDINDNPPVFGSSHYQAGVPEDAVVGSSVLQVAAADADEGTNADIRYRLQDEGTPFQMDPETGLITVREPLDFEARRQYSLTVQAMDRGVPSLTGRAEALIQLLDVNDNDPVVKFRYFPATSRYASVDENAQVGTVVALLTVTDADSPAANGNISVQILGGNEQRHFEVQSSKVPNLSLIKVASALDRERIPSYNLTVSVSDNYGAPPGAAVQARSSVASLVIFVNDINDHPPVFSQQVYRVNLSEEAPPGSYVSGISATDGDSGLNANLRYSIVSGNGLGWFHISEHSGLVTTGSSGGLDRELASQIVLNISARDQGVHPKVSYAQLVVTLLDVNDEKPVFSQPEGYDVSVVENAPTGTELLMLRATDGDLGDNGTVRFSLQEAETDRRSFRLDPVSGRLSTISSLDREEQAFYSLLVLATDLGSPPQSSMARINVSLLDINDNSPVFYPVQYFAHIKENEPGGSYITTVSATDPDLGTNGTVKYSISAGDRSRFQVNAQSGVISTRMALDREEKTAYQLQIVATDGGNLQSPNQAIVTITVLDTQDNPPVFSQVAYSFVVFENVALGYHVGSVSASTMDLNSNISYLITTGDQKGMFAINQVTGQLTTANVIDREEQSFYQLKVVASGGTVTGDTMVNITVKDLNDNSPHFLQAIESVNVVENWQAGHSIFQAKAVDPDEGVNGMVLYSLKQNPKNLFAINEKNGTISLLGPLDVHAGSYQIEILASDMGVPQLSSSVILTVYVHDVNDNSPVFDQLSYEVTLSESEPVNSRFFKVQASDKDSGANGEIAYTIAEG"
+    },
+    {
+      "run": "screen-anchor2-Q86VB7",
+      "uniprot_id": "Q86VB7",
+      "gene": "CD163",
+      "seq": "SSLGGTDKELRLVDGENKCSGRVEVKVQEEWGTVCNNGWSMEAVSVICNQLGCPTAIKAPGWANSSAGSGRIWMDHVSCRGNESALWDCKHDGWGKHSNCTHQQDAGVTCSDGSNLEMRLTRGGNMCSGRIEIKFQGRWGTVCDDNFNIDHASVICRQLECGSAVSFSGSSNFGEGSGPIWFDDLICNGNESALWNCKHQGWGKHNCDHAEDAGVICSKGADLSLRLVDGVTECSGRLEVRFQGEWGTICDDGWDSYDAAVACKQLGCPTAVTAIGRVNASKGFGHIWLDSVSCQGHEPAIWQCKHHEWGKHYCNHNEDAGVTCSDGSDLELRLRGGGSRCAGTVEVEIQRLLGKVCDRGWGLKEADVVCRQLGCGSALKTSYQVYSKIQATNTWLFLSSCNGNETSLWDCKNWQWGGLTCDHYEEAKITCSAHREPRLVGGDIPCSGRVEVKHGDTWGSICDSDFSLEAASVLCRELQCGTVVSILGGAHFGEGNGQIWAEEFQCEGHESHLSLCPVAPRPEGTCSHSRDVGVVCSRYTEIRLVNGKTPCEGRVELKTLGAWGSLCNSHWDIEDAHVLCQQLKCGVALSTPGGARFGKGNGQIWRHMFHCTGTEQHMGDCPVTALGASLCPSEQVASVICSGNQSQTLSSCNSSSLGPTRPTIPEESAVACIESGQLRLVNGGGRCAGRVEIYHEGSWGTICDDSWDLSDAHVVCRQLGCGEAINATGSAHFGEGTGPIWLDEMKCNGKESRIWQCHSHGWGQQNCRHKEDAGVICSEFMSLRLTSEASREACAGRLEVFYNGAWGTVGKSSMSETTVGVVCRQLGCADKGKINPASLDKAMSIPMWVDNVQCPKGPDTLWQCPSSPWEKRLASPSEETWITCDNKIRLQEGPTSCSGRVEIWHGGSWGTVCDDSWDLDDAQVVCQQLGCGPALKAFKEAEFGQGTGPIWLNEVKCKGNESSLWDCPARRWGHSECGHKEDAAVNCTDISVQKTPQKAT"
+    },
+    {
+      "run": "screen-anchor2-Q8WXG9",
+      "uniprot_id": "Q8WXG9",
+      "gene": "GPR98",
+      "seq": "MSVFLGPGMPSASLLVNLLSALLILFVFGETEIRFTGQTEFVVNETSTTVIRLIIERIGEPANVTAIVSLYGEDAGDFFDTYAAAFIPAGETNRTVYIAVCDDDLPEPDETFIFHLTLQKPSANVKLGWPRTVTVTILSNDNAFGIISFNMLPSIAVSEPKGRNESMPLTLIREKGTYGMVMVTFEVEGGPNPPDEDLSPVKGNITFPPGRATVIYNLTVLDDEVPENDEIFLIQLKSVEGGAEINTSRNSIEIIIKKNDSPVRFLQSIYLVPEEDHILIIPVVRGKDNNGNLIGSDEYEVSISYAVTTGNSTAHAQQNLDFIDLQPNTTVVFPPFIHESHLKFQIVDDTIPEIAESFHIMLLKDTLQGDAVLISPSVVQVTIKPNDKPYGVLSFNSVLFERTVIIDEDRISRYEEITVVRNGGTHGNVSANWVLTRNSTDPSPVTADIRPSSGVLHFAQGQMLATIPLTVVDDDLPEEAEAYLLQILPHTIRGGAEVSEPAELLFYIQDSDDVYGLITFFPMENQKIESSPGERYLSLSFTRLGGTKGDVRLLYSVLYIPAGAVDPLQAKEGILNISRRNDLIFPEQKTQVTTKLPIRNDAFLQNGAHFLVQLETVELLNIIPLIPPISPRFGEICNISLLVTPAIANGEIGFLSNLPIILHEPEDFAAEVVYIPLHRDGTDGQATVYWSLKPSGFNSKAVTPDDIGPFNGSVLFLSGQSDTTINITIKGDDIPEMNETVTLSLDRVNVENQVLKSGYTSRDLIILENDDPGGVFEFSPASRGPYVIKEGESVELHIIRSRGSLVKQFLHYRVEPRDSNEFYGNTGVLEFKPGEREIVITLLARLDGIPELDEHYWVVLSSHGERESKLGSATIVNITILKNDDPHGIIEFVSDGLIVMINESKGDAIYSAVYDVVRNRGNFGDVSVSWVVSPDFTQDVFPVQGTVVFGDQEFSKNITIYSLPDEIPEEMEEFTVILLNGTGGAKVGNRTTATLRIRRN"
+    },
+    {
+      "run": "screen-anchor2-Q96PQ0",
+      "uniprot_id": "Q96PQ0",
+      "gene": "SORCS2",
+      "seq": "RSPEPGRLGPHAQLTRVPRSPPAGRAEPGGGEDRQARGTEPGAPGPSPGPAPGPGEDGAPAAGYRRWERAAPLAGVASRAQVSLISTSFVLKGDATHNQAMVHWTGENSSVILILTKYYHADMGKVLESSLWRSSDFGTSYTKLTLQPGVTTVIDNFYICPTNKRKVILVSSSLSDRDQSLFLSADEGATFQKQPIPFFVETLIFHPKEEDKVLAYTKESKLYVSSDLGKKWTLLQERVTKDHVFWSVSGVDADPDLVHVEAQDLGGDFRYVTCAIHNCSEKMLTAPFAGPIDHGSLTVQDDYIFFKATSANQTKYYVSYRRNEFVLMKLPKYALPKDLQIISTDESQVFVAVQEWYQMDTYNLYQSDPRGVRYALVLQDVRSSRQAEESVLIDILEVRGVKGVFLANQKIDGKVMTLITYNKGRDWDYLRPPSMDMNGKPTNCKPPDCHLHLHLRWADNPYVSGTVHTKDTAPGLIMGAGNLGSQLVEYKEEMYITSDCGHTWRQVFEEEHHILYLDHGGVIVAIKDTSIPLKILKFSVDEGLTWSTHNFTSTSVFVDGLLSEPGDETLVMTVFGHISFRSDWELVKVDFRPSFSRQCGEEDYSSWELSNLQGDRCIMGQQRSFRKRKSTSWCIKGRSFTSALTSRVCECRDSDFLCDYGFERSSSSESSTNKCSANFWFNPLSPPDDCALGQTYTSSLGYRKVVSNVCEGGVDMQQSQVQLQCPLTPPRGLQVSIQGEAVAVRPGEDVLFVVRQEQGDVLTTKYQVDLGDGFKAMYVNLTLTGEPIRHRYESPGIYRVSVRAENTAGHDEAVLFVQVNSPLQALYLEVVPVIGLNQEVNLTAVLLPLNPNLTVFYWWIGHSLQPLLSLDNSVTTRFSDTGDVRVTVQAACGNSVLQDSRVLRVLDQFQVMPLQFSKELDAYNPNTPEWREDVGLVVTRLLSKETSVPQELLVTVVKPGLPTLADLYVLLPPPRPTRKRSLSSDKRLAAIQQVLNAQKI"
+    },
+    {
+      "run": "screen-anchor2-Q9BZ76",
+      "uniprot_id": "Q9BZ76",
+      "gene": "CNTNAP3",
+      "seq": "GNPPDCDAPLASALPRSSFSSSSELSSSHGPGFSRLNRRDGAGGWTPLVSNKYQWLQIDLGERMEVTAVATQGGYGSSDWVTSYLLMFSDGGRNWKQYRREESIWGFPGNTNADSVVHYRLQPPFEARFLRFLPLAWNPRGRIGMRIEVYGCAYKSEVVYFDGQSALLYRLDKKPLKPIRDVISLKFKAMQSNGILLHREGQHGNHITLELIKGKLVFFLNSGNAKLPSTIAPVTLTLGSLLDDQHWHSVLIELLDTQVNFTVDKHTHHFQAKGDSSYLDLNFEISFGGIPTPGRSRAFRRKSFHGCLENLYYNGVDVTELAKKHKPQILMMGNVSFSCPQPQTVPVTFLSSRSYLALPGNSGEDKVSVTFQFRTWNRAGHLLFGELRRGSGSFVLFLKDGKLKLSLFQPGQSPRNVTAGAGLNDGQWHSVSFSAKWSHMNVVVDDDTAVQPLVAVLIDSGDTYYFGGCLDNSSGSGCKSPLGGFQGCLRLITIGDKAVDPILVQQGALGSFRDLQIDSCGITDRCLPSYCEHGGECSQSWDTFSCDCLGTGYTGETCHSSLYEQSCEAHKHRGNPSGLYYIDADGSGPLGPFLVYCNMTADAAWTVVQHGGPDAVTLRGAPSGHPRSAVSFAYAAGAGQLRSAVNLAERCEQRLALRCGTARRPDSRDGTPLSWWVGRTNETHTSWGGSLPDAQKCTCGLEGNCIDSQYYCNCDAGRNEWTSDTIVLSQKEHLPVTQIVMTDAGRPHSEAAYTLGPLLCRGDQSFWNSASFNTETSYLHFPAFHGELTADVCFFFKTTVSSGVFMENLGITDFIRIELRAPTEVTFSFDVGNGPCEVTVQSPTPFNDNQWHHVRAERNVKGASLQVDQLPQKMQPAPADGHVRLQLNSQLFIGGTATRQRGFLGCIRSLQLNGVALDLEERATVTPGVEPGCAGHCSTYGHLCRNGGRCREKRRGVTCDCAFSAYDGPFCSNEISAYFATGSSMTYHFQEHYTLSENSS"
+    },
+    {
+      "run": "screen-anchor2-Q9HCU4",
+      "uniprot_id": "Q9HCU4",
+      "gene": "CELSR2",
+      "seq": "MRSPATGVPLPTPPPPLLLLLLLLLPPPLLGDQVGPCRSLGSRGRGSSGACAPMGWLCPSSASNLWLYTSRCRDAGTELTGHLVPHHDGLRVWCPESEAHIPLPPAPEGCPWSCRLLGIGGHLSPQGKLTLPEEHPCLKAPRLRCQSCKLAQAPGLRAGERSPEESLGGRRKRNVNTAPQFQPPSYQATVPENQPAGTPVASLRAIDPDEGEAGRLEYTMDALFDSRSNQFFSLDPVTGAVTTAEELDRETKSTHVFRVTAQDHGMPRRSALATLTILVTDTNDHDPVFEQQEYKESLRENLEVGYEVLTVRATDGDAPPNANILYRLLEGSGGSPSEVFEIDPRSGVIRTRGPVDREEVESYQLTVEASDQGRDPGPRSTTAAVFLSVEDDNDNAPQFSEKRYVVQVREDVTPGAPVLRVTASDRDKGSNAVVHYSIMSGNARGQFYLDAQTGALDVVSPLDYETTKEYTLRVRAQDGGRPPLSNVSGLVTVQVLDINDNAPIFVSTPFQATVLESVPLGYLVLHVQAIDADAGDNARLEYRLAGVGHDFPFTINNGTGWISVAAELDREEVDFYSFGVEARDHGTPALTASASVSVTVLDVNDNNPTFTQPEYTVRLNEDAAVGTSVVTVSAVDRDAHSVITYQITSGNTRNRFSITSQSGGGLVSLALPLDYKLERQYVLAVTASDGTRQDTAQIVVNVTDANTHRPVFQSSHYTVNVNEDRPAGTTVVLISATDEDTGENARITYFMEDSIPQFRIDADTGAVTTQAELDYEDQVSYTLAITARDNGIPQKSDTTYLEILVNDVNDNAPQFLRDSYQGSVYEDVPPFTSVLQISATDRDSGLNGRVFYTFQGGDDGDGDFIVESTSGIVRTLRRLDRENVAQYVLRAYAVDKGMPPARTPMEVTVTVLDVNDNPPVFEQDEFDVFVEENSPIGLAVARVTATDPDEGTNAQIMYQIVEGNIPEVFQLDIFSGELTALVDLDYEDRPEYVLVIQATS"
+    },
+    {
+      "run": "screen-anchor2-Q9NZM1",
+      "uniprot_id": "Q9NZM1",
+      "gene": "MYOF",
+      "seq": "MLRVIVESASNIPKTKFGKPDPIVSVIFKDEKKKTKKVDNELNPVWNEILEFDLRGIPLDFSSSLGIIVKDFETIGQNKLIGTATVALKDLTGDQSRSLPYKLISLLNEKGQDTGATIDLVIGYDPPSAPHPNDLSGPSVPGMGGDGEEDEGDEDRLDNAVRGPGPKGPVGTVSEAQLARRLTKVKNSRRMLSNKPQDFQIRVRVIEGRQLSGNNIRPVVKVHVCGQTHRTRIKRGNNPFFDELFFYNVNMTPSELMDEIISIRVYNSHSLRADCLMGEFKIDVGFVYDEPGHAVMRKWLLLNDPEDTSSGSKGYMKVSMFVLGTGDEPPPERRDRDNDSDDVESNLLLPAGIALRWVTFLLKIYRAEDIPQMDDAFSQTVKEIFGGNADKKNLVDPFVEVSFAGKKVCTNIIEKNANPEWNQVVNLQIKFPSVCEKIKLTIYDWDRLTKNDVVGTTYLHLSKIAASGGEVEDFSSSGTGAASYTVNTGETEVGFVPTFGPCYLNLYGSPREYTGFPDPYDELNTGKGEGVAYRGRILVELATFLEKTPPDKKLEPISNDDLLVVEKYQRRRKYSLSAVFHSATMLQDVGEAIQFEVSIGNYGNKFDTTCKPLASTTQYSRAVFDGNYYYYLPWAHTKPVVTLTSYWEDISHRLDAVNTLLAMAERLQTNIEALKSGIQGKIPANQLAELWLKLIDEVIEDTRYTLPLTEGKANVTVLDTQIRKLRSRSLSQIHEAAVRMRSEATDVKSTLAEIEDWLDKLMQLTEEPQNSMPDIIIWMIRGEKRLAYARIPAHQVLYSTSGENASGKYCGKTQTIFLKYPQEKNNGPKVPVELRVNIWLGLSAVEKKFNSFAEGTFTVFAEMYENQALMFGKWGTSGLVGRHKFSDVTGKIKLKREFFLPPKGWEWEGEWIVDPERSLLTEADAGHTEFTDEVYQNESRYPGGDWKPAEDTYTDANGDKAASPSELTCPPGWEWEDDAWSYDINRAVDEKGWEYGITIP"
+    },
+    {
+      "run": "screen-anchor2-Q9UKN1",
+      "uniprot_id": "Q9UKN1",
+      "gene": "MUC12",
+      "seq": "VTTVTPEGSAVHKAISQQGTLWTGEVLEKQTVEQGKSTLRRQKNHFHRSAGELRCRNALKDEGASAGWSVMFAGESVVVLVHLWMTGARVKNLGLVEFASPGDDGDGRAEGFSLGLPLSEQARAAGAREKERQETVINHSTFSGFSQITGSTVNTSIGGNTTSASTPSSSDPFTTFSDYGVSVTFITGSTATKHFLDSSTNSGHSEESTVSHSGPGATGTTLFPSHSATSVFVGEPKTSPITSASMETTALPGSTTTAGLSEKSTTFYSSPRSPDRTLSPARTTSSGVSEKSTTSHSRPGPTHTIAFPDSTTMPGVSQESTASHSIPGSTDTTLSPGTTTPSSLGPESTTFHSSPGYTKTTRLPDNTTTSGLLEASTPVHSSTGSPHTTLSPSSSTTHEGEPTTFQSWPSSKDTSPAPSGTTSAFVKLSTTYHSSPSSTPTTHFSASSTTLGHSEESTPVHSSPVATATTPPPARSATSGHVEESTAYHRSPGSTQTMHFPESSTTSGHSEESATFHGSTTHTKSSTPSTTAALAHTSYHSSLGSTETTHFRDSSTISGRSEESKASHSSPDAMATTVLPAGSTPSVLVGDSTPSPISSGSMETTALPGSTTKPGLSEKSTTFYSSPRSPDTTHLPASMTSSGVSEESTTSHSRPGSTHTTAFPGSTTMPGLSQESTASHSSPGPTDTTLSPGSTTASSLGPEYTTFHSRPGSTETTLLPDNTTASGLLEASMPVHSSTRSPHTTLSPAGSTTRQGESTTFHSWPSSKDTRPAPPTTTSAFVEPSTTSHGSPSSIPTTHISARSTTSGLVEESTTYHSSPGSTQTMHFPESDTTSGRGEESTTSHSSTTHTISSAPSTTSALVEEPTSYHSSPGSTATTHFPDSSTTSGRSEESTASHSSQDATGTIVLPARSTTSVLLGESTTSPISSGSMETTALPGSTTTPGLSERSTTFHSSPRSPATTLSPASTTSSGVSEESTTSRSRPGSTHTTAFPDSTTTP"
+    },
+    {
+      "run": "screen-anchor2-Q9UM73",
+      "uniprot_id": "Q9UM73",
+      "gene": "ALK",
+      "seq": "VGSGMGTGQRAGSPAAGPPLQPREPLSYSRLQRKSLAVDFVVPSLFRVYARDLLLPPSSSELKAGRPEARGSLALDCAPLLRLLGPAPGVSWTAGSPAPAEARTLSRVLKGGSVRKLRRAKQLVLELGEEAILEGCVGPPGEAAVGLLQFNLSELFSWWIRQGEGRLRIRLMPEKKASEVGREGRLSAAIRASQPRLLFQIFGTGHSSLESPTNMPSPSPDYFTWNLTWIMKDSFPFLSHRSRYGLECSFDFPCELEYSPPLHDLRNQSWSWRRIPSEEASQMDLLDGPGAERSKEMPRGSFLLLNTSADSKHTILSPWMRSSSEHCTLAVSVHRHLQPSGRYIAQLLPHNEAAREILLMPTPGKHGWTVLQGRIGRPDNPFRVALEYISSGNRSLSAVDFFALKNCSEGTSPGSKMALQSSFTCWNGTVLQLGQACDFHQDCAQGEDESQMCRKLPVGFYCNFEDGFCGWTQGTLSPHTPQWQVRTLKDARFQDHQDHALLLSTTDVPASESATVTSATFPAPIKSSPCELRMSWLIRGVLRGNVSLVLVENKTGKEQGRMVWHVAAYEGLSLWQWMVLPLLDVSDRFWLQMVAWWGQGSRAIVAFDNISISLDCYLTISGEDKILQNTAPKSRNLFERNPNKELKPGENSPRQTPIFDPTVHWLFTTCGASGPHGPTQAQCNNAYQNSNLSVEVGSEGPLKGIQIWKVPATDTYSISGYGAAGGKGGKNTMMRSHGVSVLGIFNLEKDDMLYILVGQQGEDACPSTNQLIQKVCIGENNVIEEEIRVNRSVHEWAGGGGGGGGATYVFKMKDGVPVPLIIAAGGGGRAYGAKTDTFHPERLENNSSVLGLNGNSGAAGGGGGWNDNTSLLWAGKSLQEGATGGHSCPQAMKKWGWETRGGFGGGGGGCSSGGGGGGYIGGNAASNNDPEMDGEDGVSFISPLGILYTPALKVMEGHGEVNIKHYLNCSHCEVDECHMDPESHKVICFCDHGTVLAEDG"
+    },
+    {
+      "run": "screen-anchor2-Q9Y4D7",
+      "uniprot_id": "Q9Y4D7",
+      "gene": "PLXND1",
+      "seq": "LEIQRRFPSPTPTNNFALDGAAGTVYLAAVNRLYQLSGANLSLEAEAAVGPVPDSPLCHAPQLPQASCEHPRRLTDNYNKILQLDPGQGLVVVCGSIYQGFCQLRRRGNISAVAVRFPPAAPPAEPVTVFPSMLNVAANHPNASTVGLVLPPAAGAGGSRLLVGATYTGYGSSFFPRNRSLEDHRFENTPEIAIRSLDTRGDLAKLFTFDLNPSDDNILKIKQGAKEQHKLGFVSAFLHPSDPPPGAQSYAYLALNSEARAGDKESQARSLLARICLPHGAGGDAKKLTESYIQLGLQCAGGAGRGDLYSRLVSVFPARERLFAVFERPQGSPAARAAPAALCAFRFADVRAAIRAARTACFVEPAPDVVAVLDSVVQGTGPACERKLNIQLQPEQLDCGAAHLQHPLSILQPLKATPVFRAPGLTSVAVASVNNYTAVFLGTVNGRLLKINLNESMQVVSRRVVTVAYGEPVHHVMQFDPADSGYLYLMTSHQMARVKVAACNVHSTCGDCVGAADAYCGWCALETRCTLQQDCTNSSQQHFWTSASEGPSRCPAMTVLPSEIDVRQEYPGMILQISGSLPSLSGMEMACDYGNNIRTVARVPGPAFGHQIAYCNLLPRDQFPPFPPNQDHVTVEMSVRVNGRNIVKANFTIYDCSRTAQVYPHTACTSCLSAQWPCFWCSQQHSCVSNQSRCEASPNPTSPQDCPRTLLSPLAPVPTGGSQNILVPLANTAFFQGAALECSFGLEEIFEAVWVNESVVRCDQVVLHTTRKSQVFPLSLQLKGRPARFLDSPEPMTVMVYNCAMGSPDCSQCLGREDLGHLCMWSDGCRLRGPLQPMAGTCPAPEIHAIEPLSGPLDGGTLLTIRGRNLGRRLSDVAHGVWIGGVACEPLPDRYTVSEEIVCVTGPAPGPLSGVVTVNASKEGKSRDRFSYVLPLVHSLEPTMGPKAGGTRITIHGNDLHVGSELQVLVNDTDPCTELMRTDTSIACTMPEGALPAPVP"
+    }
+  ]
+}

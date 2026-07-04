@@ -1,6 +1,11 @@
 # Demo build plan — autonomous brief
 
-**Status:** active demo-build brief (2026-07-04). Companion to [`findings.md`](findings.md) (evidence) and [`plan.md`](plan.md) (the productization pipeline — *not* built here). This file is the self-contained brief for building the **hackathon demo** from already-validated data.
+**Status:** the offline demo (Phases 0–5) is **BUILT and committed** (commit `94df3cb`): `demo/dashboard.html`, `demo/figures/*.png`, `demo/verdict_table.{md,json}`, the `crossflag.demo` package, and `tests/test_demo.py` all exist and pass. **The active work is now Phase −1 — the live $500 validation screen** (below). Companion to [`findings.md`](findings.md) (evidence) and [`plan.md`](plan.md) (the productization pipeline — *not* built here).
+
+> **What already exists that Phase −1 must reuse (do NOT rebuild):**
+> - `crossflag.demo.scoring.score_run(run)` — recomputes `PAE_IF` + `epitope_reprod` from committed `data/results/structures/<run>/sample_N.{cif,npz}`. The screen calls this per protein; do not reimplement metric extraction.
+> - `crossflag.demo.panel` — the **frozen hit-caller is already committed here**: `PAE_IF_CONFIRM = 9.8`, `REPROD_CONFIRM = 0.55`, and `verdict()` = *confirmed iff `PAE_IF < 9.8 AND reprod ≥ 0.55`*. These thresholds were frozen for the 8-point demo **before** any screen existed — that is the pre-registration. **Apply them UNCHANGED to the screen; do not re-tune.**
+> - `crossflag.demo.panel.load_rows()` / the `cofold_metrics.csv` schema — the screen output must match this schema so the dashboard and verdict table can read it with the existing single-source-of-truth code.
 
 ---
 
@@ -87,8 +92,8 @@ Submit a **20-protein pilot** (random draw from `self_proteins.csv`, ectodomains
 ### Step B — Ectodomain prep (the real engineering cost)
 Most of the 2,896 set are TM proteins; you cofold the **soluble ectodomain**, not full-length (`plan.md`). Build `src/crossflag/demo/ectodomain.py`: for each target, derive the extracellular region from the `surface_region` column / UniProt topology where available, else a documented heuristic (strip predicted TM spans, keep the largest extracellular segment). Cache to `data/results/screen/ectodomains/`. Trimming also *lowers* per-job cost if price scales with antigen length — a free squeeze.
 
-### Step C — Freeze the hit-caller (pre-register BEFORE the screen)
-Commit the exact decision rule to `src/crossflag/demo/hitcaller.py` and a frozen `data/results/screen/rig.json` **before** running the screen, so the screen cannot retro-fit it. Rule (from the existing anchor calibration — do not re-tune to the screen): per protein, over 5 samples compute `PAE_IF_mean` and `epitope_reprod`; **rank** by a composite calibrated against the PD-1 ceiling (7.24 / 0.936) and lysozyme floor (12.38 / 0.446); a protein is a **"hit"** if `epitope_reprod ≥ r*` AND `PAE_IF ≤ p*`, with `r*`, `p*` set from the floor + a fixed margin and written into `rig.json` now. The threshold does **not** move after seeing results.
+### Step C — Snapshot the already-frozen hit-caller (pre-registration is done)
+The decision rule is **already committed** in `crossflag.demo.panel` (`PAE_IF_CONFIRM = 9.8`, `REPROD_CONFIRM = 0.55`; hit = `PAE_IF < 9.8 AND reprod ≥ 0.55`), frozen for the 8-point demo before this screen existed. **Do not create a new rule or re-tune these numbers.** Just copy the current constants (with the `panel.py` git SHA) into `data/results/screen/rig.json` as an immutable record, and score every screened protein with `scoring.score_run()` + `panel.verdict()` exactly as the demo does. Report ranks *and* the binary hit/miss under this frozen threshold. (If you ever feel the urge to move the threshold after seeing the screen, that is the one thing you must not do — report the honest number instead.)
 
 ### Step D — Allocation (priority-ordered, adaptive to the measured price)
 Spend to the cap by priority; size each tier from the pilot price so total ≤ `PLANNING_TARGET` ($450), guard at `HARD_STOP` ($480). Reuse the 24 existing runs (free) — do not re-cofold FZD5/ULBP2/VEGFR2/PD-1/lysozyme/Frizzlens.
@@ -107,8 +112,12 @@ Spend to the cap by priority; size each tier from the pilot price so total ≤ `
 - **Control:** scrambled-CDR loses the off-target signal (hit → non-hit).
 - **Honesty:** if the FPR is high, that is a finding, not a failure — report it; do not move the threshold.
 
-### Step F — Outputs (feed the offline build)
-Commit to `data/results/screen/`: `screen_metrics.csv` (same schema as `cofold_metrics.csv`, one row per protein + prediction_id), the `rig.json`, `spend_ledger.json` (final reconciled spend, must show ≤ $500), CIFs/PAE for the top ~15 hits (for figures), and a `screen_manifest.json` (what was screened, sampling seed, ectodomain method). The offline Phases 1–3 read these instead of / in addition to the 24-run CSV.
+### Step F — Outputs + wire into the existing demo
+Commit to `data/results/screen/`: `screen_metrics.csv` (**same schema as `cofold_metrics.csv`** so `panel.load_rows()` reads it unchanged, one row per protein + prediction_id), `rig.json`, `spend_ledger.json` (final reconciled spend, must show ≤ $500), CIFs/PAE for the top ~15 hits (for figures), and `screen_manifest.json` (proteins screened, sampling seed, ectodomain method). Then extend the *already-built* demo:
+- `panel.py` gains a screen loader (points at `screen_metrics.csv`) + an enrichment/ROC summary (ranks of FZD5/ULBP2, enrichment factor, precision@K, FPR at the frozen threshold).
+- `dashboard.py` Chart A upgrades to the **full-screen enrichment view**; `figures.py` adds a ranked/ROC figure.
+- `run.py` verdict table is computed over the screened set.
+- `tests/test_demo.py` gains a Phase −1 assertion: `spend_ledger.json` total ≤ 500 and the pre-registered pass bars are recorded.
 
 ### Second anchor — sourcing + fallback
 `findings.md` names **ABT-736 → PF4**. Sourcing the VH/VL + the validated off-target sequence is the real bottleneck (curation, not credits). **If a validated pair cannot be sourced with public sequences, skip tier 2 and reallocate its budget to expanding the flagship toward the full 2,896-set** — do not fabricate an anchor.
@@ -118,9 +127,9 @@ Commit to `data/results/screen/`: `screen_metrics.csv` (same schema as `cofold_m
 
 ---
 
-## Build phases
+## Build phases (0–5) — ✅ DONE (commit `94df3cb`)
 
-> **If Phase −1 ran,** Phase 1 Chart A upgrades from the 8-point calibrated panel to the **full-screen enrichment view** (ROC / ranked list of 1,200+ proteins with FZD5/ULBP2 at the top, VEGFR2 shown missed, FPR annotated), and the verdict table (Phase 3) is computed over the screened set. If Phase −1 was skipped, Phases 0–5 run on the committed 24-run data exactly as written below.
+> These shipped: `demo/dashboard.html`, `demo/figures/*.png`, `demo/verdict_table.{md,json}`, `demo/README.md`, the `crossflag.demo` package, and a green `tests/test_demo.py`. The phase specs below are retained as the record of what was built and the contracts Phase −1 extends. **When Phase −1 runs, it feeds new data into this existing machinery (Step F above)** — Chart A becomes the full-screen enrichment view and the verdict table is computed over the screened set; no rebuild.
 
 Each phase has a **deliverable**, **files**, and a **self-verifiable acceptance gate**. Do phases in order; do not start a phase until the prior gate is green.
 

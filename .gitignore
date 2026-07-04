@@ -19,5 +19,15 @@ data/reference/raw/
 data/reference/build/
 data/reference/index/
 
+# Screen cofolds — large & regenerable (re-download free via prediction_id in
+# screen_metrics.csv / submitted_*.json). Commit metrics, rig, ledger, job configs,
+# analysis code — NOT the structures/archives/per-run inputs.
+data/results/structures/screen-*
+data/results/screen/screen_runs/
+data/results/screen/pilot_runs/
+data/results/screen/screen_inputs/
+data/results/screen/pilot_inputs/
+data/results/inputs/screen_*.json
+
 # OS / editor
 .DS_Store

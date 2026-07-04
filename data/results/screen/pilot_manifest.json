@@ -1,0 +1,165 @@
+{
+  "n_eligible": 1331,
+  "picks": [
+    {
+      "run": "screen-pilot-P25063",
+      "uniprot_id": "P25063",
+      "gene": "CD24",
+      "name": "Signal transducer CD24",
+      "antigen_len": 80,
+      "idempotency_key": "screen-pilot-P25063"
+    },
+    {
+      "run": "screen-pilot-Q16558",
+      "uniprot_id": "Q16558",
+      "gene": "KCNMB1",
+      "name": "Calcium-activated potassium channel subunit beta-1",
+      "antigen_len": 191,
+      "idempotency_key": "screen-pilot-Q16558"
+    },
+    {
+      "run": "screen-pilot-Q08708",
+      "uniprot_id": "Q08708",
+      "gene": "CD300C",
+      "name": "CMRF35-like molecule 6",
+      "antigen_len": 224,
+      "idempotency_key": "screen-pilot-Q08708"
+    },
+    {
+      "run": "screen-pilot-Q9BZM4",
+      "uniprot_id": "Q9BZM4",
+      "gene": "ULBP3",
+      "name": "NKG2D ligand 3",
+      "antigen_len": 244,
+      "idempotency_key": "screen-pilot-Q9BZM4"
+    },
+    {
+      "run": "screen-pilot-P48060",
+      "uniprot_id": "P48060",
+      "gene": "GLIPR1",
+      "name": "Glioma pathogenesis-related protein 1",
+      "antigen_len": 266,
+      "idempotency_key": "screen-pilot-P48060"
+    },
+    {
+      "run": "screen-pilot-Q86UF1",
+      "uniprot_id": "Q86UF1",
+      "gene": "TSPAN33",
+      "name": "Tetraspanin-33",
+      "antigen_len": 283,
+      "idempotency_key": "screen-pilot-Q86UF1"
+    },
+    {
+      "run": "screen-pilot-Q92537",
+      "uniprot_id": "Q92537",
+      "gene": "KIAA0247",
+      "name": "Uncharacterized protein KIAA0247",
+      "antigen_len": 303,
+      "idempotency_key": "screen-pilot-Q92537"
+    },
+    {
+      "run": "screen-pilot-O76100",
+      "uniprot_id": "O76100",
+      "gene": "OR7A10",
+      "name": "Olfactory receptor 7A10",
+      "antigen_len": 309,
+      "idempotency_key": "screen-pilot-O76100"
+    },
+    {
+      "run": "screen-pilot-Q86SM8",
+      "uniprot_id": "Q86SM8",
+      "gene": "MRGPRE",
+      "name": "Mas-related G-protein coupled receptor member E",
+      "antigen_len": 312,
+      "idempotency_key": "screen-pilot-Q86SM8"
+    },
+    {
+      "run": "screen-pilot-Q8NGC2",
+      "uniprot_id": "Q8NGC2",
+      "gene": "OR4E2",
+      "name": "Olfactory receptor 4E2",
+      "antigen_len": 313,
+      "idempotency_key": "screen-pilot-Q8NGC2"
+    },
+    {
+      "run": "screen-pilot-Q96R72",
+      "uniprot_id": "Q96R72",
+      "gene": "OR4K3",
+      "name": "Olfactory receptor 4K3",
+      "antigen_len": 315,
+      "idempotency_key": "screen-pilot-Q96R72"
+    },
+    {
+      "run": "screen-pilot-Q9Y2T6",
+      "uniprot_id": "Q9Y2T6",
+      "gene": "GPR55",
+      "name": "G-protein coupled receptor 55",
+      "antigen_len": 319,
+      "idempotency_key": "screen-pilot-Q9Y2T6"
+    },
+    {
+      "run": "screen-pilot-Q8NH56",
+      "uniprot_id": "Q8NH56",
+      "gene": "OR52N5",
+      "name": "Olfactory receptor 52N5",
+      "antigen_len": 324,
+      "idempotency_key": "screen-pilot-Q8NH56"
+    },
+    {
+      "run": "screen-pilot-P29016",
+      "uniprot_id": "P29016",
+      "gene": "CD1B",
+      "name": "T-cell surface glycoprotein CD1b",
+      "antigen_len": 333,
+      "idempotency_key": "screen-pilot-P29016"
+    },
+    {
+      "run": "screen-pilot-P40199",
+      "uniprot_id": "P40199",
+      "gene": "CEACAM6",
+      "name": "Carcinoembryonic antigen-related cell adhesion molecule 6",
+      "antigen_len": 344,
+      "idempotency_key": "screen-pilot-P40199"
+    },
+    {
+      "run": "screen-pilot-Q7Z3B1",
+      "uniprot_id": "Q7Z3B1",
+      "gene": "NEGR1",
+      "name": "Neuronal growth regulator 1",
+      "antigen_len": 354,
+      "idempotency_key": "screen-pilot-Q7Z3B1"
+    },
+    {
+      "run": "screen-pilot-P30498",
+      "uniprot_id": "P30498",
+      "gene": "HLA-B",
+      "name": "HLA class I histocompatibility antigen, B-78 alpha chain",
+      "antigen_len": 362,
+      "idempotency_key": "screen-pilot-P30498"
+    },
+    {
+      "run": "screen-pilot-Q6ZUK4",
+      "uniprot_id": "Q6ZUK4",
+      "gene": "TMEM26",
+      "name": "Transmembrane protein 26",
+      "antigen_len": 368,
+      "idempotency_key": "screen-pilot-Q6ZUK4"
+    },
+    {
+      "run": "screen-pilot-Q29980",
+      "uniprot_id": "Q29980",
+      "gene": "MICB",
+      "name": "MHC class I polypeptide-related sequence B",
+      "antigen_len": 383,
+      "idempotency_key": "screen-pilot-Q29980"
+    },
+    {
+      "run": "screen-pilot-P16150",
+      "uniprot_id": "P16150",
+      "gene": "SPN",
+      "name": "Leukosialin",
+      "antigen_len": 400,
+      "idempotency_key": "screen-pilot-P16150"
+    }
+  ]
+}

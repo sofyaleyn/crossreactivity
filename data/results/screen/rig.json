@@ -1,0 +1,28 @@
+{
+  "_comment": "FROZEN scoring rig for the off-target screen (demo-plan.md Step C). These thresholds were committed in src/crossflag/demo/panel.py for the 8-point calibrated demo BEFORE any large screen existed — that is the pre-registration. Applied UNCHANGED to the screen. DO NOT re-tune after seeing screen results.",
+  "frozen_at": {
+    "date": "2026-07-04",
+    "repo_head": "580fe7ee67da3180b979463f7bf05819f5e3bfe7",
+    "panel_py_blob": "f70d17f2c3fc46d3b903db0cac0b895fdd51aaf7",
+    "source": "src/crossflag/demo/panel.py"
+  },
+  "metrics": {
+    "PAE_IF": "mean predicted aligned error over antibody(H+L) x antigen(V) token pairs, symmetrized, averaged across 5 samples (A). Lower = tighter.",
+    "epitope_reprod": "mean pairwise Jaccard of contacted antigen residues (5 A heavy-atom) across 5 samples. Higher = same epitope every sample.",
+    "num_samples": 5
+  },
+  "hit_rule": {
+    "definition": "hit == (PAE_IF < PAE_IF_CONFIRM) AND (epitope_reprod >= REPROD_CONFIRM)",
+    "PAE_IF_CONFIRM": 9.8,
+    "REPROD_CONFIRM": 0.55
+  },
+  "calibrators": {
+    "ceiling": {"run": "cofold-pd1", "antigen": "PD-1 (cognate)", "PAE_IF": 7.24, "epitope_reprod": 0.936},
+    "floor": {"run": "cofold-lyz", "antigen": "lysozyme (non-binder)", "PAE_IF": 12.38, "epitope_reprod": 0.446}
+  },
+  "reference_known_offtargets": {
+    "FZD5": {"PAE_IF": 5.69, "epitope_reprod": 0.660, "expected": "confirmed"},
+    "ULBP2": {"PAE_IF": 5.74, "epitope_reprod": 0.893, "expected": "confirmed"},
+    "VEGFR2": {"PAE_IF": 11.55, "epitope_reprod": 0.430, "expected": "missed (weakest off-target)"}
+  }
+}
