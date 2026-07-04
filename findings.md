@@ -1,6 +1,6 @@
 # Findings — empirical viability log (2026-07-04)
 
-Durable record of the viability investigation run on 2026-07-04. Design implications live in `pivot-spec.md`; this file is the experimental log + current verdict. All work used the SHR-1210 (camrelizumab) anti-PD-1 anchor.
+Durable record of the viability investigation run on 2026-07-04. The forward build plan lives in [`plan.md`](plan.md); this file is the experimental log + current verdict. All work used the SHR-1210 (camrelizumab) anti-PD-1 anchor.
 
 > **Raw per-run data:** [`data/results/`](data/results/) — `cofold_metrics.csv` holds the full metrics for all **24 cofold runs** (ipTM max/mean, protein-ipTM, pTM, complex-pLDDT, structure-confidence, binding-confidence, PAE_IF, epitope-reprod, boltz.bio prediction IDs); plus the Tier-1 filter scores and fold-matched-benchmark scores. Human-readable tables in [`data/results/README.md`](data/results/README.md).
 
@@ -16,7 +16,7 @@ Durable record of the viability investigation run on 2026-07-04. Design implicat
 
 ## Experiment 1 — Rung-1 method soundness (analytical + literature)
 
-**Verdict: the original rung-1 (`cosine(antibody-PLM vector, ESM-2 antigen vector)`) is broken.** (1) Undefined as written — 512/480-d antibody vectors vs 1280-d ESM antigen vectors, no alignment. (2) Biophysically backwards — binding is complementarity, not similarity; embedding *similarity* indicates two antibodies bind the **same** antigen (epitope binning), not that an antibody binds a protein. (3) No published off-target/polyreactivity method uses unsupervised cross-PLM cosine. Full reasoning in `pivot-spec.md §Why rung-1 changed`.
+**Verdict: the original rung-1 (`cosine(antibody-PLM vector, ESM-2 antigen vector)`) is broken.** (1) Undefined as written — 512/480-d antibody vectors vs 1280-d ESM antigen vectors, no alignment. (2) Biophysically backwards — binding is complementarity, not similarity; embedding *similarity* indicates two antibodies bind the **same** antigen (epitope binning), not that an antibody binds a protein. (3) No published off-target/polyreactivity method uses unsupervised cross-PLM cosine.
 
 ## Experiment 2 — Embedding discrimination spike (16 antigens)
 
@@ -33,7 +33,7 @@ VEGFR2 ranks #1 by **fold/size confound** (largest Ig-fold receptor), not bindin
 
 - WT SHR-1210 VH/VL: **real** (matches Finlay et al. mAbs 2019, PMID 30541416, Table 1).
 - VEGFR2 / FZD5 / ULBP2: **real** (UniProt P35968 / Q13467 / Q9BZM5).
-- **Germlined-mutant panel: NOT published — must be reconstructed** (recipe only: light chain near-germlined to IGKV1-39 + JK1). Beat 2 is therefore illustrative. Detail in `pivot-spec.md §Anchor data status`.
+- **Germlined-mutant panel: NOT published — must be reconstructed** (recipe only: light chain near-germlined to IGKV1-39 + JK1). Beat 2 is therefore illustrative.
 
 ## Experiment 4 — Calibrated cofold panel (Boltz-2.1, 5 samples each)
 
@@ -131,9 +131,9 @@ Both bind the shared target PD-1; for the two off-targets SHR-1210 confirmed, **
 | Cheap **embedding / surface** shortlisting (Stage 1) | ❌ Fails within-fold enrichment (~0.58–0.62 ≈ chance) |
 | Antibody-only polyreactivity ("variant is sticky") | ✅ Viable, but doesn't *name* the off-target |
 
-**Reframe:** hosted cofold ≈ **$0.20 each** → a curated few-hundred-protein reference set ≈ **$50–150/antibody**, trivial vs a wet-lab specificity screen (~$10–30k). The pivot spec's premise that cofold is "too expensive to run against every self-protein" (hence a cheap pre-filter is required) is **wrong at these prices.** Drop the broken Stage-1; cofold the whole curated set directly.
+**Reframe:** hosted cofold ≈ **$0.20 each** → a curated few-hundred-protein reference set ≈ **$50–150/antibody**, trivial vs a wet-lab specificity screen (~$10–30k). The original premise that cofold is "too expensive to run against every self-protein" (hence a cheap pre-filter is required) is **wrong at these prices.** Drop the broken Stage-1; cofold the whole curated set directly.
 
-**Revised pipeline:** Stage 0 curate (bounds recall) → **cofold ALL** → rank by PAE_IF / epitope-reproducibility against the calibrated panel (PD-1 ceiling / lysozyme floor). **Limits:** VEGFR2-class (weakest) off-targets missed → imperfect recall; within-fold false positives (SMO); recall bounded by curation.
+**Revised pipeline:** Stage 0 curate (bounds recall) → **cofold ALL** → rank by PAE_IF / epitope-reproducibility against the calibrated panel (PD-1 ceiling / lysozyme floor). **Limits:** VEGFR2-class (weakest) off-targets missed → imperfect recall; within-fold false positives (SMO); recall bounded by curation. For a *panel* of many candidates, [`plan.md`](plan.md) scales this via the representative-set approach (cofold representatives, not the full grid).
 
 **Bottom line: viable as a validated cofold-based off-target screen for a curated reference set** — not the original embedding-triage design, but empirically defensible.
 
@@ -149,4 +149,4 @@ The active, detailed build plan — the **representative-set off-target screen**
 
 ## Reproducibility
 
-Scripts in scratchpad: `spike.py` (Exp 2), `analyze_all.py` (Exp 4 metrics), `build_benchmark.py` + `benchmark_antigens.json` (Exp 5), `analyze_pembro.py` (Exp 8), `surface_score.py` (Exp 7), `prep_*.py` (input builders). Cofold runs under `scratchpad/boltz-runs/cofold-*`; idempotency keys `cofold-*` (re-runnable without new charges). Tooling: conda env `crossflag-spike`, `boltz-api` CLI (boltz.bio, OAuth).
+All artifacts persisted under [`data/results/`](data/results/): `scripts/` (analysis code + `requirements.lock.txt` pinned env), `inputs/` (Boltz input JSONs), `structures/` (116 CIFs + PAE matrices), `cofold_metrics.csv`, `tier1_filter_scores.csv`, `benchmark_*.json`. Cofolds re-run free via the boltz.bio prediction IDs in `cofold_metrics.csv` (idempotency keys `cofold-*`). Tooling: conda env `crossflag-spike` (Python 3.10), `boltz-api` CLI (boltz.bio, OAuth).

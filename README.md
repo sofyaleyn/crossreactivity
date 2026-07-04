@@ -7,8 +7,7 @@
 > **Read in this order:**
 > 1. **[`plan.md`](plan.md)** — the active build plan (representative-set off-target screen). **Build from this.**
 > 2. **[`findings.md`](findings.md)** — what was tested, the evidence, and the current verdict (the plan rests on this).
-> 3. **[`pivot-spec.md`](pivot-spec.md)** — design rationale for the pivot (why embedding was dropped).
-> 4. **[`glossary.md`](docs/glossary.md)** — terminology.
+> 3. **[`glossary.md`](docs/glossary.md)** — terminology.
 >
 > `mvp-spec.md`, `demo-run.md`, `HANDOFF.md`, `roadmap.md`, `tools.md`, and the rest of this README are the **original, now-superseded** design, kept for history.
 

@@ -1,6 +1,6 @@
 # Extensions spec (Phase 2–3) — the confirmation ladder
 
-> **⚠️ SUPERSEDED (2026-07-04).** The Boltz-2 cofold "rung 3" described here is now the **primary, validated** off-target signal — not an extension. The dMaSIF/surface rung and the cheap pre-filter framing are dropped (`findings.md` shows no cheap filter works). **Build from [`plan.md`](plan.md)**; evidence in [`findings.md`](findings.md). Kept for the cofold/interface-metric rationale.
+> **⚠️ SUPERSEDED (2026-07-04).** The Boltz-2 cofold "rung 3" described here is now the **primary, validated** off-target signal — not an extension. The dMaSIF/surface rung and the cheap pre-filter framing are dropped (`findings.md` shows no cheap filter works). **Build from [`../plan.md`](../plan.md)**; evidence in [`../findings.md`](../findings.md). Kept for the cofold/interface-metric rationale.
 
 Add only after the MVP (`mvp-spec.md`) is frozen. The MVP ranks; this phase *confirms* the top suspects with two independent, increasingly expensive signals — 3D surface comparison, then cofolding. Neither runs on the whole set: rung 2 on the top ~10 flags, rung 3 on the top ~5 pairs.
 

@@ -1,6 +1,6 @@
 # Implementation plan — representative-set off-target screen
 
-**Status:** active build plan (2026-07-04). Supersedes the forward-looking parts of `pivot-spec.md`. Evidence basis in `findings.md`.
+**Status:** active build plan (2026-07-04). Evidence basis in [`findings.md`](findings.md); supersedes the original specs in `docs/`.
 
 ## Goal & scope
 
@@ -21,7 +21,7 @@ De-risk a wet-lab specificity plate for a panel of **~100–1000 antibody candid
 A fresh context can build immediately; a validated toolchain and env already exist (details in `findings.md §Environment` + `§Reproducibility`):
 - **Python env:** conda env `crossflag-spike` (Python 3.10) with `torch` (CPU), `fair-esm`, `numpy`, `biopython`, `requests`. Run: `conda run -n crossflag-spike python …`. (Local base Python 3.14 lacks ML wheels; no CUDA — Apple M2.)
 - **Cofolding:** boltz.bio hosted API via the `boltz-api` CLI (`~/.local/bin`, OAuth session already authenticated). Pattern: `boltz-api predictions:structure-and-binding {estimate-cost,run} --input @json://<file> --model boltz-2.1 --idempotency-key <k> --root-dir <dir>`. ~$0.20/cofold (5 samples); `sampling_steps ≥ 50`; input = `protein_protein_binding` with VH/VL + antigen chains.
-- **Reusable scripts** (session scratchpad — adapt into `src/crossflag/`): `analyze_all.py` (cofold metric extraction: PAE_IF, epitope-reproducibility, chain-by-length), `prep_*.py` + `cofold_*.json` (Boltz input builders), `build_benchmark.py` (ESM embedding), `tier1_filter_scores.csv` (2,896 × filter scores). Idempotency keys `cofold-*` re-run free.
+- **Reusable code & data** in [`data/results/`](data/results/) (adapt into `src/crossflag/`): `scripts/analyze_all.py` (cofold metrics: PAE_IF, epitope-reproducibility, chain-by-length), `scripts/prep_*.py` + `inputs/cofold_*.json` (Boltz input builders), `scripts/build_benchmark.py` (ESM embedding), `structures/` (CIFs + PAE), `cofold_metrics.csv`, `tier1_filter_scores.csv`. Cofolds re-run free via prediction IDs (idempotency keys `cofold-*`).
 - **Data:** `data/reference/self_proteins.csv` (2,896 reference set + sequences), `data/anchor/` (SHR-1210 WT VH/VL, germline variants, off-target FASTAs).
 
 ## Pipeline
