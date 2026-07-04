@@ -15,7 +15,9 @@
       "Bash(curl -sL -o raw_surfaceome/surfy_table_S3.xlsx \"https://raw.githubusercontent.com/steveneschrich/surfaceome/main/data-raw/surfy/table_S3_surfaceome.xlsx\")",
       "Bash(curl -sL -o raw_surfaceome/cspa_S2_File.xlsx \"https://raw.githubusercontent.com/steveneschrich/surfaceome/main/data-raw/cspa/S2_File.xlsx\")",
       "Bash(file raw_surfaceome/*.xlsx)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Bash(python3 -c \"import requests; print\\('requests OK', requests.__version__\\)\")",
+      "Bash(python3 build_layer_a.py)"
     ]
   }
 }
