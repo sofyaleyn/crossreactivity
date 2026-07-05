@@ -86,7 +86,8 @@ def test_dashboard_self_contained(built):
     assert data["family"]["auroc"] == 0.909
     assert len(data["verdict_table"]) == 5
     # all images inline; no external resource requests
-    assert html.count("data:image/png;base64") == 5
+    # 5 anchor figures + 3 real-scale-screen figures (when screen_metrics.csv is present)
+    assert html.count("data:image/png;base64") in (5, 8)
     external = [
         u for u in re.findall(r'(?:src|href)="([^"]+)"', html)
         if not u.startswith("data:")
