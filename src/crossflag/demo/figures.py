@@ -72,7 +72,8 @@ def chart_a_panel(rows) -> str:
     ax.axhline(floor.PAE_IF, color=NEUTRAL, ls="--", lw=1)
     ax.text(0.02, ceil.PAE_IF - 0.15, "PD-1 ceiling (cognate)", ha="left",
             va="bottom", color=INK2, fontsize=9, transform=ax.get_yaxis_transform())
-    ax.text(0.02, floor.PAE_IF + 0.15, "lysozyme floor (non-binder)", ha="left",
+    # floor label on the empty bottom-right, clear of the lysozyme marker/label (left)
+    ax.text(0.98, floor.PAE_IF + 0.15, "lysozyme floor (non-binder)", ha="right",
             va="top", color=INK2, fontsize=9, transform=ax.get_yaxis_transform())
 
     style = {
@@ -102,6 +103,9 @@ def chart_a_panel(rows) -> str:
                 arrowprops=dict(arrowstyle="->", color=WARNING, lw=1))
 
     ax.invert_yaxis()  # up = tighter interface
+    # headroom so the top point labels clear the title and the lysozyme label clears the edge
+    _paes = [rows[r].PAE_IF for r in panel.PANEL_RUNS]
+    ax.set_ylim(max(_paes) + 0.9, min(_paes) - 1.05)
     ax.set_xlabel("epitope reproducibility  (Jaccard across 5 samples →)")
     ax.set_ylabel("PAE_IF  (Å; ↑ = tighter interface)")
     ax.set_title("SHR-1210 self-protein panel — from sequence alone",
