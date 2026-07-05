@@ -100,3 +100,44 @@ def test_dashboard_numbers_match_csv(built):
     html = paths.DASHBOARD.read_text()
     for t in json.loads(paths.VERDICT_JSON.read_text()):
         assert f'{t["PAE_IF"]:.2f}' in html
+
+
+# --- (f) size-aware confidence gate: the fix for the small-antigen flaw ---
+def test_size_gate_tiers():
+    from crossflag.demo import screen_view as sv
+
+    assert sv.VALID_REGIME_MIN_AA == 150
+    # small antigen -> low-confidence (over-docking-prone, unreliable)
+    assert sv.confidence_tier(80) == "low"
+    assert sv.confidence_tier(sv.VALID_REGIME_MIN_AA - 1) == "low"
+    # valid regime -> high-confidence
+    assert sv.confidence_tier(sv.VALID_REGIME_MIN_AA) == "high"
+    assert sv.confidence_tier(300) == "high"
+
+
+def test_confident_hit_requires_frozen_rule_and_gate():
+    from crossflag.demo import screen_view as sv
+
+    # passes frozen rule but small antigen -> NOT a confident hit
+    small = {"len": 90, "hit": True}
+    assert sv.confidence_tier(small["len"]) == "low"
+    assert sv.is_confident_hit(small) is False
+    # passes frozen rule and valid regime -> confident hit
+    big = {"len": 300, "hit": True}
+    assert sv.is_confident_hit(big) is True
+    # valid regime but fails frozen rule -> not a hit at all
+    assert sv.is_confident_hit({"len": 300, "hit": False}) is False
+
+
+def test_all_candidate_off_targets_are_high_confidence():
+    """Every protein in the candidate off-target table is in the valid regime."""
+    from crossflag.demo import screen_view as sv
+
+    if not sv.SCREEN_CSV.exists():
+        pytest.skip("screen_metrics.csv absent")
+    d = sv.compute()
+    assert d["cand"], "expected at least one candidate off-target"
+    for r in d["cand"]:
+        assert r["len"] >= sv.VALID_REGIME_MIN_AA
+        assert sv.confidence_tier(r["len"]) == "high"
+        assert sv.is_confident_hit(r)

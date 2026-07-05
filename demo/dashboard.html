@@ -158,22 +158,33 @@
   <figcaption><b>Paratope-specificity control.</b> Scrambling all six CDRs (framework preserved) turns both off-targets into non-hits: FZD5 loses epitope reproducibility, ULBP2 loses interface tightness. The hit rule is an AND of both metrics, so failing either is enough — binding depends on the paratope sequence, not the scaffold.<span class="prov" data-source="screen_metrics.csv (scramble6) vs cofold_metrics.csv (wild-type)">source: screen_metrics.csv (scramble6) vs cofold_metrics.csv (wild-type)</span></figcaption>
 </figure>
 <div class="card">
-  <p style="margin:.2rem 0 .6rem"><b>Candidate novel off-targets</b> (valid regime, top by
-  interface confidence) — testable hypotheses. SMO recurs from earlier within-fold tests;
-  the KIR / CD19 cluster are Ig-fold NK receptors (possible genuine cross-reactivity, or an
-  Ig-fold bias — needs a wet-lab read).</p>
+  <p style="margin:.2rem 0 .6rem"><b>The false-positive signature — a characterized fold-affinity
+  bias, not new biology.</b> The top valid-regime non-target hits below concentrate <i>entirely</i>
+  in the fold families of the confirmed off-targets: SMO shares FZD5's Frizzled cysteine-rich domain,
+  and CD19 / IL22RA1 / the five KIRs are Ig-superfamily β-sandwich receptors like ULBP2 (and like
+  PD-1 itself). Decisive control: the orthogonal <i>experimental</i> screen that discovered SHR-1210's
+  real off-targets (Finlay et&nbsp;al., Retrogenix ~4,975 receptors, <i>mAbs</i> 2019, PMID&nbsp;30541416)
+  tested every protein below and scored them all <b>negative</b>. So these are fold-driven false
+  positives, not candidate discoveries — the diagnostic signature of an Ig-fold / CRD affinity bias
+  (full read: <code>data/results/screen/novel_candidates_assessment.md</code>).</p>
   <div class="tablecard"><table>
-    <thead><tr><th>gene</th><th>ecto len</th><th>PAE_IF (Å)</th><th>epitope_reprod</th></tr></thead>
-    <tbody><tr><td>SMO</td><td class="num">202</td><td class="num">5.24</td><td class="num">0.835</td></tr><tr><td>IL22RA1</td><td class="num">213</td><td class="num">5.43</td><td class="num">0.689</td></tr><tr><td>MRGPRD</td><td class="num">321</td><td class="num">6.19</td><td class="num">0.597</td></tr><tr><td>KIR2DL4</td><td class="num">221</td><td class="num">7.24</td><td class="num">0.761</td></tr><tr><td>KIR2DS1</td><td class="num">224</td><td class="num">7.58</td><td class="num">0.774</td></tr><tr><td>CD19</td><td class="num">272</td><td class="num">7.58</td><td class="num">0.760</td></tr><tr><td>TBXA2R</td><td class="num">343</td><td class="num">7.78</td><td class="num">0.686</td></tr><tr><td>KIR3DL3</td><td class="num">297</td><td class="num">7.98</td><td class="num">0.720</td></tr></tbody>
+    <thead><tr><th>gene</th><th>ecto len</th><th>PAE_IF (Å)</th><th>epitope_reprod</th><th>confidence</th><th>Finlay 2019</th></tr></thead>
+    <tbody><tr><td>SMO</td><td class="num">202</td><td class="num">5.24</td><td class="num">0.835</td><td>high</td><td>negative</td></tr><tr><td>IL22RA1</td><td class="num">213</td><td class="num">5.43</td><td class="num">0.689</td><td>high</td><td>negative</td></tr><tr><td>MRGPRD</td><td class="num">321</td><td class="num">6.19</td><td class="num">0.597</td><td>high</td><td>negative</td></tr><tr><td>KIR2DL4</td><td class="num">221</td><td class="num">7.24</td><td class="num">0.761</td><td>high</td><td>negative</td></tr><tr><td>KIR2DS1</td><td class="num">224</td><td class="num">7.58</td><td class="num">0.774</td><td>high</td><td>negative</td></tr><tr><td>CD19</td><td class="num">272</td><td class="num">7.58</td><td class="num">0.760</td><td>high</td><td>negative</td></tr><tr><td>TBXA2R</td><td class="num">343</td><td class="num">7.78</td><td class="num">0.686</td><td>high</td><td>negative</td></tr><tr><td>KIR3DL3</td><td class="num">297</td><td class="num">7.98</td><td class="num">0.720</td><td>high</td><td>negative</td></tr></tbody>
   </table></div>
-  <span class="prov">source: screen_metrics.csv (flagship, ≥150 aa, hit rule PAE_IF&lt;9.8 ∧ reprod≥0.55)</span>
+  <span class="prov">source: screen_metrics.csv (flagship, ≥150 aa, hit rule PAE_IF&lt;9.8 ∧ reprod≥0.55);
+  confidence = size-aware gate (high iff ecto ≥150 aa); Finlay column = orthogonal
+  experimental (Retrogenix) call, all negative</span>
 </div>
 <div class="card">
   <p style="margin:.2rem 0"><b>Honest read.</b> Conditionally validated. The screen is
   reliable for medium/large antigens (≥150 aa: 2.1% FPR, both known off-targets
   enriched, paratope-specific, generalizes to a 2nd drug) but <b>over-docks small antigens</b>
-  (&lt;150 aa, ~20% FPR) — a genuine method limitation affecting ~43% of the surfaceome that
-  needs a size-aware confidence gate. A prioritization tool, not a verdict.</p>
+  (&lt;150 aa, ~20% FPR) — a genuine method limitation affecting ~43% of the surfaceome. We
+  <b>found it, characterized it, and now handle it</b>: the size-aware confidence gate
+  (<code>VALID_REGIME_MIN_AA = 150</code>) tiers every hit, emitting
+  small-antigen (&lt;150 aa) hits explicitly as <b>low-confidence</b> and
+  only ≥150 aa hits as high-confidence — so a confident hit must pass the
+  frozen rule <i>and</i> the gate. A prioritization tool, not a verdict.</p>
 </div>
 
 <h2>How this scales — productization (not built in this demo)</h2>

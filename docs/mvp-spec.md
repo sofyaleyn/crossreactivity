@@ -1,6 +1,6 @@
 # MVP spec (Phase 1) — embedding-based panel ranking
 
-> **⚠️ SUPERSEDED (2026-07-04).** The embedding-similarity rung-1 described here was found broken (not computable + biophysically backwards + fails a fold-matched benchmark). See [`../findings.md`](../findings.md) and [`../plan.md`](../plan.md) for the validated cofold-screen replacement. Kept for history.
+> **⚠️ SUPERSEDED (2026-07-05).** The embedding-similarity rung-1 described here was empirically found broken (not computable at scale + biophysically backwards + fails a fold-matched benchmark ≈ chance). The validated approach is the Boltz-2 cofold screen against a curated self-protein surfaceome — now confirmed at real scale. See [`../findings.md`](../findings.md), [`../plan.md`](../plan.md), and [`../demo/README.md`](../demo/README.md). Kept for history.
 
 The minimum viable build. Rank the antibody variant panel by learned-embedding similarity between the antibody paratope and self-protein antigens. No 3D. This phase meets the success criterion at the embedding level; the confirmation ladder (`extensions-spec.md`) makes it convincing.
 

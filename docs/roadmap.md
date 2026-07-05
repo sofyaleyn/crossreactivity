@@ -1,6 +1,6 @@
 # Roadmap — ranked steps and tools
 
-> **⚠️ SUPERSEDED (2026-07-04).** The Phase-1 embedding rung was found broken and the ladder reordered (cofold is the validated primary signal, not a top-of-funnel extra). See [`../plan.md`](../plan.md) and [`../findings.md`](../findings.md). Kept for history.
+> **⚠️ SUPERSEDED (2026-07-05).** The Phase-1 embedding rung was empirically found broken and the ladder collapsed: the Boltz-2 cofold screen is the validated *primary* signal (run across the whole curated surfaceome), not a top-k confirmation extra. The tool tiers below are stale — Boltz-2 is the core engine, embedding PLMs are no longer the primary path. See [`../plan.md`](../plan.md), [`../findings.md`](../findings.md), and [`../demo/README.md`](../demo/README.md). Kept for history.
 
 Read before the specs. Ranks every pipeline step and tool, marks the MVP / extension boundary, gives a 15h budget. Abbreviations in `glossary.md`.
 

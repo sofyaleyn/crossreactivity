@@ -69,41 +69,56 @@ Steinmetz et al., *mAbs* 2021, PMID 33596779).
 ### The real limitation we found
 
 The method **over-docks small antigens (<150 aa)** — FPR ~20%, with docking confidence
-*higher than the true target itself* (physically implausible). Of 168 decoys docking tighter
-than a real off-target, median length 41 aa; only 3 are ≥150 aa. This is a **genuine method
+*higher than the true target itself* (physically implausible). Of 171 decoys docking tighter
+than a real off-target (PAE_IF < 5.69), median length 41 aa; only 3 are ≥150 aa. This is a **genuine method
 flaw, not a test artifact**: the small ectodomains are correctly extracted, real domains
 (e.g. GPCR N-termini), and the scoring simply mis-ranks short peptides. It affects **~43% of
 the surfaceome** (1,257/2,896 proteins have ectodomains <150 aa). **Fix:** a size-aware
 confidence gate (flag small-ectodomain hits as low-confidence) or improved short-antigen scoring.
 
-### Candidate novel off-targets (valid regime, top by interface confidence)
+### The false-positive signature: a characterized fold-affinity bias (NOT novel discoveries)
 
-- **SMO** (Smoothened, 202 aa) — reproducible (also flagged in earlier within-family tests).
-- A cluster of **Ig-fold NK receptors** — CD19, IL22RA1, and five KIRs
-  (KIR2DL4 / KIR2DS1 / KIR3DL3 / KIR2DL3 / KIR2DL5B). Same structural family as ULBP2's biology.
-- **Interpretation caveat:** possible genuine cross-reactivity, or an Ig-fold affinity bias —
-  needs a wet-lab / structural-biology read before treating as real.
+The top valid-regime non-target hits are **not** candidate new off-targets — they are a
+characterized failure mode. Full analysis in
+[`novel_candidates_assessment.md`](novel_candidates_assessment.md).
+
+- The hits concentrate **entirely** in the fold families of the confirmed off-targets:
+  **SMO** (202 aa) shares FZD5's Frizzled cysteine-rich domain; **CD19**, **IL22RA1**, and five
+  **KIRs** (KIR2DL4 / KIR2DS1 / KIR3DL3 / KIR2DL3 / KIR2DL5B) are Ig-superfamily β-sandwich
+  receptors like ULBP2 — and like the PD-1 target itself (an IgV fold). An Ig-fold candidate
+  therefore carries almost no discriminating signal.
+- **Decisive external control:** the orthogonal *experimental* screen that discovered SHR-1210's
+  real off-targets (Finlay et al., Retrogenix human-receptor array ~4,975 receptors, *mAbs* 2019,
+  PMID 30541416) **contained every one of these proteins and scored them all negative.** A
+  computational "novel" hit that an orthogonal wet screen calls negative is a false positive, not
+  a discovery.
+- Several also fail an anchor-robustness check (KIR2DL4 / 2DL5B / 3DL3 collapse to PAE 17–25 Å
+  under the anchor-2 control). **Verdict: Ig-fold / CRD affinity bias.** This is the honest,
+  diagnostic signature of the method's main non-size failure mode — a *finding*, not a lead.
 
 ## Bottom line
 
 **Conditionally validated.** The cofold screen reliably prioritizes off-targets for
-medium/large antigens (≥150 aa: ~3% FPR, both known off-targets enriched), is paratope-specific,
-(≥150 aa: ~2% FPR, both known off-targets enriched) and generalizes across two independent
-antibodies. It has one real, bounded flaw — unreliable scoring for small (<150 aa) ectodomains —
-that needs a size-aware fix before the full surfaceome can be trusted. It is a **prioritization
-tool for wet-lab specificity screens, not a replacement.**
+medium/large antigens (≥150 aa: **2.1% FPR** (14/678), both known off-targets enriched), is
+paratope-specific (all-6-CDR-scramble control collapses both hits), and generalizes across two
+independent antibodies (blind ABT-736 → PF4). It has one real, bounded flaw — unreliable scoring
+for small (<150 aa) ectodomains — now handled by a size-aware confidence gate that flags
+small-antigen hits as low-confidence. Its non-size false positives are a characterized Ig-fold /
+CRD affinity bias (all confirmed negative by the orthogonal Finlay 2019 screen), not new leads.
+It is a **prioritization tool for wet-lab specificity screens, not a replacement.**
 
 ## Open questions for discussion
 
-1. Do the candidate off-targets (SMO, KIRs, CD19) make biological sense, or read as an Ig-fold artifact?
+1. ~~Do the candidate off-targets (SMO, KIRs, CD19) make biological sense, or read as an Ig-fold artifact?~~ **Resolved:** Ig-fold / CRD affinity bias — all were experimental non-hits in the Finlay 2019 Retrogenix screen (see the fold-affinity-bias section above and `novel_candidates_assessment.md`).
 2. Small-antigen limitation — acceptable to flag GPCRs/small-ectodomain proteins as "low-confidence,"
    or do we need to solve short-antigen scoring?
 3. Does our ABT-736 → PF4 generalization result square with the published case?
 
 ## Caveats & provenance
 
-- Numbers reflect the **complete** run: **1,198/1,200** flagship (2 dropped on API rate-limit) and
-  **401/401** anchor-2 cofolds scored, plus 20 pilot + 4 scramble-control folds (1,603 total, 5 samples each).
+- Numbers reflect the **complete** run: **1,198/1,200** flagship (2 dropped on API rate-limit) +
+  **401/401** anchor-2 + **4** scramble-control folds = **1,603** scored (5 samples each). An earlier
+  24-fold calibration pilot (`cofold_metrics.csv`) is separate and not counted in the 1,603.
 - ABT-736 VH/VL were transcribed from a patent figure (US2009/0175847A1); off-target/mechanism
   fully cited (PMID 33596779). PF4 = UniProt P02776 (mature chain).
 - Data & code: `data/results/screen/` — `screen_metrics.csv` (per-protein scores),

@@ -56,7 +56,7 @@ Abbreviations and terms across CrossFlag docs.
 | **IgFold** | Antibody-specific structure predictor (VH+VL → 3D). |
 | **AbodyBuilder2 / 3** | Alternative antibody structure predictors. |
 | **cofolding / co-folding** | Predicting the joint 3D structure of two molecules together (e.g. antibody + antigen) to assess whether they bind. |
-| **Boltz-2** | Open (MIT) co-folding + binding-affinity foundation model; the confirmation rung. |
+| **Boltz-2** | Open (MIT) co-folding + binding-affinity foundation model. The **core engine** of the validated tool — cofolds the antibody against the whole curated surfaceome, scored by `PAE_IF` + `epitope_reprod` (was described as a top-k "confirmation rung" in the superseded design). |
 | **AlphaFold3 (AF3)** | DeepMind's co-folding model; gated weights; slightly better on Ab–Ag accuracy. |
 | **ipTM / pTM** | Interface / global predicted TM-score — model confidence in the (interface) structure. |
 | **PAE** | Predicted aligned error — per-residue-pair confidence; low PAE at CDR–antigen contacts = confident interface. |
@@ -84,7 +84,7 @@ Abbreviations and terms across CrossFlag docs.
 | Term | Meaning |
 |---|---|
 | **MVP / EXT** | Phase 1 (embedding rank) / Phase 2–3 (confirmation ladder). |
-| **evidence ladder** | The three rungs: embedding rank → surface fingerprint → cofolding. |
+| **evidence ladder** | The original three-rung design: embedding rank → surface fingerprint → cofolding. **Superseded** — rungs 1–2 were found broken; the validated tool is the Boltz-2 cofold screen alone (see [`../findings.md`](../findings.md)). |
 | **agent skill** | A programmatically invokable tool wrapper; excludes web-only tools. |
 | **CC-BY-NC-ND / MIT** | dMaSIF license (non-commercial) / Boltz-2, ESM-2 license (commercial-ok). |
 | **ARDitox / Tope-seq** | Recent whole-proteome one-candidate tools CrossFlag differentiates from. |

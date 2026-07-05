@@ -1,6 +1,6 @@
 # Demo run — MVP acceptance test
 
-> **⚠️ SUPERSEDED (2026-07-04).** These beats assume the embedding-ranking MVP. The validated demo is now a Boltz-2 cofold screen ranked on a calibrated panel — see [`../plan.md`](../plan.md) and [`../findings.md`](../findings.md) (§Next steps). Kept for history.
+> **⚠️ SUPERSEDED (2026-07-05).** These beats assume the embedding-ranking MVP, which was found broken. The validated demo is now a Boltz-2 cofold screen ranked on a calibrated panel (PD-1 ceiling / lysozyme floor, frozen hit rule `PAE_IF < 9.8 ∧ epitope_reprod ≥ 0.55`), confirmed at real scale. See [`../plan.md`](../plan.md), [`../findings.md`](../findings.md), and [`../demo/README.md`](../demo/README.md) for the actual demo script. Kept for history.
 
 The exact sequence of runs that proves the MVP works, using the SHR-1210 anchor. Three beats, each producing a concrete artifact you show on stage. If Beat 1 fails, the MVP is broken and nothing else matters.
 

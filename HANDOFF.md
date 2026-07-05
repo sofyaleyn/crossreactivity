@@ -1,6 +1,6 @@
 # HANDOFF — build instructions for Claude Code
 
-> **⚠️ SUPERSEDED (2026-07-04).** This build order centers the embedding rung-1, which was found broken. **Build from [`plan.md`](plan.md)** (the active representative-set cofold-screen plan), with evidence in [`findings.md`](findings.md). Kept for history.
+> **⚠️ SUPERSEDED (2026-07-05).** This build order centers the embedding rung-1, which was empirically found broken. The validated approach is the Boltz-2 cofold screen against a curated self-protein surfaceome — now confirmed at real scale. **Build from [`plan.md`](plan.md)** (the active cofold-screen plan); evidence in [`findings.md`](findings.md), demo and validated results in [`demo/README.md`](demo/README.md). Kept for history.
 
 This file is the executable brief. It turns the specs into an ordered build with explicit module contracts and acceptance tests. Read [docs/mvp-spec.md](docs/mvp-spec.md) and [docs/extensions-spec.md](docs/extensions-spec.md) for rationale; build from here.
 
@@ -9,7 +9,7 @@ This file is the executable brief. It turns the specs into an ordered build with
 **Non-negotiable constraints:**
 - Every tool must be callable programmatically (no web-form tools). Wrap each as a skill in `skills/`.
 - MVP (Phase 1) must run end-to-end and pass its acceptance test before any Phase 2 work.
-- Expensive steps are top-k gated: surface on top ~10, cofolding on top ~5. Never run cofolding across the set.
+- Expensive steps are top-k gated: surface on top ~10, cofolding on top ~5. Never run cofolding across the set. *(Superseded — the validated method instead cofolds the antibody against the entire curated ectodomain set; at ~$0.20/cofold a full screen is ~$50–150/antibody and no cheap pre-filter beats it. See [`findings.md`](findings.md) and [`demo/README.md`](demo/README.md).)*
 - Framing everywhere is triage, not certification.
 
 ---

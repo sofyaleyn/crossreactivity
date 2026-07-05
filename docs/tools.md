@@ -1,10 +1,12 @@
 # Tools reference
 
+> **⚠️ TIERING SUPERSEDED (2026-07-05).** The MVP-vs-extension split below reflects the original embedding-ladder design, which was found broken. In the **validated** tool the **core engine is Boltz-2 cofold via the hosted boltz.bio API** (see the "Extension tools" section — that is now the *primary* path, not an add-on), scoring `PAE_IF` + `epitope_reprod`. The antibody/antigen embedding PLMs (AntiBERTy / AbLang2 / ESM-2) and the dMaSIF/surface rung are **no longer the primary path** — the embedding ranker failed a fold-matched benchmark and no cheap filter beats a free annotation baseline (`../findings.md`). The per-tool facts (installs, licenses, APIs) below are still accurate; only the MVP/extension *framing* is stale. Current design: [`../plan.md`](../plan.md); validated results: [`../demo/README.md`](../demo/README.md).
+
 Every tool is programmatic (local or callable API) and skill-wrappable. Web-only tools excluded. **Skill?** = drivable without runtime human interaction.
 
 ---
 
-## MVP tools (Phase 1)
+## MVP tools (Phase 1) — *superseded as the primary path; see banner*
 
 ### Python + Biopython
 - **Role:** parsing, FASTA/PDB handling, glue.
@@ -41,7 +43,7 @@ Every tool is programmatic (local or callable API) and skill-wrappable. Web-only
 
 ---
 
-## Extension tools (Phase 2–3)
+## Extension tools (Phase 2–3) — *Boltz-2 (below) is now the CORE engine, not an extension*
 
 ### IgFold
 - **Role:** predict 3D antibody structure (VH+VL) for top-flagged variants; input to surface fingerprinting.
@@ -59,11 +61,10 @@ Every tool is programmatic (local or callable API) and skill-wrappable. Web-only
 - **Role:** hand-rolled surface descriptor (electrostatics + hydrophobicity + H-bond) if no GPU / commercial-clean needed.
 - **Install:** standalone binaries; `pip install pdb2pqr apbs`. **Skill?** Yes. **License:** open.
 
-### Boltz-2  ← the confirmation gate
+### Boltz-2  ← the CORE cofold engine (validated)
 - **Full name:** open co-folding + binding-affinity foundation model (MIT Jameel Clinic + Recursion).
-- **Role:** rung 3 — cofold top ~5 variant×self-protein pairs; read interface confidence (ipTM/PAE at CDR contacts) + affinity score.
-- **Install:** `pip install boltz` (add `[cuda]` for GPU). Run: `boltz predict input.yaml --use_msa_server`. Affinity via YAML affinity request → `affinity_pred_value`, `affinity_probability_binary`.
-- **Also:** NVIDIA hosts a Boltz-2 NIM with a Python client (`pip install boltz2-python-client`) if you prefer a remote endpoint over local GPU.
+- **Role (validated):** the *primary* off-target signal — cofold the antibody Fv against **every** curated self-protein ectodomain (not a top-5 gate), 5 samples each, and score the interface with **`PAE_IF` (mean interface predicted-aligned-error, lower = tighter) + `epitope_reprod` (Jaccard of the contacted epitope across the 5 samples)**. Frozen hit rule `PAE_IF < 9.8 ∧ epitope_reprod ≥ 0.55`. **`ipTM` and the affinity head are NOT used — they over-dock** (lysozyme ipTM 0.87 ≈ everything; `../findings.md`). *(The old "rung 3 / top-5 confirmation, ranked on ipTM/affinity" framing is superseded.)*
+- **Access (validated path):** the **hosted boltz.bio API** (Boltz-2.1) at ~$0.20/cofold — this is how the real-scale screen was run (`../demo/README.md`). Local `pip install boltz` (add `[cuda]` for GPU; `boltz predict input.yaml --use_msa_server`) and NVIDIA's Boltz-2 NIM (`pip install boltz2-python-client`) remain alternatives.
 - **Skill?** Yes (CLI + YAML, or client API).
 - **License:** **MIT — academic and commercial use.** This is why Boltz-2, not AlphaFold3, carries the confirmation rung.
 - **Caveat:** antibody–antigen is the hardest cofolding category; use CDR-restricted interface confidence, treat as confirmation not certainty. `--use_msa_server` is one remote call.

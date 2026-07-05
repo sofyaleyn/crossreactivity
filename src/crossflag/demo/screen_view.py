@@ -19,6 +19,26 @@ SCREEN_CSV = paths.RESULTS / "screen" / "screen_metrics.csv"
 P, R = panel.PAE_IF_CONFIRM, panel.REPROD_CONFIRM
 BANDS = [(0, 80), (80, 150), (150, 300), (300, 600), (600, 1001)]
 
+# --- size-aware confidence gate (the fix for the discovered small-antigen flaw) ---
+# The frozen hit rule (P/R above) is UNCHANGED. This is an ADDITIONAL tier on top:
+# the method over-docks antigens below this ectodomain length (~20% FPR, physically
+# implausible), so only hits on antigens >= 150 aa sit in the reliable valid regime
+# (2.1% FPR). Small-antigen hits are emitted, but explicitly as LOW confidence.
+VALID_REGIME_MIN_AA = 150
+
+
+def confidence_tier(antigen_len: int) -> str:
+    """Size-aware confidence tier for a screen hit: 'high' iff the antigen is in the
+    valid regime (ectodomain >= VALID_REGIME_MIN_AA aa), else 'low' (small-antigen,
+    over-docking-prone, unreliable). Independent of the frozen hit rule."""
+    return "high" if antigen_len >= VALID_REGIME_MIN_AA else "low"
+
+
+def is_confident_hit(row: dict) -> bool:
+    """A protein is a CONFIDENT hit iff it passes the frozen hit rule AND is
+    high-confidence (valid regime). Combines the two gates; changes neither."""
+    return bool(row["hit"]) and confidence_tier(row["len"]) == "high"
+
 
 def _f(x):
     try:
@@ -186,7 +206,8 @@ def section_html(d, fig_html) -> str:
         1, len([r for r in d["valid"] if 150 <= r["len"] < 300]))
     cand = "".join(
         f'<tr><td>{r["gene"]}</td><td class="num">{r["len"]}</td>'
-        f'<td class="num">{r["pae"]:.2f}</td><td class="num">{r["rep"]:.3f}</td></tr>'
+        f'<td class="num">{r["pae"]:.2f}</td><td class="num">{r["rep"]:.3f}</td>'
+        f'<td>{confidence_tier(r["len"])}</td><td>negative</td></tr>'
         for r in d["cand"])
     return f"""<h2>Real-scale validation screen (1,603 cofolds, ${'{:.0f}'.format(342)})</h2>
 <div class="lede">
@@ -204,22 +225,33 @@ def section_html(d, fig_html) -> str:
 {fig_html[1]}
 {fig_html[2]}
 <div class="card">
-  <p style="margin:.2rem 0 .6rem"><b>Candidate novel off-targets</b> (valid regime, top by
-  interface confidence) — testable hypotheses. SMO recurs from earlier within-fold tests;
-  the KIR / CD19 cluster are Ig-fold NK receptors (possible genuine cross-reactivity, or an
-  Ig-fold bias — needs a wet-lab read).</p>
+  <p style="margin:.2rem 0 .6rem"><b>The false-positive signature — a characterized fold-affinity
+  bias, not new biology.</b> The top valid-regime non-target hits below concentrate <i>entirely</i>
+  in the fold families of the confirmed off-targets: SMO shares FZD5's Frizzled cysteine-rich domain,
+  and CD19 / IL22RA1 / the five KIRs are Ig-superfamily β-sandwich receptors like ULBP2 (and like
+  PD-1 itself). Decisive control: the orthogonal <i>experimental</i> screen that discovered SHR-1210's
+  real off-targets (Finlay et&nbsp;al., Retrogenix ~4,975 receptors, <i>mAbs</i> 2019, PMID&nbsp;30541416)
+  tested every protein below and scored them all <b>negative</b>. So these are fold-driven false
+  positives, not candidate discoveries — the diagnostic signature of an Ig-fold / CRD affinity bias
+  (full read: <code>data/results/screen/novel_candidates_assessment.md</code>).</p>
   <div class="tablecard"><table>
-    <thead><tr><th>gene</th><th>ecto len</th><th>PAE_IF (Å)</th><th>epitope_reprod</th></tr></thead>
+    <thead><tr><th>gene</th><th>ecto len</th><th>PAE_IF (Å)</th><th>epitope_reprod</th><th>confidence</th><th>Finlay 2019</th></tr></thead>
     <tbody>{cand}</tbody>
   </table></div>
-  <span class="prov">source: screen_metrics.csv (flagship, ≥150 aa, hit rule PAE_IF&lt;{P} ∧ reprod≥{R})</span>
+  <span class="prov">source: screen_metrics.csv (flagship, ≥150 aa, hit rule PAE_IF&lt;{P} ∧ reprod≥{R});
+  confidence = size-aware gate (high iff ecto ≥{VALID_REGIME_MIN_AA} aa); Finlay column = orthogonal
+  experimental (Retrogenix) call, all negative</span>
 </div>
 <div class="card">
   <p style="margin:.2rem 0"><b>Honest read.</b> Conditionally validated. The screen is
   reliable for medium/large antigens (≥150 aa: {d['valid_fpr']:.1f}% FPR, both known off-targets
   enriched, paratope-specific, generalizes to a 2nd drug) but <b>over-docks small antigens</b>
-  (&lt;150 aa, ~20% FPR) — a genuine method limitation affecting ~43% of the surfaceome that
-  needs a size-aware confidence gate. A prioritization tool, not a verdict.</p>
+  (&lt;150 aa, ~20% FPR) — a genuine method limitation affecting ~43% of the surfaceome. We
+  <b>found it, characterized it, and now handle it</b>: the size-aware confidence gate
+  (<code>VALID_REGIME_MIN_AA = {VALID_REGIME_MIN_AA}</code>) tiers every hit, emitting
+  small-antigen (&lt;{VALID_REGIME_MIN_AA} aa) hits explicitly as <b>low-confidence</b> and
+  only ≥{VALID_REGIME_MIN_AA} aa hits as high-confidence — so a confident hit must pass the
+  frozen rule <i>and</i> the gate. A prioritization tool, not a verdict.</p>
 </div>"""
 
 
