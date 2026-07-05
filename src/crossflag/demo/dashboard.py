@@ -126,8 +126,10 @@ def build_html() -> str:
                 "screen_metrics.csv (flagship ≥150 aa; anchor2 40–110 aa)"),
             "screen_scramble.png": (
                 "<b>Paratope-specificity control.</b> Scrambling all six CDRs (framework "
-                "preserved) collapses both off-targets below the hit threshold — the binding "
-                "depends on the paratope sequence, not the scaffold.",
+                "preserved) turns both off-targets into non-hits: FZD5 loses epitope "
+                "reproducibility, ULBP2 loses interface tightness. The hit rule is an AND of "
+                "both metrics, so failing either is enough — binding depends on the paratope "
+                "sequence, not the scaffold.",
                 "screen_metrics.csv (scramble6) vs cofold_metrics.csv (wild-type)"),
         }
         fig_html = [_figure(name, name, caps[name][0], caps[name][1])

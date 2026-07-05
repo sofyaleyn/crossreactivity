@@ -135,25 +135,44 @@ def _fig_enrich(d) -> str:
 
 
 def _fig_scramble(d) -> str:
+    """Both metrics: the hit rule is AND, so a control passes if EITHER fails.
+    FZD5 collapses on reproducibility, ULBP2 on interface PAE — show both honestly."""
     import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(figsize=(6.4, 4.2))
     genes = list(d["scramble"].keys())
     x = np.arange(len(genes))
-    wt = [d["scramble"][g][0][1] for g in genes]
-    sc = [d["scramble"][g][1][1] for g in genes]
-    ax.bar(x - 0.19, wt, 0.36, label="wild-type", color=F.SERIES_1)
-    ax.bar(x + 0.19, sc, 0.36, label="all-6-CDR scramble", color=F.NEUTRAL)
-    ax.axhline(R, color=F.WARNING, lw=1.2, ls="--")
-    ax.text(len(genes) - 0.5, R + 0.02, f"hit threshold ({R})", ha="right",
-            fontsize=8.5, color=F.WARNING)
-    ax.set_xticks(x); ax.set_xticklabels(genes)
-    ax.set_ylabel("epitope reproducibility")
-    ax.set_ylim(0, 1.0)
-    ax.set_title("Scramble control: off-target binding is paratope-specific",
-                 fontsize=10.5)
-    ax.legend(frameon=False, fontsize=9)
-    ax.spines[["top", "right"]].set_visible(False)
-    return F._save(fig, "screen_scramble.png")
+    fig, (ar, ap) = plt.subplots(1, 2, figsize=(9.0, 4.2))
+
+    # left: epitope reproducibility (higher = better; hit needs >= R)
+    wt_r = [d["scramble"][g][0][1] for g in genes]
+    sc_r = [d["scramble"][g][1][1] for g in genes]
+    ar.bar(x - 0.19, wt_r, 0.36, label="wild-type", color=F.SERIES_1)
+    ar.bar(x + 0.19, sc_r, 0.36, label="all-6-CDR scramble", color=F.NEUTRAL)
+    ar.axhline(R, color=F.WARNING, lw=1.2, ls="--")
+    ar.text(len(genes) - 0.55, R + 0.015, f"hit needs ≥ {R}", ha="right",
+            va="bottom", fontsize=8.5, color=F.WARNING)
+    ar.set_xticks(x); ar.set_xticklabels(genes)
+    ar.set_ylabel("epitope reproducibility"); ar.set_ylim(0, 1.0)
+    ar.set_title("epitope reproducibility", fontsize=10)
+    ar.legend(frameon=False, fontsize=9, loc="upper left")
+    ar.spines[["top", "right"]].set_visible(False)
+
+    # right: interface PAE (lower = tighter; hit needs < P)
+    wt_p = [d["scramble"][g][0][0] for g in genes]
+    sc_p = [d["scramble"][g][1][0] for g in genes]
+    ap.bar(x - 0.19, wt_p, 0.36, color=F.SERIES_1)
+    ap.bar(x + 0.19, sc_p, 0.36, color=F.NEUTRAL)
+    ap.axhline(P, color=F.WARNING, lw=1.2, ls="--")
+    ap.text(len(genes) - 0.55, P + 0.15, f"hit needs < {P}", ha="right",
+            va="bottom", fontsize=8.5, color=F.WARNING)
+    ap.set_xticks(x); ap.set_xticklabels(genes)
+    ap.set_ylabel("interface PAE (Å)"); ap.set_ylim(0, max(sc_p) * 1.18)
+    ap.set_title("interface PAE  (lower = tighter)", fontsize=10)
+    ap.spines[["top", "right"]].set_visible(False)
+
+    fig.suptitle("Scramble control: both off-targets become non-hits (paratope-specific)",
+                 fontsize=11.5, fontweight="bold")
+    fig.tight_layout(rect=(0, 0, 1, 0.95))
+    return F._save(fig, "screen_scramble.png", tight=False)
 
 
 def build_figures(d):
