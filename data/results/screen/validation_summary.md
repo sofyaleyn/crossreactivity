@@ -14,6 +14,11 @@ This run tested whether the method actually works at screen scale.
   `epitope_reprod` (do the 5 samples agree on the antigen epitope; higher = consistent).
 - **Hit rule (frozen):** `PAE_IF < 9.8 AND epitope_reprod ≥ 0.55`, calibrated on the
   original anchor against a PD-1 cognate-target ceiling and a lysozyme non-binder floor.
+- **Reference set (the denominator):** the **2,886-protein SURFY human surfaceome**
+  (Bausch-Fluck et al., PNAS 2018, 5% FPR; 948 CSPA mass-spec-confirmed) + curated
+  autoimmune/mimicry additions = **2,896 proteins**, 99.8% with UniProt sequences
+  (`data/reference/self_proteins.csv`; build in `docs/reference-set.md`). This screen cofolded
+  a **1,198-protein slice**; a large denominator is what makes the enrichment / FPR meaningful.
 - **Antigens:** extracellular (ectodomain) region only, extracted from UniProt topology
   (membrane proteins are cofolded as their soluble ectodomain, not full-length).
 

@@ -212,9 +212,13 @@ def section_html(d, fig_html) -> str:
     return f"""<h2>Real-scale validation screen (1,603 cofolds, ${'{:.0f}'.format(342)})</h2>
 <div class="lede">
   <p><b>The test.</b> We ran the actual product at scale: SHR-1210 cofolded against
-  <b>1,198 curated self-protein ectodomains</b>, a blind second antibody (ABT-736, known
-  off-target PF4) through the identical frozen rig, and a CDR-scrambled negative control.
-  Numbers from <code>screen_metrics.csv</code>; the hit rule was frozen before the screen.</p>
+  <b>1,198 self-protein ectodomains</b> — a slice of the human cell-surface proteome (the
+  2,886-protein SURFY surfaceome, Bausch-Fluck <i>et&nbsp;al.</i> PNAS 2018, + curated
+  autoimmune/mimicry additions = 2,896; 948 mass-spec-confirmed via CSPA) — plus a blind
+  second antibody (ABT-736, known off-target PF4) through the identical frozen rig and a
+  CDR-scrambled negative control. A large, unbiased denominator is what makes the enrichment
+  and false-positive rate meaningful. Numbers from <code>screen_metrics.csv</code>; the hit
+  rule was frozen before the screen.</p>
   <div class="kpis">
     <div class="kpi"><b>{d['valid_fpr']:.1f}%</b><span>false-positive rate for antigens ≥150 aa (valid regime)</span></div>
     <div class="kpi"><b>PF4 ✓</b><span>2nd antibody's off-target recovered, blind, zero retuning</span></div>

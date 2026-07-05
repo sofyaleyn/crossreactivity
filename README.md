@@ -34,7 +34,7 @@ The critical fact for the method: **CDR cross-reactivity is driven by surface sh
 
 CrossFlag is a single validated stage: **cofold, then score against a calibrated panel.**
 
-1. **Curate** a human self-protein reference surfaceome (`data/reference/self_proteins.csv`, ~2,896 proteins), cofolding each against the antibody as its extracellular **ectodomain** where it spans the membrane.
+1. **Curate** a human self-protein reference surfaceome (`data/reference/self_proteins.csv`) — the **2,886-protein SURFY surfaceome** (Bausch-Fluck et al., PNAS 2018; 948 mass-spec-confirmed via CSPA) plus curated autoimmune/mimicry additions = **2,896 proteins** (99.8% with UniProt sequences; see [`docs/reference-set.md`](docs/reference-set.md)) — cofolding each against the antibody as its extracellular **ectodomain** where it spans the membrane.
 2. **Cofold** the antibody Fv against every reference protein with Boltz-2 (5 samples per pair, hosted API, ~$0.20/cofold).
 3. **Score** each pair on two metrics: **`PAE_IF`** (interface predicted-aligned-error — lower = tighter) and **`epitope_reprod`** (do the 5 samples agree on the same antigen epitope — higher = reproducible). **`ipTM` is dropped — it over-docks** (lysozyme non-binder scores ~0.87, like everything).
 4. **Rank** against a per-antibody calibrated panel: a cognate true-target **ceiling** (e.g. PD-1) and a non-binder **floor** (lysozyme). Frozen hit rule: **`PAE_IF < 9.8 Å AND epitope_reprod ≥ 0.55`**. A valid-regime hit on a small (<150 aa) ectodomain is flagged **low-confidence** (see limits below).

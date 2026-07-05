@@ -1,6 +1,26 @@
 # Reference set — assembly instructions
 
-> **✅ CURRENT (2026-07-04), with one correction.** The *assembly* below remains valid and produces the active `data/reference/self_proteins.csv` (2,896 surface proteins) used as **Stage 0** of the cofold screen. **Ignore** the references below to "the embedding pipeline" and `mvp-spec.md §Data` — both superseded. The set is now consumed by the **Boltz-2 cofold screen** in [`../plan.md`](../plan.md); the layer flags (`layer_A/B/C`, severity) still apply for prioritizing hits.
+> **✅ CURRENT (2026-07-05).** The **"As built" summary** immediately below is the authoritative record of the reference set actually used by the validated cofold screen. The step-by-step *assembly brief* further down (§"Why three layers" onward) is retained for provenance and reproducibility; **ignore** its references to "the embedding pipeline", ESM-2 indexing, and the §"Scoring impact" priority-weight formula — those belong to the superseded embedding design (see [`../findings.md`](../findings.md)). The set is now consumed by the **Boltz-2 cofold screen** in [`../plan.md`](../plan.md); the layer flags (`layer_A/B/C`, severity) still apply for prioritizing hits.
+
+---
+
+## As built (authoritative)
+
+`data/reference/self_proteins.csv` — **2,896 rows** — is CrossFlag's self-protein reference set: the *denominator* the whole screen is measured against.
+
+| | | |
+|---|---|---|
+| **What it is** | Every human cell-surface protein an antibody could physically reach *in vivo* — the surface compartment where CDR off-target binding actually happens. | |
+| **Base — Layer A (SURFY)** | In-silico human surfaceome, ML predictor trained on CSPA. Bausch-Fluck et al., **PNAS 2018, Table S3**, surface-labeled at **5% FPR**. | **2,886** proteins (2,756 α-helical TM + 130 GPI-anchored) |
+| **Curated additions** | Autoimmune (Layer B) + pathogen-mimicry (Layer C) self-proteins and anchor off-targets not already in SURFY, merged onto the base. | **+10** → **2,896** total |
+| **Sequences** | Canonical sequences batch-fetched from **UniProt REST** (`/uniprotkb/{id}.fasta`). | **99.8%** coverage (2,889/2,896; 7 unresolved) |
+| **Mass-spec–validated subset** | Entries also in the experimental **CSPA** atlas (Bausch-Fluck et al., PLOS ONE 2015; 1,492 proteins total). Flagged `cspa_validated=True`. | **948** |
+| **Anchor off-targets (eval-only)** | VEGFR2 (`P35968`), FZD5 (`Q13467`), ULBP2 (`Q9BZM5`) embedded as ground truth; `is_anchor_offtarget=True`, **never shown to the scorer**. | 3 |
+| **How consumed** | Stage 0 of the Boltz-2 cofold screen; membrane proteins cofolded as their extracellular **ectodomain** (`data/reference/ectodomains.csv`). The validation screen cofolded a **1,198-protein slice** (`data/results/screen/`), not the full set. | |
+
+**Why this size is the right denominator.** Small enough to be surface-relevant — this is *only* the compartment where antibody CDR off-targets can bind, not the whole proteome. Large enough that recovering the 3 known off-targets near the top of it is a genuine result, not a lucky draw against a handful of decoys. That completeness is what gives the enrichment and false-positive-rate numbers their statistical weight.
+
+---
 
 This document is an executable brief for the agent that assembles CrossFlag's self-protein reference set. The output is `data/reference/self_proteins.csv` — a three-layer set (surface proteins + sequences + clinical-severity layers).
 
@@ -177,6 +197,8 @@ If SURFY doesn't include one of these, add it manually and log. The `is_anchor_o
 ---
 
 ## Scoring impact — layer priority weights
+
+> **⚠️ Superseded mechanism.** The `embedding_similarity(v, p) × priority(p)` formula below belongs to the dropped embedding design. In the validated tool, ranking is by cofold interface score (`PAE_IF` + `epitope_reprod`) against the calibrated PD-1/lysozyme panel; the layer flags are still used, but as **severity annotations on confirmed hits** (how much to worry), not as a multiplier on an embedding score. Kept for the layer-weighting rationale.
 
 The layers feed into `rank/embedding_rank.py` via a priority multiplier:
 

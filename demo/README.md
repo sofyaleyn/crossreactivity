@@ -29,6 +29,8 @@ Antibody CDR-mediated off-target binding is a leading cause of biologic drug fai
 ### 2. The result at scale — lead here (120s) → **screen figures**
 We ran the frozen pipeline as a real screen, not a toy: **SHR-1210's Fv cofolded against 1,198 curated self-protein ectodomains** (1,198/1,200; 2 dropped on an API rate-limit). Counting the second anchor (401) and scramble controls, **1,603 cofolds total**, 5 samples each, for **$342.70 of a $500 budget** (~$0.20/cofold). Nothing was tuned to these results — the hit rule was frozen on the calibration panel *before* the screen ran.
 
+**What it's screened against — the denominator matters.** The reference set is not a hand-picked decoy list. It's the human cell-surface proteome — the **SURFY surfaceome** (Bausch-Fluck et al., *PNAS* 2018): **2,886 proteins**, every self-protein an antibody's CDRs could physically reach *in vivo* (the compartment where off-target binding actually happens), **948** of them mass-spec-confirmed (CSPA). We add curated autoimmune/mimicry self-proteins → a **2,896-protein** set (99.8% with UniProt sequences), then cofold the ~1,200-protein slice above as each protein's extracellular ectodomain. Recovering the known off-targets near the top of *that* haystack is the result — against five cherry-picked decoys it would prove nothing. ([`reference-set.md`](../docs/reference-set.md))
+
 **Specificity holds where it matters.** In the valid regime (antigen ectodomain ≥150 aa) the false-positive rate is **2.1% (14/678)**, and FPR falls monotonically with antigen size (`figures/screen_fpr_by_length.png`):
 
 | ectodomain length | FPR |
